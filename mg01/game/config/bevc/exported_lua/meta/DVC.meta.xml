@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<agents version="1" signature="3600341653">
+  <agent type="player" base="role" signature="494715068">
+    <properties>
+      <property name="CARD_COUNT_PLAYER_START" type="int" member="false" static="false" defaultvalue="0" />
+    </properties>
+  </agent>
+</agents>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="DVC" folder="behaviors" export="exported_lua" language="cs" version="3">
+  <export>
+    <cs>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../exported_c</folder>
+    </cs>
+    <lua>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+    </lua>
+    <xml>
+      <isexported>False</isexported>
+    </xml>
+  </export>
+</workspace>
