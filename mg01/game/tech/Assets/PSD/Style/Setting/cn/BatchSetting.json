@@ -1,0 +1,23 @@
+﻿{
+	"setting":
+	[
+
+
+		/*
+		Part1 Part2 Part3 这几个是2048
+
+		Part1主要是"Welfare" "Kill" "KillAndRevive1"，另外Look2单独就有1024；创建角色系列也都在这里。
+		Part2主要是xxxSettle系列，"Diary" 也比较大，如果单独导出会撑到2048
+		Part3主要是"HugeMap","VillageExploreMap","Pet"这几个共享了大地图；另外卡牌系列与之合并。
+		*/
+
+
+		["Shared", "Shared"],
+
+		["Part1", 
+			"Pet2", "Bag"
+		]
+		
+		
+	]
+}

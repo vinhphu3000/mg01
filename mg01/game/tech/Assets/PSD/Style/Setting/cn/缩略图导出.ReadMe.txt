@@ -1,0 +1,31 @@
+﻿所谓的缩略图，就是指把界面中用到的大图片（例如超过256的背景图）在导出时以scale5的小倍数输出的小图片。
+其目的是为了节省常驻内存的几张ui图空间，达到减小内存的目的。
+
+操作步骤:
+1. 让美术把原图抽取出来，放到图集目录（http://oa.ejoy.com/svn/a2/ART/RawData/AnchorRes），建议命名是UI_{对应的UI英文名}
+2. 打包机上图集操作（http://oa.ejoy.com/wiki/doku.php?id=a9527:psdatlaspacking）
+3. 本地svn更新下来后，到Assets/RawData/Texturepacker/UI_{对应的UI英文名}目录，右键图片，选择菜单UI_SprAtlas/生成全部SpriteProxy
+4. 到Assets/Resources/Texturepacker/提交
+
+------------------ 上面是正常的图集生成流程 --------------------
+
+5. 在ThumbnailSetting.json增加对应UI的配置
+	- 文件地址 PSD/Style/Setting/cn/ThumbnailSetting.json
+	- 以 D地图$HugeMap.psd 这个为例子，需要增加进去的json格式是
+		    "HugeMap" : [
+		        {
+		            "src_path"   : "UI_HugeMapBg",
+		            "src_name"   : "UI_HugeMapBg",
+		            "ui_name"    : "UI_MAP",
+		            "thumb_name" : "BigMap"
+		        }
+		    ]
+	- src_path是步骤1图集的目录名
+	- src_name是该目录里的图片名
+	- ui_name是策划配置表UI.xls里填的名字
+	- thumb_name是psd里对该图片层的命名（不含导出参数）
+6. 在unity里导出该UI，会生成配置Assets/Resources/LuaScript/ui/thumbnail_cfg.lua，请记得提交
+
+
+5、6点不在适用
+改为直接配置thumbnail_cfg.lua，暂时不使用ThumbnailSetting.json

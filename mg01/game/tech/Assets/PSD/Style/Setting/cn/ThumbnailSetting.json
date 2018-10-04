@@ -1,0 +1,153 @@
+
+{
+    "HugeMap" : [
+        {
+            "node_paths" : [
+                "Container_HugeMap/Container_Panel/Container_Bg/Image_BigMap"
+            ],
+            "src_path"   : "UI_HugeMapBg",
+            "src_name"   : "UI_HugeMapBg",
+            "ui_name"    : "UI_MAP",
+            "thumb_name" : "BigMap",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        }
+    ],
+    "CardAlbum" : [
+        {
+            "node_paths" : [
+                "Container_Album__CardAlbum/Container_Bg/Image_BgIllustration"
+            ],
+            "src_path"   : "UI_Bag",
+            "src_name"   : "AlbumnBg",
+            "ui_name"    : "UI_BAG_NEW",
+            "thumb_name" : "BgIllustration",
+            "ui_parent_name" : "Container_Bag/Container_Panel/",
+            "node_paths_reset" : false
+        },
+        {
+            "node_paths" : [
+                "Container_Album__CardAlbum/Container_Bg/Image_BgPlatform"
+            ],
+            "src_path"   : "UI_Bag",
+            "src_name"   : "PlatformBg",
+            "ui_name"    : "UI_BAG_NEW",
+            "thumb_name" : "BgPlatform",
+            "ui_parent_name" : "Container_Bag/Container_Panel/",
+            "node_paths_reset" : false
+        }
+    ],
+    "TitlePanel" : [
+        {
+            "node_paths" : [
+                "Container_Title__TitlePanel/Container_Bg/Image_BgStarryNight"
+            ],
+            "src_path"   : "UI_Bag",
+            "src_name"   : "TitleBg",
+            "ui_name"    : "UI_BAG_NEW",
+            "thumb_name" : "BgStarryNight",
+            "ui_parent_name" : "Container_Bag/Container_Panel/",
+            "node_paths_reset" : false
+        }
+    ],
+    "Welfare"    : [
+        {
+            "node_paths" : [
+                "Container_Welfare/Container_Panel/Container_GiftOnline/Container_Bg/Container_BgShadow/Image_BgWindow"
+            ],
+            "src_path"   : "UI_Welfare",
+            "src_name"   : "UI_WelfareBg",
+            "ui_name"    : "UI_WELFARE",
+            "thumb_name" : "BgWindow",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        },
+        {
+            "node_paths" : [
+                "Container_GetReward__Welfare/Container_Bg/Image_bg"
+            ],
+            "src_path"   : "UI_Welfare",
+            "src_name"   : "yesterDayOncemore",
+            "ui_name"    : "UI_WELFARE",
+            "thumb_name" : "BigPic",
+            "ui_parent_name" : "Container_Welfare/Container_Panel/",
+            "node_paths_reset" : false
+        }
+    ],
+    "Convoy"     : [
+        {
+            "node_paths" : [
+                "Container_Convoy/Container_Panel/Container_Container/Container_Bg/Image_husonditu"
+            ],
+            "src_path"   : "UI_Husong",
+            "src_name"   : "UI_Husong",
+            "ui_name"    : "UI_CONVOY",
+            "thumb_name" : "husonditu",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        }
+    ],
+    "GuildChicken" : [
+        {
+            "node_paths" : [
+                "Container_GuildChicken/Container_Panel/Container_Bg/Image_BgChicken"
+            ],
+            "src_path"   : "UI_GuildChickenBg",
+            "src_name"   : "Bg",
+            "ui_name"    : "UI_GUILD_CHICK",
+            "thumb_name" : "BgChicken",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        },
+        {
+            "node_paths" : [
+                "Container_GuildChicken/Container_Panel/Container_Full/Button_gold/Image_IconCoin913"
+            ],
+            "src_path"   : "UI_GuildChickenBg",
+            "src_name"   : "GoldIcon",
+            "ui_name"    : "UI_GUILD_CHICK",
+            "thumb_name" : "IconCoin913",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        }
+    ],
+    "RaceBet"      : [
+        {
+            "node_paths" : [
+                "Container_RaceBet/Container_Panel/Container_prizepool/Container_bgTitle/Container_Coins/Image_IconCoin913"
+            ],
+            "src_path"   : "UI_GuildChickenBg",
+            "src_name"   : "GoldIcon",
+            "ui_name"    : "UI_RACING_BET",
+            "thumb_name" : "IconCoin913",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        }
+    ],
+    "Race"         : [
+        {
+            "node_paths" : [
+                "Container_Race/Container_Panel/Container_Bg/Container_bgTitle/Container_Coins/Image_IconCoin913"
+            ],
+            "src_path"   : "UI_GuildChickenBg",
+            "src_name"   : "GoldIcon",
+            "ui_name"    : "UI_RACING_MAIN",
+            "thumb_name" : "IconCoin913",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        }
+    ],
+    "VillageExploreMap" : [
+        {
+            "node_paths" : [
+                "Container_VillageExploreMap/Container_Panel/Container_Bg/Image_BigMap"
+            ],
+            "src_path"   : "UI_HugeMapBg",
+            "src_name"   : "UI_HugeMapBg",
+            "ui_name"    : "UI_VILLAGE_MAP",
+            "thumb_name" : "BigMap",
+            "ui_parent_name" : null,
+            "node_paths_reset" : false
+        }
+    ]
+}

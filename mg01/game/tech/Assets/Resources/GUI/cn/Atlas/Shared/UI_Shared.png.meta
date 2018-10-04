@@ -1,0 +1,3022 @@
+fileFormatVersion: 2
+guid: 517598e5683151c42b226d373ca22c58
+timeCreated: 1517551873
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BgLv
+    21300002: DuoBaoKillWinBg
+    21300004: DuoBaoKillLoseBg
+    21300006: BgSk1212
+    21300008: BgSelected824
+    21300010: IconSword
+    21300012: BtnCircle1
+    21300014: IconButterFly
+    21300016: BgPetStar01
+    21300018: IconSchedule
+    21300020: BgPowerX1
+    21300022: FrameHead1116
+    21300024: IconVariation
+    21300026: BgVillageList04
+    21300028: BgVillageList05
+    21300030: BgVillageList06
+    21300032: MiscArrowL2
+    21300034: ListOn2
+    21300036: List2
+    21300038: BgTitleRedM
+    21300040: BgTitleRedL
+    21300042: IconOhMan
+    21300044: LightBarProgress
+    21300046: BarProgressX2
+    21300048: BgSCard
+    21300050: BtnEdit
+    21300052: BtnBack
+    21300054: IconBind
+    21300056: zhezhao
+    21300058: ArrowBad
+    21300060: ArrowGood
+    21300062: IconArrowRise
+    21300064: ListOn1
+    21300066: List1
+    21300068: MiscLightTopSkill
+    21300070: IconMark
+    21300072: BgSk1
+    21300074: underline
+    21300076: RoleExpBar
+    21300078: RoleExpBg
+    21300080: zhanlipic
+    21300082: PropertyListBg
+    21300084: PropertyLoadingBar
+    21300086: PropertyLoadingBg
+    21300088: BtnCommon2
+    21300090: BtnCommon4
+    21300092: BtnCommon1
+    21300094: RedDot
+    21300096: WordSettledBg
+    21300098: Btngantan
+    21300100: BtnSearch
+    21300102: BgInputSlot1
+    21300104: BtnMinus
+    21300106: BtnAdd
+    21300108: InfoTitleBg1
+    21300110: MiscFrame
+    21300112: ArrowUp
+    21300114: PropertyListBg2
+    21300116: IconArrowC1
+    21300118: sharedAnchor
+    21300120: RoleTitleBg2
+    21300122: RoleTitleBgbackupM
+    21300124: RoleTitleBgbackup
+    21300126: RoleTitleBg
+    21300128: InfoTitleBg
+    21300130: MiscLine2
+    21300132: NewRankNO1
+    21300134: NewRankNO2
+    21300136: TipsBubbleArrow2
+    21300138: mibao
+    21300140: IconWake
+    21300142: NewRankNO3
+    21300144: ArrowPointing
+    21300146: BgGraphic
+    21300148: Underline
+    21300150: MoneyBg
+    21300152: TextBackX1
+    21300154: SlotContent
+    21300156: BgSquare3
+    21300158: IconStar
+    21300160: IconTitleduihuan
+    21300162: BgTitleMonster
+    21300164: bgscrollMiscxxx2
+    21300166: BgScrollStyleBBottomL
+    21300168: bgscrollMiscxxx3
+    21300170: bgscrollMiscxxx1
+    21300172: BgScrollStyleBTopL
+    21300174: BgScrollStyleBMiddle
+    21300176: BgScrollStyleBBottomNXM
+    21300178: BgScrollStyleBTopM
+    21300180: BarCoin
+    21300182: BgLableCaption
+    21300184: ArrowSkipX
+    21300186: ArrowGuide
+    21300188: BgGuide
+    21300190: BgSlotC1
+    21300192: BgBtnSq
+    21300194: IconTitlekunnan
+    21300196: BgArenaScore31
+    21300198: BgArenaScore32
+    21300200: BgArenaScore33
+    21300202: BgArenaScore34
+    21300204: BgArenaScore
+    21300206: BgArenaScore1
+    21300208: BgArenaScore2
+    21300210: BgTitleNew
+    21300212: BgScrollUp
+    21300214: BgScrollUpMiddle2
+    21300216: BgScrollUpMiddle1
+    21300218: BgScrolMiddlel
+    21300220: BgScrolMiddlel2
+    21300222: BgScrollBottomMiddle2
+    21300224: BgScrollBottomMiddle1
+    21300226: BgScrollBottom
+    21300228: InfoTitleBgX2
+    21300230: IconDart
+    21300232: Bghecheng01X
+    21300234: Bghecheng01
+    21300236: BtnNo
+    21300238: BtnYes
+    21300240: IconChestS0
+    21300242: IconChestS1
+    21300244: Btn
+    21300246: IconChest
+    21300248: BoxWord
+    21300250: MiscArrowL3
+    21300252: jifen
+    21300254: MiscLineScroll2
+    21300256: MiscArrowB1
+    21300258: BgBubble1
+    21300260: BtnMoreChoice
+    21300262: BgTitleN
+    21300264: BgTitleNM
+    21300266: TipsBubbleArrow
+    21300268: TipsBubbleL
+    21300270: IconStrength1205
+    21300272: bgClass
+    21300274: BgArenaScore1116
+    21300276: TipsBubble
+    21300278: pictureqiuke
+    21300280: IconSpot1
+    21300282: BgSlot2
+    21300284: IconTick1
+    21300286: BgSlot1
+    21300288: BgMission
+    21300290: noneimage
+    21300292: BtnClose
+    21300294: BtnViewMore
+    21300296: MiscLineRange
+    21300298: MiscFrame2
+    21300300: PatternMagic
+    21300302: PopBox1
+    21300304: zhanliX
+    21300306: zhanliD
+    21300308: zhanli9
+    21300310: zhanli8
+    21300312: zhanli7
+    21300314: zhanli6
+    21300316: zhanli5
+    21300318: zhanli4
+    21300320: zhanli3
+    21300322: zhanli2
+    21300324: zhanli1
+    21300326: zhanli0
+    21300328: zhanli+
+    21300330: zhanli
+    21300332: maskzhezhao
+    21300334: Falun04
+    21300336: Falun03
+    21300338: Falun02
+    21300340: Falun01
+    21300342: MiscShadow
+    21300344: Shadow
+    21300346: BtnLabel2
+    21300348: BtnLabel1
+    21300350: shukuangquan
+    21300352: BgTitle
+    21300354: IconArrowN1
+    21300356: BeigeBg
+    21300358: mianbandikuang
+    21300360: IconArrow
+    21300362: btnExtend
+    21300364: IconAdd1
+    21300366: suo
+    21300368: WordGot
+    21300370: BgBarProress
+    21300372: MiscLine3
+    21300374: BgTitleTips
+    21300376: IconStarPal
+    21300378: UnderLine
+    21300380: MiscLightTop2817
+    21300382: IconArrowMore
+    21300384: MiscLineScroll
+    21300386: BgNum1
+    21300388: BgCardBlack
+    21300390: ItemHeadBg
+    21300392: IconNightmare
+    21300394: noneimage03
+    21300396: ItemFrameBg
+    21300398: MiscSelectedItems
+    21300400: BtnTabArrowDown
+    21300402: BtnTab4
+    21300404: BtnTab3
+    21300406: BtnTabArrowUp
+    21300408: MiscLightTop2
+    21300410: BtnAttack
+    21300412: BgTips
+    21300414: BtnCommon3
+    21300416: Icon
+    21300418: IconLuckyBag
+    21300420: BtnC5
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BgLv
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 408
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DuoBaoKillWinBg
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 294
+        width: 77
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DuoBaoKillLoseBg
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1675
+        width: 83
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSk1212
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 294
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSelected824
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 704
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconSword
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 294
+        width: 77
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnCircle1
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 704
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconButterFly
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1173
+        width: 54
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgPetStar01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 921
+        width: 279
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconSchedule
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 294
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgPowerX1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1466
+        width: 487
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 243, y: 41, z: 243, w: 42}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FrameHead1116
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1390
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 30, z: 24, w: 30}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconVariation
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 408
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgVillageList04
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 478
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgVillageList05
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2038
+        width: 76
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgVillageList06
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1975
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 2, z: 5, w: 2}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscArrowL2
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 399
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ListOn2
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2
+        width: 241
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 120, y: 48, z: 120, w: 30}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: List2
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 2
+        width: 241
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 120, y: 48, z: 120, w: 30}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleRedM
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1036
+        width: 7
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 41, z: 3, w: 42}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleRedL
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 2
+        width: 204
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconOhMan
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 294
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LightBarProgress
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 85
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 11, z: 30, w: 12}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BarProgressX2
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 425
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 12, z: 25, w: 12}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSCard
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 2014
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 12, z: 12, w: 12}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnEdit
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1455
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnBack
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 704
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconBind
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 129
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhezhao
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowBad
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 460
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowGood
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 460
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconArrowRise
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 704
+        width: 50
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ListOn1
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 129
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 70, z: 70, w: 70}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: List1
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 129
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 70, z: 70, w: 70}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLightTopSkill
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 85
+        width: 71
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconMark
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 704
+        width: 76
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSk1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1666
+        width: 162
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: underline
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1458
+        width: 6
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 1}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RoleExpBar
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 460
+        width: 524
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RoleExpBg
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 269
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 8, z: 15, w: 9}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanlipic
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 407
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PropertyListBg
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 460
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PropertyLoadingBar
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 478
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 13, z: 18, w: 14}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PropertyLoadingBg
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 421
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 16, z: 18, w: 17}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnCommon2
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 604
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 46, z: 40, w: 46}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnCommon4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 604
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 46, z: 40, w: 46}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnCommon1
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 604
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 46, z: 40, w: 46}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RedDot
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 460
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WordSettledBg
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 478
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 15, z: 15, w: 15}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Btngantan
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 704
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnSearch
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1197
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgInputSlot1
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2019
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnMinus
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 704
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnAdd
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 704
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: InfoTitleBg1
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 460
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscFrame
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 460
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 18, z: 18, w: 18}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowUp
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 406
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PropertyListBg2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2029
+        width: 121
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 60, y: 5, z: 60, w: 5}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconArrowC1
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 704
+        width: 82
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sharedAnchor
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1406
+        width: 176
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RoleTitleBg2
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 604
+        width: 91
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 45, y: 31, z: 45, w: 31}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RoleTitleBgbackupM
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1554
+        width: 5
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 26, z: 2, w: 26}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RoleTitleBgbackup
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 514
+        width: 133
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RoleTitleBg
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 514
+        width: 129
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 33, z: 64, w: 34}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: InfoTitleBg
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 460
+        width: 184
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLine2
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 499
+        width: 241
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 120, y: 3, z: 120, w: 3}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: NewRankNO1
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 514
+        width: 96
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: NewRankNO2
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 604
+        width: 86
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TipsBubbleArrow2
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 922
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mibao
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 294
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconWake
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 997
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: NewRankNO3
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 704
+        width: 86
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowPointing
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 294
+        width: 80
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgGraphic
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1868
+        width: 234
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Underline
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1458
+        width: 6
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 1}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MoneyBg
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 460
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TextBackX1
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 400
+        width: 100
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SlotContent
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 407
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSquare3
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 425
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 12, z: 12, w: 12}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconStar
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 460
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconTitleduihuan
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1261
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleMonster
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 129
+        width: 201
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 100, y: 33, z: 100, w: 34}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bgscrollMiscxxx2
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 85
+        width: 118
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollStyleBBottomL
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1666
+        width: 175
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bgscrollMiscxxx3
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1158
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bgscrollMiscxxx1
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 98
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollStyleBTopL
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1818
+        width: 200
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollStyleBMiddle
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1653
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 4, z: 12, w: 4}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollStyleBBottomNXM
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1675
+        width: 5
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 69, z: 2, w: 69}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollStyleBTopM
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 921
+        width: 9
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 55, z: 4, w: 55}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BarCoin
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 514
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 65, y: 42, z: 38, w: 43}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgLableCaption
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1737
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 29, z: 25, w: 30}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowSkipX
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 294
+        width: 81
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowGuide
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1277
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgGuide
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 406
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSlotC1
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 201
+        width: 143
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgBtnSq
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1942
+        width: 178
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconTitlekunnan
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 704
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore31
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 269
+        width: 76
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore32
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 76
+        width: 76
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore33
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 266
+        width: 76
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore34
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1406
+        width: 76
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 294
+        width: 105
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 52, y: 50, z: 52, w: 51}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1824
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore2
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 514
+        width: 96
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleNew
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1349
+        width: 250
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollUp
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 806
+        width: 65
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollUpMiddle2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1915
+        width: 5
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 27, z: 2, w: 28}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollUpMiddle1
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1915
+        width: 5
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 27, z: 2, w: 28}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrolMiddlel
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2038
+        width: 71
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 2, z: 35, w: 2}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrolMiddlel2
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 704
+        width: 61
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 35, z: 35, w: 35}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollBottomMiddle2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1748
+        width: 5
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 34, z: 2, w: 34}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollBottomMiddle1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1675
+        width: 5
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 34, z: 2, w: 34}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgScrollBottom
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 294
+        width: 67
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: InfoTitleBgX2
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 2
+        width: 201
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 100, y: 34, z: 100, w: 35}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconDart
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 604
+        width: 86
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Bghecheng01X
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 604
+        width: 90
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Bghecheng01
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 294
+        width: 90
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnNo
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 604
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnYes
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 604
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconChestS0
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 514
+        width: 84
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconChestS1
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 294
+        width: 106
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Btn
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 201
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconChest
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 2
+        width: 144
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BoxWord
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1982
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 12, z: 12, w: 12}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscArrowL3
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1801
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: jifen
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 514
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLineScroll2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1868
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 21, z: 5, w: 21}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscArrowB1
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 406
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgBubble1
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 167
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 12, z: 12, w: 12}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnMoreChoice
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1132
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleN
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1554
+        width: 159
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleNM
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1124
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 8, z: 2, w: 8}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TipsBubbleArrow
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 76
+        width: 103
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TipsBubbleL
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 129
+        width: 141
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 80, z: 70, w: 80}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconStrength1205
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 399
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bgClass
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 604
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgArenaScore1116
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1066
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 30, z: 30, w: 31}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TipsBubble
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 129
+        width: 141
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 76, z: 70, w: 76}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pictureqiuke
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1466
+        width: 258
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconSpot1
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 460
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSlot2
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1571
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconTick1
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 704
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgSlot1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1514
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgMission
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 478
+        width: 348
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 173, y: 8, z: 174, w: 8}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: noneimage
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1868
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnClose
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1666
+        width: 143
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnViewMore
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 704
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLineRange
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2014
+        width: 133
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 5, z: 66, w: 5}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscFrame2
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 406
+        width: 61
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 20, z: 30, w: 20}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PatternMagic
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1818
+        width: 166
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PopBox1
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 514
+        width: 141
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 30, z: 70, w: 30}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanliX
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 85
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanliD
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 76
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli9
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1988
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1054
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli7
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 889
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli6
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 460
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 999
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli4
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1222
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli3
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 460
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli2
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 944
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli1
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1277
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli0
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1167
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli+
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 460
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhanli
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1109
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maskzhezhao
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1801
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Falun04
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 604
+        width: 81
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Falun03
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 294
+        width: 130
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Falun02
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1324
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Falun01
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 921
+        width: 258
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscShadow
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1988
+        width: 208
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Shadow
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1976
+        width: 154
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnLabel2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1675
+        width: 153
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnLabel1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1833
+        width: 131
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shukuangquan
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1833
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitle
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1554
+        width: 361
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 180, y: 53, z: 180, w: 54}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconArrowN1
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 2
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BeigeBg
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 2
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 60, y: 60, z: 60, w: 60}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mianbandikuang
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 801
+        height: 915
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 400, y: 457, z: 400, w: 457}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconArrow
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1666
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btnExtend
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1877
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconAdd1
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 604
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: suo
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 704
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WordGot
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 398
+        width: 86
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgBarProress
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 85
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 17, z: 25, w: 18}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLine3
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 806
+        width: 241
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 120, y: 1, z: 120, w: 1}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTitleTips
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 704
+        width: 41
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 90, z: 20, w: 90}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconStarPal
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 435
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UnderLine
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1458
+        width: 6
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 1}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLightTop2817
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 604
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconArrowMore
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 85
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLineScroll
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1611
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 14, z: 5, w: 15}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgNum1
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 85
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgCardBlack
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 269
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 8, z: 8, w: 8}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ItemHeadBg
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 129
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconNightmare
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1173
+        width: 197
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: noneimage03
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1645
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ItemFrameBg
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 129
+        width: 135
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscSelectedItems
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 704
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnTabArrowDown
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 421
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnTab4
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1905
+        width: 21
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 36, z: 10, w: 36}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnTab3
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1942
+        width: 21
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 36, z: 10, w: 36}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnTabArrowUp
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 266
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MiscLightTop2
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 129
+        width: 146
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnAttack
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 921
+        width: 242
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgTips
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 514
+        width: 141
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 30, z: 70, w: 30}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnCommon3
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 514
+        width: 81
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 42, z: 40, w: 42}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Icon
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1466
+        width: 44
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconLuckyBag
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 604
+        width: 83
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BtnC5
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 514
+        width: 81
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 42, z: 40, w: 42}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,7 @@
+{"npc1026_small":{"rect":{"offetX":110,"offetY":55,"width":200,"height":200}
+,"pivot":{"x":0.5,"y":0.5}
+}
+,"npc1026_mini":{"rect":{"offetX":142,"offetY":117,"width":143,"height":82}
+,"pivot":{"x":0.5,"y":0.5}
+}
+}

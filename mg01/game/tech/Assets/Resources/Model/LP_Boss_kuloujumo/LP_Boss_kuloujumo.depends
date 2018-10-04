@@ -1,0 +1,21 @@
+{
+    "fxs" : 
+    [
+        "Role/Effect_LP/Monster/LP_Boss_TY/TY_atk01"
+    ],    
+    "sounds" : 
+    [
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_footstep_01",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_footstep_02",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_footstep_03",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_footstep_04",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_attack_01",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_attack_02",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_attack_03",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_whoosh_02",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_whoosh_01",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_die_02",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_wound_01",        
+        "Sounds/Monster/LP_Boss_kulou/LP_Boss_kulou_wound_02"
+    ]
+}

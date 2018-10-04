@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f037d667aab604d883e71cf8bf062f, type: 3}
+  m_Name: LP_Boss_kuloujumo_hurt_anim
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 7400000, guid: 67e85ba130ee66848a2568b54f78a234, type: 2}

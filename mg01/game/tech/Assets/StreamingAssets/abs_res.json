@@ -1,0 +1,665 @@
+{
+    "bdlNodes" : 
+    [
+        
+        {
+            "bundleId" : "011",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "font.j"
+        },        
+        
+        {
+            "bundleId" : "012",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "shader.j"
+        },        
+        
+        {
+            "bundleId" : "100",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "depends_gui_0.j"
+        },        
+        
+        {
+            "bundleId" : "101",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_account.j"
+        },        
+        
+        {
+            "bundleId" : "102",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_announce.j"
+        },        
+        
+        {
+            "bundleId" : "103",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_bag.j"
+        },        
+        
+        {
+            "bundleId" : "104",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_bag__container_part2.j"
+        },        
+        
+        {
+            "bundleId" : "105",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_bag__container_part3.j"
+        },        
+        
+        {
+            "bundleId" : "106",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_bag__container_part4.j"
+        },        
+        
+        {
+            "bundleId" : "107",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_card.j"
+        },        
+        
+        {
+            "bundleId" : "108",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_card__container_part2.j"
+        },        
+        
+        {
+            "bundleId" : "109",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_card__container_part3.j"
+        },        
+        
+        {
+            "bundleId" : "110",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_card__container_part4.j"
+        },        
+        
+        {
+            "bundleId" : "111",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_equipjinglian.j"
+        },        
+        
+        {
+            "bundleId" : "112",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_errorreport.j"
+        },        
+        
+        {
+            "bundleId" : "113",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_loading.j"
+        },        
+        
+        {
+            "bundleId" : "114",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_npccloseup.j"
+        },        
+        
+        {
+            "bundleId" : "115",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_role.j"
+        },        
+        
+        {
+            "bundleId" : "116",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_role__container_part3.j"
+        },        
+        
+        {
+            "bundleId" : "117",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_role__container_part4.j"
+        },        
+        
+        {
+            "bundleId" : "118",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_setting.j"
+        },        
+        
+        {
+            "bundleId" : "119",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_shared.j"
+        },        
+        
+        {
+            "bundleId" : "120",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_shared__container_part1.j"
+        },        
+        
+        {
+            "bundleId" : "121",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_test1.j"
+        },        
+        
+        {
+            "bundleId" : "122",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_test2.j"
+        },        
+        
+        {
+            "bundleId" : "123",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_test3.j"
+        },        
+        
+        {
+            "bundleId" : "124",            
+            "depends" : 
+            [
+                "100"
+            ],            
+            "bundleName" : "gui_cn_prefab_canvas_testmainui.j"
+        },        
+        
+        {
+            "bundleId" : "125",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "gui_prefab_uilayer.j"
+        },        
+        
+        {
+            "bundleId" : "126",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_equipitem8_equipitem8.j"
+        },        
+        
+        {
+            "bundleId" : "127",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1026_npc1026.j"
+        },        
+        
+        {
+            "bundleId" : "128",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1027_npc1027.j"
+        },        
+        
+        {
+            "bundleId" : "129",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1028_npc1028.j"
+        },        
+        
+        {
+            "bundleId" : "130",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1029_npc1029.j"
+        },        
+        
+        {
+            "bundleId" : "131",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1030_npc1030.j"
+        },        
+        
+        {
+            "bundleId" : "132",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1031_npc1031.j"
+        },        
+        
+        {
+            "bundleId" : "133",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1032_npc1032.j"
+        },        
+        
+        {
+            "bundleId" : "134",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1033_npc1033.j"
+        },        
+        
+        {
+            "bundleId" : "135",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1034_npc1034.j"
+        },        
+        
+        {
+            "bundleId" : "136",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_npc1103_npc1103.j"
+        },        
+        
+        {
+            "bundleId" : "137",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_skillaaaa_skillaaaa.j"
+        },        
+        
+        {
+            "bundleId" : "138",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_skillbsicon_skillbsicon.j"
+        },        
+        
+        {
+            "bundleId" : "139",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_skillicon1_skillicon1.j"
+        },        
+        
+        {
+            "bundleId" : "140",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_skillicon2_skillicon2.j"
+        },        
+        
+        {
+            "bundleId" : "141",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_skillicon3_skillicon3.j"
+        },        
+        
+        {
+            "bundleId" : "142",            
+            "depends" : 
+            [
+                
+            ],            
+            "bundleName" : "spriteatlas_skillicon4_skillicon4.j"
+        }
+    ],    
+    "resNodes" : 
+    [
+        
+        {
+            "path" : "gui/cn/prefab/canvas_account",            
+            "suffix" : ".prefab",            
+            "bundleId" : "101"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_announce",            
+            "suffix" : ".prefab",            
+            "bundleId" : "102"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_bag",            
+            "suffix" : ".prefab",            
+            "bundleId" : "103"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_bag__container_part2",            
+            "suffix" : ".prefab",            
+            "bundleId" : "104"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_bag__container_part3",            
+            "suffix" : ".prefab",            
+            "bundleId" : "105"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_bag__container_part4",            
+            "suffix" : ".prefab",            
+            "bundleId" : "106"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_card",            
+            "suffix" : ".prefab",            
+            "bundleId" : "107"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_card__container_part2",            
+            "suffix" : ".prefab",            
+            "bundleId" : "108"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_card__container_part3",            
+            "suffix" : ".prefab",            
+            "bundleId" : "109"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_card__container_part4",            
+            "suffix" : ".prefab",            
+            "bundleId" : "110"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_equipjinglian",            
+            "suffix" : ".prefab",            
+            "bundleId" : "111"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_errorreport",            
+            "suffix" : ".prefab",            
+            "bundleId" : "112"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_loading",            
+            "suffix" : ".prefab",            
+            "bundleId" : "113"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_npccloseup",            
+            "suffix" : ".prefab",            
+            "bundleId" : "114"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_role",            
+            "suffix" : ".prefab",            
+            "bundleId" : "115"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_role__container_part3",            
+            "suffix" : ".prefab",            
+            "bundleId" : "116"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_role__container_part4",            
+            "suffix" : ".prefab",            
+            "bundleId" : "117"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_setting",            
+            "suffix" : ".prefab",            
+            "bundleId" : "118"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_shared",            
+            "suffix" : ".prefab",            
+            "bundleId" : "119"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_shared__container_part1",            
+            "suffix" : ".prefab",            
+            "bundleId" : "120"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_test1",            
+            "suffix" : ".prefab",            
+            "bundleId" : "121"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_test2",            
+            "suffix" : ".prefab",            
+            "bundleId" : "122"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_test3",            
+            "suffix" : ".prefab",            
+            "bundleId" : "123"
+        },        
+        
+        {
+            "path" : "gui/cn/prefab/canvas_testmainui",            
+            "suffix" : ".prefab",            
+            "bundleId" : "124"
+        },        
+        
+        {
+            "path" : "gui/prefab/uilayer",            
+            "suffix" : ".prefab",            
+            "bundleId" : "125"
+        },        
+        
+        {
+            "path" : "spriteatlas/equipitem8/equipitem8",            
+            "suffix" : ".asset",            
+            "bundleId" : "126"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1026/npc1026",            
+            "suffix" : ".asset",            
+            "bundleId" : "127"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1027/npc1027",            
+            "suffix" : ".asset",            
+            "bundleId" : "128"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1028/npc1028",            
+            "suffix" : ".asset",            
+            "bundleId" : "129"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1029/npc1029",            
+            "suffix" : ".asset",            
+            "bundleId" : "130"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1030/npc1030",            
+            "suffix" : ".asset",            
+            "bundleId" : "131"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1031/npc1031",            
+            "suffix" : ".asset",            
+            "bundleId" : "132"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1032/npc1032",            
+            "suffix" : ".asset",            
+            "bundleId" : "133"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1033/npc1033",            
+            "suffix" : ".asset",            
+            "bundleId" : "134"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1034/npc1034",            
+            "suffix" : ".asset",            
+            "bundleId" : "135"
+        },        
+        
+        {
+            "path" : "spriteatlas/npc1103/npc1103",            
+            "suffix" : ".asset",            
+            "bundleId" : "136"
+        },        
+        
+        {
+            "path" : "spriteatlas/skillaaaa/skillaaaa",            
+            "suffix" : ".asset",            
+            "bundleId" : "137"
+        },        
+        
+        {
+            "path" : "spriteatlas/skillbsicon/skillbsicon",            
+            "suffix" : ".asset",            
+            "bundleId" : "138"
+        },        
+        
+        {
+            "path" : "spriteatlas/skillicon1/skillicon1",            
+            "suffix" : ".asset",            
+            "bundleId" : "139"
+        },        
+        
+        {
+            "path" : "spriteatlas/skillicon2/skillicon2",            
+            "suffix" : ".asset",            
+            "bundleId" : "140"
+        },        
+        
+        {
+            "path" : "spriteatlas/skillicon3/skillicon3",            
+            "suffix" : ".asset",            
+            "bundleId" : "141"
+        },        
+        
+        {
+            "path" : "spriteatlas/skillicon4/skillicon4",            
+            "suffix" : ".asset",            
+            "bundleId" : "142"
+        }
+    ]
+}

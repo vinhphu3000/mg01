@@ -1,0 +1,29 @@
+{"name":"ErrorReport","type":"Container","param":"stretch","x":0,"y":0,"width":1920,"height":1080,"langCount":0,
+	"children":
+	[
+		{"name":"Panel","type":"Container","param":"Stretch","x":104,"y":75,"width":1712,"height":930,
+			"children":
+			[
+				{"name":"Center","type":"Button","param":"MiddleCenter","x":0,"y":0,"width":1712,"height":930,
+					"children":
+					[
+						{"name":"Text","type":"Label","param":"UpperLeft|overVFlow","x":31,"y":106.22,"width":1538,"height":39.56,
+							"normal":{"x":0,"y":0,"width":1538,"height":39.56,"content":"这里是错误码这里是错误码这里是错误码这里是错误码这里是错误码这里是错误码这里是错误码这里是错","param":"UpperLeft|overVFlow","alignment":"UpperLeft","format":{"color":"FF0000","font":"FZZhunYuan-M02","size":33,"bold":0}}
+						},
+						{"name":"Tips","type":"Label","param":"RightCenter","x":655,"y":844.72,"width":404,"height":39.5599999999999,
+							"normal":{"x":0,"y":0,"width":404,"height":39.56,"content":"客户端程序异常，点击继续","param":"RightCenter","format":{"color":"FF0000","font":"FZZhunYuan-M02","size":33,"bold":0}}
+						},
+						{"name":"Bg","type":"Container","x":0,"y":0,"width":1712,"height":930,
+							"children":
+							[
+								{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":1712,"height":930,
+									"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":1712,"height":930,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"FFFFFF","alpha":100}}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

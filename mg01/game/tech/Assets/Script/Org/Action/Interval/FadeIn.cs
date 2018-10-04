@@ -1,0 +1,30 @@
+﻿/* ==============================================================================
+ * FadeIn
+ * @author jr.zeng
+ * 2016/11/1 17:03:08
+ * ==============================================================================*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using UnityEngine;
+
+namespace mg.org.Actions
+{
+
+    public class FadeIn : FadeTo
+    {
+
+        static public FadeIn Create(float duration_)
+        {
+            FadeIn action = new FadeIn();
+            action.InitWithAlpha(duration_, 1.0f);
+
+            return action;
+        }
+
+    }
+
+}

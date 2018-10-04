@@ -1,0 +1,10 @@
+/.svn/
+/tools/
+/game/tech/Library/
+/game/tech/Log/
+/game/tech/Temp/
+/game/config/
+/game/config/patch_test/*
+/game/config/xls/*
+/game/config/xls2lua/tmp/
+/game/config/xls2lua/game_data_client/
