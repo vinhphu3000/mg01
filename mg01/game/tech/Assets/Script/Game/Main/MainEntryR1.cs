@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -89,15 +88,14 @@ public class MainEntryR1 : MainEntry
 
     public void LoadResources()
     {
-        LoadReq[] objs = new LoadReq[0];
+        //LoadReq[] objs = new LoadReq[0];
+        //objs = ArrayUtil.Concat<LoadReq>(objs, DataConfig.GetLoadObjs());//配置表
 
-        //配置表
-        objs = ArrayUtil.Concat<LoadReq>(objs, DataConfig.GetLoadObjs());
+        List<LoadReq> reqs = new List<LoadReq>();
+        reqs.Add(new LoadReqLevel("SceneEmpty", false));
+        reqs.Add(new LoadReqDelay(1));
 
-        //场景
-        //objs = ArrayUtil.Add(objs, new LoadReqLevel("Map1", false));
-
-        LoadReqQueue reqQue = new LoadReqQueue(objs);
+        LoadReqQueue reqQue = new LoadReqQueue(reqs.ToArray() );
 
         LoadMgr.DoMainLoad(reqQue, LoadResourcesBack, POP_ID.LOADING_1);
 

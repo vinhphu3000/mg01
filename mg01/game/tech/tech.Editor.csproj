@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5568DEF5-4F3E-3ED0-8C81-05B20FF5BD99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.5.4f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_4;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_4;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PlaymodeTestsRunner">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets/Plugins/LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="BytesHelper">
+      <HintPath>Assets/Slua/Plugins/Slua_Managed/BytesHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsolePro.Editor">
+      <HintPath>Assets/ThirdyParty/Editor/ConsolePro/ConsolePro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets/ThirdyParty/Editor/dotnet2/ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>Assets/ThirdyParty/Editor/dotnet2/NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>Assets/ThirdyParty/Editor/dotnet2/NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>Assets/ThirdyParty/Editor/dotnet2/NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>Assets/ThirdyParty/Editor/dotnet2/NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:/Program Files/Unity554/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="tech.csproj">
+      <Project>{5B8D07FD-3D54-AC85-294F-FFEE6FBD8D53}</Project>
+      <Name>tech</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\Bundle\BundleBuilder.cs" />
+    <Compile Include="Assets\Editor\Bundle\BundleBuilderTest.cs" />
+    <Compile Include="Assets\Editor\Bundle\BundleLog.cs" />
+    <Compile Include="Assets\Editor\Bundle\BundleUtility.cs" />
+    <Compile Include="Assets\Editor\Bundle\Collect\BdlCollect.cs" />
+    <Compile Include="Assets\Editor\Bundle\Collect\BdlCollectLdFst.cs" />
+    <Compile Include="Assets\Editor\Bundle\Collect\BdlCollectNew.cs" />
+    <Compile Include="Assets\Editor\Bundle\Collect\BdlCollectTiny.cs" />
+    <Compile Include="Assets\Editor\Bundle\Util\AbsConfigRead.cs" />
+    <Compile Include="Assets\Editor\Bundle\Util\AbsResExport.cs" />
+    <Compile Include="Assets\Editor\Json\JsonPrettyPrint.cs" />
+    <Compile Include="Assets\Editor\Json\JsonUtil.cs" />
+    <Compile Include="Assets\Editor\SprAtlas\SprAtlasClipUtility.cs" />
+    <Compile Include="Assets\Editor\SprAtlas\SprAtlasCliper.cs" />
+    <Compile Include="Assets\Editor\SprAtlas\SprAtlasMaker.cs" />
+    <Compile Include="Assets\Editor\Util\EditerUtil.cs" />
+    <Compile Include="Assets\Script\Slua\Editor\SluaExport.cs" />
+    <Compile Include="Assets\Slua\Editor\CustomEditor.cs" />
+    <Compile Include="Assets\Slua\Editor\CustomExport.cs" />
+    <Compile Include="Assets\Slua\Editor\LoggerHelper.cs" />
+    <Compile Include="Assets\Slua\Editor\LuaCodeGen.cs" />
+    <Compile Include="Assets\Slua\Editor\LuaConsole.cs" />
+    <Compile Include="Assets\Slua\Editor\LuajitGen.cs" />
+    <Compile Include="Assets\Slua\Editor\ModuleSelector.cs" />
+    <Compile Include="Assets\Slua\Plugins\Slua_Managed\SluaMemoryProfiler\Editor\MemoryProfilerWindow.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\ConsolePro\ConsoleProRemoteServer.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\ArrayTools.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\BytesAndOffset.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\CrawledDataUnpacker.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Crawler.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\HighLevelAPI.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Inspector.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\LowLevelAPI.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\ManagedHeapExtensions.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\MemoryProfilerWindow.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\PackedManagedObject.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\PrimitiveValueReader.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\ShortestPathToRootFinder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\StringTools.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\TreeMapView.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Treemap\Group.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Treemap\ITreemapRenderable.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Treemap\Item.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Treemap\Tests\TreemapTests.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\Treemap\Utility.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\TypeTools.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\MemProfile\ZoomArea.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\Drawcall\DrawCallInspector.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\LuaStructGenerator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\AtlasGenerator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\AtlasBatchSetting.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\AtlasOptimizer.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\AtlasQualitySetting.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\AtlasSpritePaddingHelper.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\AtlasWriter.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\EtcMaterialCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\ImageChannelSpliterWrapper.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\Scale9GridTextureProcessor.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\TextureAlphaKicker.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\TextureClamper.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Atlas\Utilities\TextureImporterUtil.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\KAssetManager.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\PSD4UGUI.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ButtonBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ComponentBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ComponentBuilderFactory.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ContainerBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\Custom\MaskBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ImageBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\InputBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\LabelBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ListBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\MaskContainerBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ProgressBarBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ScrollPageBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ScrollViewBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\SliderBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ToggleBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Builder\ToggleGroupBuilder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ButtonCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ComponentCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ComponentCreatorFactory.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ContainerCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\Custom\MaskCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ImageCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\InputCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\LabelCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\LanguageDividerCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ListCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\MaskContainerCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ProgressBarCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ScrollPageCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ScrollViewCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\SliderCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ToggleCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\Creator\ToggleGroupCreator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Prefab\PrefabGenerator.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Util\JsonAsset.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Util\JsonFileWriter.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\PSD4UGUI\Worker.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\Recorder\BaseRecorder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\Recorder\ParticleRecorder.cs" />
+    <Compile Include="Assets\ThirdyParty\Editor\PSD4UGUI\Recorder\PerfabRecorder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PSD\Style\Setting\cn\缩略图导出.ReadMe.txt" />
+    <None Include="Assets\PSD\Style\Xml\ErrorReport.xml" />
+    <None Include="Assets\PSD\Style\Xml\Loading.xml" />
+    <None Include="Assets\PSD\Style\Xml\Shared.xml" />
+    <None Include="Assets\PSD\Style\Xml\Stage.xml" />
+    <None Include="Assets\PSD\Style\Xml\TestPop4.xml" />
+    <None Include="Assets\PSD\Style\Xml\Welcome.xml" />
+    <None Include="Assets\RawData\Shaders\A1\Alpha-Diffuse.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Alpha-Diffuse_depth.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Alpha-VertexLit.shader" />
+    <None Include="Assets\RawData\Shaders\A1\AlphaTest-VertexLit.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Common\A1.cginc" />
+    <None Include="Assets\RawData\Shaders\A1\Common\Outline.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Decal.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Effect\FastVignette(GUI).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Fx\Additive Diffuse Flow(Foreground).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Fx\Additive.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Fx\AdditiveBlend.shader" />
+    <None Include="Assets\RawData\Shaders\A1\MaskAdditive.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Mobile\Mobile-Diffuse.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Mobile\Mobile-VertexLit.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Mobile\Outline\Diffuse.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Mobile\Particles\Mobile-Particle-Add.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Mobile\Particles\Mobile-Particle-Alpha.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Mobile\Particles\Mobile-Particle-Multiply.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Normal-Diffuse_noFog.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Normal-VertexLit.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Add (B).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Add (G).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Add (R).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Add (RG).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Alpha (B).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Alpha (G).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Alpha (R).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Alpha (RG).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Multiply (B).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Multiply (G).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Multiply (R).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Gray Multiply (RG).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Particle Add.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Particle GUI Add.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Particles\Particle Multiply.shader" />
+    <None Include="Assets\RawData\Shaders\A1\ProjectionSpace\AlphaBlended.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\Illumin-Diffuse.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\Illumin-SkyPlane.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\Illumin-VertexLit 1.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\Illumin-VertexLit.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Diffuse Flow.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Diffuse Rim TwoSided.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Diffuse Rim.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim Flow Gloss(B).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim Flow Gloss(B2).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim Flow Gloss(G).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim Flow Gloss(R).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim Flow Monster.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim MatCap.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Outline\Role\Diffuse Rim.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Role\Diffuse Rim Flow Gloss(B).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Role\Diffuse Rim Flow Gloss(G).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Role\Diffuse Rim Flow Gloss(R).shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\Role\Diffuse Rim.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Self-Illumin\NonAmbient\SuperSimpleSelfIllumination.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Shadow.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Ulit_NoFog.shader" />
+    <None Include="Assets\RawData\Shaders\A1\Unlit-Alpha2.shader" />
+    <None Include="Assets\RawData\Shaders\Bokeh\Bokeh.shader" />
+    <None Include="Assets\RawData\Shaders\Bokeh\Common.cginc" />
+    <None Include="Assets\RawData\Shaders\Bokeh\Composition.cginc" />
+    <None Include="Assets\RawData\Shaders\Bokeh\Debug.cginc" />
+    <None Include="Assets\RawData\Shaders\Bokeh\DiskBlur.cginc" />
+    <None Include="Assets\RawData\Shaders\Bokeh\DiskKernel.cginc" />
+    <None Include="Assets\RawData\Shaders\Bokeh\Prefilter.cginc" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\Diffuse.shader" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\TerrainDetail2.shader" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\TerrainDetailBillboard2.shader" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\TerrainVertexLit2.shader" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\VertexLit2.shader" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\WavingGrass2.shader" />
+    <None Include="Assets\RawData\Shaders\BuildInShader\WavingGrassBillboard2.shader" />
+    <None Include="Assets\RawData\Shaders\Characters\AlphaCutoutCheapFallback.shader" />
+    <None Include="Assets\RawData\Shaders\Characters\AngryInclude.cginc" />
+    <None Include="Assets\RawData\Shaders\Characters\CharacterSelfIlluminationReflective.shader" />
+    <None Include="Assets\RawData\Shaders\Characters\DiffuseFlow.shader" />
+    <None Include="Assets\RawData\Shaders\Characters\EnemySelfIlluminationReflective.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Dissolve\1T-NoUV-[Dissolve]-By-BaseLight-Add.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Dissolve\1T-NoUV-[Dissolve]-By-BaseLight-Add_camCap.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Dissolve\1T-NoUV-[Dissolve]-By_BaseLight-Blended.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Dissolve\1T-NoUV-[GrayToColorful]-By-BaseLight-Blended.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Dissolve\2T-NoUV-[DissolveSwitch]-By-BaseLight-Blended.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Distortion\Effect-Distort-2T.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Frame\Effect-UVFrame.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Frame\ProjX.cginc" />
+    <None Include="Assets\RawData\Shaders\Effect\Frame\ProjX_Mid.cginc" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-1T-AddClip 1.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-1T-AddClip.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-1T-Clip.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-2T-Opaque-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-2T-Ring2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-2T-ShapeClip-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-2T-ShapeClip.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-3T-AutoU-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-3T-AutoV-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-3T-ShapeClip-2uv 1.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Hard\HardEdge-3T-ShapeClip-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-1T-Base-Alpha-Add.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-1T-Base-Alpha-Add_UI.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-1T-Base-Alpha-Blended.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-1T-Base-Alpha-Blended_UI.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkAdd-2uv-OneSide.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkAdd-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkAdd.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkAdd_UI.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkAdd_rot.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkAdd_rot_UI.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkBlender.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-DarkBlender_rot.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-GlowAdd.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-2T-RingUv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-3T-AutoU-2uv-Mul.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-3T-AutoU-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-3T-AutoV-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge-3T-Shape-Add-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\SoftEdge_moxing.shader" />
+    <None Include="Assets\RawData\Shaders\Effect\Soft\UV_Ring_Add_1T_Color.shader" />
+    <None Include="Assets\RawData\Shaders\EffectOrder\MADFINGER-god-rays-nofader-noZTest.shader" />
+    <None Include="Assets\RawData\Shaders\EffectOrder\Particle Alpha Blend_noZTest.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\Blend.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\Cursor.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\InterlacePatternAdditive.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\InterlacePatternBlend.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\LaserScope.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\Multiply.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\ParticleAdditive.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\ParticleAdditiveBlend.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\ParticleBlend.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\ParticleMultiply.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\Rain.shader" />
+    <None Include="Assets\RawData\Shaders\Fx\RainSplash.shader" />
+    <None Include="Assets\RawData\Shaders\HardEdge-2T-Add-2uv.shader" />
+    <None Include="Assets\RawData\Shaders\ImgEffect\DepthOfFieldScatter.shader" />
+    <None Include="Assets\RawData\Shaders\ImgEffect\M1Blur.shader" />
+    <None Include="Assets\RawData\Shaders\ImgEffect\RadialBlurEx.shader" />
+    <None Include="Assets\RawData\Shaders\ImgEffect\grey.shader" />
+    <None Include="Assets\RawData\Shaders\LP\AvatarLight.shader" />
+    <None Include="Assets\RawData\Shaders\LP\Role_Outline_Cutout.shader" />
+    <None Include="Assets\RawData\Shaders\LP\Role_Outline_UI.shader" />
+    <None Include="Assets\RawData\Shaders\LP\Scene\Diffuse_Vertex.shader" />
+    <None Include="Assets\RawData\Shaders\LP\Scene\TerrainNoLighting.shader" />
+    <None Include="Assets\RawData\Shaders\LP\Scene\lp_water.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Creat-VGlow1-Glow2AutoV-Mask.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Destroy-4T-UGlow-Mask.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Destroy-4T-VGlow-Mask.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Destroy-Glow-Edge.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Destroy-Glow-Mask4.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Destroy-VGlow-Mask5-camCap.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Destroy-VGlow-Mask5.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Mesh-GLow1-AutoV-NoAmbient.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Mesh-GLow1-AutoV.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Mesh-GLow1.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Mesh-NoMask-Glow-AutoV.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\Mesh-NoMask-Glow-AutoV_nolightmap.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\MeshBlender-GLow1-AutoU 1.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\MeshGlow-Effect-3T.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\MeshGlow-Effect.shader" />
+    <None Include="Assets\RawData\Shaders\Mesh\MeshGlow-Mask-Effect.shader" />
+    <None Include="Assets\RawData\Shaders\MogoSkybox.shader" />
+    <None Include="Assets\RawData\Shaders\MogoTransparentDiffuse.shader" />
+    <None Include="Assets\RawData\Shaders\Particle Alpha Blend.shader" />
+    <None Include="Assets\RawData\Shaders\ReColor\Mesh-ReColor-1T.shader" />
+    <None Include="Assets\RawData\Shaders\ReColor\MetalMesh-ReColor-2T(Op).shader" />
+    <None Include="Assets\RawData\Shaders\ReColor\MetalMesh-ReColor-2T.shader" />
+    <None Include="Assets\RawData\Shaders\Role\A2_Test_Character.shader" />
+    <None Include="Assets\RawData\Shaders\Role\A2_Test_Character2.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Buff_ice.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Buff_stone.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Cartoon-AddMatCap.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Cartoon-MulMatCap.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Normal-BackLight.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-1T-ScreenEdge.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-2T-ScreenEdge.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-3T-OpaqueEdge-BaseMul.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-3T-OpaqueEdge-Clip.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-Cartoon.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-Soft-1T-Hide.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-Soft-Dir.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-Soft-hide.shader" />
+    <None Include="Assets\RawData\Shaders\Role\Role-Rim-Soft.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\AA.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\Scene-DirAmbientColor.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\Scene-Fog-Color.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\SceneC-Color-NoLight2.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\Sky-Nofog-VAlpha.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\Sky-Nofog.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\Skybox.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\Terrain.shader" />
+    <None Include="Assets\RawData\Shaders\Scene\myTerrain.shader" />
+    <None Include="Assets\RawData\Shaders\Shader\Mesh\Destroy-Glow-Mask4.shader" />
+    <None Include="Assets\RawData\Shaders\Shader\Sky-Nofog.shader" />
+    <None Include="Assets\RawData\Shaders\SoftEdge-1T-Base-Alpha-Blended.shader" />
+    <None Include="Assets\RawData\Shaders\Terrain\Terrain1.shader" />
+    <None Include="Assets\RawData\Shaders\Terrain\Terrain2.shader" />
+    <None Include="Assets\RawData\Shaders\Terrain\Terrain3.shader" />
+    <None Include="Assets\RawData\Shaders\Terrain\TerrainNull.shader" />
+    <None Include="Assets\RawData\Shaders\Terrain\TerrainProjector.shader" />
+    <None Include="Assets\RawData\Shaders\Terrain\VertexLit.shader" />
+    <None Include="Assets\RawData\Shaders\UI\Image-Gray.shader" />
+    <None Include="Assets\RawData\Shaders\UI\PSD4UGUI-Default-OneTex.shader" />
+    <None Include="Assets\RawData\Shaders\UI\PSD4UGUI-Default.shader" />
+    <None Include="Assets\RawData\Shaders\UI\PSD4UGUI-Icon.shader" />
+    <None Include="Assets\RawData\Shaders\UI\PSD4UGUI-NoTex.shader" />
+    <None Include="Assets\RawData\Shaders\UI\Ran.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UI-Blender-Add-Color.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UI-EJLabel.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UI-GlowBrush.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UI-TargetColor.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UIMask.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UI_NoAlpha.shader" />
+    <None Include="Assets\RawData\Shaders\UI\UI_stone.shader" />
+    <None Include="Assets\RawData\Shaders\UI\bright.shader" />
+    <None Include="Assets\RawData\Shaders\UI\stencil_only.shader" />
+    <None Include="Assets\RawData\Shaders\build_in\Diffuse.shader" />
+    <None Include="Assets\RawData\Shaders\myTerrain.shader" />
+    <None Include="Assets\RawData\Shaders\spine\Skeleton.shader" />
+    <None Include="Assets\Resources\GUI\cn\readme.txt" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\Bokeh.shader" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\Common.cginc" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\Composition.cginc" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\Debug.cginc" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\DiskBlur.cginc" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\DiskKernel.cginc" />
+    <None Include="Assets\Resources\PreloadShader\Bokeh\Prefilter.cginc" />
+    <None Include="Assets\Resources\PreloadShader\MotionVectors.shader" />
+    <None Include="Assets\Resources\PreloadShader\Normal-Diffuse.shader" />
+    <None Include="Assets\Resources\PreloadShader\Normal-VertexLit.shader" />
+    <None Include="Assets\Resources\PreloadShader\Outline.shader" />
+    <None Include="Assets\Resources\PreloadShader\Role_Cover.shader" />
+    <None Include="Assets\Resources\PreloadShader\Role_Outline.shader" />
+    <None Include="Assets\Resources\PreloadShader\Role_Outline_Color.shader" />
+    <None Include="Assets\Resources\PreloadShader\Role_Outline_Color_me.shader" />
+    <None Include="Assets\Resources\PreloadShader\Role_Outline_me.shader" />
+    <None Include="Assets\Resources\PreloadShader\Standard-FirstPass.shader" />
+    <None Include="Assets\Resources\PreloadShader\StandardTerrain.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\MotionVectors.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Normal-Diffuse.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Normal-VertexLit.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Outline.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Role_Cover.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Role_Outline.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Role_Outline_Color.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Role_Outline_Color_me.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\Role_Outline_me.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\UI-Default.shader" />
+    <None Include="Assets\Resources\Start\PreloadShader\UI-DefaultFont.shader" />
+    <None Include="Assets\ShaderForGame\AlphaTest-Diffuse.shader" />
+    <None Include="Assets\ShaderForGame\Hobbit.shader" />
+    <None Include="Assets\ShaderForGame\Normal-Diffuse.shader" />
+    <None Include="Assets\ShaderForGame\Standard-FirstPass.shader" />
+    <None Include="Assets\ShaderForGame\StandardTerrain.shader" />
+    <None Include="Assets\ShaderForGame\Terrain4.shader" />
+    <None Include="Assets\Slua\Resources\circle\circle.txt" />
+    <None Include="Assets\Slua\Resources\custom.txt" />
+    <None Include="Assets\Slua\Resources\delegate.txt" />
+    <None Include="Assets\Slua\Resources\main.txt" />
+    <None Include="Assets\Slua\Resources\module\some.txt" />
+    <None Include="Assets\Slua\Resources\new_coroutine.txt" />
+    <None Include="Assets\Slua\Resources\perf.txt" />
+    <None Include="Assets\Slua\Resources\valuetype.txt" />
+    <None Include="Assets\Slua\Resources\varobj.txt" />
+    <None Include="Assets\ThirdyParty\Editor\ConsolePro\Readme.txt" />
+    <None Include="Assets\ThirdyParty\Editor\dotnet2\NPOI.OOXML.XML" />
+    <None Include="Assets\ThirdyParty\Editor\dotnet2\NPOI.OpenXml4Net.XML" />
+    <None Include="Assets\ThirdyParty\Editor\dotnet2\NPOI.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

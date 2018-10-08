@@ -17,6 +17,7 @@ local _ENV = namespace(ns, using, modname)
 local POP_ID = {
 
 	WELCOME = {script_url = "src.dvc.view.welcome_view", prefab_url = "GUI/cn/Prefab/Canvas_Welcome", res_urls = {} },
+	STAGE = {script_url = "src.dvc.view.stage_view", prefab_url = "GUI/cn/Prefab/Canvas_Stage", res_urls = {} },
 }
 
 
@@ -64,18 +65,18 @@ CARD_STATE =
 --卡牌颜色
 CARD_COLOR =
 {
-	--黑
-	BLACK = 1,  --数字也代表优先级
 	--白
-	WHITE = 2,
+	WHITE = 1,
+	--黑
+	BLACK = 2,  --数字也代表优先级
 }
 
 
 --卡牌颜色名称
 CARD_COLOR_NAME =
 {
-	[CARD_COLOR.BLACK] = '黑',
 	[CARD_COLOR.WHITE] = '白',
+	[CARD_COLOR.BLACK] = '黑',
 }
 
 

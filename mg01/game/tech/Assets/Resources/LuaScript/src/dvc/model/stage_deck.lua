@@ -65,7 +65,6 @@ function stage_deck:setup_deck()
 	self.m_card_list = {}
 	self.m_color2cards = {}
 
-
 	local deckCfg = self.m_deckInfo.deckCfg
 
 	local cardInfo
@@ -80,6 +79,7 @@ function stage_deck:setup_deck()
 			if not cards then
 				cards = {}
 				self.m_color2cards[color] = cards
+
 			end
 			cards[#cards+1] = cardInfo
 		end
@@ -91,6 +91,21 @@ function stage_deck:clear_deck()
 
 	self.m_card_list = false
 	self.m_color2cards = false
+end
+
+--获取指定颜色的剩余牌数
+function stage_deck:get_card_num(color)
+	local cards = self.m_color2cards[color]
+	if cards then
+		return #cards
+	end
+	return nil
+end
+
+
+
+function stage_deck:has_color(color)
+	return self.m_color2cards[color] ~= nil
 end
 
 
@@ -120,6 +135,7 @@ function stage_deck:draw_card(player, color)
 
 	local cards = self.m_color2cards[color]
 	if #cards == 0 then
+		--没有牌了
 		color = self:get_enable_color()
 		cards = self.m_color2cards[color]
 	end

@@ -184,10 +184,10 @@ function MainEntry:on_level_loaded(url_)
 	--nslog.print_t("on_level_loaded", url_)
 
 	--test.UnityTest:setup()
-	test.UnityTestPop:setup()
+	--test.UnityTestPop:setup()
 
-	--require "src.dvc.lib"
-	--dvc.dvc_mgr:setup()
+	require "src.dvc.lib"
+	dvc.dvc_mgr:setup()
 end
 
 

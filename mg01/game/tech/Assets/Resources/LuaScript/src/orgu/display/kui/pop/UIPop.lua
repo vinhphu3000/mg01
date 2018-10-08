@@ -44,8 +44,7 @@ function UIPop:show(showObj, ...)
     self:setup_event()
     
     self:pop()
-    
-    self.m_is_open = true    --开启时访问为false, 用以区分首次打开 ,因此不支持在show的时候close
+    self.m_is_open = true    --开启时访问为false, 用以区分首次打开 ,因此不支持在__show的时候close
 end
 
 

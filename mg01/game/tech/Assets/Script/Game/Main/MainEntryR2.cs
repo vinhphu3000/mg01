@@ -93,6 +93,7 @@ public class MainEntryR2 : MainEntry
 
         reqs.Add( new LoadReqDelay(1) );
         //reqs.Add( new LoadReqProg(new ProgData(), OnLoadReqProg));
+        reqs.Add(new LoadReqLevel("SceneEmpty", false));
 
         LoadReqQueue reqQue = new LoadReqQueue( reqs.ToArray() );
 

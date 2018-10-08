@@ -84,7 +84,8 @@ end
 --开始关卡
 function stage_mgr:start_stage()
 
-	self:set_phase(STAGE_PHASE.DRAW)
+	App.popMgr:show(POP_ID.STAGE)
+	--self:set_phase(STAGE_PHASE.DRAW)
 
 end
 

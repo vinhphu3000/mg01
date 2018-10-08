@@ -32,7 +32,7 @@ end
 
 --Active
 function HelpGo.set_active(go, b)
-    go:SetActive(b)
+    go:SetActive(b and true or false)
 end
 
 function HelpGo.getActive(go)

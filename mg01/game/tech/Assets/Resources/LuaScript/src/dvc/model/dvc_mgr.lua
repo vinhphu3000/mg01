@@ -77,14 +77,11 @@ end
 
 function dvc_mgr:on_key_press(evt_)
 
-	--nslog.print_t('on_key_press', evt_)
 	local code = evt_.data
 	if code == KeyCode.Alpha1 then
 
 	elseif code == KeyCode.Alpha2 then
 
-		local a
-		a.a = 1
 	elseif code == KeyCode.Alpha3 then
 
 	elseif code == KeyCode.Alpha4 then
