@@ -17,7 +17,7 @@ local _ENV = namespace(ns, using, modname)
 local POP_ID = {
 
 	WELCOME = {script_url = "src.dvc.view.welcome_view", prefab_url = "GUI/cn/Prefab/Canvas_Welcome", res_urls = {} },
-	STAGE = {script_url = "src.dvc.view.stage_view", prefab_url = "GUI/cn/Prefab/Canvas_Stage", res_urls = {} },
+	STAGE = {script_url = "src.dvc.view.stage.stage_view", prefab_url = "GUI/cn/Prefab/Canvas_Stage", res_urls = {} },
 }
 
 
