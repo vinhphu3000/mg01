@@ -16,7 +16,6 @@ local HelpGo = HelpGo
 local GameObjUtil = GameObjUtil
 local ComponentUtil = ComponentUtil
 
-local delete = delete
 
 --===================module content========================
 
@@ -24,10 +23,6 @@ function HelpGo.get_gameObject(go_)
     return go_
 end
 
-
-function HelpGo.delete(go_)
-    delete(go_)
-end
 
 
 --Active

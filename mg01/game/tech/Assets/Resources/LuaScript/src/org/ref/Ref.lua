@@ -34,6 +34,29 @@ function Ref:ref_cnt()
 	return self.m_refCnt
 end
 
+
+--实例化且引用
+function Ref:create(cls, ...)
+	local cls_obj = new(cls, ...)
+	if cls_obj.retain then
+		cls_obj:retain(self)
+	end
+	return cls_obj
+end
+
+--释放引用
+function Ref:delete(cls_obj)
+	if cls_obj.release then
+		cls_obj:release(self)
+	elseif cls_obj.dispose then
+		cls_obj:dispose()
+	end
+	return false
+end
+
+
+--//-------∽-★-∽------∽-★-∽--------∽-★-∽引用计数∽-★-∽--------∽-★-∽------∽-★-∽--------//
+
 function Ref:retain(refer_)
     
     if self:isDisposed(true) then
@@ -46,7 +69,7 @@ function Ref:retain(refer_)
 		local referId = Refer.format(refer_)
 		if not self.m_refHash[referId] then
 			self.m_refHash[referId] = referId
-			Refer.attachDispose(referId, self.onReferDispose, self)
+			Refer.attachDispose(referId, self.__onReferDispose, self)
 		end
 	end
 
@@ -57,12 +80,6 @@ function Ref:retain(refer_)
     --end
     
     return true
-end
-
---监听引用者析构
-function Ref:onReferDispose(referId_)
-	nslog.print_t('监听到引用者析构: ' .. referId_ )
-	self:release(referId_)
 end
 
 
@@ -81,7 +98,7 @@ function Ref:release(refer_)
 		end
 
 		self.m_refHash[referId] = nil
-		Refer.detachDispose(referId, self.onReferDispose, self)
+		Refer.detachDispose(referId, self.__onReferDispose, self)
 	end
     
     if self.m_refCnt > 0 then
@@ -98,11 +115,16 @@ function Ref:release(refer_)
     return true
 end
 
+--监听引用者析构
+function Ref:__onReferDispose(referId_)
+	nslog.print_t('监听到引用者析构: ' .. referId_ )
+	self:release(referId_)
+end
+
 function Ref:__onRelease()
     
     self:dispose()
 end
-
 
 --清除所有引用者
 function Ref:__clearAllRefer()
@@ -112,7 +134,7 @@ function Ref:__clearAllRefer()
 	self.m_refCnt = 0
 
 	for k, v in pairs( self.m_refHash ) do
-		Refer.detachDispose(k, self.onReferDispose, self)
+		Refer.detachDispose(k, self.__onReferDispose, self)
 	end
 
 	clear_tbl( self.m_refHash )

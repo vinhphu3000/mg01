@@ -14,7 +14,7 @@ local super = nil	--父类
 Observer = class(modname, super, _ENV)
 local Observer = Observer
 
-local Refer
+local Refer = Refer
 
 --===================module content========================
 
@@ -46,10 +46,6 @@ function Observer:setRefer(refer)
 
 	if self.m_refer == refer then
 		return end
-
-	if not Refer then
-		Refer = _ENV.Refer
-	end
 
 	if self.m_refer then
 		Refer.detachDeactive(self.m_refer, self.onDeactive, self)

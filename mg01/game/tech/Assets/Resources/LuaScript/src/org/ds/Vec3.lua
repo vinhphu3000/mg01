@@ -82,6 +82,20 @@ function Vec3:angle_off( vec )
     return abs(acos(dot) * TO_DEGREE)
 end
 
+function Vec3:angle_off_signed( vec )
+	tmp_vec1:set(self.x, self.y, self.z)
+	tmp_vec1:normalize()
+	tmp_vec2:set(vec.x, vec.y, vec.z)
+	tmp_vec2:normalize()
+	local dot = Vec3.dot(tmp_vec1, tmp_vec2)
+	local y = tmp_vec1.x*tmp_vec2.z - tmp_vec1.z*tmp_vec2.x
+	if y > 0 then
+		return acos(dot)*TO_DEGREE
+	end
+	return -acos(dot)*TO_DEGREE
+end
+
+
 function Vec3:angle_off_xz( vec )
     tmp_vec1:set(self.x, 0.0, self.z)
     tmp_vec1:normalize()
@@ -89,19 +103,6 @@ function Vec3:angle_off_xz( vec )
     tmp_vec2:normalize()
     local dot = Vec3.dot(tmp_vec1, tmp_vec2)
     return abs(acos(dot)*TO_DEGREE)
-end
-
-function Vec3:angle_off_signed( vec )
-    tmp_vec1:set(self.x, self.y, self.z)
-    tmp_vec1:normalize()
-    tmp_vec2:set(vec.x, vec.y, vec.z)
-    tmp_vec2:normalize()
-    local dot = Vec3.dot(tmp_vec1, tmp_vec2)
-    local y = tmp_vec1.x*tmp_vec2.z - tmp_vec1.z*tmp_vec2.x
-    if y > 0 then
-        return acos(dot)*TO_DEGREE
-    end
-    return -acos(dot)*TO_DEGREE
 end
 
 function Vec3:angle_off_signed_xz( vec )

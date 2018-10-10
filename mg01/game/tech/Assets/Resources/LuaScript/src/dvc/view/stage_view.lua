@@ -20,7 +20,10 @@ local ui_root = 'Container_Stage/Container_Panel'
 local ui_map =
 {
 	container_players = "Container_Players",
-	container_deck = "Container_Deck",
+
+	container_deck = {"Container_Deck",
+		container_content = 'Container_content'
+	},
 
 	label_time = "Container_Top/Label_TIme",
 	btn_quit = "Button_quit",
@@ -47,9 +50,12 @@ stage_view.layerId = POP_LAYER_ID.LAYER_MAIN_UI
 
 function stage_view:__ctor()
 
-
 	self.m_handler = self:get_handler(ui_root, ui_map)
 
+	self.m_deckListView = self:create(ListView, {
+		container=self.m_handler.container_deck.container_content,
+		on_item_data = callback(self.update_deck_item, self),
+	})
 
 end
 
@@ -58,49 +64,78 @@ function stage_view:__show(showObj, ...)
 
 	self:show_deck()
 
+	stage_mgr:set_phase(STAGE_PHASE.DRAW)
+end
+
+function stage_view:on_click_quit()
+
 end
 
 function stage_view:setup_event()
     
-    
+    self.m_handler.btn_quit:attach_click(self.on_click_quit, self)
+
+	self:add_listener(DVC_EVENT.DECK_CARD_CHANGE, self.on_deck_change, self)
 end
 
 function stage_view:clear_event()
-    
-    
+
+	--self.m_handler.btn_quit:detach_click(self.on_click_quit, self)
 end
 
 function stage_view:__destroy()
-    
-    
+
+    self:clear_deck()
+end
+
+function stage_view:on_deck_change(color)
+
+	self:refrsh_deck_data(color)
 end
 
 --//-------~★~-------~★~-------~★~牌库相关~★~-------~★~-------~★~-------//
 
 function stage_view:show_deck()
 
-	for i=1, deck_num do
+	self.m_color2deckItem = {}
 
-		local handler = self.m_handler['btn_deck'..i]
-
-		if stage_deck:has_color(i) then
-			self:update_deck_item(i)
-			handler:set_active(true)
-		else
-			handler:set_active(false)
-		end
-	end
-
+	local deckItem = stage_deck:get_deck_items()
+	self.m_deckListView:show(deckItem)
 end
 
-function stage_view:update_deck_item( color )
+function stage_view:clear_deck()
 
-	local handler = self.m_handler['btn_deck'..color]
+	self.m_deckListView:destroy()
+
+	self.m_color2deckItem = false
+end
+
+
+function stage_view:update_deck_item( item_go, data, index )
+
+	local handler = self:get_handler(item_go, ui_map_deck)
+
+	handler.icon_deck:load_sprite('CardIcon', 'CardBack'..data.color, false)
+
+	self.m_color2deckItem[data.color] = handler
+
+	self:refrsh_deck_data(data.color)
+
+	handler:attach_click(callback_n(self.on_click_deck, self, data.color))
+end
+
+function stage_view:refrsh_deck_data(color)
+
+	local handler = self.m_color2deckItem[color]
 
 	local num = stage_deck:get_card_num(color)
 	handler.label_num:set_text('剩余:' .. num)
+end
 
-	handler.icon_deck:load_sprite('CardIcon', 'CardBack'..color, false)
+
+function stage_view:on_click_deck( color )
+
+	nslog.print_t('on_click_deck', color)
 end
 
 return stage_view

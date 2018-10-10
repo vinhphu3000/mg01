@@ -22,7 +22,7 @@ function StageInfo:__ctor()
 	--起始玩家确认类型
 	self.firstPlayerType = 0
 	--玩家行动顺序
-	self.playerActSeqType = 0
+	self.playerActQueue = 0
 
 	self.deckInfo = new(DeckInfo)
 
@@ -33,7 +33,7 @@ function StageInfo:init(data)
 
 	self.playerInfos = data.playerInfos
 	self.firstPlayerType = data.firstPlayerType or FIRST_PLAYER_TP.ME_FIRST
-	self.playerActSeqType = data.playerActSeqType or PLAYER_ACT_SEQ_TYPE.CLOCKWISE
+	self.playerActQueue = data.playerActQueue or PLAYER_ACT_QUEUE.CLOCKWISE
 
 	self.deckInfo:init(data)
 end

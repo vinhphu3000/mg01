@@ -148,7 +148,7 @@ function ImageAbs:__clearGameObject()
         
     else
         --是自己托管的go, 则删除对象
-        delete(self.m_gameObject)
+        destroy(self.m_gameObject)
         self.m_gameObject = nil
     end
     

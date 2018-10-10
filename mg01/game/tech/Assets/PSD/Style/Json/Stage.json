@@ -23,37 +23,28 @@
 						}
 					]
 				},
-				{"name":"Deck","type":"Container","param":"MiddleRight","x":1646,"y":215,"width":238,"height":206,
+				{"name":"Deck","type":"Container","param":"MiddleRight","x":1646,"y":215,"width":238,"height":120,
 					"children":
 					[
 						{"name":"Text","type":"Label","param":"title","x":17,"y":0,"width":95,"height":36,
 							"normal":{"x":0,"y":0,"width":95,"height":36,"content":"牌库区","param":"title","format":{"color":"010101","font":"FZZhunYuan-M02","size":30,"bold":0}}
 						},
-						{"name":"Deck2","type":"Button","param":"shrink","x":0,"y":134,"width":238,"height":72,
+						{"name":"content","type":"Container","x":0,"y":48,"width":238,"height":72,
 							"children":
 							[
-								{"name":"Text","type":"Label","param":"MiddleLeft|overFlow","x":75,"y":19.5,"width":128,"height":36,
-									"normal":{"x":0,"y":0,"width":128,"height":36,"content":"剩余:000","param":"MiddleLeft|overFlow","alignment":"MiddleLeft","format":{"color":"FEFEFE","font":"FZZhunYuan-M02","size":30,"bold":0}}
-								},
-								{"name":"sharedAnchor","type":"Image","x":20,"y":11,"width":45,"height":49,
-									"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":45,"height":49,"alpha":100}
-								},
-								{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":238,"height":72,
-									"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":238,"height":72,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"A4A4A4","alpha":100}}
-								}
-							]
-						},
-						{"name":"Deck1","type":"Button","param":"shrink","x":0,"y":48,"width":238,"height":72,
-							"children":
-							[
-								{"name":"Text","type":"Label","param":"MiddleLeft|overFlow","x":75,"y":19.5,"width":128,"height":36,
-									"normal":{"x":0,"y":0,"width":128,"height":36,"content":"剩余:000","param":"MiddleLeft|overFlow","alignment":"MiddleLeft","format":{"color":"FEFEFE","font":"FZZhunYuan-M02","size":30,"bold":0}}
-								},
-								{"name":"sharedAnchor","type":"Image","x":20,"y":11,"width":45,"height":49,
-									"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":45,"height":49,"alpha":100}
-								},
-								{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":238,"height":72,
-									"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":238,"height":72,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"A4A4A4","alpha":100}}
+								{"name":"item","type":"Button","param":"shrink","x":0,"y":0,"width":238,"height":72,
+									"children":
+									[
+										{"name":"Text","type":"Label","param":"MiddleLeft|overFlow","x":75,"y":19.5,"width":128,"height":36,
+											"normal":{"x":0,"y":0,"width":128,"height":36,"content":"剩余:000","param":"MiddleLeft|overFlow","alignment":"MiddleLeft","format":{"color":"FEFEFE","font":"FZZhunYuan-M02","size":30,"bold":0}}
+										},
+										{"name":"sharedAnchor","type":"Image","x":20,"y":11,"width":45,"height":49,
+											"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":45,"height":49,"alpha":100}
+										},
+										{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":238,"height":72,
+											"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":238,"height":72,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"A4A4A4","alpha":100}}
+										}
+									]
 								}
 							]
 						}

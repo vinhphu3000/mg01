@@ -14,7 +14,7 @@ local _ENV = namespace(ns, using, modname)
 
 
 --@now_ 立刻删除
-function delete(unityObj, now_)
+function destroy(unityObj, now_)
     if now_ then
         Object.DestroyImmediate(unityObj)
     else

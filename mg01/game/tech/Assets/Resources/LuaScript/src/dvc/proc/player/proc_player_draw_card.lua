@@ -37,7 +37,7 @@ end
 
 function proc_player_draw_card:__enter(input)
 
-	stage_deck:draw_card(self.m_agent)
+	stage_deck:draw_rand_card(self.m_agent)
 
 end
 

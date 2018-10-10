@@ -59,14 +59,18 @@ end
 
 -------∽-★-∽------∽-★-∽Notify∽-★-∽------∽-★-∽--------//
 
-local __subDeactive = new(Subject)
-local __subDispose = new(Subject)
+local __subDeactive
+local __subDispose
+
+function Refer.a()  --TODO
+	__subDeactive = new(Subject)
+	__subDispose =  new(Subject)
+end
 
 function Refer.clearNotify()
 	__subDeactive:detachAll()
 	__subDispose:detachAll()
 end
-
 
 -- 通知沉默
 function Refer.notifyDeactive(refer_)

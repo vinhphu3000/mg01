@@ -32,8 +32,8 @@ function ListView:__dispose()
 end
 
 --@setting {
---  container       摆放列表项的容器(gameobject或者uihandler)
---  on_item_data    单个列表项数据回调
+--  container                               摆放列表项的容器(gameobject或者uihandler)
+--  on_item_data(item_go, data, index)      单个列表项数据回调
 --
 --}
 function ListView:__ctor( setting)
@@ -142,7 +142,7 @@ function ListView:show_list()
 	for i=1, len do
 		index = i
 		item_go = self:create_item(index)
-		self:set_item_data(item_go, index, self.m_dataList[i])
+		self:set_item_data(item_go, self.m_dataList[i], index)
 	end
 
 	if self.m_dataLenLast > index then
@@ -237,7 +237,7 @@ function ListView:recyle_item(index)
 end
 
 --设置item数据
-function ListView:set_item_data(item_go, index, data)
+function ListView:set_item_data(item_go, data, index)
 
 	local old =  self.m_item2data[item_go]
 	if old ~= nil and old == data then
@@ -253,7 +253,7 @@ function ListView:set_item_data(item_go, index, data)
 	else
 
 		if self.m_setting.on_item_data then
-			self.m_setting.on_item_data(item_go, index, data)
+			self.m_setting.on_item_data(item_go, data, index)
 		end
 	end
 

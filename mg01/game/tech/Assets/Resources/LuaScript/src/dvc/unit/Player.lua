@@ -87,7 +87,7 @@ function Player:add_to_draw_zone(cardInfo)
 	cardInfo.index = #self.m_draw_zone
 
 	nslog.print_t(string.format('%s 抽到了一张 %s \n' .. self:dump_draw_zone(), self:get_label(), cardInfo.name), cardInfo)
-
+	self:notify(DVC_EVENT.PLAYER_DRAW_ZONE_CHANGE, self, cardInfo)
 end
 
 --获取抽牌区第一张卡
@@ -140,7 +140,7 @@ function Player:add_to_game_zone(cardInfo, index)
 
 	nslog.print_t(string.format('%s 把 %s 放到位置：%d \n' .. self:dump_game_zone(), self:get_label(), cardInfo.name, index))
 
-
+	self:notify(DVC_EVENT.PLAYER_GAME_ZONE_CHANGE, self, cardInfo)
 end
 
 

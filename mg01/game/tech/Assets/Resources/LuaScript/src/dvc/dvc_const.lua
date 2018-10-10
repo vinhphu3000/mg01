@@ -96,22 +96,26 @@ local function card_cfg(pattern, weight)
 	return {pattern = pattern, weight = weight }
 end
 
+local function deck_item(color, cards)
+	return {color = color, cards = cards }
+end
+
 --牌库配置
 DECK_CONFIG =
 {
 	[DECK_TYPE.DEFAULT] = {
-		[CARD_COLOR.BLACK] = {
+		deck_item(CARD_COLOR.WHITE, {
 			card_cfg('0'), card_cfg('1'), card_cfg('2'), card_cfg('3'),
 			card_cfg('4'), card_cfg('5'), card_cfg('6'), card_cfg('7'),
 			card_cfg('8'), card_cfg('9'), card_cfg('10'), card_cfg('11'),
 			card_cfg('-', -1)
-		},
-		[CARD_COLOR.WHITE] = {
+		}),
+		deck_item(CARD_COLOR.BLACK, {
 			card_cfg('0'), card_cfg('1'), card_cfg('2'), card_cfg('3'),
 			card_cfg('4'), card_cfg('5'), card_cfg('6'), card_cfg('7'),
 			card_cfg('8'), card_cfg('9'), card_cfg('10'), card_cfg('11'),
 			card_cfg('-', -1)
-		},
+		}),
 	}
 
 }
@@ -132,7 +136,7 @@ STAGE_PHASE = {
 CARD_COUNT_PLAYER_START = 3
 
 --玩家行动顺序类型
-PLAYER_ACT_SEQ_TYPE =
+PLAYER_ACT_QUEUE =
 {
 	--顺时针
 	CLOCKWISE = 0,
@@ -155,8 +159,18 @@ DVC_EVENT =
 {
 	--关卡阶段改变
 	STG_PHASE_CHANGE = 'STG_PHASE_CHANGE',
+
+	----deck----
+	--牌库改变
+	DECK_CARD_CHANGE = 'DECK_CARD_CHANGE',
+
+	----player----
 	--当前玩家改变
 	CUR_PLAYER_CHANGE = 'CUR_PLAYER_CHANGE',
+	--抽牌区改变
+	PLAYER_DRAW_ZONE_CHANGE = 'PLAYER_DRAW_ZONE_CHANGE',
+	--游戏区改变
+	PLAYER_GAME_ZONE_CHANGE = 'PLAYER_GAME_ZONE_CHANGE',
 
 
 }

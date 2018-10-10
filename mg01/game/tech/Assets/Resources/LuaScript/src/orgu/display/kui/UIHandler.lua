@@ -32,11 +32,12 @@ local key2fn_gftr = {}  --(go, function. target, refer)
 -- {path = "", ui_map = {}}
 local function formatUiMap(uiMap_)
 
+	local ui_map = {}
+
     if not uiMap_ then
-        return {}
+        return ui_map
     end
 
-    local ui_map = {}
     local tp
     for k,v in pairs(uiMap_) do
 
@@ -85,7 +86,9 @@ local mt = {
                 --是子对象,创建代理
                 --nslog.print_t(self.gameObject, v)
                 local go = self.gameObject:FindChild_(v.path)
-                assert(go, "cant find gameobject: " .. k)
+	            if not go then
+		            assert(false, "cant find gameobject: " .. k)
+	            end
                 v = UIHandler.new(go, v.ui_map or v, self.m_refer)
             end
         end

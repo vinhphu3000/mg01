@@ -22,7 +22,7 @@ function player_cache:__ctor()
 	--起始玩家类型
 	self.m_first_player_type = false
 	--玩家行动顺序类型
-	self.m_act_seq_type = 0
+	self.m_act_queue = 0
 
 
 	self.m_uuid2player = false
@@ -47,7 +47,7 @@ function player_cache:__setup(stageInfo)
 	self:ctor()
 
 	self.m_first_player_type = stageInfo.firstPlayerType
-	self.m_act_seq_type = stageInfo.playerActSeqType
+	self.m_act_queue = stageInfo.playerActQueue
 
 	self:setup_players(stageInfo.playerInfos)
 	self:decide_start_player()

@@ -126,6 +126,10 @@ end
 --回调函数
 function callback(fun, sender)
 
+	if not fun then
+		return nil
+	end
+
     local excute = function(...)
         if sender == nil then
             return fun(...)
@@ -141,8 +145,9 @@ end
 --回调函数_带不定参
 function callback_n(fun, sender, ...)
 
-    if fun == nil then
-        return end
+    if not fun then
+        return nil
+    end
 
     local p = {...}
     local excute = function(...)

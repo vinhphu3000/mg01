@@ -41,16 +41,17 @@ require_org "pool.lib"
 --ds
 require_org "ds.lib"
 
+--ref
+require_org "ref.Refer"
+require_org "ref.Ref"
+require_org "ref.AutoRelease"
+
 --event
 require_org "event.Observer"
 require_org "event.SubjectEvent"
 require_org "event.Subject"
 require_org "event.CBoard"
 
---ref
-require_org "ref.Refer"
-require_org "ref.Ref"
-require_org "ref.AutoRelease"
 
 --time
 require_org "time.TimerMgr"

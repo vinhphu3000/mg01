@@ -363,5 +363,6 @@ function Subject:notifyEach(type, fun)
     tmp_k = nil
 end
 
+Refer.a()
 
 return Subject
