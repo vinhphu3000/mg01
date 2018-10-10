@@ -1,0 +1,271 @@
+﻿const WORKBENCH = "workbench";
+
+//以下是图片输出设置参数
+const IMAGE_ROTATION_REGEXP = /(((rotation)(\d+))|(right)|(down))/ig; //图片输出设置参数，设置图片输出前旋转
+const FORCE_EXPORT_REGEXP = /force/ig; //图片输出设置参数，设置图片强制输出
+const SCALE_RATIO_REGEXP = /scale\d+/ig;//图片输出设置参数，设置图片输出前进行缩放
+
+function ImageExporter(environment)
+{
+	this.environment = environment;
+	this.exportAssetMap = null;
+
+	this.exportOptions = new ExportOptionsSaveForWeb();
+	this.exportOptions.format = SaveDocumentType.PNG;
+	this.exportOptions.PNG8 = false;
+	this.exportOptions.transparency = true;
+	this.exportOptions.interlaced = false;
+
+	this.workbench = null;
+}
+
+ImageExporter.prototype.export = function(extractData)
+{
+	this.exportAssetMap = {};
+	this.emptyImageFolder();
+	this.createWorkbench();
+	this.exportAllLayers(extractData);
+	this.destoryWorkbench();
+	app.activeDocument = this.environment.doc;
+}
+
+ImageExporter.prototype.emptyImageFolder = function()
+{
+	var folder = new Folder(this.environment.imageFolderPath + "/" + this.environment.psdName);
+	if(folder.exists == true)
+	{
+		var files = folder.getFiles();
+		for(var i = 0; i < files.length; i++)
+		{
+			files[i].remove();
+		}
+	}
+	else
+	{
+		folder.create();
+	}
+}
+
+ImageExporter.prototype.createWorkbench = function()
+{
+	this.workbench = app.documents.add(this.environment.doc.width, this.environment.doc.height, 72, WORKBENCH, NewDocumentMode.RGB, DocumentFill.TRANSPARENT);
+	app.activeDocument = this.environment.doc;
+}
+
+ImageExporter.prototype.destoryWorkbench = function()
+{
+	this.workbench.close(SaveOptions.DONOTSAVECHANGES);
+}
+
+ImageExporter.prototype.exportAllLayers = function(extractData)
+{
+	var children = extractData.children;
+	for(var i = 0; i < children.length; i++)
+	{
+		var child = children[i];
+		if(child.type == "image" && child.name.indexOf("placeholder") == -1)
+		{
+			this.exportImageLayer(child);
+		}
+		else if(child.type == "folder" && child.name.toLowerCase() != "notexport")
+		{
+			this.exportAllLayers(child);
+		}
+	}
+}
+
+ImageExporter.prototype.exportImageLayer = function(data)
+{
+	if(this.environment.psdName == "Shared" || this.environment.psdName == "Shared1" 
+		|| (data.assetName.indexOf("Shared.") == -1 && data.assetName.indexOf("Shared1.") == -1))
+	{
+		var name = data.assetName.substring(data.assetName.indexOf(".") + 1);
+		var forceExport = this.extractExportParam(data.exportParam, FORCE_EXPORT_REGEXP);
+		var scaleSetting = this.extractExportParam(data.exportParam, SCALE_RATIO_REGEXP);
+		if(this.exportAssetMap[name] == null || forceExport != null || scaleSetting != null)
+		{
+			this.exportAssetMap[name] = 1;
+			var imagePath = this.environment.imageFolderPath + "/" + this.environment.psdName + "/" + name + ".png";			
+			this.exportImageInWorkbench(data, imagePath);
+			app.activeDocument = this.environment.doc;
+		}
+	}
+}
+
+ImageExporter.prototype.exportImageInWorkbench = function(data, imagePath)
+{
+	this.selectLayer(data.layerIndex);
+	this.duplicateLayerToWorkbench(data.layerIndex);
+	app.activeDocument = this.workbench;
+	this.hideImageLayerSolidFillEffect();
+	this.maximizeImageLayerAlpha(data);
+	this.translateImage();
+	this.scaleImage(data);
+	this.rotateOrFlipCanvas(data);
+	this.workbench.trim(TrimType.TRANSPARENT);
+	this.workbench.exportDocument(new File(imagePath), ExportType.SAVEFORWEB, this.exportOptions);
+	this.deleteWorkbenchLayer();
+	this.workbench.resizeCanvas(this.environment.doc.width, this.environment.doc.height);
+}
+
+ImageExporter.prototype.scaleImage = function(data)
+{
+	var scale = this.extractExportParam(data.exportParam, SCALE_RATIO_REGEXP);
+	if(scale != null)
+	{
+		var value = parseInt(scale.substring(5));
+		this.scaleCanvas(this.workbench.width * value * 0.01);
+	}
+}
+
+ImageExporter.prototype.rotateOrFlipCanvas = function(data)
+{
+	var rotation = this.extractExportParam(data.exportParam, IMAGE_ROTATION_REGEXP);
+	switch(rotation)
+	{
+		case "rotation90":
+			this.rotateCanvas(270);
+			break;
+		case "rotation180":
+			this.rotateCanvas(180);
+			break;
+		case "rotation270":
+			this.rotateCanvas(90);
+			break;
+		case "rotation45":
+			this.rotateCanvas(45);
+			break;
+		case "right":
+			this.flipCanvas("horizontal");
+			break;
+		case "down":
+			this.flipCanvas("vertical");
+			break;
+	}
+}
+
+ImageExporter.prototype.deleteWorkbenchLayer = function()
+{
+	var desc = new ActionDescriptor();
+	var ref = new ActionReference();
+	ref.putEnumerated(ST("layer"), ST("ordinal"), ST("targetEnum"));
+	desc.putReference(ST("null"), ref);
+	executeAction(ST("delete"), desc, DialogModes.NO);
+}
+
+ImageExporter.prototype.duplicateLayerToWorkbench = function(layerIndex)
+{
+	var desc = new ActionDescriptor();
+	var layerRef = new ActionReference();
+	layerRef.putEnumerated(ST("layer"), ST("ordinal"), ST("targetEnum"));
+	desc.putReference(ST("null"), layerRef);
+	var docRef = new ActionReference();
+	docRef.putName(ST("document"), WORKBENCH);
+	desc.putReference(ST("to"), docRef);
+	docRef.putIndex(ST("layer"), layerIndex);
+	desc.putInteger(ST("version"), 5);
+	executeAction(ST("duplicate"), desc, DialogModes.NO);
+}
+
+ImageExporter.prototype.hasSolidFillEffect = function()
+{
+	var ref = new ActionReference();
+	ref.putEnumerated(ST("layer"), ST("ordinal"), ST("targetEnum"));
+	var desc = executeActionGet(ref);
+	return desc.hasKey(ST("layerEffects")) && desc.getObjectValue(ST("layerEffects")).hasKey(ST("solidFill"));
+}
+
+ImageExporter.prototype.hideImageLayerSolidFillEffect = function()
+{
+	if(this.hasSolidFillEffect() == true)
+	{
+		var desc = new ActionDescriptor();
+		var list = new ActionList();
+		var ref = new ActionReference();
+		ref.putClass(ST("solidFill"));
+		ref.putEnumerated(ST("layer"), ST("ordinal"), ST("targetEnum"));
+		list.putReference(ref);
+		desc.putList(ST("null"), list);
+		executeAction(ST("hide"), desc, DialogModes.NO);
+	}
+}
+
+ImageExporter.prototype.selectLayer = function(layerIndex)
+{
+	var desc = new ActionDescriptor();
+	var ref = new ActionReference();
+	ref.putIndex(ST("layer"), layerIndex);
+	desc.putReference(ST("null"), ref);
+	executeAction(ST("select"), desc, DialogModes.NO);
+}
+
+ImageExporter.prototype.maximizeImageLayerAlpha = function(data)
+{
+	if(data.alpha < 1)
+	{
+		var setDesc = new ActionDescriptor();
+		var ref = new ActionReference();
+		ref.putEnumerated(ST("layer"), ST("ordinal"), ST("targetEnum"));
+		setDesc.putReference(ST("null"), ref);
+		var toDesc = new ActionDescriptor();
+		toDesc.putUnitDouble(ST("opacity"), ST("percentUnit"), 100);
+		setDesc.putObject(ST("to"), ST("layer"), toDesc);
+		executeAction(ST("set"), setDesc, DialogModes.NO);
+	}
+}
+
+ImageExporter.prototype.rotateCanvas = function(angle)
+{
+	if(angle > 0)
+	{
+		var desc = new ActionDescriptor();
+		var ref = new ActionReference();
+		ref.putEnumerated(ST("document"), ST("ordinal"), ST("first"));
+		desc.putReference(ST("null"), ref);
+		desc.putUnitDouble(ST("angle"), ST("angleUnit"), angle);
+		executeAction(ST("rotateEventEnum"), desc, DialogModes.NO);	
+		
+	}
+}
+
+ImageExporter.prototype.flipCanvas = function(orientation)
+{
+	if(orientation != "")
+	{
+		var desc = new ActionDescriptor();
+		var ref = new ActionReference();
+		ref.putEnumerated(ST("document"), ST("ordinal"), ST("first"));
+		desc.putReference(ST("null"), ref);
+		//vertical, horizontal
+		desc.putEnumerated(ST("axis"), ST("orientation"), ST(orientation))
+		executeAction(ST("flip"), desc, DialogModes.NO);	
+	}
+}
+
+//强制约束比例缩放
+ImageExporter.prototype.scaleCanvas = function(width)
+{
+	var desc = new ActionDescriptor();
+	var ref = new ActionReference();
+	desc.putUnitDouble(ST("width"), ST("pixelsUnit"), width);
+	desc.putBoolean(ST("scaleStyles"), true);
+	desc.putBoolean(ST("constrainProportions"), true);
+	desc.putEnumerated(ST("interfaceIconFrameDimmed"), ST("interfacePaletteFill"), ST("bilinear"));
+	executeAction(ST("imageSize"), desc, DialogModes.NO);
+}
+
+ImageExporter.prototype.translateImage = function()
+{
+	var layer = app.activeDocument.activeLayer;
+	var bounds = layer.bounds;
+	layer.translate(-bounds[0], -bounds[1]);
+}
+
+ImageExporter.prototype.extractExportParam = function(exportParam, regExp)
+{
+	if(exportParam != null && exportParam.match(regExp))
+	{
+		return exportParam.match(regExp)[0];
+	}
+	return null;
+}

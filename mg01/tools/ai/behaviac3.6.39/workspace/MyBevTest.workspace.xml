@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="MyBevTest" folder="behaviors" export="exported" language="cs" version="3">
+  <export>
+    <cs>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../exported</folder>
+    </cs>
+    <lua>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+    </lua>
+    <xml>
+      <isexported>False</isexported>
+    </xml>
+    <lua2>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+    </lua2>
+  </export>
+</workspace>

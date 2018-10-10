@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpc defaultLocale="zh_CN" version="4" keySequence="64" currentLocale="zh_CN">
+  <product appid="PHSP" version="13" name="Photoshop CS6"/>
+  <target id="PHSP-13"/>
+  <ConfiguratorPanel name="快速建立结构辅助工具" width="230" height="330" init="doInit" close="doClose" persistent="True" extensionId="com.configurator.extension" extensionVersion="1.0.0" menuName="快速建立结构辅助工具" flyoutMenuAbout="$$$/Configurator/FlyoutMenu/about">
+    <onInit><![CDATA[]]></onInit>
+    <aboutBox><![CDATA[]]></aboutBox>
+    <extensionDescription><![CDATA[]]></extensionDescription>
+    <extensionAuthor><![CDATA[]]></extensionAuthor>
+    <onClose><![CDATA[]]></onClose>
+    <eventListeners>
+      <function id="doInit" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onInit"/>
+      </function>
+      <function id="doClose" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onClose"/>
+      </function>
+    </eventListeners>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###2" cfgVisible="$$$/Configurator/Attribute/visible/value###3" fileUrl="$$$/Configurator/key_###4" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="10" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###5" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###6" cfgVisible="$$$/Configurator/Attribute/visible/value###7" fileUrl="$$$/Configurator/key_###8" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="120" y="10" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###33" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###34" cfgVisible="$$$/Configurator/Attribute/visible/value###35" fileUrl="$$$/Configurator/key_###36" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="48" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###29" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###30" cfgVisible="$$$/Configurator/Attribute/visible/value###31" fileUrl="$$$/Configurator/key_###32" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="120" y="48" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###25" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###26" cfgVisible="$$$/Configurator/Attribute/visible/value###27" fileUrl="$$$/Configurator/key_###28" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="86" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###21" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###22" cfgVisible="$$$/Configurator/Attribute/visible/value###23" fileUrl="$$$/Configurator/key_###24" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="118" y="86" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###17" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###18" cfgVisible="$$$/Configurator/Attribute/visible/value###19" fileUrl="$$$/Configurator/key_###20" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="124" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###13" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###14" cfgVisible="$$$/Configurator/Attribute/visible/value###15" fileUrl="$$$/Configurator/key_###16" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="118" y="124" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###9" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###10" cfgVisible="$$$/Configurator/Attribute/visible/value###11" fileUrl="$$$/Configurator/key_###12" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="162" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###61" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###62" cfgVisible="$$$/Configurator/Attribute/visible/value###63" fileUrl="$$$/Configurator/key_###64" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="120" y="162" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###57" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###58" cfgVisible="$$$/Configurator/Attribute/visible/value###59" fileUrl="$$$/Configurator/key_###60" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="200" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###53" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###54" cfgVisible="$$$/Configurator/Attribute/visible/value###55" fileUrl="$$$/Configurator/key_###56" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="120" y="200" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###49" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###50" cfgVisible="$$$/Configurator/Attribute/visible/value###51" fileUrl="$$$/Configurator/key_###52" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="238" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###45" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###46" cfgVisible="$$$/Configurator/Attribute/visible/value###47" fileUrl="$$$/Configurator/key_###48" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="118" y="238" width="100" height="30"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###41" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###42" cfgVisible="$$$/Configurator/Attribute/visible/value###43" fileUrl="$$$/Configurator/key_###44" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="276" width="100" height="30"/>
+  </ConfiguratorPanel>
+</gpc>

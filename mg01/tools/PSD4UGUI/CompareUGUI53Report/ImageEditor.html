@@ -1,0 +1,1358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementNumber { color: #2E9269; }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 2017/4/9 下午10:58:07<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All &nbsp;
+<br/>
+Left file: /Users/lixilong/Documents/ToCompare/53/UnityEditor.UI/UI/ImageEditor.cs &nbsp;
+<br/>
+Right file: /Users/lixilong/Documents/ToCompare/current/UnityEditor.UI/UI/ImageEditor.cs &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Linq</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Linq</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEditor</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AnimatedValues</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEditor</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AnimatedValues</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEditor</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEditor</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// Editor class used to edit UI Sprites.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// Editor class used to edit UI Sprites.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">CustomEditor</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">typeof</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">),</span> <span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">CustomEditor</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">typeof</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">),</span> <span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">CanEditMultipleObjects</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">CanEditMultipleObjects</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">ImageEditor</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementIdentifier">GraphicEditor</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">ImageEditor</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementIdentifier">GraphicEditor</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillAmount</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillAmount</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillClockwise</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillClockwise</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillCenter</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_FillCenter</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_PreserveAspect</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SerializedProperty</span> <span class="TextSegElementIdentifier">m_PreserveAspect</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">SerializedProperty</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Rotation</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">SerializedProperty</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Grey</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">SerializedProperty</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Alpha</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">SerializedProperty</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_OverlayColor</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">GUIContent</span> <span class="TextSegElementIdentifier">m_SpriteContent</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">GUIContent</span> <span class="TextSegElementIdentifier">m_SpriteContent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">GUIContent</span> <span class="TextSegElementIdentifier">m_SpriteTypeContent</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">GUIContent</span> <span class="TextSegElementIdentifier">m_SpriteTypeContent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">GUIContent</span> <span class="TextSegElementIdentifier">m_ClockwiseContent</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">GUIContent</span> <span class="TextSegElementIdentifier">m_ClockwiseContent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">AnimBool</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_ShowSimpled</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AnimBool</span> <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnEnable</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnEnable</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">base</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OnEnable</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">base</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OnEnable</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_SpriteContent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">GUIContent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Source Image&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_SpriteContent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">GUIContent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Source Image&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_SpriteTypeContent</span>&nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">GUIContent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Image Type&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_SpriteTypeContent</span>&nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">GUIContent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Image Type&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ClockwiseContent</span>&nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">GUIContent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Clockwise&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ClockwiseContent</span>&nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">GUIContent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Clockwise&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Sprite</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_Sprite&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Sprite</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_Sprite&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Type</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_Type&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Type</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_Type&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillCenter</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillCenter&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillCenter</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillCenter&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillMethod</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillMethod&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillMethod</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillMethod&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillOrigin&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillOrigin&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillClockwise</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillClockwise&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillClockwise</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillClockwise&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillAmount</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillAmount&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillAmount</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_FillAmount&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_PreserveAspect</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_PreserveAspect&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_PreserveAspect</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FindProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;m_PreserveAspect&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Rotation</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">serializedObject</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">FindProperty</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;m_Rotation&quot;</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Grey</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">serializedObject</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">FindProperty</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;m_Grey&quot;</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Alpha</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">serializedObject</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">FindProperty</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;m_Alpha&quot;</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_OverlayColor</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">serializedObject</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">FindProperty</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;m_OverlayColor&quot;</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">objectReferenceValue</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">objectReferenceValue</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Filled</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">AnimBool</span><span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Filled</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_ShowSimpled</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">new</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">AnimBool</span><span class="TextSegSigDiff">(!</span><span class="TextSegSigDiff">m_Type</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">hasMultipleDifferentValues</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&amp;&amp;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">typeEnum</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Image</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Type</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Simple</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_ShowSimpled</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">valueChanged</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">AddListener</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">Repaint</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnDisable</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnDisable</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">valueChanged</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Repaint</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_ShowSimpled</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">valueChanged</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">RemoveListener</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">Repaint</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnInspectorGUI</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnInspectorGUI</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Update</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Update</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SpriteGUI</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SpriteGUI</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AppearanceControlsGUI</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AppearanceControlsGUI</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">RaycastControlsGUI</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">RaycastControlsGUI</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">objectReferenceValue</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">objectReferenceValue</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">TypeGUI</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">TypeGUI</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">false</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">false</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowNativeSize</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowNativeSize</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">++;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">++;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_PreserveAspect</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_PreserveAspect</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">--;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">--;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemInsigMod">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_OverlayColor</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null</span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">EditorGUILayout</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">PropertyField</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_OverlayColor</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Alpha</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null</span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">EditorGUILayout</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">PropertyField</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Alpha</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Grey</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null</span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">EditorGUILayout</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">PropertyField</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Grey</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemInsigMod">&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">NativeSizeButtonGUI</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">NativeSizeButtonGUI</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">ApplyModifiedProperties</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">serializedObject</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">ApplyModifiedProperties</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">instant</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">instant</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span> <span class="TextSegElementIdentifier">type</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span> <span class="TextSegElementIdentifier">type</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">showNativeSize</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">type</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Simple</span> <span class="TextSegElementOperator">||</span> <span class="TextSegElementIdentifier">type</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Filled</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">showNativeSize</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">type</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Simple</span> <span class="TextSegElementOperator">||</span> <span class="TextSegElementIdentifier">type</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Filled</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">base</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">showNativeSize</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">instant</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">base</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetShowNativeSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">showNativeSize</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">instant</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Draw the atlas and Image selection fields.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Draw the atlas and Image selection fields.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">SpriteGUI</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">SpriteGUI</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginChangeCheck</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginChangeCheck</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_SpriteContent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_SpriteContent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndChangeCheck</span><span class="TextSegElementOperator">())</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndChangeCheck</span><span class="TextSegElementOperator">())</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">newSprite</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">objectReferenceValue</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Sprite</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">newSprite</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">objectReferenceValue</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Sprite</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newSprite</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newSprite</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span> <span class="TextSegElementIdentifier">oldType</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span> <span class="TextSegElementIdentifier">oldType</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newSprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">border</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SqrMagnitude</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newSprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">border</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SqrMagnitude</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">else</span> <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">oldType</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">else</span> <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">oldType</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Simple</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Simple</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Sprites's custom properties based on the type.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Sprites's custom properties based on the type.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">TypeGUI</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">TypeGUI</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_SpriteTypeContent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_SpriteTypeContent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span> <span class="TextSegElementOperator">||</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Tiled</span><span class="TextSegElementOperator">));</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span> <span class="TextSegElementOperator">||</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Tiled</span><span class="TextSegElementOperator">));</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">targets</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Length</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">targets</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Length</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">targets</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Select</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">obj</span> <span class="TextSegElementOperator">=&gt;</span> <span class="TextSegElementIdentifier">obj</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">).</span><span class="TextSegElementIdentifier">All</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">img</span> <span class="TextSegElementOperator">=&gt;</span> <span class="TextSegElementIdentifier">img</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasBorder</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">targets</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Select</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">obj</span> <span class="TextSegElementOperator">=&gt;</span> <span class="TextSegElementIdentifier">obj</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">).</span><span class="TextSegElementIdentifier">All</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">img</span> <span class="TextSegElementOperator">=&gt;</span> <span class="TextSegElementIdentifier">img</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasBorder</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">showSlicedOrTiled</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">showSlicedOrTiled</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementOperator">!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">showSlicedOrTiled</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementOperator">!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Sliced</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Filled</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">target</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">m_Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasMultipleDifferentValues</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">typeEnum</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Type</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Filled</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_ShowSimpled</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">target</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(!</span><span class="TextSegSigDiff">m_Type</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">hasMultipleDifferentValues</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&amp;&amp;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">typeEnum</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Image</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Type</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Simple</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span> <span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">target</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span> <span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">target</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">EditorGUILayout</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">BeginFadeGroup</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_ShowSimpled</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">faded</span><span class="TextSegSigDiff">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">EditorGUILayout</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">PropertyField</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Rotation</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowSlicedOrTiled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasBorder</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasBorder</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillCenter</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillCenter</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowSliced</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementOperator">!</span><span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasBorder</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementOperator">!</span><span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hasBorder</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HelpBox</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;This Image doesn't have a border.&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">MessageType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Warning</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HelpBox</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;This Image doesn't have a border.&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">MessageType</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Warning</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginFadeGroup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_ShowFilled</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">faded</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginChangeCheck</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BeginChangeCheck</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndChangeCheck</span><span class="TextSegElementOperator">())</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndChangeCheck</span><span class="TextSegElementOperator">())</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">switch</span> <span class="TextSegElementOperator">((</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">switch</span> <span class="TextSegElementOperator">((</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Horizontal</span><span class="TextSegElementOperator">:</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Horizontal</span><span class="TextSegElementOperator">:</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginHorizontal</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginHorizontal</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginHorizontal</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginHorizontal</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Vertical</span><span class="TextSegElementOperator">:</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Vertical</span><span class="TextSegElementOperator">:</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginVertical</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginVertical</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginVertical</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">OriginVertical</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Radial90</span><span class="TextSegElementOperator">:</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Radial90</span><span class="TextSegElementOperator">:</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin90</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin90</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin90</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin90</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Radial180</span><span class="TextSegElementOperator">:</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Radial180</span><span class="TextSegElementOperator">:</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin180</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin180</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin180</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin180</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Radial360</span><span class="TextSegElementOperator">:</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">case</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Radial360</span><span class="TextSegElementOperator">:</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin360</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin360</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin360</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnumPopup</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Fill Origin&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Origin360</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillOrigin</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">intValue</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">break</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillAmount</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillAmount</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">((</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Vertical</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">((</span><span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">m_FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">enumValueIndex</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">FillMethod</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Vertical</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillClockwise</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_ClockwiseContent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">PropertyField</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_FillClockwise</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_ClockwiseContent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">EditorGUILayout</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EndFadeGroup</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">--</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">--</span><span class="TextSegElementIdentifier">EditorGUI</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">indentLevel</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// All graphics have a preview.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// All graphics have a preview.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">HasPreviewGUI</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">HasPreviewGUI</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Draw the Image preview.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Draw the Image preview.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnPreviewGUI</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Rect</span> <span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">GUIStyle</span> <span class="TextSegElementIdentifier">background</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">OnPreviewGUI</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Rect</span> <span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">GUIStyle</span> <span class="TextSegElementIdentifier">background</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span> <span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">target</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span> <span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">target</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Sprite</span> <span class="TextSegElementIdentifier">sf</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Sprite</span> <span class="TextSegElementIdentifier">sf</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sf</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sf</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SpriteDrawUtility</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DrawSprite</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sf</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">canvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">GetColor</span><span class="TextSegElementOperator">());</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">SpriteDrawUtility</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DrawSprite</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sf</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">canvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">GetColor</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Info String drawn at the bottom of the Preview</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Info String drawn at the bottom of the Preview</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementIdentifier">string</span> <span class="TextSegElementIdentifier">GetInfoString</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">override</span> <span class="TextSegElementIdentifier">string</span> <span class="TextSegElementIdentifier">GetInfoString</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span> <span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">target</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Image</span> <span class="TextSegElementIdentifier">image</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">target</span> <span class="TextSegElementIdentifier">as</span> <span class="TextSegElementIdentifier">Image</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Sprite</span> <span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Sprite</span> <span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">image</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">x</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementIdentifier">Mathf</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RoundToInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">width</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">x</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementIdentifier">Mathf</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RoundToInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">width</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">y</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementIdentifier">Mathf</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RoundToInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">height</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">y</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementIdentifier">Mathf</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RoundToInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">sprite</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">rect</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">height</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">string</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Format</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Image Size: {0}x{1}&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">x</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">y</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">string</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Format</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Image Size: {0}x{1}&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">x</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">y</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

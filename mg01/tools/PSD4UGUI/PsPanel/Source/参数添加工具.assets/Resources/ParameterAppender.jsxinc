@@ -1,0 +1,123 @@
+﻿//图像图层参数
+const RIGHT = "right";
+const DOWN = "down";
+const ROTATION90 = "rotation90";
+const ROTATION180 = "rotation180";
+const ROTATION270 = "rotation270";
+const UV_LEFT2RIGHT = "uvLeft2Right";
+const UV_RIGHT2LEFT = "uvRight2Left";
+const UV_TOP2BOTTOM = "uvTop2Bottom";
+const UV_BOTTOM2TOP = "uvBottom2Top";
+const STATIC = "static";
+
+//文本图像图层
+const UPPER_LEFT = "UpperLeft";
+const UPPER_CENTER = "UpperCenter";
+const UPPER_RIGHT = "UpperRight";
+const MIDDLE_LEFT = "MiddleLeft";
+const MIDDLE_CENTER = "MiddleCenter";
+const MIDDLE_RIGHT = "MiddleRight";
+const LOWER_LEFT = "LowerLeft";
+const LOWER_CENTER = "LowerCenter";
+const LOWER_RIGHT = "LowerRight";
+const SCALE_9_GRID = "6,6,6,6";
+
+//通用参数
+const HIDE = "hide";
+const DEFERRED = "deferred";
+const HIDE_CHILDREN = "hideChildren";
+
+const TYPE_IMAGE = "image";
+const TYPE_TEXT = "text";
+const TYPE_FOLDER = "folder";
+
+function ParameterAppender()
+{
+	if(app.documents.length == 0)
+	{
+		alert("未发现工作文档！")
+		return;
+	}
+	this.doc = app.activeDocument;
+}
+
+ParameterAppender.prototype.add = function(param, type)
+{
+	if(this.hasSelectedLayer() == false)
+	{
+		alert("请先选择目标图层！");
+		return;
+	}
+	
+	if(this.getLayerType() != type)
+	{
+		alert("参数 " + param + " 只能添加到 " + type + " 图层上！");
+		return;
+	}
+	
+	var paramArray = this.getLayerParam();
+	for(var i = 0; i < paramArray.length; i++)
+	{
+		if(paramArray[i] == param)
+		{
+			alert("不能重复添加 " + param + " 参数！");
+			return;
+		}
+	}
+	
+	var token = "_" + param;
+	if(paramArray.length != 0)
+	{
+		token = "|" + param;
+	}
+	this.doc.activeLayer.name = this.doc.activeLayer.name + token;
+}
+
+//判断是否有选择的图层，暂时只能使用该trick
+//没有选择图层的时候this.doc.activeLayer不为空，但是不能修改其名字
+ParameterAppender.prototype.hasSelectedLayer = function()
+{
+	var result = true;
+	try
+	{
+		this.doc.activeLayer.name = this.doc.activeLayer.name;	
+	}
+	catch(e)
+	{
+		result = false;
+	}
+	return result;
+}
+
+ParameterAppender.prototype.getLayerType = function()
+{
+	if(this.doc.activeLayer.typename == "LayerSet")
+	{
+		return TYPE_FOLDER;
+	}
+	if(this.doc.activeLayer.kind == LayerKind.TEXT)
+	{
+		return TYPE_TEXT;
+	}
+	return TYPE_IMAGE;
+}
+
+ParameterAppender.prototype.getLayerParam = function()
+{
+	var layertype = this.getLayerType();
+	var layerName = this.doc.activeLayer.name;
+	var splitArray = layerName.split("_");
+	if(layertype == TYPE_FOLDER)
+	{
+		if(splitArray.length <= 2)
+		{
+			return [];
+		}
+	}
+	if(splitArray.length <= 1)
+	{
+		return [];
+	}
+	var paramToken = splitArray[splitArray.length - 1];
+	return paramToken.split("|");
+}

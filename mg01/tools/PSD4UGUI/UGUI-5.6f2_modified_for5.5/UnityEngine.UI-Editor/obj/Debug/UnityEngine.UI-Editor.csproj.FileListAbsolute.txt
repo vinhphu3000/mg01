@@ -1,0 +1,8 @@
+C:\Users\ejoy\Documents\WorkRepo\tools\PSD4UGUI\UGUI-5.6f2\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI-Editor.csprojResolveAssemblyReference.cache
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Debug\UnityEngine.UI.dll
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Debug\UnityEngine.UI.pdb
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Debug\UnityEditor.dll
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Debug\UnityEngine.dll
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI-Editor.csprojResolveAssemblyReference.cache
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI.dll
+D:\work\SLUA_20170913\Tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI.pdb

@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementNumber { color: #2E9269; }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 2017/4/9 下午10:50:50<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All &nbsp;
+<br/>
+Left file: /Users/lixilong/Documents/ToCompare/53/UnityEngine.UI/UI/Core/Navigation.cs &nbsp;
+<br/>
+Right file: /Users/lixilong/Documents/ToCompare/current/UnityEngine.UI/UI/Core/Navigation.cs &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Serialization</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Serialization</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">Serializable</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">Serializable</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">struct</span> <span class="TextSegElementIdentifier">Navigation</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">struct</span> <span class="TextSegElementIdentifier">Navigation</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/*</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * This looks like it's not flags, but it is flags,</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * This looks like it's not flags, but it is flags,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * the reason is that Automatic is considered horizontal</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * the reason is that Automatic is considered horizontal</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * and verical mode combined</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * and verical mode combined</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; */</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">Flags</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">Flags</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">enum</span> <span class="TextSegElementIdentifier">Mode</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">enum</span> <span class="TextSegElementIdentifier">Mode</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">None</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// No navigation</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">None</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// No navigation</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Horizontal</span>&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Automatic horizontal navigation</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Horizontal</span>&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Automatic horizontal navigation</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Vertical</span>&nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">2</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Automatic vertical navigation</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Vertical</span>&nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">2</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Automatic vertical navigation</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Automatic</span>&nbsp;&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">3</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Automatic navigation in both dimensions</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Automatic</span>&nbsp;&nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">3</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Automatic navigation in both dimensions</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Explicit</span>&nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">4</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Explicitly specified only</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Explicit</span>&nbsp; &nbsp; <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">4</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementComment">// Explicitly specified only</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Which method of navigation will be used.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Which method of navigation will be used.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;mode&quot;</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;mode&quot;</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Mode</span> <span class="TextSegElementIdentifier">m_Mode</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Mode</span> <span class="TextSegElementIdentifier">m_Mode</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves up. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves up. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnUp&quot;</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnUp&quot;</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnUp</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnUp</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves down. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves down. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnDown&quot;</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnDown&quot;</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnDown</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnDown</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves left. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves left. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnLeft&quot;</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnLeft&quot;</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnLeft</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnLeft</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves right. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Game object selected when the joystick moves right. Used when navigation is set to &quot;Explicit&quot;.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnRight&quot;</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">FormerlySerializedAs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;selectOnRight&quot;</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">SerializeField</span><span class="TextSegElementOperator">]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnRight</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">m_SelectOnRight</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Mode</span>&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mode</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_Mode</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_Mode</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Mode</span>&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mode</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_Mode</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_Mode</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnUp</span>&nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnUp</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnUp</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnUp</span>&nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnUp</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnUp</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnDown</span>&nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnDown</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnDown</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnDown</span>&nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnDown</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnDown</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnLeft</span>&nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnLeft</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnLeft</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnLeft</span>&nbsp;&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnLeft</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnLeft</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnRight</span>&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnRight</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnRight</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Selectable</span> <span class="TextSegElementIdentifier">selectOnRight</span>&nbsp; <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_SelectOnRight</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementIdentifier">set</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementIdentifier">m_SelectOnRight</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">value</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Navigation</span> <span class="TextSegElementIdentifier">defaultNavigation</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Navigation</span> <span class="TextSegElementIdentifier">defaultNavigation</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">get</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">get</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">defaultNav</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Navigation</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">defaultNav</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Navigation</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; defaultNav.m_Mode = Mode.<span class="TextSegSigDiff">Automatic</span>;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; defaultNav.m_Mode = Mode.<span class="TextSegSigDiff">N</span><span class="TextSegSigDiff">one</span>;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">defaultNav</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">defaultNav</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

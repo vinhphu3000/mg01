@@ -1,0 +1,902 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementNumber { color: #2E9269; }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 2017/6/8 11:41:07<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All &nbsp;
+<br/>
+Left file: C:\Users\ejoy\Documents\WorkRepo\tools\PSD4UGUI\Unity-Technologies-ui-5.5.0f3\UnityEngine.UI\UI\Core\StencilMaterial.cs &nbsp;
+<br/>
+Right file: C:\Users\ejoy\Documents\WorkRepo\tools\PSD4UGUI\Unity-Technologies-ui-5.6.0f2\UnityEngine.UI\UI\Core\StencilMaterial.cs &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Collections</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Generic</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Collections</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Generic</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Rendering</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Rendering</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// Dynamic material class makes it possible to create custom materials on the fly on a per-Graphic basis,</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// Dynamic material class makes it possible to create custom materials on the fly on a per-Graphic basis,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// and still have them get cleaned up correctly.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// and still have them get cleaned up correctly.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">StencilMaterial</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">StencilMaterial</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">MatEntry</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">MatEntry</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">count</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">count</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilId</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilId</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">StencilOp</span> <span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">StencilOp</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Keep</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">StencilOp</span> <span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">StencilOp</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Keep</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">CompareFunction</span> <span class="TextSegElementIdentifier">compareFunction</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">CompareFunction</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Always</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">CompareFunction</span> <span class="TextSegElementIdentifier">compareFunction</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">CompareFunction</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Always</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">useAlphaClip</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">bool</span> <span class="TextSegElementIdentifier">useAlphaClip</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">ColorWriteMask</span> <span class="TextSegElementIdentifier">colorMask</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">ColorWriteMask</span> <span class="TextSegElementIdentifier">colorMask</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">MatEntry</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_List</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">MatEntry</span><span class="TextSegElementOperator">&gt;();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">MatEntry</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_List</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">MatEntry</span><span class="TextSegElementOperator">&gt;();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">Obsolete</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Use Material.Add instead.&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">)]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">Obsolete</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Use Material.Add instead.&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">true</span><span class="TextSegElementOperator">)]</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Add a new material using the specified base and stencil ID.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Add a new material using the specified base and stencil ID.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">StencilOp</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">CompareFunction</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">ColorWriteMask</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">StencilOp</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">CompareFunction</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">ColorWriteMask</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">255</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">255</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">255</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">255</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Add a new material using the specified base and stencil ID.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Add a new material using the specified base and stencil ID.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">StencilOp</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">CompareFunction</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">ColorWriteMask</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">StencilOp</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">CompareFunction</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">ColorWriteMask</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">((</span><span class="TextSegElementIdentifier">stencilID</span> <span class="TextSegElementOperator">&lt;=</span> <span class="TextSegElementNumber">0</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">colorWriteMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">ColorWriteMask</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">All</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">||</span> <span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">((</span><span class="TextSegElementIdentifier">stencilID</span> <span class="TextSegElementOperator">&lt;=</span> <span class="TextSegElementNumber">0</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">colorWriteMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">ColorWriteMask</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">All</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">||</span> <span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_Stencil&quot;</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_Stencil&quot;</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _Stencil property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _Stencil property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilOp&quot;</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilOp&quot;</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilOp property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilOp property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilComp&quot;</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilComp&quot;</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilComp property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilComp property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilReadMask&quot;</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilReadMask&quot;</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilReadMask property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilReadMask property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (!baseMat.HasProperty(&quot;_Stencil<span class="TextSegSigDiff">R</span><span class="TextSegSigDiff">ead</span>Mask&quot;))</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (!baseMat.HasProperty(&quot;_Stencil<span class="TextSegSigDiff">Write</span>Mask&quot;))</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilWriteMask property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _StencilWriteMask property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_ColorMask&quot;</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_ColorMask&quot;</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _ColorMask property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Debug</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">LogWarning</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Material &quot;</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementString">&quot; doesn't have _ColorMask property&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MatEntry</span> <span class="TextSegElementIdentifier">ent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MatEntry</span> <span class="TextSegElementIdentifier">ent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">baseMat</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">baseMat</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">stencilId</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">stencilID</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">stencilId</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">stencilID</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">operation</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">operation</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">compareFunction</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">compareFunction</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">compareFunction</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">compareFunction</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">readMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">readMask</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">readMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">readMask</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">writeMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">writeMask</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">writeMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">writeMask</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">colorMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">colorMask</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">count</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">count</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">newEnt</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">MatEntry</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">var</span> <span class="TextSegElementIdentifier">newEnt</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">MatEntry</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Material</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Material</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hideFlags</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">HideFlags</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HideAndDontSave</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">hideFlags</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">HideFlags</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HideAndDontSave</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">stencilId</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">stencilId</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">compareFunction</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">compareFunction</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">readMask</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">readMask</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">writeMask</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">writeMask</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">colorMask</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">colorMask</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">StencilOp</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Keep</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">writeMask</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">operation</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">StencilOp</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Keep</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">writeMask</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">string</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Format</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Stencil Id:{0}, Op:{1}, Comp:{2}, WriteMask:{3}, ReadMask:{4}, ColorMask:{5} AlphaClip:{6} ({7})&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">string</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Format</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Stencil Id:{0}, Op:{1}, Comp:{2}, WriteMask:{3}, ReadMask:{4}, ColorMask:{5} AlphaClip:{6} ({7})&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">baseMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">name</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_Stencil&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_Stencil&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">stencilID</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilOp&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilOp&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">operation</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilComp&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilComp&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">compareFunction</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilReadMask&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilReadMask&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">readMask</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilWriteMask&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_StencilWriteMask&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">writeMask</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_ColorMask&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_ColorMask&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span><span class="TextSegElementIdentifier">colorWriteMask</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// left for backwards compatability</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// left for backwards compatability</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_UseAlphaClip&quot;</span><span class="TextSegElementOperator">))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">HasProperty</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_UseAlphaClip&quot;</span><span class="TextSegElementOperator">))</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_UseAlphaClip&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementNumber">1</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetInt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;_UseAlphaClip&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementNumber">1</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">useAlphaClip</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnableKeyword</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;UNITY_UI_ALPHACLIP&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EnableKeyword</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;UNITY_UI_ALPHACLIP&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">else</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">else</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DisableKeyword</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;UNITY_UI_ALPHACLIP&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DisableKeyword</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;UNITY_UI_ALPHACLIP&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">newEnt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Remove an existing material, automatically cleaning it up if it's no longer in use.</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// Remove an existing material, automatically cleaning it up if it's no longer in use.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/// &lt;/summary&gt;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">Remove</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">Remove</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Material</span> <span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">customMat</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">customMat</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MatEntry</span> <span class="TextSegElementIdentifier">ent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MatEntry</span> <span class="TextSegElementIdentifier">ent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">continue</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">continue</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(--</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(--</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Misc</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DestroyImmediate</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Misc</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DestroyImmediate</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveAt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RemoveAt</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">ClearAll</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">ClearAll</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">++</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MatEntry</span> <span class="TextSegElementIdentifier">ent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MatEntry</span> <span class="TextSegElementIdentifier">ent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Misc</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DestroyImmediate</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Misc</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">DestroyImmediate</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">customMat</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ent</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">baseMat</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_List</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

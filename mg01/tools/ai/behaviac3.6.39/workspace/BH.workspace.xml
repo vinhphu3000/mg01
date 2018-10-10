@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="BH" folder="behaviors" export="export_config" language="cpp" version="3">
+  <export>
+    <cpp>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../export_code</folder>
+    </cpp>
+    <lua>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+    </lua>
+    <xml>
+      <isexported>False</isexported>
+    </xml>
+    <lua2>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+    </lua2>
+  </export>
+</workspace>

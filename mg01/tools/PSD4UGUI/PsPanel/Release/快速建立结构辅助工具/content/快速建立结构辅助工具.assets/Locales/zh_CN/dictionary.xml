@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asf locale="zh_CN" version="1.0" xmlns="http://ns.adobe.com/asf">
+  <str name="Configurator/ActionScript/ScriptFile/desc###10" translate="yes">
+    <val>Container</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###14" translate="yes">
+    <val>Slider</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###18" translate="yes">
+    <val>List</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###2" translate="yes">
+    <val>Label</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###22" translate="yes">
+    <val>ToggleGroup</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###26" translate="yes">
+    <val>Toggle</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###30" translate="yes">
+    <val>Button</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###34" translate="yes">
+    <val>Button</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###38" translate="yes">
+    <val>运行 JavaScript 文件</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###42" translate="yes">
+    <val>Language_tw</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###46" translate="yes">
+    <val>Language_kr</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###50" translate="yes">
+    <val>Language_cn</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###54" translate="yes">
+    <val>ScrollPage</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###58" translate="yes">
+    <val>ScrollView</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###6" translate="yes">
+    <val>Image</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/desc###62" translate="yes">
+    <val>ProgressBar</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###1" translate="yes">
+    <val>文本</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###13" translate="yes">
+    <val>滑动条</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###17" translate="yes">
+    <val>列表</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###21" translate="yes">
+    <val>单选按钮组</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###25" translate="yes">
+    <val>单选按钮</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###29" translate="yes">
+    <val>标签按钮</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###33" translate="yes">
+    <val>按钮</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###37" translate="yes">
+    <val>脚本文件</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###41" translate="yes">
+    <val>繁体版标签</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###45" translate="yes">
+    <val>韩文版标签</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###49" translate="yes">
+    <val>简体版标签</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###5" translate="yes">
+    <val>图片</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###53" translate="yes">
+    <val>滑动翻页</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###57" translate="yes">
+    <val>滚动面板</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###61" translate="yes">
+    <val>进度条</val>
+  </str>
+  <str name="Configurator/ActionScript/ScriptFile/name###9" translate="yes">
+    <val>容器</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###11" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###15" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###19" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###23" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###27" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###3" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###31" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###35" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###39" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###43" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###47" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###51" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###55" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###59" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###63" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/Attribute/visible/value###7" translate="yes">
+    <val>True</val>
+  </str>
+  <str name="Configurator/FlyoutMenu/about" translate="yes">
+    <val>关于</val>
+  </str>
+  <str name="Configurator/key_###12" translate="yes">
+    <val>Resources/ContainerCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###16" translate="yes">
+    <val>Resources/SliderCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###20" translate="yes">
+    <val>Resources/ListCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###24" translate="yes">
+    <val>Resources/ToggleGroupCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###28" translate="yes">
+    <val>Resources/ToggleCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###32" translate="yes">
+    <val>Resources/LabelButtonCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###36" translate="yes">
+    <val>Resources/ButtonCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###4" translate="yes">
+    <val>Resources/LabelCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###40" translate="yes">
+    <val/>
+  </str>
+  <str name="Configurator/key_###44" translate="yes">
+    <val>Resources/LanguageTwCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###48" translate="yes">
+    <val>Resources/LanguageKrCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###52" translate="yes">
+    <val>Resources/LanguageCnCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###56" translate="yes">
+    <val>Resources/ScrollPageCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###60" translate="yes">
+    <val>Resources/ScrollViewCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###64" translate="yes">
+    <val>Resources/ProgressBarCreator.jsx</val>
+  </str>
+  <str name="Configurator/key_###8" translate="yes">
+    <val>Resources/ImageCreator.jsx</val>
+  </str>
+  <str name="Configurator/watermark/htmlText" translate="yes">
+    <val>&lt;a href='http://labs.adobe.com/technologies/configurator/' target='_blank'&gt;使用 Configurator 创建&lt;/a&gt;</val>
+  </str>
+  <str name="Configurator/watermark/width" translate="yes">
+    <val>122</val>
+  </str>
+  <str name="Configurator/watermark/x" translate="yes">
+    <val>98</val>
+  </str>
+</asf>

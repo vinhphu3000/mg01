@@ -1,0 +1,336 @@
+﻿function JsonFileWriter(environment)
+{
+	this.environment = environment;
+}
+
+JsonFileWriter.prototype.writeParseResult = function(data)
+{
+	var json = this.formatContainer(data, "");
+	var jsonPath = this.environment.jsonFolderPath + "/" + this.environment.psdName + ".json";
+	this.writeJsonFile(jsonPath, json);
+}
+
+JsonFileWriter.prototype.formatContainer = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type", "param", "x", "y", "width", "height", "langCount"], [1, 1, 1, 0, 0, 0, 0, 0]) + ",";
+	result += "\n";
+	result += indent + "\t" + "\"children\":\n";
+	result += this.formatContainerChildren(data, indent + "\t");
+	result += indent + "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatLanguage = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type", "param"], [1, 1, 1]) + ",";
+	result += "\n";
+	result += indent + "\t" + "\"children\":\n";
+	result += this.formatContainerChildren(data, indent + "\t");
+	result += indent + "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatContainerChildren = function(data, indent)
+{
+	var result = indent + "[" + "\n";
+	var children = data.children;
+	children.reverse();
+	for(var i = 0; i < children.length; i++)
+	{
+		var child = children[i];
+		if(child.type == "Image" || child.type == "ScaleImage")
+		{
+			result += this.formatImage(child, indent + "\t");
+		}
+		else if(child.type == "Label")
+		{
+			result += this.formatLabel(child, indent + "\t");
+		}
+		else if(child.type == "Language")
+		{
+			result += this.formatLanguage(child, indent + "\t");
+		}
+		else
+		{
+			result += this.formatContainer(child, indent + "\t");
+		}
+		if(i < (children.length - 1))
+		{
+			result += ",\n";
+		}
+	}
+	result += "\n" + indent + "]\n";
+	return result;
+}
+
+JsonFileWriter.prototype.formatImage = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type", "param", "x", "y", "width", "height"], [1, 1, 1, 0, 0, 0, 0]) + ",";
+	for(var state in data)
+	{
+		if(data[state] instanceof Object)
+		{
+			if(data[state].link != undefined)
+			{
+				result += "\n" + indent + "\t" + "\"" + state + "\"" + ":" + this.formatImageState(data[state]) + ",";
+			}
+		}
+	}
+	result = result.substring(0, result.length - 1);
+	result += "\n" + indent + "}";
+	return result;
+}
+
+//TODO:简化参数处理方式
+JsonFileWriter.prototype.formatImageState = function(data)
+{
+	var result = "{" + this.atomFormatPropertyList(data, ["link", "x", "y", "width", "height", "alpha", "rotation", "param", "top", "right", "bottom", "left"], [1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]);
+	if(data.solidFill != undefined)
+	{
+		result += ",\"solidFill\":{" + this.atomFormatPropertyList(data.solidFill, ["mode", "color", "alpha"], [1, 1, 0]) + "}";
+	}
+	result += "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatLabel = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type", "param", "x", "y", "width", "height"], [1, 1, 1, 0, 0, 0, 0]) + ",";
+	for(var state in data)
+	{
+		if(data[state] instanceof Object)
+		{
+			result += "\n" + indent + "\t" + "\"" + state + "\"" + ":" + this.formatLabelState(data[state]) + ",";
+		}
+	}
+	result = result.substring(0, result.length - 1);
+	result += "\n" + indent + "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatLabelState = function(data)
+{
+	var result = "{" + this.atomFormatPropertyList(data, ["x", "y", "width", "height", "content", "param", "langId", "alignment", "lineSpacing"], [0, 0, 0, 0, 1, 1, 0, 1, 1]) + ",";
+	if(data.stroke != undefined)
+	{
+		result += "\"stroke\":{";
+		result += this.atomFormatPropertyList(data.stroke, ["distance", "color", "alpha"], [0, 1, 0]);
+		result += "},";	
+	}
+	if(data.shadow != undefined)
+	{
+		result += "\"shadow\":{";
+		result += this.atomFormatPropertyList(data.shadow, ["distance", "angle", "color", "alpha"], [0, 0, 1, 0]);
+		result += "},";
+	}
+	if(data.gradient != undefined)
+	{
+		result += "\n\"gradient\":{\"colors\":";
+		result += this.atomFormatList(data.gradient.colors);
+		result += ", \"precents\":";
+		result += this.atomFormatList(data.gradient.precents);
+		result += "},\n";
+	}
+	result += "\"format\":{";
+	result += this.atomFormatPropertyList(data.format, ["color", "font", "size", "bold"], [1, 1, 0, 0]);
+	result += "}}";
+	return result;
+}
+
+JsonFileWriter.prototype.writeExtractResult = function(data)
+{
+	var json = this.formatFolderNode(data, "");
+	var jsonPath = this.environment.jsonFolderPath + "/" + this.environment.psdName + "_extract.json";
+	this.writeJsonFile(jsonPath, json);
+}
+
+JsonFileWriter.prototype.formatFolderNode = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type"], [1, 1]) + ",";
+	result += "\n";
+	result += indent + "\t" + "\"children\":\n";
+	result += this.formatChildrenNode(data.children, indent + "\t");
+	result += indent + "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatChildrenNode = function(children, indent)
+{
+	var result = indent + "[" + "\n";
+	for(var i = 0; i < children.length; i++)
+	{
+		var child = children[i];
+		if(child.type == "folder")
+		{
+			result += this.formatFolderNode(child, indent + "\t");
+		}
+		else if(child.type == "text")
+		{
+			result += this.formatTextNode(child, indent + "\t");
+		}
+		else
+		{
+			result += this.formatImageNode(child, indent + "\t");
+		}
+		if(i < (children.length - 1))
+		{
+			result += ",\n";
+		}
+	}
+	result += "\n" + indent + "]\n";
+	return result;
+}
+
+JsonFileWriter.prototype.formatImageNode = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type", "x", "y", "width", "height", "alpha"], [1, 1, 0, 0, 0, 0, 0]) + ",";
+	if(data.effects.length > 0)
+	{
+		result += this.formatImageEffects(data.effects);	
+	}
+	result = result.substring(0, result.length - 1);
+	result += "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatImageEffects = function(effects)
+{
+	var result = "\"effects\":[";
+	for(var i = 0; i < effects.length; i++)
+	{
+		result += "{" + this.atomFormatPropertyList(effects[i], ["type", "mode", "color", "alpha"], [1, 1, 1, 0]) + "}" + ",";
+	}
+	result = result.substring(0, result.length - 1);
+	result += "],";
+	return result;
+}
+
+JsonFileWriter.prototype.formatTextNode = function(data, indent)
+{
+	var result = indent + "{";
+	result += this.atomFormatPropertyList(data, ["name", "type", "centerX", "centerY", "width", "height"], [1, 1, 0, 0, 0, 0]) + ",";
+	result += this.formatTextFragments(data.fragments);
+	if(data.effects.length > 0)
+	{
+		result += this.formatTextEffects(data.effects);	
+	}
+	result = result.substring(0, result.length - 1);
+	result += "}";
+	return result;
+}
+
+JsonFileWriter.prototype.formatTextEffects = function(effects)
+{
+	var result = "\"effects\":[";
+	for(var i = 0; i < effects.length; i++)
+	{
+		var effect = effects[i];
+		if(effect.type == "stroke")
+		{
+			result += "{" + this.atomFormatPropertyList(effects[i], ["type", "size", "color", "alpha"], [1, 0, 1, 0]) + "}" + ",";
+		}
+		else if(effect.type == "dropShadow")
+		{
+			result += "{" + this.atomFormatPropertyList(effects[i], ["type", "color", "alpha", "distance", "angle"], [1, 1, 0, 0, 0]) + "}" + ",";
+		}
+		else if(effect.type == "gradient")
+		{
+			result += "{\"colors\":";
+			result += this.atomFormatList(effect.colors);
+			result += ", \"precents\":";
+			result += this.atomFormatList(effect.precents);
+			result += "},";
+		}
+		else
+		{
+			alert(effect.type + "not support");
+		}
+	}
+	result = result.substring(0, result.length - 1);
+	result += "],";
+	return result;
+}
+
+JsonFileWriter.prototype.formatTextFragments = function(fragments)
+{
+	var result = "\"fragments\":[";
+	for(var i = 0; i < fragments.length; i++)
+	{
+		result += "{" + this.atomFormatPropertyList(fragments[i], ["text", "font", "size", "color"], [1, 1, 0, 1]) + "}" + ",";
+	}
+	result = result.substring(0, result.length - 1);
+	result += "],";
+	return result;
+}
+
+JsonFileWriter.prototype.writeJsonFile = function(path, content)
+{
+	var file = new File(path);
+	file.encoding = "UTF8";
+	if(file.open("w") == true)
+	{
+		file.write(content);
+		file.close();
+	}
+}
+
+//0为数字，1为字符串
+JsonFileWriter.prototype.atomFormatPropertyList = function(obj, propertyList, typeList)
+{
+	if(obj == null)
+	{
+		return {};
+	}
+	if(propertyList.length != typeList.length)
+	{
+		throw new Error("属性长度和属性类型长度不符~~");
+	}
+	var result = "";
+	for(var i = 0; i < propertyList.length; i++)
+	{
+		if(obj[propertyList[i]] == undefined)
+		{
+			continue;
+		}
+		result += this.atomFormatProperty(obj, propertyList[i], typeList[i]);
+		result += ",";
+	}
+	result = result.substring(0, result.length - 1);
+	return result;
+}
+
+JsonFileWriter.prototype.atomFormatProperty = function(obj, property, type)
+{
+	if(type == 0)
+	{
+		return "\"" + property + "\"" + ":" + obj[property];
+	}
+	return "\"" + property + "\"" + ":" + "\"" + obj[property] + "\"";
+}
+
+JsonFileWriter.prototype.atomFormatList = function(obj, itemtype)
+{
+	var result = "["
+	for (var i = 0; i < obj.length; i++)
+	{
+		if ("string" == typeof(obj[i]))
+		{
+			result += "\"" + obj[i] + "\"";
+		}
+		else
+		{
+			result += obj[i];
+		}
+
+		if (i != (obj.length - 1))
+			result += ",";
+	}
+	result += "]"
+	return result
+}

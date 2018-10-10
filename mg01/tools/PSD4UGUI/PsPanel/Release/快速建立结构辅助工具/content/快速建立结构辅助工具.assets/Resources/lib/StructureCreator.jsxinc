@@ -1,0 +1,70 @@
+﻿
+function StructureCreator()
+{
+	this.label = this.generateLabel(null, false);
+	this.image = this.generateImage(null, false);
+	
+	this.button = {"Button_{name}" : [this.generateImage("Image", "image", true)]};
+	this.labelButton = {"Button_{name}" : [this.generateLabel("Label", "label", true), this.generateImage("Image", "image", true)]};
+
+	this.toggle = {"Toggle_{name}" : [this.generateImage("checkmark", false), this.generateImage("image", true)]};
+	this.toggleGroup = {"ToggleGroup_{name}" : [this.toggle, this.toggle, this.toggle]};
+	this.container = {"Container_{name}":null};
+	this.list = {"List_{name}" : ["Container_item", "Container_template"]};
+	this.slider = {"Slider_{name}" : [this.generateImage("fill", false), this.generateImage("handle", true)]};
+	this.progressBar = {"ProgressBar_{name}" : [this.generateImage("bar", false), this.generateImage("background", false)]};
+
+	this.mask = this.generateImage("mask", false);
+	this.arrowContainer = {"Container_arrow": [this.generateImage("arrowPrev", false), this.generateImage("arrowNext", false)]};
+	this.contentContainer = {"Container_content" : null};
+	this.contentList = {"List_content" : ["Container_item"]};
+	this.pagerList = {"List_pager" : [{"Container_item" : [this.generateImage("spotlight", false), this.generateImage("identifier", false)]}]};
+	this.scrollView = {"ScrollView_{name}" : [this.mask, this.arrowContainer, this.contentContainer]};
+	this.scrollPage = {"ScrollPage_{name}" : [this.mask, this.arrowContainer, this.contentList, this.pagerList]};
+	this.languageCn = {"Language_cn" : null};
+	this.languageTw = {"Language_tw" : null};
+	this.languageKr = {"Language_kr" : null};
+}
+
+StructureCreator.prototype.generateLabel = function(name, fullState)
+{
+	return this.generateAtom("Label", name, fullState);
+}
+
+StructureCreator.prototype.generateImage = function(name, fullState)
+{
+	return this.generateAtom("Image", name, fullState);
+}
+
+StructureCreator.prototype.generateAtom = function(type, name, fullState)
+{
+	var result = {};
+	var name = (name == null) ? type + "_{name}" : type + "_" + name;
+	var states = (fullState == false) ? ["normal"] : ["normal", "over", "down", "disable"];
+	result[name] = states;
+	return result;
+}
+
+StructureCreator.prototype.create = function(parentLayerSets, obj)
+{
+	for(var property in obj)
+	{
+		var layerSet = parentLayerSets.add();
+		layerSet.name = property;
+		var subLayerSetList = obj[property];
+		var len = (subLayerSetList == null) ? 0 : subLayerSetList.length;
+
+		for(var i = (len - 1); i >= 0; i--)
+		{		
+			if((subLayerSetList[i] instanceof Object) == true)
+			{
+				this.create(layerSet.layerSets, subLayerSetList[i]);
+			}
+			else
+			{
+				var subLayerSet = layerSet.layerSets.add();
+				subLayerSet.name = subLayerSetList[i];
+			}
+		}
+	}
+}

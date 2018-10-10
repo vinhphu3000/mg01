@@ -1,0 +1,11 @@
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\out\PluginBehaviac.dll.config
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\out\PluginBehaviac.dll
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\out\PluginBehaviac.pdb
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\out\zh-CN\PluginBehaviac.resources.dll
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\PluginBehaviac.csprojResolveAssemblyReference.cache
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\PluginBehaviac.Properties.Resources.resources
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\PluginBehaviac.Properties.Resources.zh-CN.resources
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\PluginBehaviac.csproj.GenerateResource.Cache
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\zh-CN\PluginBehaviac.resources.dll
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\PluginBehaviac.dll
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\Plugins\PluginBehaviac\obj\Debug\PluginBehaviac.pdb

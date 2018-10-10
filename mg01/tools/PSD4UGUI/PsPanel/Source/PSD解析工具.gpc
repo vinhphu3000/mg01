@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpc defaultLocale="zh_CN" version="4" keySequence="16" currentLocale="zh_CN">
+  <product appid="PHSP" version="13" name="Photoshop CS6"/>
+  <target id="PHSP-13"/>
+  <ConfiguratorPanel name="PSD解析工具" width="320" height="170" init="doInit" close="doClose" persistent="True" extensionId="com.configurator.extension" extensionVersion="1.0.0" menuName="PSD解析工具" flyoutMenuAbout="$$$/Configurator/FlyoutMenu/about">
+    <onInit><![CDATA[]]></onInit>
+    <aboutBox><![CDATA[]]></aboutBox>
+    <extensionDescription><![CDATA[]]></extensionDescription>
+    <extensionAuthor><![CDATA[]]></extensionAuthor>
+    <onClose><![CDATA[]]></onClose>
+    <eventListeners>
+      <function id="doInit" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onInit"/>
+      </function>
+      <function id="doClose" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onClose"/>
+      </function>
+    </eventListeners>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###2" cfgVisible="$$$/Configurator/Attribute/visible/value###3" fileUrl="$$$/Configurator/key_###4" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="10" width="145" height="70"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###5" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###6" cfgVisible="$$$/Configurator/Attribute/visible/value###7" fileUrl="$$$/Configurator/key_###8" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="165" y="10" width="145" height="70"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###13" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###14" cfgVisible="$$$/Configurator/Attribute/visible/value###15" fileUrl="$$$/Configurator/key_###16" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="10" y="88" width="145" height="70"/>
+    <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###9" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###10" cfgVisible="$$$/Configurator/Attribute/visible/value###11" fileUrl="$$$/Configurator/key_###12" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="165" y="90" width="145" height="70"/>
+  </ConfiguratorPanel>
+</gpc>

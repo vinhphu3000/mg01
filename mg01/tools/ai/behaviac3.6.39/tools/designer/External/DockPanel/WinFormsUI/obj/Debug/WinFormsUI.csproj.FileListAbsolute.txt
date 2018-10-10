@@ -1,0 +1,8 @@
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.pdb
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\obj\Debug\WinFormsUI.csprojResolveAssemblyReference.cache
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Resources.resources
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Strings.resources
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\obj\Debug\WinFormsUI.csproj.GenerateResource.Cache
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\work\mg01\tools\ai\behaviac3.6.39\tools\designer\External\DockPanel\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.pdb

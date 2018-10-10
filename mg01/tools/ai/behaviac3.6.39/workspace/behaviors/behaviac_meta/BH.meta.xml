@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types />
+  <agents>
+    <agent classfullname="behaviac::Agent" DisplayName="behaviac::Agent" Desc="" IsRefType="true" IsImplemented="true">
+      <Method Name="VectorLength" DisplayName="VectorLength" Desc="VectorLength" Class="behaviac::Agent" ReturnType="int" ReturnTypeFullName="System.Int32" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="const IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+      </Method>
+      <Method Name="VectorAdd" DisplayName="VectorAdd" Desc="VectorAdd" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+        <Param Name="param1" Type="const System::Object&amp;" TypeFullName="System.Object" DisplayName="param1" Desc="param1" />
+      </Method>
+      <Method Name="VectorRemove" DisplayName="VectorRemove" Desc="VectorRemove" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+        <Param Name="param1" Type="const System::Object&amp;" TypeFullName="System.Object" DisplayName="param1" Desc="param1" />
+      </Method>
+      <Method Name="VectorContains" DisplayName="VectorContains" Desc="VectorContains" Class="behaviac::Agent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+        <Param Name="param1" Type="const System::Object&amp;" TypeFullName="System.Object" DisplayName="param1" Desc="param1" />
+      </Method>
+      <Method Name="VectorClear" DisplayName="VectorClear" Desc="VectorClear" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+      </Method>
+      <Method Name="LogMessage" DisplayName="LogMessage" Desc="LogMessage" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="const char*" TypeFullName="System.String" DisplayName="param0" Desc="param0" />
+      </Method>
+    </agent>
+    <agent classfullname="BaseAgent" base="behaviac::Agent" DisplayName="基础AI" Desc="基础AI" IsRefType="true" IsCustomized="true">
+      <Method Name="add_var" DisplayName="设置变量" Desc="设置变量" Class="BaseAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false">
+        <Param Name="key" Type="string" TypeFullName="System.String" DisplayName="名字" Desc="key" />
+        <Param Name="value" Type="int" TypeFullName="System.Int32" DisplayName="值" Desc="value" />
+      </Method>
+      <Method Name="get_var" DisplayName="获取变量" Desc="获取变量" Class="BaseAgent" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="false" istask="false">
+        <Param Name="key" Type="string" TypeFullName="System.String" DisplayName="名字" Desc="key" />
+      </Method>
+    </agent>
+    <agent classfullname="CommonAgent" base="BaseAgent" DisplayName="普通AI" Desc="普通AI" IsRefType="true" IsCustomized="true" />
+    <agent classfullname="DefaultMonsterAgent" base="CommonAgent" DisplayName="普通怪" Desc="普通怪" IsRefType="true" IsCustomized="true">
+      <Method Name="is_dead" DisplayName="是否死亡" Desc="is_dead" Class="DefaultMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="is_need_back" DisplayName="是否需要回圈" Desc="is_need_back" Class="DefaultMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="has_target" DisplayName="是否有目标" Desc="has_target" Class="DefaultMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="is_target_in_attack_range" DisplayName="目标是否在攻击范围内" Desc="is_target_in_attack_range" Class="DefaultMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="init_back" DisplayName="设置回圈参数" Desc="init_back" Class="DefaultMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="back" DisplayName="回圈" Desc="back" Class="DefaultMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="update_target" DisplayName="更新目标" Desc="update_target" Class="DefaultMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="attack_target" DisplayName="攻击目标" Desc="attack_target" Class="DefaultMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="move_to_target" DisplayName="移动到目标" Desc="move_to_target" Class="DefaultMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="patrol" DisplayName="巡逻" Desc="patrol" Class="DefaultMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="AdvancedAgent" base="DefaultMonsterAgent" DisplayName="高级AI" Desc="高级AI" IsRefType="true" IsCustomized="true">
+      <Method Name="move_to" DisplayName="移动到指定点" Desc="移动到指定点" Class="AdvancedAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="is_need_move_to" DisplayName="是否需要移动到某点" Desc="是否需要移动到某点" Class="AdvancedAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="init_move_to" DisplayName="初始化移动" Desc="初始化移动" Class="AdvancedAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="SpilingMonsterAgent" base="CommonAgent" DisplayName="木桩怪" Desc="木桩怪" IsRefType="true" IsCustomized="true">
+      <Method Name="update_hatred_list" DisplayName="清除超时仇恨对象" Desc="update_hatred_list" Class="SpilingMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="has_hatred_obj" DisplayName="是否有仇恨目标" Desc="has_hatred_obj" Class="SpilingMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="restore" DisplayName="复原" Desc="restore" Class="SpilingMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="TrapMonsterAgent" base="CommonAgent" DisplayName="陷阱" Desc="陷阱" IsRefType="true" IsCustomized="true">
+      <Method Name="ai_check_disappear" DisplayName="检查消失" Desc="ai_check_disappear" Class="TrapMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_check_effect_interval" DisplayName="检查生效间隔" Desc="ai_check_effect_interval" Class="TrapMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_find_target" DisplayName="寻找目标" Desc="ai_find_target" Class="TrapMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_take_effect" DisplayName="触发效果" Desc="ai_take_effect" Class="TrapMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="TriggerMonsterAgent" base="CommonAgent" DisplayName="触发器" Desc="触发器" IsRefType="true" IsCustomized="true">
+      <Method Name="ai_check_disappear" DisplayName="检查消失" Desc="ai_check_disappear" Class="TriggerMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_is_trigger" DisplayName="是否已经触发" Desc="ai_is_trigger" Class="TriggerMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="ai_find_target" DisplayName="寻找目标" Desc="ai_find_target" Class="TriggerMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_trigger" DisplayName="触发" Desc="ai_trigger" Class="TriggerMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_check_cast_spell" DisplayName="检查放技能" Desc="ai_check_cast_spell" Class="TriggerMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="ai_cast_spell" DisplayName="放技能" Desc="ai_cast_spell" Class="TriggerMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="DungeonNpcAgent" base="BaseAgent" DisplayName="副本NPC" Desc="副本NPC" IsRefType="true" IsCustomized="true">
+      <Method Name="ai_update" DisplayName="更新" Desc="ai_update" Class="DungeonNpcAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="ChargeMonsterAgent" base="CommonAgent" DisplayName="冲锋怪" Desc="冲锋怪" IsRefType="true" IsCustomized="true">
+      <Method Name="is_need_back" DisplayName="是否需要回圈" Desc="is_need_back" Class="ChargeMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="is_dead" DisplayName="是否死亡" Desc="is_dead" Class="ChargeMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="has_target" DisplayName="是否有目标" Desc="has_target" Class="ChargeMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="is_target_in_attack_range" DisplayName="目标是否在攻击范围内" Desc="is_target_in_attack_range" Class="ChargeMonsterAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="init_back" DisplayName="设置回圈参数" Desc="init_back" Class="ChargeMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="back" DisplayName="回圈" Desc="back" Class="ChargeMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="update_target" DisplayName="更新目标" Desc="update_target" Class="ChargeMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="attack_target" DisplayName="攻击目标" Desc="attack_target" Class="ChargeMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="move_to_target" DisplayName="移动到目标" Desc="move_to_target" Class="ChargeMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="patrol" DisplayName="巡逻" Desc="patrol" Class="ChargeMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="BuildingMonsterAgent" base="CommonAgent" DisplayName="建筑" Desc="建筑" IsRefType="true" IsCustomized="true">
+      <Method Name="update_hatred_list" DisplayName="清除超时仇恨对象" Desc="update_hatred_list" Class="BuildingMonsterAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="Player" base="BaseAgent" DisplayName="玩家" Desc="玩家" IsRefType="true" IsCustomized="true">
+      <Method Name="is_dead" DisplayName="是否死亡" Desc="is_dead" Class="Player" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="has_target" DisplayName="是否有目标" Desc="has_target" Class="Player" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="is_target_in_attack_range" DisplayName="目标是否在攻击范围内" Desc="is_target_in_attack_range" Class="Player" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="update_target" DisplayName="更新目标" Desc="update_target" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="attack_target" DisplayName="攻击目标" Desc="attack_target" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="move_to_target" DisplayName="移动到目标" Desc="move_to_target" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+      <Method Name="update_quest_target" DisplayName="更新任务目标" Desc="update_quest_target" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false" />
+    </agent>
+    <agent classfullname="FirstAgent" base="behaviac::Agent" DisplayName="FirstAgent" Desc="FirstAgent" IsRefType="true" IsCustomized="true">
+      <Member Name="Count" DisplayName="Count" Desc="成员数量" Class="FirstAgent" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="WaitTime" DisplayName="WaitTime" Desc="WaitTime" Class="FirstAgent" Type="float" TypeFullName="System.Single" defaultvalue="0" Static="false" Public="false" Readonly="false" />
+      <Method Name="SayHello" DisplayName="SayHello" Desc="SayHello" Class="FirstAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false" />
+      <Method Name="GetBool" DisplayName="GetBool" Desc="GetBool" Class="FirstAgent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false" />
+      <Method Name="SayFuck" DisplayName="SayFuck" Desc="SayFuck" Class="FirstAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="str1" Type="string" TypeFullName="System.String" DisplayName="str1" Desc="str1" />
+        <Param Name="num1" Type="int" TypeFullName="System.Int32" DisplayName="num1" Desc="num1" />
+        <Param Name="num2" Type="float" TypeFullName="System.Single" DisplayName="num2" Desc="num2" />
+        <Param Name="is_ok" Type="bool" TypeFullName="System.Boolean" DisplayName="is_ok" Desc="is_ok" />
+      </Method>
+      <Method Name="SetState" DisplayName="SetState" Desc="SetState" Class="FirstAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="state" Type="int" TypeFullName="System.Int32" DisplayName="state" Desc="state" />
+      </Method>
+      <Method Name="GetBTState" DisplayName="GetBTState" Desc="GetBTState" Class="FirstAgent" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="GetState" DisplayName="GetState" Desc="GetState" Class="FirstAgent" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false" />
+      <Method Name="GetWaitTime" DisplayName="GetWaitTime" Desc="GetWaitTime" Class="FirstAgent" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="true" istask="false" />
+      <Method Name="my_event" DisplayName="my_event" Desc="my_event" Class="FirstAgent" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="true">
+        <Param Name="p1" Type="int" TypeFullName="System.Int32" DisplayName="p1" Desc="" />
+      </Method>
+    </agent>
+    <agent classfullname="ut_mgr" base="behaviac::Agent" DisplayName="ut_mgr" Desc="ut_mgr" IsRefType="true" IsCustomized="true">
+      <Member Name="is_true" DisplayName="is_true" Desc="is_true" Class="ut_mgr" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="false" Readonly="false" />
+      <Member Name="battle_count" DisplayName="battle_count" Desc="battle_count" Class="ut_mgr" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="false" Readonly="false" />
+      <Member Name="op_depending" DisplayName="op_depending" Desc="op_depending" Class="ut_mgr" Type="string" TypeFullName="System.String" defaultvalue="" Static="false" Public="false" Readonly="false" />
+      <Method Name="log" DisplayName="log" Desc="log" Class="ut_mgr" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="str" Type="string" TypeFullName="System.String" DisplayName="str" Desc="str" />
+      </Method>
+      <Method Name="actionResult" DisplayName="actionResult" Desc="ActionResult" Class="ut_mgr" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="actionResult2" DisplayName="actionResult2" Desc="ActionResult2" Class="ut_mgr" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="state" Type="behaviac::EBTStatus" TypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" DisplayName="state" Desc="state" />
+      </Method>
+      <Method Name="get_wait_time" DisplayName="get_wait_time" Desc="get_wait_time" Class="ut_mgr" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="true" istask="false" />
+      <Method Name="check_is_true" DisplayName="check_is_true" Desc="check_is_true" Class="ut_mgr" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false" />
+      <Method Name="add_battle_count" DisplayName="add_battle_count" Desc="add_battle_count" Class="ut_mgr" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false" />
+      <Method Name="Action_MovTo" DisplayName="Action_MovTo" Desc="Action_MovTo" Class="ut_mgr" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="pos" Type="string" TypeFullName="System.String" DisplayName="pos" Desc="pos" />
+        <Param Name="speed" Type="int" TypeFullName="System.Int32" DisplayName="speed" Desc="speed" />
+      </Method>
+      <Method Name="get_mov_speed" DisplayName="get_mov_speed" Desc="get_mov_speed" Class="ut_mgr" ReturnType="string" ReturnTypeFullName="System.String" Static="false" Public="true" istask="false" />
+      <Method Name="get_tar_pos" DisplayName="get_tar_pos" Desc="get_tar_pos" Class="ut_mgr" ReturnType="string" ReturnTypeFullName="System.String" Static="false" Public="true" istask="false" />
+    </agent>
+    <agent classfullname="HomeOrderUnit" DisplayName="家园订单单位AI" Desc="HomeOrderUnit" IsRefType="true" IsCustomized="true">
+      <Member Name="get_unit_enter_pos_yaw()" DisplayName="获取排队位置的面向" Desc="获取排队位置的面向" Class="HomeOrderUnit" Type="float" TypeFullName="System.Single" defaultvalue="0" Static="false" Public="false" Readonly="false" />
+      <Member Name="EVT_QUEUE_CHANGE" DisplayName="&lt;事件&gt;排队位置变化" Desc="&lt;事件&gt;排队位置变化" Class="HomeOrderUnit" Type="string" TypeFullName="System.String" defaultvalue="EVT_QUEUE_CHANGE" Static="false" Public="false" Readonly="false" />
+      <Member Name="EVT_ORDER_DONE_CHANGE" DisplayName="&lt;事件&gt;订单完成状态改变" Desc="&lt;事件&gt;订单完成状态改变" Class="HomeOrderUnit" Type="string" TypeFullName="System.String" defaultvalue="EVT_ORDER_DONE_CHANGE" Static="false" Public="false" Readonly="false" />
+      <Method Name="is_order_done" DisplayName="订单是否已完成" Desc="is_order_done" Class="HomeOrderUnit" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false" />
+      <Method Name="is_in_queue" DisplayName="是否在排队位置" Desc="is_in_queue" Class="HomeOrderUnit" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false" />
+      <Method Name="set_in_queue" DisplayName="设置已排队" Desc="set_in_queue" Class="HomeOrderUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="b" Type="bool" TypeFullName="System.Boolean" DisplayName="b" Desc="b" />
+      </Method>
+      <Method Name="is_moving" DisplayName="是否移动中" Desc="is_moving" Class="HomeOrderUnit" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="get_queue_delay" DisplayName="获取排队行走的延时" Desc="获取排队行走的延时" Class="HomeOrderUnit" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="false" istask="false" />
+      <Method Name="turn_to_yaw" DisplayName="面相指定的方向" Desc="turn_to_yaw" Class="HomeOrderUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false">
+        <Param Name="y" Type="float" TypeFullName="System.Single" DisplayName="角度" Desc="" />
+      </Method>
+    </agent>
+    <agent classfullname="HomeUnit" base="behaviac::Agent" DisplayName="家园单位AI" Desc="家园单位AI" IsRefType="true" IsCustomized="true">
+      <Member Name="get_unit_enter_pos()" DisplayName="获取入口位置" Desc="get_enter_pos()" Class="HomeUnit" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="false" Readonly="false" />
+      <Member Name="get_unit_end_pos()" DisplayName="获取家园里的位置" Desc="get_unit_end_pos()" Class="HomeUnit" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="false" Readonly="false" />
+      <Method Name="delete_self" DisplayName="移除自己" Desc="delete_self" Class="HomeUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false" />
+      <Method Name="_idle_" DisplayName="&lt;行为&gt;空闲" Desc="idle" Class="HomeUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false" />
+      <Method Name="_roam_" DisplayName="&lt;行为&gt;闲逛" Desc="&lt;行为&gt;闲逛" Class="HomeUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="interval" Type="float" TypeFullName="System.Single" DisplayName="判断间隔" Desc="interval" />
+        <Param Name="range_min" Type="float" TypeFullName="System.Single" DisplayName="移动范围(最小)" Desc="range_min" />
+        <Param Name="range_max" Type="float" TypeFullName="System.Single" DisplayName="移动范围(最大)" Desc="range_max" />
+        <Param Name="chance" Type="float" TypeFullName="System.Single" DisplayName="移动几率" Desc="chance" />
+      </Method>
+      <Method Name="_mov_to_" DisplayName="&lt;行为&gt;移动到位置" Desc="_mov_to_" Class="HomeUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false">
+        <Param Name="pos" Type="int" TypeFullName="System.Int32" DisplayName="位置" Desc="" />
+      </Method>
+      <Method Name="_listen_" DisplayName="&lt;监听事件&gt;" Desc="&lt;监听事件&gt;" Class="HomeUnit" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false">
+        <Param Name="eventType" Type="string" TypeFullName="System.String" DisplayName="事件名称" Desc="" />
+        <Param Name="chlidPolicy" Type="int" TypeFullName="System.Int32" DisplayName="子节点策略(0、1)" Desc="" />
+        <Param Name="donePolicy" Type="int" TypeFullName="System.Int32" DisplayName="完成策略(0、1)" Desc="" />
+      </Method>
+    </agent>
+    <agent classfullname="HomeOrderUnit2" base="HomeUnit" DisplayName="家园订单单位" Desc="" IsRefType="true" IsCustomized="true">
+      <Member Name="get_unit_enter_pos_yaw()" DisplayName="获取排队位置的面向" Desc="获取排队位置的面向" Class="HomeOrderUnit2" Type="float" TypeFullName="System.Single" defaultvalue="0" Static="false" Public="false" Readonly="false" />
+      <Member Name="EVT_QUEUE_CHANGE" DisplayName="&lt;事件&gt;排队位置变化" Desc="&lt;事件&gt;排队位置变化" Class="HomeOrderUnit2" Type="string" TypeFullName="System.String" defaultvalue="EVT_QUEUE_CHANGE" Static="false" Public="false" Readonly="false" />
+      <Member Name="EVT_ORDER_DONE_CHANGE" DisplayName="&lt;事件&gt;订单完成状态改变" Desc="&lt;事件&gt;订单完成状态改变" Class="HomeOrderUnit2" Type="string" TypeFullName="System.String" defaultvalue="EVT_ORDER_DONE_CHANGE" Static="false" Public="false" Readonly="false" />
+      <Method Name="is_order_done" DisplayName="订单是否已完成" Desc="订单是否已完成" Class="HomeOrderUnit2" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="is_in_queue" DisplayName="是否在排队位置" Desc="是否在排队位置" Class="HomeOrderUnit2" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="set_in_queue" DisplayName="设置已排队" Desc="设置已排队" Class="HomeOrderUnit2" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false">
+        <Param Name="b" Type="bool" TypeFullName="System.Boolean" DisplayName="b" Desc="" />
+      </Method>
+      <Method Name="is_moving" DisplayName="是否移动中" Desc="是否移动中" Class="HomeOrderUnit2" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="false" istask="false" />
+      <Method Name="get_queue_delay" DisplayName="获取排队行走的延时" Desc="获取排队行走的延时" Class="HomeOrderUnit2" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="false" istask="false" />
+      <Method Name="turn_to_yaw" DisplayName="面相指定的方向" Desc="面相指定的方向" Class="HomeOrderUnit2" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="false" istask="false">
+        <Param Name="y" Type="float" TypeFullName="System.Single" DisplayName="y" Desc="" />
+      </Method>
+    </agent>
+  </agents>
+  <instances>
+    <instance name="Self" class="FirstAgent" DisplayName="Self" Desc="Self" />
+  </instances>
+</meta>

@@ -1,6 +1,6 @@
 /.svn/
 
-/tools/
+#/tools/
 
 /game/tech/Library/
 /game/tech/Log/

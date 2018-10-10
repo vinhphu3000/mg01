@@ -1,0 +1,1021 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementNumber { color: #2E9269; }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 2017/6/8 11:42:15<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All &nbsp;
+<br/>
+Left file: C:\Users\ejoy\Documents\WorkRepo\tools\PSD4UGUI\Unity-Technologies-ui-5.5.0f3\UnityEngine.UI\UI\Core\Utility\VertexHelper.cs &nbsp;
+<br/>
+Right file: C:\Users\ejoy\Documents\WorkRepo\tools\PSD4UGUI\Unity-Technologies-ui-5.6.0f2\UnityEngine.UI\UI\Core\Utility\VertexHelper.cs &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Collections</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Generic</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">using</span> <span class="TextSegElementIdentifier">System</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Collections</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Generic</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementIdentifier">namespace</span> <span class="TextSegElementIdentifier">UnityEngine</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">UI</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">VertexHelper</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementIdentifier">IDisposable</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">VertexHelper</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementIdentifier">IDisposable</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Positions</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Positions</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Color32</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Colors</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Color32</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Color32</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Colors</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Color32</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Uv0S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Uv0S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Uv1S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Uv1S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">private</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">List</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">ListPool</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">&gt;.</span><span class="TextSegSigDiff">Get</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">private</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">List</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">ListPool</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">&gt;.</span><span class="TextSegSigDiff">Get</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Normals</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Normals</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Tangents</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Tangents</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Indices</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">m_Indices</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Get</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">readonly</span> <span class="TextSegElementIdentifier">Vector4</span> <span class="TextSegElementIdentifier">s_DefaultTangent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">1.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">-</span><span class="TextSegElementNumber">1.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">readonly</span> <span class="TextSegElementIdentifier">Vector4</span> <span class="TextSegElementIdentifier">s_DefaultTangent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">1.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementOperator">-</span><span class="TextSegElementNumber">1.0</span><span class="TextSegElementIdentifier">f</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">readonly</span> <span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">s_DefaultNormal</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">back</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">readonly</span> <span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">s_DefaultNormal</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">back</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">VertexHelper</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">VertexHelper</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">VertexHelper</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Mesh</span> <span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">VertexHelper</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Mesh</span> <span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">vertices</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">vertices</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">colors32</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">colors32</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv2</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv2</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">AddRange</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">uv3</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">AddRange</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">uv4</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normals</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normals</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangents</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangents</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">GetIndices</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">));</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">GetIndices</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">));</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Clear</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Clear</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">currentVertCount</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">currentVertCount</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">currentIndexCount</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">currentIndexCount</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">get</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">PopulateUIVertex</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ref</span> <span class="TextSegElementIdentifier">UIVertex</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">PopulateUIVertex</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ref</span> <span class="TextSegElementIdentifier">UIVertex</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">position</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">position</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">color</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">color</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv0</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv0</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv1</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv1</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">vertex</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">uv2</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">[</span><span class="TextSegSigDiff">i</span><span class="TextSegSigDiff">];</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">vertex</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">uv3</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">[</span><span class="TextSegSigDiff">i</span><span class="TextSegSigDiff">];</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normal</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normal</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangent</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">SetUIVertex</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">UIVertex</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">SetUIVertex</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">UIVertex</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">[</span><span class="TextSegSigDiff">i</span><span class="TextSegSigDiff">]</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">vertex</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">uv2</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">[</span><span class="TextSegSigDiff">i</span><span class="TextSegSigDiff">]</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">vertex</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">uv3</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">vertex</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">FillMesh</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Mesh</span> <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">FillMesh</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Mesh</span> <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Clear</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span> <span class="TextSegElementOperator">&gt;=</span> <span class="TextSegElementNumber">65000</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Count</span> <span class="TextSegElementOperator">&gt;=</span> <span class="TextSegElementNumber">65000</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">throw</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">ArgumentException</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Mesh can not have more than 65000 vertices&quot;</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">throw</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">ArgumentException</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Mesh can not have more than 65000 vertices&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetVertices</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetVertices</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetColors</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetColors</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetUVs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetUVs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetUVs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetUVs</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mesh</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">SetUVs</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">2</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mesh</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">SetUVs</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">3</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetNormals</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetNormals</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetTangents</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetTangents</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetTriangles</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SetTriangles</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RecalculateBounds</span><span class="TextSegElementOperator">();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">mesh</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">RecalculateBounds</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">Dispose</span><span class="TextSegElementOperator">()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">Dispose</span><span class="TextSegElementOperator">()</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Color32</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Color32</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">ListPool</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">&gt;.</span><span class="TextSegSigDiff">Release</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">ListPool</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">&gt;.</span><span class="TextSegSigDiff">Release</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector3</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Vector4</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ListPool</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;.</span><span class="TextSegElementIdentifier">Release</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Color32</span> <span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span> <span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span> <span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector4</span> <span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Color32</span> <span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span> <span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span> <span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector4</span> <span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">-+</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv2S</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Add</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">zero</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">m_Uv3S</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Add</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">Vector2</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">zero</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Color32</span> <span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span> <span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Vector3</span> <span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Color32</span> <span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span> <span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">zero</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">s_DefaultNormal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">s_DefaultTangent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">Vector2</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">zero</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">s_DefaultNormal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">s_DefaultTangent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">UIVertex</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">UIVertex</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">v</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddTriangle</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">idx0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">idx1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">idx2</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddTriangle</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">idx0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">idx1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">idx2</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">idx0</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">idx0</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">idx1</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">idx1</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">idx2</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">idx2</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddUIVertexQuad</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">[]</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddUIVertexQuad</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">[]</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">currentVertCount</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">currentVertCount</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementNumber">4</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">++)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementNumber">4</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">++)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddVert</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">position</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">color</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">uv0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">uv1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">normal</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">].</span><span class="TextSegElementIdentifier">tangent</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddTriangle</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">startIndex</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">2</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddTriangle</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">startIndex</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">2</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddTriangle</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">2</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">3</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">AddTriangle</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">2</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">3</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">startIndex</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">indices</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">indices</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">CanvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">CanvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">indices</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">indices</span> <span class="TextSegElementOperator">!=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">indices</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">AddRange</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">indices</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddUIVertexTriangleStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">AddUIVertexTriangleStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">CanvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SplitUIVertexStreams</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">CanvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">SplitUIVertexStreams</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">verts</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">GetUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">stream</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">GetUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">List</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">UIVertex</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">stream</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">stream</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">stream</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">CanvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">CreateUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">stream</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">);</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">CanvasRenderer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">CreateUIVertexStream</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">stream</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Positions</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Colors</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv0S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Uv1S</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Normals</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Tangents</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">m_Indices</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

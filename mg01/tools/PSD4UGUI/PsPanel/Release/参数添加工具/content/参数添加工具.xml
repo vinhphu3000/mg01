@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpc defaultLocale="zh_CN" version="4" keySequence="1063" currentLocale="zh_CN">
+  <product appid="PHSP" version="13" name="Photoshop CS6"/>
+  <target id="PHSP-13"/>
+  <ConfiguratorPanel name="参数添加工具" width="230" height="330" init="doInit" close="doClose" persistent="True" extensionId="com.configurator.extension" extensionVersion="1.0.0" menuName="参数添加工具" flyoutMenuAbout="$$$/Configurator/FlyoutMenu/about">
+    <onInit><![CDATA[]]></onInit>
+    <aboutBox><![CDATA[]]></aboutBox>
+    <extensionDescription><![CDATA[]]></extensionDescription>
+    <extensionAuthor><![CDATA[]]></extensionAuthor>
+    <onClose><![CDATA[]]></onClose>
+    <eventListeners>
+      <function id="doInit" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onInit"/>
+      </function>
+      <function id="doClose" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onClose"/>
+      </function>
+    </eventListeners>
+    <tabnavigator _itemId="container_tabnavigator" toolTip="$$$/Configurator/Container/TabNavigator/desc###890" label="$$$/Configurator/key_###891" width="100%" height="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###892" x="0" y="0">
+      <vbox _itemId="container_vbox" toolTip="$$$/Configurator/Container/VBox/desc###893" label="$$$/Configurator/key_###894" height="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###895" width="100%">
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###896" label="$$$/Configurator/key_###897" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###898" x="0" y="213">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###899" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###900" cfgVisible="$$$/Configurator/Attribute/visible/value###901" fileUrl="$$$/Configurator/key_###902" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###903" label="$$$/Configurator/key_###904" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###905" x="1" y="180">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###906" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###907" cfgVisible="$$$/Configurator/Attribute/visible/value###908" fileUrl="$$$/Configurator/key_###909" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" left="10" x="4" y="8" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###903" label="$$$/Configurator/key_###910" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###911" x="-2" y="141">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###912" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###913" cfgVisible="$$$/Configurator/Attribute/visible/value###914" fileUrl="$$$/Configurator/key_###915" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" left="10" x="4" y="8" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###916" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###917" cfgVisible="$$$/Configurator/Attribute/visible/value###918" fileUrl="$$$/Configurator/key_###919" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" left="10" x="4" y="8" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###903" label="$$$/Configurator/key_###920" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###921" x="13" y="111">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###922" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###923" cfgVisible="$$$/Configurator/Attribute/visible/value###924" fileUrl="$$$/Configurator/key_###925" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" left="10" x="4" y="8" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###926" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###927" cfgVisible="$$$/Configurator/Attribute/visible/value###928" fileUrl="$$$/Configurator/key_###929" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" left="10" x="4" y="8" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###903" label="$$$/Configurator/key_###930" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###931" x="7" y="112">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###932" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###933" cfgVisible="$$$/Configurator/Attribute/visible/value###934" fileUrl="$$$/Configurator/key_###935" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="4" y="8" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###903" label="$$$/Configurator/key_###936" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###937" x="9" y="144">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###938" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###939" cfgVisible="$$$/Configurator/Attribute/visible/value###940" fileUrl="$$$/Configurator/key_###941" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="4" y="8" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###942" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###943" cfgVisible="$$$/Configurator/Attribute/visible/value###944" fileUrl="$$$/Configurator/key_###945" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="4" y="8" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###903" label="$$$/Configurator/key_###946" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###947" x="0" y="189">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###948" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###949" cfgVisible="$$$/Configurator/Attribute/visible/value###950" fileUrl="$$$/Configurator/key_###951" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" left="10" x="4" y="8" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###952" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###953" cfgVisible="$$$/Configurator/Attribute/visible/value###954" fileUrl="$$$/Configurator/key_###955" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="4" y="8" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###1053" label="$$$/Configurator/key_###1054" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###1055" x="-1" y="68">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1056" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1057" cfgVisible="$$$/Configurator/Attribute/visible/value###1058" fileUrl="$$$/Configurator/key_###1059" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="6" y="-2" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1060" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1061" cfgVisible="$$$/Configurator/Attribute/visible/value###1062" fileUrl="$$$/Configurator/key_###1063" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="6" y="-2" width="110" height="30"/>
+        </hbox>
+      </vbox>
+      <vbox _itemId="container_vbox" toolTip="$$$/Configurator/Container/VBox/desc###893" label="$$$/Configurator/key_###956" height="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###957" width="100%">
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###959" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###960" x="0" y="247">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###961" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###962" cfgVisible="$$$/Configurator/Attribute/visible/value###963" fileUrl="$$$/Configurator/key_###964" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###965" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###966" x="1" y="179">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###967" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###968" cfgVisible="$$$/Configurator/Attribute/visible/value###969" fileUrl="$$$/Configurator/key_###970" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###971" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###972" x="2" y="144">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###973" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###974" cfgVisible="$$$/Configurator/Attribute/visible/value###975" fileUrl="$$$/Configurator/key_###976" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###977" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###978" cfgVisible="$$$/Configurator/Attribute/visible/value###979" fileUrl="$$$/Configurator/key_###980" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###981" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###982" x="-3" y="108">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###983" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###984" cfgVisible="$$$/Configurator/Attribute/visible/value###985" fileUrl="$$$/Configurator/key_###986" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###987" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###988" x="1" y="79">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###989" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###990" cfgVisible="$$$/Configurator/Attribute/visible/value###991" fileUrl="$$$/Configurator/key_###992" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###993" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###994" cfgVisible="$$$/Configurator/Attribute/visible/value###995" fileUrl="$$$/Configurator/key_###996" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###997" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###998" x="0" y="35">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###999" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1000" cfgVisible="$$$/Configurator/Attribute/visible/value###1001" fileUrl="$$$/Configurator/key_###1002" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###958" label="$$$/Configurator/key_###1003" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###1004" x="-1" y="7">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1005" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1006" cfgVisible="$$$/Configurator/Attribute/visible/value###1007" fileUrl="$$$/Configurator/key_###1008" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1009" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1010" cfgVisible="$$$/Configurator/Attribute/visible/value###1011" fileUrl="$$$/Configurator/key_###1012" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="36" y="1" width="110" height="30"/>
+        </hbox>
+      </vbox>
+      <vbox _itemId="container_vbox" toolTip="$$$/Configurator/Container/VBox/desc###893" label="$$$/Configurator/key_###1013" height="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###1014" width="100%">
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###1015" label="$$$/Configurator/key_###1016" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###1017" x="0" y="36">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1018" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1019" cfgVisible="$$$/Configurator/Attribute/visible/value###1020" fileUrl="$$$/Configurator/key_###1021" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="6" y="-2" width="110" height="30"/>
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1022" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1023" cfgVisible="$$$/Configurator/Attribute/visible/value###1024" fileUrl="$$$/Configurator/key_###1025" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="6" y="-2" width="110" height="30"/>
+        </hbox>
+        <hbox _itemId="container_hbox" toolTip="$$$/Configurator/Container/HBox/desc###1015" label="$$$/Configurator/key_###1026" width="100%" cfgVisible="$$$/Configurator/Attribute/visible/value###1027" x="0" y="8">
+          <ps_script_file _itemId="ps_actionscript_scriptfile" label="$$$/Configurator/ActionScript/ScriptFile/name###1028" toolTip="$$$/Configurator/ActionScript/ScriptFile/desc###1029" cfgVisible="$$$/Configurator/Attribute/visible/value###1030" fileUrl="$$$/Configurator/key_###1031" icon="ps_script_file" overIcon="ps_script_file_r" showIcon="true" x="6" y="-2" width="110" height="30"/>
+        </hbox>
+      </vbox>
+    </tabnavigator>
+  </ConfiguratorPanel>
+  <images>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+    <image id="ps_script_file" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file"/>
+    <image id="ps_script_file_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_file_r"/>
+  </images>
+  <scripts/>
+  <elements>
+    <element id="ConfiguratorPanel" classRT="com.adobe.configurator2.component.panel.PanelRuntime">
+      <attr id="name" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="minWidth" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="minHeight" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="maxWidth" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="maxHeight" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="persistent" meta="Other" translate="y"/>
+      <attr id="extensionId" meta="Other" translate="y"/>
+      <attr id="extensionVersion" meta="Other" translate="y"/>
+      <attr id="extensionAuthor" meta="Other" translate="y"/>
+      <attr id="extensionDescription" meta="Other" translate="y"/>
+      <attr id="menuName" meta="Other" translate="y"/>
+      <attr id="init" meta="EVENT" translate="y"/>
+      <attr id="close" meta="EVENT" translate="y"/>
+      <attr id="onInit" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="aboutBox" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="flyoutMenuAbout" meta="Other" localize="y" translate="y"/>
+      <attr id="normalIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="rollOverIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="darkNormalIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="tabnavigator" classRT="com.adobe.configurator2.component.TabNavigatorRuntime">
+      <attr id="label" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="vbox" classRT="mx.containers.VBox">
+      <attr id="label" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="hbox" classRT="mx.containers.HBox">
+      <attr id="label" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="ps_script_file" classRT="com.adobe.configurator2.component.ScriptFileButtonRunTime">
+      <attr id="fileUrl" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="icon" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="label" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="showIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="mouseUpIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="mouseOverIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="mouseDownSkinIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+  </elements>
+  <properties>
+    <property id="LocaleSearchPath2">${HostProductRoot}/Locales/${LocaleID}/Support Files/Panels/${PanelName}/dictionary.xml</property>
+    <property id="LocaleSearchPath1">${HostProductRoot}/Locales/${LocaleID}/Support Files/Panels/fsPanels.xml</property>
+  </properties>
+</gpc>

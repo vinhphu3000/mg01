@@ -1,0 +1,9 @@
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\bin\Release\UnityEditor.UI.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\bin\Release\UnityEditor.UI.pdb
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\bin\Release\UnityEditor.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\bin\Release\UnityEngine.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\bin\Release\UnityEngine.UI.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\bin\Release\UnityEngine.UI.pdb
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\obj\Release\UnityEditor.UI.csprojResolveAssemblyReference.cache
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\obj\Release\UnityEditor.UI.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEditor.UI\obj\Release\UnityEditor.UI.pdb

@@ -1,0 +1,6 @@
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Release\UnityEngine.UI.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Release\UnityEngine.UI.pdb
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Release\UnityEditor.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\bin\Release\UnityEngine.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\obj\Release\UnityEngine.UI.dll
+D:\work\s\tools\PSD4UGUI\UGUI-5.6f2_modified_for5.5\UnityEngine.UI-Editor\obj\Release\UnityEngine.UI.pdb
