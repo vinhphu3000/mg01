@@ -22,6 +22,7 @@ function CardInfo:__ctor()
 
 	--颜色
 	self.color = 0
+	self.txt_color = false
 	--花色
 	self.pattern = false    --'1','2','-', ...
 	--排序权重
@@ -29,7 +30,8 @@ function CardInfo:__ctor()
 
 	--状态
 	self.state = 0
-	--持有者uuid
+	--持有者
+	self.owner = false
 	self.owner_uuid = 0
 
 	--位于那个卡牌区
@@ -41,11 +43,14 @@ function CardInfo:__ctor()
 	self.insert_ver = -1
 	self.insert_pos_arr = false
 
+
 end
 
 function CardInfo:init(color, card_cfg)
 
 	self.color = color
+	self.txt_color = dvc_util.get_card_txt_color(color)
+
 	self.state = CARD_STATE.CLOSE
 
 	self.pattern = card_cfg.pattern

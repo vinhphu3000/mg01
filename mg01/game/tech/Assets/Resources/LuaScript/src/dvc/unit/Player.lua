@@ -77,9 +77,16 @@ end
 --//-------∽-★-∽------∽-★-∽--------∽-★-∽卡牌相关∽-★-∽--------∽-★-∽------∽-★-∽--------//
 
 --//-------∽-★-∽--------∽-★-∽抽牌区∽-★-∽------∽-★-∽--------//
+
+function Player:get_draw_zone()
+	return self.m_draw_zone
+end
+
+
 --添加到抽牌区
 function Player:add_to_draw_zone(cardInfo)
 
+	cardInfo.owner = self
 	cardInfo.owner_uuid = self.m_info.uuid
 	cardInfo.zone_tp = CARD_ZONE_TP.DRAW
 
@@ -115,6 +122,10 @@ end
 
 --//-------∽-★-∽--------∽-★-∽游戏区∽-★-∽------∽-★-∽--------//
 
+function Player:get_game_zone()
+	return self.m_game_zone
+end
+
 --添加到游戏区
 function Player:add_to_game_zone(cardInfo, index)
 
@@ -135,9 +146,10 @@ function Player:add_to_game_zone(cardInfo, index)
 	end
 
 	self.m_draw_zone:remove(cardInfo)
+	self:notify(DVC_EVENT.PLAYER_DRAW_ZONE_CHANGE, self, cardInfo)
+
 	self.m_game_zone:insert(index, cardInfo)
 	self.m_game_zone_ver = self.m_game_zone_ver + 1
-
 	nslog.print_t(string.format('%s 把 %s 放到位置：%d \n' .. self:dump_game_zone(), self:get_label(), cardInfo.name, index))
 
 	self:notify(DVC_EVENT.PLAYER_GAME_ZONE_CHANGE, self, cardInfo)

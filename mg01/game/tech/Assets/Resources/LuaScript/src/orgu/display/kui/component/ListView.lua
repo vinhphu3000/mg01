@@ -27,14 +27,13 @@ local LayoutUtil = LayoutUtil
 function ListView:__dispose()
 
 	self:clear_all_item_views(true)
-	 self.m_itemPool:clear()
-
+	self.m_itemPool:clear()
 end
 
 --@setting {
 --  container                               摆放列表项的容器(gameobject或者uihandler)
 --  on_item_data(item_go, data, index)      单个列表项数据回调
---
+--  item_cls                                列表项视图类
 --}
 function ListView:__ctor( setting)
 
@@ -136,7 +135,7 @@ end
 function ListView:show_list()
 
 	local item_go
-	local index
+	local index = 0
 
 	local len = #self.m_dataList
 	for i=1, len do

@@ -29,7 +29,7 @@ function player_cache:__ctor()
 	--玩家列表（按index排序）
 	self.m_idxPlayers = false
 	--玩家列表（按actIdx排序）
-	self.m_actPlayers = false
+	self.m_act_players = false
 	--玩家数量
 	self.m_player_num = 0
 
@@ -117,7 +117,7 @@ function player_cache:clear_players()
 
 	self.m_uuid2player = false
 	self.m_idxPlayers = false
-	self.m_actPlayers =false
+	self.m_act_players =false
 
 	self.m_cur_player = false
 	self.m_my_player = false
@@ -127,6 +127,9 @@ function player_cache:get_player(uuid)
 	return self.m_uuid2player[uuid]
 end
 
+function player_cache:get_act_players()
+	return self.m_act_players
+end
 
 --//-------∽-★-∽------∽-★-∽--------∽-★-∽数据操作∽-★-∽--------∽-★-∽------∽-★-∽--------//
 
@@ -136,7 +139,7 @@ end
 --确定起始玩家
 function player_cache:decide_start_player()
 
-	self.m_actPlayers = {}
+	self.m_act_players = {}
 
 	local index
 	if self.m_first_player_type == FIRST_PLAYER_TP.RANDOM then
@@ -154,7 +157,7 @@ function player_cache:decide_start_player()
 		end
 		player = self.m_idxPlayers[j]
 		player.act_idx = i  --行动序号
-		self.m_actPlayers[#self.m_actPlayers+1] = player
+		self.m_act_players[#self.m_act_players+1] = player
 	end
 
 	--self:reset_first_player()
@@ -177,7 +180,7 @@ end
 
 --重置起始玩家
 function player_cache:reset_first_player()
-	local player = self.m_actPlayers[1]
+	local player = self.m_act_players[1]
 	self:set_cur_player(player)
 	return player
 end
@@ -185,7 +188,7 @@ end
 
 --获取起始玩家
 function player_cache:get_first_player()
-	return self.m_actPlayers[1]
+	return self.m_act_players[1]
 end
 
 --获取下一个行动的玩家
@@ -196,7 +199,7 @@ function player_cache:get_next_player()
 	end
 
 	local next_id = self.m_cur_idx + 1
-	return self.m_actPlayers[next_id]
+	return self.m_act_players[next_id]
 end
 
 

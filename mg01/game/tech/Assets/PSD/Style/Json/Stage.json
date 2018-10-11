@@ -23,26 +23,26 @@
 						}
 					]
 				},
-				{"name":"Deck","type":"Container","param":"MiddleRight","x":1646,"y":215,"width":238,"height":120,
+				{"name":"Deck","type":"Container","param":"MiddleRight","x":1615,"y":165.89805,"width":268,"height":211.10195,
 					"children":
 					[
-						{"name":"Text","type":"Label","param":"title","x":17,"y":0,"width":95,"height":36,
-							"normal":{"x":0,"y":0,"width":95,"height":36,"content":"牌库区","param":"title","format":{"color":"010101","font":"FZZhunYuan-M02","size":30,"bold":0}}
+						{"name":"Text","type":"Label","param":"title","x":0,"y":0,"width":153,"height":59.2039,
+							"normal":{"x":0,"y":0,"width":153,"height":59.2039,"content":"牌库区","param":"title","format":{"color":"010101","font":"FZZhunYuan-M02","size":50,"bold":0}}
 						},
-						{"name":"content","type":"Container","x":0,"y":48,"width":238,"height":72,
+						{"name":"content","type":"Container","x":2,"y":84.10195,"width":266,"height":127,
 							"children":
 							[
-								{"name":"item","type":"Button","param":"shrink","x":0,"y":0,"width":238,"height":72,
+								{"name":"item","type":"Button","param":"shrink","x":0,"y":0,"width":266,"height":127,
 									"children":
 									[
-										{"name":"Text","type":"Label","param":"MiddleLeft|overFlow","x":75,"y":19.5,"width":128,"height":36,
-											"normal":{"x":0,"y":0,"width":128,"height":36,"content":"剩余:000","param":"MiddleLeft|overFlow","alignment":"MiddleLeft","format":{"color":"FEFEFE","font":"FZZhunYuan-M02","size":30,"bold":0}}
+										{"name":"Text","type":"Label","param":"MiddleLeft|overFlow","x":100,"y":70.9801,"width":128,"height":38.0398,
+											"normal":{"x":0,"y":0,"width":128,"height":38.0398,"content":"剩余:000","param":"MiddleLeft|overFlow","alignment":"MiddleLeft","format":{"color":"FEFEFE","font":"FZZhunYuan-M02","size":31,"bold":0}}
 										},
-										{"name":"sharedAnchor","type":"Image","x":20,"y":11,"width":45,"height":49,
-											"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":45,"height":49,"alpha":100}
+										{"name":"sharedAnchor","type":"Image","x":20,"y":11,"width":73,"height":105,
+											"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":105,"alpha":100}
 										},
-										{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":238,"height":72,
-											"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":238,"height":72,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"A4A4A4","alpha":100}}
+										{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":266,"height":127,
+											"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":266,"height":127,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"A4A4A4","alpha":100}}
 										}
 									]
 								}
@@ -50,17 +50,157 @@
 						}
 					]
 				},
-				{"name":"Players","type":"Container","param":"MiddleLeft","x":0,"y":116,"width":1323,"height":964,
+				{"name":"Players","type":"Container","param":"MiddleLeft","x":38,"y":119,"width":1486,"height":947,
 					"children":
 					[
-
+						{"name":"content","type":"Container","x":0,"y":56,"width":1451,"height":210,
+							"children":
+							[
+								{"name":"item","type":"Container","x":0,"y":0,"width":1451,"height":210,
+									"children":
+									[
+										{"name":"Name","type":"Label","param":"MiddleLeft|overFlow","x":17,"y":16.6384,"width":152,"height":44.7232,
+											"normal":{"x":0,"y":0,"width":152,"height":44.7232,"content":"爆石流翔","param":"MiddleLeft|overFlow","alignment":"MiddleLeft","format":{"color":"FEFEFE","font":"FZZhunYuan-M02","size":37,"bold":0}}
+										},
+										{"name":"draw","type":"Container","x":1181,"y":16.58145,"width":259,"height":185.41855,
+											"children":
+											[
+												{"name":"Text","type":"Label","param":"MiddleLeft","x":10,"y":0,"width":227,"height":45.8371,
+													"normal":{"x":0,"y":0,"width":227,"height":45.8371,"content":"点击放入队列","param":"MiddleLeft","alignment":"MiddleLeft","format":{"color":"FFF600","font":"FZZhunYuan-M02","size":38,"bold":0}}
+												},
+												{"name":"content","type":"Container","x":13,"y":68.41855,"width":77,"height":105,
+													"children":
+													[
+														{"name":"carditem","type":"Container","x":0,"y":0,"width":77,"height":105,
+															"children":
+															[
+																{"name":"Info","type":"Container","x":2,"y":2,"width":73,"height":100,
+																	"children":
+																	[
+																		{"name":"face","type":"Container","param":"hide","x":0,"y":0,"width":73,"height":100,
+																			"children":
+																			[
+																				{"name":"Name","type":"Label","param":"MiddleCenter","x":10,"y":24.39805,"width":54,"height":59.2039,
+																					"normal":{"x":0,"y":0,"width":54,"height":59.2039,"content":"99","param":"MiddleCenter","alignment":"MiddleCenter","format":{"color":"000000","font":"FZZhunYuan-M02","size":50,"bold":0}}
+																				},
+																				{"name":"sharedAnchor","type":"Image","x":0,"y":0,"width":73,"height":100,
+																					"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":100,"alpha":100}
+																				}
+																			]
+																		},
+																		{"name":"back","type":"Container","x":0,"y":0,"width":73,"height":100,
+																			"children":
+																			[
+																				{"name":"sharedAnchor","type":"Image","x":0,"y":0,"width":73,"height":100,
+																					"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":100,"alpha":100}
+																				}
+																			]
+																		}
+																	]
+																},
+																{"name":"choose","type":"Container","param":"hide","x":2,"y":2,"width":73,"height":100,
+																	"children":
+																	[
+																		{"name":"Name","type":"Label","param":"MiddleCenter","x":20,"y":14,"width":35,"height":78,
+																			"normal":{"x":0,"y":0,"width":35,"height":78,"content":"点\n击","param":"MiddleCenter","alignment":"MiddleCenter","format":{"color":"000000","font":"FZZhunYuan-M02","size":30,"bold":0}}
+																		},
+																		{"name":"sharedAnchor","type":"Image","x":0,"y":0,"width":73,"height":100,
+																			"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":100,"alpha":100}
+																		}
+																	]
+																},
+																{"name":"select","type":"Container","param":"hide","x":0,"y":0,"width":77,"height":105,
+																	"children":
+																	[
+																		{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":77,"height":105,
+																			"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":77,"height":105,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4}
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":58.41855,"width":259,"height":127,
+													"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":259,"height":127,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"787878","alpha":98}}
+												}
+											]
+										},
+										{"name":"game","type":"Container","x":12,"y":75,"width":1149,"height":127,
+											"children":
+											[
+												{"name":"content","type":"Container","x":10,"y":11,"width":77,"height":105,
+													"children":
+													[
+														{"name":"carditem","type":"Container","x":0,"y":0,"width":77,"height":105,
+															"children":
+															[
+																{"name":"Info","type":"Container","x":2,"y":2,"width":73,"height":100,
+																	"children":
+																	[
+																		{"name":"face","type":"Container","param":"hide","x":0,"y":0,"width":73,"height":100,
+																			"children":
+																			[
+																				{"name":"Name","type":"Label","param":"MiddleCenter","x":10,"y":24.39805,"width":54,"height":59.2039,
+																					"normal":{"x":0,"y":0,"width":54,"height":59.2039,"content":"99","param":"MiddleCenter","alignment":"MiddleCenter","format":{"color":"000000","font":"FZZhunYuan-M02","size":50,"bold":0}}
+																				},
+																				{"name":"sharedAnchor","type":"Image","x":0,"y":0,"width":73,"height":100,
+																					"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":100,"alpha":100}
+																				}
+																			]
+																		},
+																		{"name":"back","type":"Container","x":0,"y":0,"width":73,"height":100,
+																			"children":
+																			[
+																				{"name":"sharedAnchor","type":"Image","x":0,"y":0,"width":73,"height":100,
+																					"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":100,"alpha":100}
+																				}
+																			]
+																		}
+																	]
+																},
+																{"name":"choose","type":"Container","param":"hide","x":2,"y":2,"width":73,"height":100,
+																	"children":
+																	[
+																		{"name":"Name","type":"Label","param":"MiddleCenter","x":20,"y":14,"width":35,"height":78,
+																			"normal":{"x":0,"y":0,"width":35,"height":78,"content":"点\n击","param":"MiddleCenter","alignment":"MiddleCenter","format":{"color":"000000","font":"FZZhunYuan-M02","size":30,"bold":0}}
+																		},
+																		{"name":"sharedAnchor","type":"Image","x":0,"y":0,"width":73,"height":100,
+																			"normal":{"link":"Shared.sharedAnchor","x":0,"y":0,"width":73,"height":100,"alpha":100}
+																		}
+																	]
+																},
+																{"name":"select","type":"Container","param":"hide","x":0,"y":0,"width":77,"height":105,
+																	"children":
+																	[
+																		{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":77,"height":105,
+																			"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":77,"height":105,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4}
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":1149,"height":127,
+													"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":1149,"height":127,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"787878","alpha":100}}
+												}
+											]
+										},
+										{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex","x":0,"y":0,"width":1451,"height":210,
+											"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":1451,"height":210,"alpha":100,"param":"4,4,4,4|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"000000","alpha":100}}
+										}
+									]
+								}
+							]
+						}
 					]
 				},
 				{"name":"Bg","type":"Container","param":"Stretch","x":0,"y":0,"width":1920,"height":1080,
 					"children":
 					[
 						{"name":"zhezhao","type":"Image","param":"4,4,4,4|Stretch|NoTex","x":0,"y":0,"width":1920,"height":1080,
-							"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":1920,"height":1080,"alpha":100,"param":"4,4,4,4|Stretch|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"6D6D6D","alpha":100}}
+							"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":1920,"height":1080,"alpha":100,"param":"4,4,4,4|Stretch|NoTex","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"777777","alpha":100}}
 						}
 					]
 				}

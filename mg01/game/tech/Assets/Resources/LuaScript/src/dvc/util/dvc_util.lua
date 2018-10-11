@@ -14,6 +14,7 @@ local _ENV = namespace(ns, using, modname)
 dvc_util = {}
 local dvc_util = dvc_util
 
+local CARD_COLOR = CARD_COLOR
 local CARD_COLOR_NAME = CARD_COLOR_NAME
 
 --===================module content========================
@@ -26,4 +27,14 @@ function dvc_util.get_card_name(color, pattern)
 end
 
 
-return dvc_util
+function dvc_util.get_card_txt_color(color)
+
+	if color == CARD_COLOR.WHITE then
+		return '000000'
+	elseif color == CARD_COLOR.BLACK then
+		return 'ffffff'
+	end
+	return '000000'
+end
+
+	return dvc_util

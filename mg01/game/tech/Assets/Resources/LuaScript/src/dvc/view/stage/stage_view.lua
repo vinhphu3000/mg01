@@ -25,6 +25,10 @@ local ui_map =
 		container_content = 'Container_content'
 	},
 
+	container_players = {"Container_Players",
+		container_content = 'Container_content'
+	},
+
 	label_time = "Container_Top/Label_TIme",
 	btn_quit = "Button_quit",
 
@@ -52,9 +56,14 @@ function stage_view:__ctor()
 
 	self.m_handler = self:get_handler(ui_root, ui_map)
 
-	self.m_deckListView = self:create(ListView, {
+	self.m_listViewDeck = self:create(ListView, {
 		container=self.m_handler.container_deck.container_content,
 		on_item_data = callback(self.update_deck_item, self),
+	})
+
+	self.m_listViewPlayer = self:create(ListView, {
+		container=self.m_handler.container_players.container_content,
+		item_cls = player_zone_item,
 	})
 
 end
@@ -63,6 +72,7 @@ function stage_view:__show(showObj, ...)
 
 
 	self:show_deck()
+	self:show_player_list()
 
 	stage_mgr:set_phase(STAGE_PHASE.DRAW)
 end
@@ -86,6 +96,7 @@ end
 function stage_view:__destroy()
 
     self:clear_deck()
+	self:clear_player_list()
 end
 
 function stage_view:on_deck_change(color)
@@ -100,12 +111,12 @@ function stage_view:show_deck()
 	self.m_color2deckItem = {}
 
 	local deckItem = stage_deck:get_deck_items()
-	self.m_deckListView:show(deckItem)
+	self.m_listViewDeck:show(deckItem)
 end
 
 function stage_view:clear_deck()
 
-	self.m_deckListView:destroy()
+	self.m_listViewDeck:destroy()
 
 	self.m_color2deckItem = false
 end
@@ -137,5 +148,25 @@ function stage_view:on_click_deck( color )
 
 	nslog.print_t('on_click_deck', color)
 end
+
+
+--//-------~★~-------~★~-------~★~玩家列表相关~★~-------~★~-------~★~-------//
+
+
+function stage_view:show_player_list()
+
+	local playerList = player_cache:get_act_players()
+
+	self.m_listViewPlayer:show(playerList)
+end
+
+function stage_view:clear_player_list()
+
+	self.m_listViewPlayer:destroy()
+
+end
+
+
+
 
 return stage_view

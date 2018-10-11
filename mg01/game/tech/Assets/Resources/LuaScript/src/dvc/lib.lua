@@ -23,3 +23,9 @@ require 'src.dvc.util.dvc_util'
 --proc
 require 'src.dvc.proc.lib'
 
+--view
+require 'src.dvc.view.stage.player_zone_item'
+require 'src.dvc.view.stage.player_card_item'
+--|util
+require 'src.dvc.view.util.HelpUi_dvc'
+
