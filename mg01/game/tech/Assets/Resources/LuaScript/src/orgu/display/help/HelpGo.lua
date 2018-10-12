@@ -65,8 +65,8 @@ function HelpGo.get_transform(go_)
 end
 
 --改变父级
-function HelpGo.set_parent(go_, toParent_)
-	return GameObjUtil.changeParent(go_, toParent_)
+function HelpGo.set_parent(go_, toParent_, worldPosStays_)
+	return GameObjUtil.changeParent(go_, toParent_, worldPosStays_)
 end
 
 --根据路径获取子对象
@@ -82,23 +82,23 @@ end
 
 
 --本地坐标
-function HelpGo.setLocalPos(go_, x, y, z)
+function HelpGo.set_local_pos(go_, x, y, z)
 	go_:SetLocalPos_(x, y, z)
 end
 
 --return x,y,z
-function HelpGo.getLocalPos(go_)
+function HelpGo.get_local_pos(go_)
 	return go_:GetLocalPos_()
 end
 
 
 --本地Scale
-function HelpGo.setLocalScale(go_, x, y, z)
+function HelpGo.set_local_scale(go_, x, y, z)
 	go_:SetLocalScale_(x, y, z)
 end
 
 --return x,y,z
-function HelpGo.getLocalScale_(go_)
+function HelpGo.get_local_scale_(go_)
 	return go_:GetLocalScale_()
 end
 

@@ -13,12 +13,14 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.5.4f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -281,6 +283,7 @@
     <Compile Include="Assets\Script\Org\ds\Struct\Padding.cs" />
     <Compile Include="Assets\Script\Org\ds\Struct\Size.cs" />
     <Compile Include="Assets\Script\Org\ds\ds_const.cs" />
+    <Compile Include="Assets\Script\Slua\LuaBindManual\Unity\Lua_UnityEngine_UI_Graphic_Manual.cs" />
     <Compile Include="Assets\Script\Slua\LuaBind\Custom\BindCustom.cs" />
     <Compile Include="Assets\Script\Slua\LuaBind\Custom\LuaDelegate_Circle_UpdateDelegate.cs" />
     <Compile Include="Assets\Script\Slua\LuaBind\Custom\LuaDelegate_Deleg_GetBundleInfoDelegate.cs" />

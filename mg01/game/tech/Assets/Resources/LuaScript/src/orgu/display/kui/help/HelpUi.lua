@@ -4,6 +4,8 @@
 local modname = "HelpUi"
 --==================global reference=======================
 
+local csKuiUtil = mg.org.KUI.KuiUtil
+
 --===================namespace========================
 local ns = "org.kui"
 local using = {--[[namespace1,...]]}
@@ -26,8 +28,11 @@ local function getSelectable(go)
     return go:NeedComponent_(CTypeName.Selectable)
 end
 
+local function getGraphic(go)
+	return go:NeedComponent_(CTypeName.Graphic)
+end
 
---===================module content========================.rect_transform_util
+--===================module content========================
 
 
 --能否用户交互
@@ -37,6 +42,26 @@ function HelpUi.set_interactable(go, b)
         return end
     a.interactable = b
 end
+
+--//-------~★~-------~★~-------~★~Graphic~★~-------~★~-------~★~-------//
+
+--设置32位颜色值 0xff0000ff
+function HelpUi.set_color32(go, i)
+	local a = getGraphic(go)
+	if not a then
+		return end
+	a:SetColor32_(i)
+end
+
+
+--设置24位颜色值 0xff0000
+function HelpUi.set_color24(go, i)
+	local a = getGraphic(go)
+	if not a then
+		return end
+	a:SetColor24_(i)
+end
+
 
 
 --//-------~★~-------~★~-------~★~RectTransform~★~-------~★~-------~★~-------//
@@ -58,16 +83,20 @@ function HelpUi.get_achPos(go_)
 	return go_:GetAchPos_()
 end
 
-
 --轴点
 function HelpUi.set_pivot(go_, x, y)
 	go_:SetPivot_(x, y)
+end
+
+function HelpUi.set_pivot_smart(go, x, y)
+	go:SetPivotSmart_(x,y)
 end
 
 --return x,y
 function HelpUi.get_pivot(go_)
 	return go_:GetPivot_()
 end
+
 
 
 --设置size

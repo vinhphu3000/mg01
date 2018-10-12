@@ -70,6 +70,7 @@ end
 
 function stage_view:__show(showObj, ...)
 
+	self.m_handler.label_time:set_color24(0xffff00)
 
 	self:show_deck()
 	self:show_player_list()

@@ -33,6 +33,8 @@ namespace mg.org
     public class ColorUtil
     {
 
+        static float c_factor = 1f / 255f;
+
         /// <summary>
         /// 转换为Color
         /// </summary>
@@ -43,12 +45,12 @@ namespace mg.org
             Color color;
             if (color_ is string)
             {
-                color = ParseColor(color_ as string);
+                color = ParseColor24(color_ as string);
             }
             else if (color_ is int)
             {
                 string str = Convert.ToString((int)color_, 16);
-                color = ParseColor(str);
+                color = ParseColor24(str);
             }
             else if (color_ is Color)
             {
@@ -118,27 +120,19 @@ namespace mg.org
 
 
         //-------∽-★-∽------∽-★-∽--------∽-★-∽颜色与字符串 转换∽-★-∽--------∽-★-∽------∽-★-∽--------//
-
-
-        [System.Diagnostics.DebuggerHidden]
-        [System.Diagnostics.DebuggerStepThrough]
-        static public Color ParseColor(string text, int offset = 0)
-        {
-            return ParseColor24(text, offset); 
-        }
+        
 
         /// <summary>
         /// Parse a RrGgBb color encoded in the string.
         /// </summary>
-        [System.Diagnostics.DebuggerHidden]
-        [System.Diagnostics.DebuggerStepThrough]
+        [System.Diagnostics.DebuggerHidden]         //输出的日志不打印此方法的堆栈
+        [System.Diagnostics.DebuggerStepThrough]    //单步调试代码时不要进入此方法
         static public Color ParseColor24(string text, int offset = 0)
         {
             int r = (MathUtil.HexToDecimal(text[offset]) << 4) | MathUtil.HexToDecimal(text[offset + 1]);
             int g = (MathUtil.HexToDecimal(text[offset + 2]) << 4) | MathUtil.HexToDecimal(text[offset + 3]);
             int b = (MathUtil.HexToDecimal(text[offset + 4]) << 4) | MathUtil.HexToDecimal(text[offset + 5]);
-            float f = 1f / 255f;
-            return new Color(f * r, f * g, f * b);
+            return new Color(c_factor * r, c_factor * g, c_factor * b);
         }
 
         /// <summary>
@@ -152,8 +146,7 @@ namespace mg.org
             int g = (MathUtil.HexToDecimal(text[offset + 2]) << 4) | MathUtil.HexToDecimal(text[offset + 3]);
             int b = (MathUtil.HexToDecimal(text[offset + 4]) << 4) | MathUtil.HexToDecimal(text[offset + 5]);
             int a = (MathUtil.HexToDecimal(text[offset + 6]) << 4) | MathUtil.HexToDecimal(text[offset + 7]);
-            float f = 1f / 255f;
-            return new Color(f * r, f * g, f * b, f * a);
+            return new Color(c_factor * r, c_factor * g, c_factor * b, c_factor * a);
         }
 
 
@@ -185,6 +178,13 @@ namespace mg.org
             return MathUtil.DecimalToHex24(i);
         }
 
+        [System.Diagnostics.DebuggerHidden]
+        [System.Diagnostics.DebuggerStepThrough]
+        static public string EncodeColor32(Color c)
+        {
+            int i = 0xFFFFFF & ColorToInt(c);
+            return MathUtil.DecimalToHex24(i);
+        }
 
 
     }

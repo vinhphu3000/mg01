@@ -587,6 +587,7 @@ public class Lua_UnityEngine_UI_Graphic : LuaObject {
 		addMember(l,"material",get_material,set_material,true);
 		addMember(l,"materialForRendering",get_materialForRendering,null,true);
 		addMember(l,"mainTexture",get_mainTexture,null,true);
+		Lua_UnityEngine_UI_Graphic_Manual.reg(l);
 		createTypeMetatable(l,null, typeof(UnityEngine.UI.Graphic),typeof(UnityEngine.EventSystems.UIBehaviour));
 	}
 }

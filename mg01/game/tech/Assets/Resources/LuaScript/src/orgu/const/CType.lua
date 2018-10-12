@@ -24,13 +24,14 @@ local ns_kui = "mg.org.KUI."
 
 CTypeName =
 {
-	--Unity         GetComponent(不带"Unity.")
-	Camera          ="Camera",
-	RectTransform   = "RectTransform",
+	--Unity             GetComponent(不带"Unity.")
+	Camera              = "Camera",
+	RectTransform       = "RectTransform",
 
-	--Unity.ui      GetComponent(不带"Unity.UI.")
-	Selectable      = "Selectable",
-	Image           = "Image",
+	--Unity.ui          GetComponent(不带"Unity.UI.")
+	Selectable          = "Selectable",
+	Image               = "Image",
+	Graphic             = "Graphic",
 
 	--kui
 	KText               = ns_kui.."KText",
@@ -59,6 +60,7 @@ CType = {
 	--Unity.ui  获取table时需要带"Unity.ui"
 	Selectable          = type_tbl(CTypeName.Selectable,    ns_unity_ui),
 	Image               = type_tbl(CTypeName.Image,         ns_unity_ui),
+	Graphic             = type_tbl(CTypeName.Graphic,         ns_unity_ui),
 
 
 	--mg.org.KUI

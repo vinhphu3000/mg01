@@ -61,7 +61,9 @@ public class Lua_mg_org_GameObjUtil : LuaObject {
 			checkType(l,1,out a1);
 			UnityEngine.GameObject a2;
 			checkType(l,2,out a2);
-			mg.org.GameObjUtil.ChangeParent(a1,a2);
+			System.Boolean a3;
+			checkType(l,3,out a3);
+			mg.org.GameObjUtil.ChangeParent(a1,a2,a3);
 			pushValue(l,true);
 			return 1;
 		}

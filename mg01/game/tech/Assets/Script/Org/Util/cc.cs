@@ -19,6 +19,7 @@ namespace mg.org
     public class cc
     {
 
+
         static public Vector2 p(float x_, float y_)
         {
             return new Vector2(x_, y_);
@@ -51,27 +52,6 @@ namespace mg.org
             return new Rect(x_, y_, width_, height_);
         }
 
-        static public Color c3b(int r_, int g_, int b_)
-        {
-            float f = 1f / 255f;
-            return new Color(r_ * f, g_ * f, b_ * f);
-        }
-
-        static public Color c4b(int r_, int g_, int b_, int a_)
-        {
-            float f = 1f / 255f;
-            return new Color(r_ * f, g_ * f, b_ * f, a_ * f);
-        }
-
-        static public Color c3f(float r_, float g_, float b_)
-        {
-            return new Color(r_, g_, b_);
-        }
-
-        static public Color c4f(float r_, float g_, float b_, float a_)
-        {
-            return new Color(r_, g_, b_, a_);
-        }
 
 
         static public Vector2 vec2(float x_ = 0, float y_ = 0)
@@ -94,9 +74,28 @@ namespace mg.org
             return new Quaternion(x_, y_, z_, w_);
         }
 
+        
+        static float c_factor = 1f / 255f;
 
-        
-        
+        static public Color c3b(int r_, int g_, int b_)
+        {
+            return new Color(r_ * c_factor, g_ * c_factor, b_ * c_factor);
+        }
+
+        static public Color c4b(int r_, int g_, int b_, int a_)
+        {
+            return new Color(r_ * c_factor, g_ * c_factor, b_ * c_factor, a_ * c_factor);
+        }
+
+        static public Color c3f(float r_, float g_, float b_)
+        {
+            return new Color(r_, g_, b_);
+        }
+
+        static public Color c4f(float r_, float g_, float b_, float a_)
+        {
+            return new Color(r_, g_, b_, a_);
+        }
 
 
     }

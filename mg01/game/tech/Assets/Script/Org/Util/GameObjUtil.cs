@@ -427,14 +427,15 @@ namespace mg.org
         /// </summary>
         /// <param name="child_"></param>
         /// <param name="parent_"></param>
-        static public void ChangeParent(GameObject child_,  GameObject parent_)
+        static public void ChangeParent(GameObject child_,  GameObject parent_, bool worldPositionStays_=true)
         {
-            if (child_.transform.parent == (parent_ ? parent_.transform : null))
+            Transform to = parent_ ? parent_.transform : null;
+            if (child_.transform.parent == to)
                 return;
 
-            RecordLocalMatrix(child_.transform);
-            child_.transform.SetParent( parent_ ? parent_.transform : null);
-            ApplyLocalMatrix(child_.transform);
+            //RecordLocalMatrix(child_.transform);
+            child_.transform.SetParent(to, worldPositionStays_);
+            //ApplyLocalMatrix(child_.transform);
         }
 
         //使本地矩阵相等
