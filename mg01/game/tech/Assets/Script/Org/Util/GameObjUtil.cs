@@ -427,7 +427,7 @@ namespace mg.org
         /// </summary>
         /// <param name="child_"></param>
         /// <param name="parent_"></param>
-        static public void ChangeParent(GameObject child_,  GameObject parent_, bool worldPositionStays_=true)
+        static public void ChangeParent(GameObject child_,  GameObject parent_, bool worldPositionStays_=false)
         {
             Transform to = parent_ ? parent_.transform : null;
             if (child_.transform.parent == to)
