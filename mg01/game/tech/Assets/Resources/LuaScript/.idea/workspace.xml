@@ -7,6 +7,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/dvc_const.lua" afterPath="$PROJECT_DIR$/src/dvc/dvc_const.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/lib.lua" afterPath="$PROJECT_DIR$/src/dvc/lib.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/model/player_cache.lua" afterPath="$PROJECT_DIR$/src/dvc/model/player_cache.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/proc/lib.lua" afterPath="$PROJECT_DIR$/src/dvc/proc/lib.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/proc/proc_const.lua" afterPath="$PROJECT_DIR$/src/dvc/proc/proc_const.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/proc/util/proc_map.lua" afterPath="$PROJECT_DIR$/src/dvc/proc/util/proc_map.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/unit/Player.lua" afterPath="$PROJECT_DIR$/src/dvc/unit/Player.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/util/CardInfo.lua" afterPath="$PROJECT_DIR$/src/dvc/util/CardInfo.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dvc/util/dvc_util.lua" afterPath="$PROJECT_DIR$/src/dvc/util/dvc_util.lua" />
@@ -16,6 +19,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orgu/display/kui/help/HelpUi.lua" afterPath="$PROJECT_DIR$/src/orgu/display/kui/help/HelpUi.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orgu/res/model/SprAtlasCache.lua" afterPath="$PROJECT_DIR$/src/orgu/res/model/SprAtlasCache.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/orgu/util/GameObjUtil.lua" afterPath="$PROJECT_DIR$/src/orgu/util/GameObjUtil.lua" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dvc/proc/player/proc_player_draw_card.lua" afterPath="$PROJECT_DIR$/src/dvc/proc/player/proc_cpu_draw_card.lua" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dvc/proc/player/proc_player_place_card.lua" afterPath="$PROJECT_DIR$/src/dvc/proc/player/proc_cpu_place_card.lua" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,93 +41,123 @@
     <expand />
     <select />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="proc_cpu_draw_card.lua" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_cpu_draw_card.lua">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="799">
+                    <caret line="47" column="3" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="47" selection-end-column="3" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelpUi.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpUi.lua">
+      <file leaf-file-name="stage_view.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/view/stage/stage_view.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+            <state relative-caret-position="850">
+              <caret line="59" column="61" lean-forward="true" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LayoutUtil.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/util/LayoutUtil.lua">
+      <file leaf-file-name="proc_act_each_player.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_act_each_player.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="527">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bev_base.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/ds/bevtree/bev/bev_base.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proc_map.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/util/proc_map.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="599">
+              <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="lib.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orgu/lib.lua">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/lib.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proc_ply_draw_card.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_ply_draw_card.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KuiUtil.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/util/KuiUtil.lua">
+      <file leaf-file-name="proc_cpu_place_card.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_cpu_place_card.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="391">
+              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CType.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orgu/const/CType.lua">
+      <file leaf-file-name="proc_const.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/proc_const.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="62" column="11" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="11" />
+            <state relative-caret-position="408">
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stage_view.lua" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dvc/view/stage/stage_view.lua">
+      <file leaf-file-name="proc_ply_place_card.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_ply_place_card.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="41" />
+            <state relative-caret-position="612">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stage_mgr.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dvc/model/stage_mgr.lua">
+      <file leaf-file-name="PlayerInfo.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dvc/util/PlayerInfo.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1194">
-              <caret line="102" column="3" lean-forward="false" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stage_deck.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dvc/model/stage_deck.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="157" column="23" lean-forward="false" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_card_item.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dvc/view/stage/player_card_item.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -139,14 +174,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>delete</find>
-      <find>onReferDispose</find>
-      <find>on_item_data</find>
-      <find>Observer</find>
-      <find>draw_card(</find>
-      <find>notifyWithEvent</find>
-      <find>refrsh_deck_cards</find>
-      <find>refrsh_deck_data</find>
       <find>PLAYER_ACT_SEQ_TYPE</find>
       <find>PLAYER_ACT_QUEUE</find>
       <find>playerActSeqType</find>
@@ -169,12 +196,16 @@
       <find>smart</find>
       <find>SetPivotSmart</find>
       <find>Kui</find>
+      <find>cancel</find>
+      <find>build_bev_by_id</find>
+      <find>cpu</find>
+      <find>proc__place_card</find>
+      <find>proc_player_place_card</find>
+      <find>proc_player_draw_card</find>
+      <find>PLAYER_DRAW_CARD</find>
+      <find>PLAYER_PLACE_CARD</find>
     </findStrings>
     <replaceStrings>
-      <replace>self.m_act_players</replace>
-      <replace>m_actPlayer2</replace>
-      <replace>m_idxPlayers</replace>
-      <replace>m_actPlayers</replace>
       <replace>setup_deck</replace>
       <replace>m_procDraw</replace>
       <replace>__build_bev</replace>
@@ -201,6 +232,10 @@
       <replace>m_act_queue</replace>
       <replace>player_zone_item</replace>
       <replace>m_listViewDeck</replace>
+      <replace>proc_cpu_place_card</replace>
+      <replace>proc_cpu_draw_card</replace>
+      <replace>CPU_DRAW_CARD</replace>
+      <replace>CPU_PLACE_CARD</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -211,12 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/orgu/display/kui/lib.lua" />
-        <option value="$PROJECT_DIR$/src/game/test/UnityTestPop.lua" />
-        <option value="$PROJECT_DIR$/src/org/ds/Array.lua" />
-        <option value="$PROJECT_DIR$/src/org/event/CBoard.lua" />
-        <option value="$PROJECT_DIR$/src/orgu/event/EvtCenter.lua" />
-        <option value="$PROJECT_DIR$/src/orgu/display/kui/util/LayoutUtil.lua" />
         <option value="$PROJECT_DIR$/src/orgu/module/CCModule.lua" />
         <option value="$PROJECT_DIR$/src/orgu/display/ImageAbs.lua" />
         <option value="$PROJECT_DIR$/src/orgu/display/kui/UIAbs.lua" />
@@ -262,6 +291,12 @@
         <option value="$PROJECT_DIR$/src/orgu/util/GameObjUtil.lua" />
         <option value="$PROJECT_DIR$/src/orgu/display/kui/util/KuiUtil.lua" />
         <option value="$PROJECT_DIR$/src/orgu/display/kui/help/HelpUi.lua" />
+        <option value="$PROJECT_DIR$/src/orgu/display/kui/help/HelpListView.lua" />
+        <option value="$PROJECT_DIR$/src/dvc/proc/player/proc_ply_draw_card.lua" />
+        <option value="$PROJECT_DIR$/src/dvc/proc/player/proc_ply_place_card.lua" />
+        <option value="$PROJECT_DIR$/src/dvc/proc/proc_const.lua" />
+        <option value="$PROJECT_DIR$/src/dvc/proc/util/proc_map.lua" />
+        <option value="$PROJECT_DIR$/src/dvc/proc/lib.lua" />
       </list>
     </option>
   </component>
@@ -271,7 +306,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-112" />
     <option name="y" value="181" />
     <option name="width" value="1936" />
@@ -296,8 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,6 +360,29 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dvc" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dvc" type="462c0819:PsiDirectoryNode" />
+              <item name="proc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dvc" type="462c0819:PsiDirectoryNode" />
+              <item name="proc" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dvc" type="462c0819:PsiDirectoryNode" />
+              <item name="proc" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
@@ -398,6 +454,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="bevtree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="bevtree" type="462c0819:PsiDirectoryNode" />
+              <item name="bev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="bevtree" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LuaScript" type="b2602c69:ProjectViewProjectNode" />
@@ -524,14 +606,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="helpgo&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/help/HelpGo.lua&#10;helptex&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpText.lua&#10;listv&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/component/ListView.lua&#10;help&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpImage.lua&#10;pla&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/dvc/unit/Player.lua&#10;imagea&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/ImageAbs.lua&#10;vec&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/ds/Vec2.lua&#10;geo&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/GeomUtil.lua&#10;uih&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/UIHandler.lua&#10;cb&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/event/CBoard.lua&#10;he&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpBtn.lua&#10;helpb&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpBtn.lua&#10;maine&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/game/main/MainEntry.lua&#10;helpim&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpImage.lua&#10;uipop&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/pop/UIPop.lua&#10;test&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/game/test/pop/TestPop4.lua&#10;Ref&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ref/Ref.lua&#10;refer&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ref/Refer.lua&#10;ccmo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/module/CCModule.lua&#10;layou&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/util/LayoutUtil.lua&#10;cbo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/event/CBoard.lua&#10;ima&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/ImageAbs.lua&#10;Arr&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/ArrayUtil.lua&#10;retain&#9;null&#9;null&#10;cla&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/class.lua&#10;ImageAbs&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/ImageAbs.lua&#10;cc&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/cc.lua&#10;HelpGo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/help/HelpGo.lua&#10;GameObjUtil&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/util/GameObjUtil.lua&#10;ref&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ref/Ref.lua&#10;lay&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/util/LayoutUtil.lua&#10;name&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/namespace/namespace.lua&#10;nam&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/namespace/namespace.lua&#10;poo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/pool/ClassPool.lua&#10;HelpUi&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpUi.lua&#10;listview&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpListView.lua&#10;main&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/game/main/MainEntry.lua&#10;popm&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/pop/UIPopMgr.lua&#10;sub&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/event/Subject.lua&#10;evt&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/event/EvtCenter.lua&#10;helpli&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpListView.lua&#10;ComponentUtil&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/util/ComponentUtil.lua&#10;KListViewLoop&#9;null&#9;null&#10;helpima&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpImage.lua&#10;helpin&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpInput.lua&#10;ActionEase&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/action/interval/ActionEase.lua&#10;set_to&#9;null&#9;null&#10;layout&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/util/LayoutUtil.lua&#10;bev_parent&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ds/bevtree/bev/bev_parent.lua&#10;stage_mg&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/dvc/model/stage_mgr.lua" />
+    <property name="SearchEverywhereHistoryKey" value="bev_m&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/ds/bevtree/util/bev_map.lua&#10;bev&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/ds/bevtree/bev/bev_base.lua&#10;stag&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/dvc/view/stage/stage_view.lua&#10;helpgo&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/help/HelpGo.lua&#10;helptex&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpText.lua&#10;listv&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/component/ListView.lua&#10;help&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpImage.lua&#10;pla&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/dvc/unit/Player.lua&#10;imagea&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/ImageAbs.lua&#10;vec&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/ds/Vec2.lua&#10;geo&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/GeomUtil.lua&#10;uih&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/UIHandler.lua&#10;cb&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/org/event/CBoard.lua&#10;he&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpBtn.lua&#10;helpb&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpBtn.lua&#10;maine&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/game/main/MainEntry.lua&#10;helpim&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpImage.lua&#10;uipop&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/pop/UIPop.lua&#10;test&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/tech/Assets/Resources/LuaScript/src/game/test/pop/TestPop4.lua&#10;Ref&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ref/Ref.lua&#10;refer&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ref/Refer.lua&#10;ccmo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/module/CCModule.lua&#10;layou&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/util/LayoutUtil.lua&#10;cbo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/event/CBoard.lua&#10;ima&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/ImageAbs.lua&#10;Arr&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/ArrayUtil.lua&#10;retain&#9;null&#9;null&#10;cla&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/class.lua&#10;ImageAbs&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/ImageAbs.lua&#10;cc&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/util/cc.lua&#10;HelpGo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/help/HelpGo.lua&#10;GameObjUtil&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/util/GameObjUtil.lua&#10;ref&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/ref/Ref.lua&#10;lay&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/util/LayoutUtil.lua&#10;name&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/namespace/namespace.lua&#10;nam&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/namespace/namespace.lua&#10;poo&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/pool/ClassPool.lua&#10;HelpUi&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpUi.lua&#10;listview&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpListView.lua&#10;main&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/game/main/MainEntry.lua&#10;popm&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/pop/UIPopMgr.lua&#10;sub&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/event/Subject.lua&#10;evt&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/event/EvtCenter.lua&#10;helpli&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpListView.lua&#10;ComponentUtil&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/util/ComponentUtil.lua&#10;KListViewLoop&#9;null&#9;null&#10;helpima&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpImage.lua&#10;helpin&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/orgu/display/kui/help/HelpInput.lua&#10;ActionEase&#9;FILE&#9;file://D:/work/mg01/game/tech/Assets/Resources/LuaScript/src/org/action/interval/ActionEase.lua&#10;set_to&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -713,14 +797,15 @@
       <workItem from="1539164737282" duration="1968000" />
       <workItem from="1539228501063" duration="2001000" />
       <workItem from="1539254985787" duration="16491000" />
+      <workItem from="1539745939432" duration="8520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511120000" />
+    <option name="totallyTimeSpent" value="519640000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -736,7 +821,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23187633" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454158" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -753,37 +838,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025974026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21375267" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -805,106 +859,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dvc/model/dvc_mgr.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/main/MainEntry.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="178" column="50" lean-forward="false" selection-start-line="178" selection-start-column="50" selection-end-line="178" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/test/pop/TestPop4.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="349" column="26" lean-forward="false" selection-start-line="349" selection-start-column="14" selection-end-line="349" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/util/functions.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpBtn.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/event/EvtCenter.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ref/AutoRelease.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-574">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/event/Observer.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/event/CBoard.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/util/functions.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/event/Subject.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="365" column="6" lean-forward="false" selection-start-line="365" selection-start-column="6" selection-end-line="365" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ref/Refer.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/lib.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ref/Ref.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="158" column="27" lean-forward="true" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/util/MathUtil.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-540">
@@ -944,15 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3791">
           <caret line="223" column="15" lean-forward="false" selection-start-line="223" selection-start-column="15" selection-end-line="223" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_player_draw_card.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2890">
           <caret line="170" column="30" lean-forward="false" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,7 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,16 +1004,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dvc/model/stage_deck.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="2669">
           <caret line="157" column="23" lean-forward="false" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpText.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1086,7 +1020,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dvc/model/stage_mgr.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1194">
+        <state relative-caret-position="1734">
           <caret line="102" column="3" lean-forward="false" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="3" />
           <folding />
         </state>
@@ -1104,13 +1038,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dvc/view/stage/player_card_item.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="629">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
@@ -1144,22 +1077,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/lib.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/orgu/const/CType.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="1054">
           <caret line="62" column="11" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orgu/util/GameObjUtil.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpListView.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="84" column="59" lean-forward="false" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpText.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpToggle.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpToggleGroup.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpUi.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1172,26 +1143,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/display/kui/help/HelpUi.lua">
+    <entry file="file://$PROJECT_DIR$/src/orgu/lib.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/orgu/util/GameObjUtil.lua">
+    <entry file="file://$PROJECT_DIR$/src/dvc/model/dvc_mgr.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="315">
+          <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ds/bevtree/bev/bev_base.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/util/PlayerInfo.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_cpu_place_card.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dvc/view/stage/stage_view.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="41" />
+        <state relative-caret-position="850">
+          <caret line="59" column="61" lean-forward="true" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_act_each_player.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_ply_place_card.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ds/bevtree/util/bev_map.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/proc_const.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_cpu_draw_card.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="3" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="47" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/util/proc_map.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/lib.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dvc/proc/player/proc_ply_draw_card.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>

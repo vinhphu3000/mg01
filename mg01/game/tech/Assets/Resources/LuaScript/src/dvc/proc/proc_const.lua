@@ -18,10 +18,16 @@ PROC_TYPE =
 
 	--每个玩家轮流行动
 	ACT_EACH_PLAYER = 'proc_act_each_player',
+
 	--玩家抽牌
-	PLAYER_DRAW_CARD = 'proc_player_draw_card',
+	PLY_DRAW_CARD = 'proc_ply_draw_card',
 	--玩家放牌
-	PLAYER_PLACE_CARD = 'proc_player_place_card',
+	PLY_PLACE_CARD = 'proc_ply_place_card',
+
+	--cpu抽牌
+	CPU_DRAW_CARD = 'proc_cpu_draw_card',
+	--cpu放牌
+	CPU_PLACE_CARD = 'proc_cpu_place_card',
 
 
 }

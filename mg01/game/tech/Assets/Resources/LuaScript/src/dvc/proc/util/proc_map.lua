@@ -27,21 +27,21 @@ _stg_ph_draw_ = function()
 		_wait_({time=2}),
 		_callback_({callback=a}),
 		--'player_in_ph_draw__'
-		_act_each_player_({proc_id='_player_proc_ph_draw_'})
+		_act_each_player_({proc_id='_ply_proc_ph_draw_cpu'})
 	)
 	return root
 end
 
 
 --玩家流程_抽牌阶段
-_player_proc_ph_draw_ = function()
+_ply_proc_ph_draw_ = function()
 
 	local card_num = CARD_COUNT_PLAYER_START
 
 	local root  = _seq_(nil,
 		_wait_({time=1}),
-		_loop_({count=card_num}, _player_proc_draw_card_() ),
-		_loop_({count=card_num}, _player_proc_place_card_() ),
+		_loop_({count=card_num}, _ply_proc_draw_card_() ),
+		_loop_({count=card_num}, _ply_proc_place_card_() ),
 		_wait_({time=1})
 	)
 	return root
@@ -49,24 +49,62 @@ end
 
 
 --玩家抽一张卡
-_player_proc_draw_card_ = function()
+_ply_proc_draw_card_ = function()
 
 	local root  = _seq_(nil,
 		_wait_({time=1}),
-		_player_draw_card_()
+		_cpu_draw_card_()
 	)
 	return root
 end
 
 --玩家选一张卡加入游戏区
-_player_proc_place_card_ = function()
+_ply_proc_place_card_ = function()
 
 	local root  = _seq_(nil,
 		_wait_({time=1}),
-		_player_place_card_()
+		_cpu_place_card_()
 	)
 	return root
 end
+
+
+--//-------∽-★-∽cpu∽-★-∽--------//
+
+--玩家流程_抽牌阶段
+_ply_proc_ph_draw_cpu = function()
+
+	local card_num = CARD_COUNT_PLAYER_START
+
+	local root  = _seq_(nil,
+	_wait_({time=1}),
+	_loop_({count=card_num}, _cpu_proc_draw_card_() ),
+	_loop_({count=card_num}, _cpu_proc_place_card_() ),
+	_wait_({time=1})
+	)
+	return root
+end
+
+--cpu抽一张卡
+_ply_proc_draw_card_cpu = function()
+
+	local root  = _seq_(nil,
+	_wait_({time=1}),
+	_cpu_draw_card_()
+	)
+	return root
+end
+
+--cpu选一张卡加入游戏区
+_ply_proc_place_card_cpu = function()
+
+	local root  = _seq_(nil,
+	_wait_({time=1}),
+	_cpu_place_card_()
+	)
+	return root
+end
+
 
 --//-------∽-★-∽------∽-★-∽--------∽-★-∽流程相关∽-★-∽--------∽-★-∽------∽-★-∽--------//
 
@@ -77,15 +115,25 @@ function _act_each_player_(setting)
 end
 
 --玩家抽牌
-function _player_draw_card_(setting)
-	local cfg = gen_bev_cfg(PROC_TYPE.PLAYER_DRAW_CARD, setting)
+function _ply_draw_card_(setting)
+	local cfg = gen_bev_cfg(PROC_TYPE.PLY_DRAW_CARD, setting)
 	return cfg
 end
 
---玩家放牌到game_zone
-function _player_place_card_(setting)
-	local cfg = gen_bev_cfg(PROC_TYPE.PLAYER_PLACE_CARD, setting)
+function _cpu_place_card_(setting)
+	local cfg = gen_bev_cfg(PROC_TYPE.PLY_PLACE_CARD, setting)
 	return cfg
 end
+
+function _cpu_draw_card_(setting)
+	local cfg = gen_bev_cfg(PROC_TYPE.CPU_DRAW_CARD, setting)
+	return cfg
+end
+
+function _cpu_place_card_(setting)
+	local cfg = gen_bev_cfg(PROC_TYPE.CPU_PLACE_CARD, setting)
+	return cfg
+end
+
 
 return _ENV
