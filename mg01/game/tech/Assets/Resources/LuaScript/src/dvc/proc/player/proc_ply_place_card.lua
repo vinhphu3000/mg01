@@ -34,6 +34,19 @@ end
 
 function proc_ply_place_card:__enter(input)
 
+	--nslog.print_t(string.format('<color=#ffdf58ff>%s 开始放牌</color>', self.m_player:get_label()))
+	nslog.print_t(string.format('<color=#ffdf58ff>自己 开始放牌</color>'))
+
+	local card = self.m_agent:get_first_in_draw_zone()
+	if card then
+
+		--nslog.print_t('放牌', card)
+
+		local pos_arr = self.m_agent:get_insert_pos_arr(card)
+		local index = math.random(1, #pos_arr) --没传入位置，随机一个
+		index = pos_arr[index]
+		self.m_agent:add_to_game_zone(card, index)
+	end
 
 end
 

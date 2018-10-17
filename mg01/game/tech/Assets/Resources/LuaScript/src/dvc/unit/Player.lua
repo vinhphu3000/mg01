@@ -47,7 +47,6 @@ function Player:__setup(playerInfo)
 	self.name = playerInfo.name
 	self.index = playerInfo.index
 
-
 end
 
 
@@ -69,6 +68,13 @@ function Player:clear_event()
 
 end
 
+function Player:is_cpu()
+	return self.m_info.is_cpu
+end
+
+function Player:is_me()
+	return self.m_info.is_me
+end
 
 function Player:get_label()
 	return string.format('%s(%d)', self.name, self.act_idx)

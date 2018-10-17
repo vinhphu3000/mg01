@@ -27,7 +27,7 @@ _stg_ph_draw_ = function()
 		_wait_({time=2}),
 		_callback_({callback=a}),
 		--'player_in_ph_draw__'
-		_act_each_player_({proc_id='_ply_proc_ph_draw_cpu'})
+		_act_each_player_({proc_id='_ply_proc_ph_draw_'})
 	)
 	return root
 end
@@ -53,7 +53,7 @@ _ply_proc_draw_card_ = function()
 
 	local root  = _seq_(nil,
 		_wait_({time=1}),
-		_cpu_draw_card_()
+		_ply_draw_card_()
 	)
 	return root
 end
@@ -63,7 +63,7 @@ _ply_proc_place_card_ = function()
 
 	local root  = _seq_(nil,
 		_wait_({time=1}),
-		_cpu_place_card_()
+		_ply_place_card_()
 	)
 	return root
 end
@@ -72,7 +72,7 @@ end
 --//-------∽-★-∽cpu∽-★-∽--------//
 
 --玩家流程_抽牌阶段
-_ply_proc_ph_draw_cpu = function()
+_ply_proc_ph_draw_cpu_ = function()
 
 	local card_num = CARD_COUNT_PLAYER_START
 
@@ -86,20 +86,20 @@ _ply_proc_ph_draw_cpu = function()
 end
 
 --cpu抽一张卡
-_ply_proc_draw_card_cpu = function()
+_cpu_proc_draw_card_ = function()
 
 	local root  = _seq_(nil,
-	_wait_({time=1}),
+	_wait_({time=0.2}),
 	_cpu_draw_card_()
 	)
 	return root
 end
 
 --cpu选一张卡加入游戏区
-_ply_proc_place_card_cpu = function()
+_cpu_proc_place_card_ = function()
 
 	local root  = _seq_(nil,
-	_wait_({time=1}),
+	_wait_({time=0.2}),
 	_cpu_place_card_()
 	)
 	return root
@@ -120,7 +120,7 @@ function _ply_draw_card_(setting)
 	return cfg
 end
 
-function _cpu_place_card_(setting)
+function _ply_place_card_(setting)
 	local cfg = gen_bev_cfg(PROC_TYPE.PLY_PLACE_CARD, setting)
 	return cfg
 end
