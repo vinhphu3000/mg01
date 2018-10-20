@@ -26,10 +26,9 @@ end
 
 function proc_act_each_player:__ctor()
 
-	self.m_actProc = false
-
+	self.m_proc = false
+	self.m_procRunning = false
 	self.m_id2proc = false
-	self.m_actProcRunning = false
 end
 
 
@@ -44,9 +43,9 @@ function proc_act_each_player:__clear()
 
 	super.__clear(self)
 
-	self:clear_act_proc()
+	self:clear_proc()
 
-	self.m_actProc = false
+	self.m_proc = false
 	self.m_id2proc = false
 end
 
@@ -70,19 +69,21 @@ end
 function proc_act_each_player:__update(input)
 
 
-	if self.m_actProcRunning then
+	if self.m_procRunning then
 
-		self.m_actProc:update(input)
-		if self.m_actProc:done() then
+		self.m_proc:update(input)
+		
+		if self.m_proc:done() then
 
-			self:clear_act_proc(input)
+			self:clear_proc(input)
 
 			local player = player_cache:get_next_player()   --下一个玩家
 			if player then
+
 				player_cache:set_cur_player(player)
 
 				local proc = self:get_act_proc(player)
-				self:run_act_proc(proc, input, player)
+				self:run_proc(proc, input, player)
 			else
 				self.m_state = BEV_STATE.SUCCESS
 			end
@@ -97,41 +98,42 @@ end
 function proc_act_each_player:__enter(input)
 
 	local player = player_cache:reset_first_player()
+
 	local proc = self:get_act_proc(player)
-	self:run_act_proc(proc, input, player)
+	self:run_proc(proc, input, player)
 end
 
 function proc_act_each_player:__exit(input)
 
-	self:clear_act_proc(input)
+	self:clear_proc(input)
 end
 
 --//-------∽-★-∽------∽-★-∽--------∽-★-∽玩家流程∽-★-∽--------∽-★-∽------∽-★-∽--------//
 
-function proc_act_each_player:run_act_proc(proc, input, player)
+function proc_act_each_player:run_proc(proc, input, player)
 
-	assert(not self.m_actProcRunning)
+	assert(not self.m_procRunning)
 
-	self.m_actProc = proc
-	self.m_actProc:setup(player)
-	self.m_actProc:set_board(self.m_board)
+	self.m_proc = proc
+	self.m_proc:setup(player)
+	self.m_proc:set_board(self.m_board)
 
-	self.m_actProc:enter(input)
-	self.m_actProcRunning = true
+	self.m_proc:enter(input)
+	self.m_procRunning = true
 end
 
-function proc_act_each_player:clear_act_proc(input)
+function proc_act_each_player:clear_proc(input)
 
-	if not self.m_actProcRunning then
+	if not self.m_procRunning then
 		return end
-	self.m_actProcRunning = false
+	self.m_procRunning = false
 
 	if input then
-		self.m_actProc:exit(input)
+		self.m_proc:exit(input)
 	end
 
-	self.m_actProc:clear()
-	self.m_actProc = false
+	self.m_proc:clear()
+	self.m_proc = false
 end
 
 

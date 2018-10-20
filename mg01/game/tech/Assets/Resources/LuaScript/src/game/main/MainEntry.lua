@@ -177,6 +177,10 @@ function MainEntry:enter_game()
     require("src.game.lib")
 
 	LevelMgr:load_async('SceneStart', false, self.on_level_loaded, self)
+
+	local name = '红叶秘境'
+	local aa = string.sub(name, 2)
+	nslog.print_r(aa)
 end
 
 function MainEntry:on_level_loaded(url_)
