@@ -42,6 +42,7 @@ class type_flag():
     ignored = 'ignored'  # 忽略此列
     server = 'server'  # 服务端专用
     client = 'client'  # 客户端专用
+    lang = 'lang'
 
 
 class formatstring(str):

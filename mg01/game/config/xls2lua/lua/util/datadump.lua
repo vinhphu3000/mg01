@@ -1,13 +1,3 @@
-
-local string_format = string.format
-local type = type
-local string_dump = string.dump
-local string_rep = string.rep
-
-local tostring = tostring
-local pairs = pairs
-local table_concat = table.concat
-
 local dumplua_closure = [[
 local closures = {}
 local function closure(t)
@@ -26,8 +16,7 @@ end
 local lua_reserved_keywords = {
 	'and', 'break', 'do', 'else', 'elseif', 'end', 'false', 'for',
 	'function', 'if', 'in', 'local', 'nil', 'not', 'or', 'repeat',
-	'return', 'then', 'true', 'until', 'while'
-}
+	'return', 'then', 'true', 'until', 'while' }
 
 local function keys(t)
 	local res = {}
@@ -47,7 +36,8 @@ local function keys(t)
 end
 
 local c_functions = {}
-for _,lib in pairs{'_G', 'string', 'table', 'math', 'io', 'os', 'coroutine', 'package', 'debug'} do
+for _,lib in pairs{'_G', 'string', 'table', 'math',
+	'io', 'os', 'coroutine', 'package', 'debug'} do
 	local t = _G[lib] or {}
 	lib = lib .. "."
 	if lib == "_G." then lib = "" end
@@ -58,52 +48,30 @@ for _,lib in pairs{'_G', 'string', 'table', 'math', 'io', 'os', 'coroutine', 'pa
 	end
 end
 
-function dump_tbl(value, varname, fastmode, ident)
-
-	local defined  = {}
-	local dumplua   --function
-
-	local keycache = {}
-	local strvalcache = {}
+function DataDumper(value, varname, fastmode, ident)
+	local defined, dumplua = {}
+	-- Local variables for speed optimization
+	local string_format, type, string_dump, string_rep =
+	string.format, type, string.dump, string.rep
+	local tostring, pairs, table_concat =
+	tostring, pairs, table.concat
+	local keycache, strvalcache, out, closure_cnt = {}, {}, {}, 0
 	setmetatable(strvalcache, {__index = function(t,value)
 		local res = string_format('%q', value)
 		t[value] = res
 		return res
 	end})
-
-	local out = {}
-	local closure_cnt =  0
-
 	local fcts = {
-		string = function(value)
-			return strvalcache[value]
-		end,
-
-		number = function(value)
-			return value
-		end,
-
-		boolean = function(value)
-			return tostring(value)
-		end,
-
-		['nil'] = function(value)
-			return 'nil'
-		end,
-
+		string = function(value) return strvalcache[value] end,
+		number = function(value) return value end,
+		boolean = function(value) return tostring(value) end,
+		['nil'] = function(value) return 'nil' end,
 		['function'] = function(value)
 			return string_format("loadstring(%q)", string_dump(value))
 		end,
-
-		userdata = function()
-			error("Cannot dump userdata")
-		end,
-
-		thread = function()
-			error("Cannot dump threads")
-		end,
+		userdata = function() error("Cannot dump userdata") end,
+		thread = function() error("Cannot dump threads") end,
 	}
-
 	local function test_defined(value, path)
 		if defined[value] then
 			if path:match("^getmetatable.*%)$") then
@@ -115,7 +83,6 @@ function dump_tbl(value, varname, fastmode, ident)
 		end
 		defined[value] = path
 	end
-
 	local function make_key(t, key)
 		local s
 		if type(key) == 'string' and key:match('^[_%a][_%w]*$') then
@@ -126,18 +93,14 @@ function dump_tbl(value, varname, fastmode, ident)
 		t[key] = s
 		return s
 	end
-
 	for _,k in ipairs(lua_reserved_keywords) do
 		keycache[k] = '["'..k..'"] = '
 	end
-
 	if fastmode then
-
 		fcts.table = function (value)
 			-- Table value
 			local numidx = 1
 			out[#out+1] = "{"
-
 			for key,val in pairs(value) do
 				if key == numidx then
 					numidx = numidx + 1
@@ -147,18 +110,13 @@ function dump_tbl(value, varname, fastmode, ident)
 				local str = dumplua(val)
 				out[#out+1] = str..","
 			end
-
 			if string.sub(out[#out], -1) == "," then
 				out[#out] = string.sub(out[#out], 1, -2);
 			end
-
 			out[#out+1] = "}"
-
 			return ""
 		end
-
 	else
-
 		fcts.table = function (value, ident, path)
 			if test_defined(value, path) then return "nil" end
 			-- Table value
@@ -195,7 +153,6 @@ function dump_tbl(value, varname, fastmode, ident)
 			end
 			return str
 		end
-
 		fcts['function'] = function (value, ident, path)
 			if test_defined(value, path) then return "nil" end
 			if c_functions[value] then
@@ -213,22 +170,18 @@ function dump_tbl(value, varname, fastmode, ident)
 			return "closure " .. dumplua(res, ident, "closures["..closure_cnt.."]")
 		end
 	end
-
 	function dumplua(value, ident, path)
 		return fcts[type(value)](value, ident, path)
 	end
-
 	if varname == nil then
 		varname = "return "
 	elseif varname:match("^[%a_][%w_]*$") then
 		varname = varname .. " = "
 	end
-
 	if fastmode then
 		setmetatable(keycache, {__index = make_key })
 		out[1] = varname
 		table.insert(out,dumplua(value, 0))
-
 		return table.concat(out)
 	else
 		setmetatable(keycache, {__index = make_key })
@@ -246,10 +199,9 @@ function dump_tbl(value, varname, fastmode, ident)
 		else
 			items[2] = varname
 		end
-
 		return table.concat(items)
 	end
-
 end
 
+return DataDumper
 

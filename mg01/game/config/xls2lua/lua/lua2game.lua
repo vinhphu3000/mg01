@@ -1,47 +1,12 @@
+--windows时，console为utf-8编码
 
 require 'lua.util.functions'
-require 'lua.util.dump_tbl'
+local dump_tbl = require 'lua.util.datadump'
 
-local argv = ... or 'nil'
-local argv = load( "return " .. argv )()
---print_t(argv)
+--local lxls = require "lxls"
+--local printf = lxls.xls_printf
+--local utf8_to_gbk = lxls.utf8_to_gbk
 
-argv = argv or {
-	is_client = true,
-	export_tmp = false,
-}
-
-local is_client = argv.is_client    --是否客户端导表
-local is_export_tmp = argv.export_tmp  --是否导出临时文件
-
-local path_raw_data_lua     --lua源文件目录
-local path_raw_data_enum    --枚举源文件目录
-local out_path_tmp          --合并后的lua临时输出目录
-local out_path_export       --处理后的lua输出目录
-local file_script_list      --导表脚本的路径
-local path_script_list      --导表脚本的路径
-
-local path_tmp = './tmp/'
-
-if is_client then
-	path_raw_data_enum  = path_tmp..'lua_data_enum_c/'
-	path_raw_data_lua   = path_tmp..'lua_data_raw_c/'
-	path_script_list    = './game_script_client/'
-	--
-	out_path_tmp        = path_tmp..'lua_data_tmp_c/'
-	out_path_export     = './game_data_client/'
-	--
-	file_script_list    = './client_script_list'
-else
-	path_raw_data_enum  = path_tmp..'lua_data_enum_s/'
-	path_raw_data_lua   = path_tmp..'lua_data_raw_s/'
-	path_script_list    = './game_script_server/'
-	--
-	out_path_tmp        = path_tmp..'lua_data_tmp_c/'
-	out_path_export     = './game_data_server/'
-	--
-	file_script_list    = './server_script_list'
-end
 
 local extra_include =
 {
@@ -51,20 +16,63 @@ local extra_include =
 
 package.cpath = package.cpath .. table.concat(extra_include, ';')
 
+
+local argv = ... or 'nil'
+local argv = load( "return " .. argv )()
+--print_t(argv)
+
+argv = argv or {}
+
+local is_client = argv.client or false    --是否客户端导表
+local is_export_tmp = argv.export_tmp or false --是否导出临时文件
+
+local path_raw_data_lua     --lua源文件目录
+local path_raw_data_enum    --枚举源文件目录
+local out_path_tmp          --合并后的lua临时输出目录
+local out_path_export       --处理后的lua输出目录
+local file_script_list      --导表脚本的路径
+local path_script_list      --导表脚本的路径
+
+local path_tmp          = './tmp/'
+if is_client then
+	path_raw_data_enum  = path_tmp..'lua_data_enum_c/'
+	path_raw_data_lua   = path_tmp..'lua_data_raw_c/'
+	--
+	out_path_tmp        = path_tmp..'lua_data_tmp_c/'
+	out_path_export     = './game_data_client/'
+	--
+	file_script_list    = './client_script_list'
+	path_script_list    = './game_script_client/'
+else
+	path_raw_data_enum  = path_tmp..'lua_data_enum_s/'
+	path_raw_data_lua   = path_tmp..'lua_data_raw_s/'
+	--
+	out_path_tmp        = path_tmp..'lua_data_tmp_s/'
+	out_path_export     = './game_data_server/'
+	--
+	file_script_list    = './server_script_list'
+	path_script_list    = './game_script_server/'
+end
+
+
 local log_str = ''
 
 local _print = print
 local function print(...)
 
-	_print(...)
-
 	local arr = {...}
-	log_str = log_str .. table.concat(arr, '\t') .. '\n'
+
+	local str = table.concat(arr, '\t')
+	--if lxls.target_os == "windows" then
+	--	str = lxls.utf8_to_gbk(str)
+	--end
+	_print(' ' .. str)  --不加空格console里第一个字会乱码？
+	log_str = log_str .. str .. '\n'
 end
 
 --//-------~★~-------~★~-------~★~os相关~★~-------~★~-------~★~-------//
 
-local gbk2utf8  --转utf8
+local gbk_to_utf8  --转utf8
 local lfs
 
 local OS_TYPE = {
@@ -97,9 +105,11 @@ local function check_os()
 
 	if os_type == OS_TYPE.WIN then
 		local encode_c = require('encode_c')
-		gbk2utf8 = encode_c.gbk2utf8
+		gbk_to_utf8 = encode_c.gbk2utf8
 	else
-		gbk2utf8 = function(str) return str end
+		gbk_to_utf8 = function(str)
+			return str
+		end
 	end
 
 	if os_type == OS_TYPE.MAC then
@@ -107,10 +117,7 @@ local function check_os()
 	else
 		lfs = require('lfs')
 	end
-
 end
-
-
 
 --//-------~★~-------~★~-------~★~枚举相关~★~-------~★~-------~★~-------//
 
@@ -166,6 +173,7 @@ local function get_file_suffix(path)
 	return suffix or '', name
 end
 
+--排除的键值
 local exclude_key =
 {
 	['______IS__MAP______'] = true,
@@ -178,7 +186,7 @@ local function scan_all_file(path, name2config, is_sub)
 
 	print('\nscan_all_file', path)
 
-	local dir_arr
+	local dir_arr = {}
 
 	for file_name in lfs.dir(path) do
 
@@ -187,14 +195,14 @@ local function scan_all_file(path, name2config, is_sub)
 		if file_type == 'directory' then
 
 			if file_name ~= "." and file_name ~= ".." then
-				dir_arr = dir_arr or {}
-				dir_arr[#dir_arr+1] = file_path .. '/'
+				dir_arr[#dir_arr+1] = {path=file_path .. '/'}
 			end
 
 		elseif file_type == 'file' then
+
 			local suffix, name = get_file_suffix(file_name)
 			if suffix == '.lua' then
-				print(gbk2utf8(file_name))
+				print(gbk_to_utf8(file_name))
 
 				local tbl = require(path .. name)
 				local real_name = name
@@ -207,10 +215,10 @@ local function scan_all_file(path, name2config, is_sub)
 					end
 
 					--print('是分表', gbk2utf8(name), gbk2utf8(real_name),_start,_end)
-					local config = name2config[gbk2utf8(real_name)]
+					local config = name2config[gbk_to_utf8(real_name)]
 					if config then
 						--已经有这个表了，合并
-						print(string.format('合并分表【%s】->【%s】', gbk2utf8(name), gbk2utf8(real_name)))
+						print(string.format('合并分表【%s】->【%s】', gbk_to_utf8(name), gbk_to_utf8(real_name)))
 
 						local old_tbl = config.tbl
 						for k, v in pairs(tbl) do
@@ -220,7 +228,7 @@ local function scan_all_file(path, name2config, is_sub)
 								if config.is_map then
 									--是字典
 									if old_tbl[k] then
-										assert(false, string.format('配置表【%s】 ID【%s】已经有值：%s',  gbk2utf8(name), k, t2str(old_tbl[k]) ))
+										assert(false, string.format('配置表【%s】 ID【%s】已经有值：%s',  gbk_to_utf8(name), k, t2str(old_tbl[k]) ))
 									else
 										old_tbl[k] = v
 									end
@@ -231,7 +239,7 @@ local function scan_all_file(path, name2config, is_sub)
 							end
 						end
 					else
-						print(string.format('--WARINNING--WARINNING--WARINNING--WARINNING-- 找不到原配置表【%s】',  gbk2utf8(real_name) ))
+						print(string.format('--WARINNING--WARINNING--WARINNING--WARINNING-- 找不到原配置表【%s】',  gbk_to_utf8(real_name) ))
 						--assert(false, error)
 					end
 				else
@@ -247,7 +255,7 @@ local function scan_all_file(path, name2config, is_sub)
 						tbl[k] = nil
 					end
 
-					name2config[gbk2utf8(real_name)] = config
+					name2config[gbk_to_utf8(real_name)] = config   --名字保存为utf8
 				end
 
 				--name = gbk2utf8(name)   --转为utf8再存
@@ -256,10 +264,8 @@ local function scan_all_file(path, name2config, is_sub)
 		end
 	end
 
-	if dir_arr then
-		for i=1, #dir_arr do
-			scan_all_file(dir_arr[i], name2config, true)
-		end
+	for i, obj in ipairs(dir_arr) do
+		scan_all_file(obj.path, name2config, true)
 	end
 
 end
@@ -276,9 +282,9 @@ local function scan_all_enum(path)
 		if file_type == 'file' then
 			local suffix, name = get_file_suffix(file_name)
 			if suffix == '.lua' then
-				print(gbk2utf8(file_path))
+				print(gbk_to_utf8(file_path))
 				local key2value = require(path .. name)
-				name = gbk2utf8(name)   --转为utf8再存，不然Enum.get时会编码不对
+				name = gbk_to_utf8(name)   --转为utf8再存，不然Enum.get时会编码不对
 				enum2tbl[name] = key2value
 
 				local value2value = {}
@@ -291,7 +297,6 @@ local function scan_all_enum(path)
 	end
 end
 
-local dump_tbl = dump_tbl
 --导出配置文件
 local function export_all_config(name2config, out_path)
 
@@ -299,7 +304,7 @@ local function export_all_config(name2config, out_path)
 
 	for name, config in pairs(name2config) do
 		local path = out_path .. config.file_name .. '.lua'
-		print(gbk2utf8(path), '', config.desc)
+		print(gbk_to_utf8(path), '', config.desc)
 		local str = dump_tbl(config.tbl)
 		str = string.format('--%s\n',  config.desc) .. str  --加上注释
 		local out_file = io.open(path, 'wb')
@@ -343,7 +348,7 @@ local function excute_script_list(script_path, name2config)
 
 			print(string.format('【%s】 -> %s', table.concat(desc_arr, '，'), export_name))
 
-			local func = require(path_script_list..export_name)
+			local func = require(path_script_list..export_name) --获取导表脚本
 			local tbl = func(ms)
 
 			new = {
@@ -373,7 +378,7 @@ local function excute_script_list(script_path, name2config)
 	return name2new
 end
 
-print('[main.lua] enter')
+print('[lua2game] enter')
 
 local function main()
 
@@ -404,4 +409,4 @@ end
 
 main()
 
-print('\n[main.lua] complete')
+print('\n[lua2game] complete')

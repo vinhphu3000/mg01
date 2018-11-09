@@ -16,7 +16,7 @@ local function main(ms)
 		cp.sections[item.section] = item
 	end
 
-	assert(false, '为什么啊')
+	--assert(false, '为什么啊')
 
 	return ret
 end

@@ -31,7 +31,7 @@ if ERRORLEVEL 1 (
 )
 
 
-.\tools\lua\lua.exe lua/main.lua {is_client=true,export_tmp=false}
+.\tools\lua\lua.exe lua/lua2game.lua {client=true,export_tmp=false}
 ::lua5.1.exe lua/main.lua client
 
 
@@ -47,4 +47,4 @@ color 02
 echo.
 echo CONVERT SUCCESS!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-::pause
+pause

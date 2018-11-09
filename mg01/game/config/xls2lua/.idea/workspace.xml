@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="1bcd03f1-5018-4b5a-aef1-d09b3051f817" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/lua/encode_c.dll" afterPath="$PROJECT_DIR$/tools/lua/encode_c.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/lua/lfs.dll" afterPath="$PROJECT_DIR$/tools/lua/lfs.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/lua/lpeg.dll" afterPath="$PROJECT_DIR$/tools/lua/lpeg.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/lua/lua.exe" afterPath="$PROJECT_DIR$/tools/lua/lua.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/lua/lua5.3.2.dll" afterPath="$PROJECT_DIR$/tools/lua/lua5.3.2.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game_script_client/card_war_config.lua" afterPath="$PROJECT_DIR$/game_script_client/card_war_config.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client_script_list.lua" afterPath="$PROJECT_DIR$/client_script_list.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lua/lua2game.lua" afterPath="$PROJECT_DIR$/lua/lua2game.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lua/xls2lua.lua" afterPath="$PROJECT_DIR$/lua/xls2lua.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/.idea/workspace.xml" afterPath="$PROJECT_DIR$/python/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/src/main.py" afterPath="$PROJECT_DIR$/python/src/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_client.bat" afterPath="$PROJECT_DIR$/run_client.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_client42.bat" afterPath="$PROJECT_DIR$/run_client42.bat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lua/util/dump_tbl.lua" afterPath="$PROJECT_DIR$/lua/util/datadump.lua" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,63 +25,96 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.lua" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lua/main.lua">
+      <file leaf-file-name="xls2lua.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lua/xls2lua.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="632">
+              <caret line="1210" column="57" lean-forward="false" selection-start-line="1210" selection-start-column="57" selection-end-line="1210" selection-end-column="57" />
+              <folding>
+                <element signature="e#2696#3078#0" expanded="false" />
+                <element signature="e#3179#3245#0" expanded="false" />
+                <element signature="e#3276#3439#0" expanded="false" />
+                <element signature="e#3470#3504#0" expanded="false" />
+                <element signature="e#4637#4804#0" expanded="false" />
+                <element signature="e#4883#5871#0" expanded="false" />
+                <element signature="e#5977#6636#0" expanded="false" />
+                <element signature="e#6751#7065#0" expanded="false" />
+                <element signature="e#7101#8077#1" expanded="false" />
+                <element signature="e#8160#8898#0" expanded="false" />
+                <element signature="e#8948#9516#0" expanded="false" />
+                <element signature="e#9567#10096#0" expanded="false" />
+                <element signature="e#10259#11813#0" expanded="false" />
+                <element signature="e#11882#13715#0" expanded="false" />
+                <element signature="e#13853#16986#0" expanded="false" />
+                <element signature="e#17798#18395#0" expanded="false" />
+                <element signature="e#22373#23721#0" expanded="false" />
+                <element signature="e#23790#24648#0" expanded="false" />
+                <element signature="e#24786#26146#0" expanded="false" />
+                <element signature="e#27043#27454#0" expanded="false" />
+                <element signature="e#27517#27798#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../../s/lss/config/convertor/utils.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card_war_config.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game_script_client/card_war_config.lua">
+      <file leaf-file-name="rank.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_script_client/rank.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dump_tbl.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lua/util/dump_tbl.lua">
+      <file leaf-file-name="rank.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game_data_client/rank.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lua/util/functions.lua">
+      <file leaf-file-name="enum.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmp/enum.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="17" />
+            <state relative-caret-position="434">
+              <caret line="27496" column="15" lean-forward="false" selection-start-line="27496" selection-start-column="15" selection-end-line="27496" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guild_abyss_const.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game_script_client/guild_abyss_const.lua">
+      <file leaf-file-name="lua2game.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lua/lua2game.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client_script_list.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client_script_list.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="-357">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -87,13 +131,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>160001</find>
-      <find>[160001]</find>
-      <find>out_path_tmp</find>
-      <find>name2tmp</find>
-      <find>game_script_client</find>
-      <find>table.so</find>
-      <find>tmp</find>
+      <find>xls_path</find>
+      <find>sheet_name</find>
+      <find>sheet_name =</find>
+      <find>path = *</find>
+      <find>path = [a-zA-Z]</find>
+      <find>.path</find>
+      <find>path =</find>
+      <find>xls_out_path</find>
+      <find>out_path =</find>
+      <find>lua_path</find>
+      <find>is_client</find>
+      <find>is_combine</find>
+      <find>out_path</find>
+      <find>&quot;______IS__MAP______&quot;</find>
+      <find>______IS__MAP______</find>
+      <find>dir_arr</find>
+      <find>path_tmp</find>
+      <find>file_script_list</find>
+      <find>err</find>
+      <find>path_script_list</find>
+      <find>ass</find>
+      <find>assertf</find>
+      <find>try_make_dir</find>
+      <find>dump_tbl</find>
+      <find>table_to_file</find>
+      <find>'\n'</find>
+      <find>is_master</find>
+      <find>&quot;--</find>
+      <find>______DESC______</find>
+      <find>Utils</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -112,10 +179,18 @@
         <option value="$PROJECT_DIR$/script_list_client.lua" />
         <option value="$PROJECT_DIR$/tmp/log.txt" />
         <option value="$PROJECT_DIR$/tmp/lua_data_raw_c/黑暗深渊常量.lua" />
-        <option value="$PROJECT_DIR$/lua/util/dump_tbl.lua" />
         <option value="$PROJECT_DIR$/game_script_client/guild_abyss_const.lua" />
-        <option value="$PROJECT_DIR$/lua/main.lua" />
         <option value="$PROJECT_DIR$/game_script_client/card_war_config.lua" />
+        <option value="$PROJECT_DIR$/lua/main.lua" />
+        <option value="$PROJECT_DIR$/lua/util/dump_tbl.lua" />
+        <option value="$PROJECT_DIR$/lua/util/functions.lua" />
+        <option value="$PROJECT_DIR$/tmp/lua_data_raw_c0/我游走.lua" />
+        <option value="$PROJECT_DIR$/tmp/lua_data_raw_c_0/魂卡秘境.lua" />
+        <option value="$PROJECT_DIR$/lua/lua2game.lua" />
+        <option value="$PROJECT_DIR$/lua/xls2lua.lua" />
+        <option value="$PROJECT_DIR$/game_script_client/talent_config.lua" />
+        <option value="$PROJECT_DIR$/../../../../../../s/lss/config/convertor/utils.lua" />
+        <option value="$PROJECT_DIR$/game_data_client/rank.lua" />
       </list>
     </option>
   </component>
@@ -125,9 +200,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-151" />
-    <option name="y" value="191" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -150,8 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -163,20 +237,47 @@
             <path>
               <item name="xls2lua" type="b2602c69:ProjectViewProjectNode" />
               <item name="xls2lua" type="462c0819:PsiDirectoryNode" />
+              <item name="game_data_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xls2lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xls2lua" type="462c0819:PsiDirectoryNode" />
+              <item name="game_script_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xls2lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xls2lua" type="462c0819:PsiDirectoryNode" />
               <item name="lua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xls2lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xls2lua" type="462c0819:PsiDirectoryNode" />
+              <item name="lua" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xls2lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xls2lua" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xls2lua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xls2lua" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools/lua/lua.exe" />
-    <property name="SearchEverywhereHistoryKey" value="guild&#9;FILE&#9;file://D:/work/mg01/game/config/xls2lua/game_script_client/guild_abyss_const.lua&#10;黑暗&#9;FILE&#9;file://D:/work/mg01/game/config/xls2lua/tmp/lua_data_raw_c/黑暗深渊常量.lua&#10;魂卡&#9;FILE&#9;file://D:/work/mg01/tools/config/xls2lua/lua_data_tmp_c/魂卡秘境.lua&#10;main&#9;FILE&#9;file://D:/work/mg01/tools/config/xls2lua/lua/main.lua" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="物品&#9;null&#9;null&#10;lxls&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/config/xls2lua/tools/lua/lxls.lua&#10;二级属性&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/config/xls2lua/tmp/lua_data_enum_c/二级属性.lua&#10;职业&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/config/xls2lua/tmp/lua_data_raw_c/职业12能力封印.lua&#10;星&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/config/xls2lua/tmp/lua_data_raw_c_0/星盘.lua&#10;魂卡&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/config/xls2lua/tmp/lua_data_raw_c_0/魂卡秘境.lua&#10;黑暗深渊常量&#9;FILE&#9;file://D:/work/GitHub/mg01/mg01/game/config/xls2lua/tmp/lua_data_raw_c/黑暗深渊常量.lua&#10;guild&#9;FILE&#9;file://D:/work/mg01/game/config/xls2lua/game_script_client/guild_abyss_const.lua&#10;黑暗&#9;FILE&#9;file://D:/work/mg01/game/config/xls2lua/tmp/lua_data_raw_c/黑暗深渊常量.lua&#10;main&#9;FILE&#9;file://D:/work/mg01/tools/config/xls2lua/lua/main.lua" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -308,20 +409,20 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\work\mg01\game\config\xls2lua" />
-          <option name="myCopyRoot" value="D:\work\mg01\game\config\xls2lua" />
+          <option name="myVcsRoot" value="D:\work\GitHub\mg01\mg01\game\config\xls2lua" />
+          <option name="myCopyRoot" value="D:\work\GitHub\mg01\mg01\game\config\xls2lua" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\work\mg01\game\config\xls2lua\.idea" />
-          <option name="myCopyRoot" value="D:\work\mg01\game\config\xls2lua\.idea" />
+          <option name="myVcsRoot" value="D:\work\GitHub\mg01\mg01\game\config\xls2lua\.idea" />
+          <option name="myCopyRoot" value="D:\work\GitHub\mg01\mg01\game\config\xls2lua\.idea" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\work\mg01\game\config\xls2lua" />
-          <option name="myCopyRoot" value="D:\work\mg01\game\config\xls2lua" />
+          <option name="myVcsRoot" value="D:\work\GitHub\mg01\mg01\game\config\xls2lua" />
+          <option name="myCopyRoot" value="D:\work\GitHub\mg01\mg01\game\config\xls2lua" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -340,43 +441,45 @@
       <workItem from="1534129843411" duration="334000" />
       <workItem from="1535981331176" duration="697000" />
       <workItem from="1536065232797" duration="4000" />
+      <workItem from="1540290583022" duration="32373000" />
+      <workItem from="1540986788281" duration="72864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42447000" />
+    <option name="totallyTimeSpent" value="147684000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-151" y="191" width="1936" height="1056" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3690476" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3690476" sideWeight="0.5021322" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3874459" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3874459" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2947761" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,54 +489,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="lua-line">
+          <url>file://$PROJECT_DIR$/lua/xls2lua.lua</url>
+          <line>475</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="lua-line">
+          <url>file://$PROJECT_DIR$/lua/lua2game.lua</url>
+          <line>38</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/AI_任务.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/ShopGoods_书籍.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/个人竞技场_每日奖励.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/二级属性.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_enum_c/任务答题.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_enum_c/npc功能.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_enum_c/AI决策规则.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/g公会福利.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/const_float.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/ai策略.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/ai事件.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/NPC显示和隐藏.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/pdlog强化类型(不导表).lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/ShopGoods_声望.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/ShopGoods_装备.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/不显示的掉落.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/主属性界面.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/主属性增强系数表.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/个人竞技场名字库.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/个人竞技场_次数购买.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/伪抽取.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/光门关卡.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/剧情旁白.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/功能按钮开启.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/品阶资源定义.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/场景刷对象_滕哲.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/外观礼包.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/头饰.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/世界首领Buff抽取.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/个人排名奖励.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/yingxudong/NPC显示和隐藏_yingxudong.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_raw_c/ai事件类型.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/魂卡秘境.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/ai状态机.lua" />
-    <entry file="file://$PROJECT_DIR$/../../../../s/lss/config/convertor/game_script_client/card_war_config.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/NPC语音.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_export_c/card_war_config2.lua" />
-    <entry file="file://$PROJECT_DIR$/lua_data_tmp_c/active2gift.lua" />
     <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c/bag_errcode.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -450,7 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_data_client/guild_abyss_const.lua" />
     <entry file="file://$PROJECT_DIR$/run_client.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -458,33 +530,296 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_script_client/guild_abyss_const.lua">
+    <entry file="file://$PROJECT_DIR$/../../../../../../s/lss/config/convertor/utils/datadump.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="735">
+          <caret line="205" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lua/util/dump_tbl.lua">
+    <entry file="file://$PROJECT_DIR$/../../../../../../s/lss/config/convertor/lua2game.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c/黑暗深渊常量.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="-2788">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client_script_list.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_script_client/guild_abyss_const.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/我游走.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2529">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/个人竞技场_常量.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/ai.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/AI_任务.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/AI优先级.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/AI变量.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/个人竞技场_机器人.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/伪抽取.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/飞行道具类型.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/黑暗深渊常量.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/保卫萝卜.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/Sheet1.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/cloud_misc.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c0/boss触发音效.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_0/星盘品阶.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3108">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_enum_c/战斗属性.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="245" column="1" lean-forward="false" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_0/魂卡秘境.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_0/职业类型.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c/职业类型.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_enum_c/二级属性.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2372">
+          <caret line="252" column="4" lean-forward="false" selection-start-line="252" selection-start-column="2" selection-end-line="252" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_0/星盘.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/lua/lxls.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lua/util/functions.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="17" />
+        <state relative-caret-position="298">
+          <caret line="64" column="9" lean-forward="false" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c/职业12能力封印.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_1/个人竞技场_常量.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_1/s生存挑战关卡表.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4845">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_1/世界领主图标.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_1/d叠加场景.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/lua_data_raw_c_1/ai事件类型.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/enum.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="27496" column="15" lean-forward="false" selection-start-line="27496" selection-start-column="15" selection-end-line="27496" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/EmmyLua/lib/EmmyLua-1.2.0.jar!/std/global.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="178" column="9" lean-forward="false" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lua/lua2game.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -492,23 +827,93 @@
     <entry file="file://$PROJECT_DIR$/game_script_client/card_war_config.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client_script_list.lua">
+    <entry file="file://$PROJECT_DIR$/game_data_client/guild_abyss_const.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="323">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lua/main.lua">
+    <entry file="file://$PROJECT_DIR$/game_data_client/card_war_config.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="170">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lua/util/datadump.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="166" column="45" lean-forward="true" selection-start-line="166" selection-start-column="45" selection-end-line="166" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lua/xls2lua.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="1210" column="57" lean-forward="false" selection-start-line="1210" selection-start-column="57" selection-end-line="1210" selection-end-column="57" />
+          <folding>
+            <element signature="e#2696#3078#0" expanded="false" />
+            <element signature="e#3179#3245#0" expanded="false" />
+            <element signature="e#3276#3439#0" expanded="false" />
+            <element signature="e#3470#3504#0" expanded="false" />
+            <element signature="e#4637#4804#0" expanded="false" />
+            <element signature="e#4883#5871#0" expanded="false" />
+            <element signature="e#5977#6636#0" expanded="false" />
+            <element signature="e#6751#7065#0" expanded="false" />
+            <element signature="e#7101#8077#1" expanded="false" />
+            <element signature="e#8160#8898#0" expanded="false" />
+            <element signature="e#8948#9516#0" expanded="false" />
+            <element signature="e#9567#10096#0" expanded="false" />
+            <element signature="e#10259#11813#0" expanded="false" />
+            <element signature="e#11882#13715#0" expanded="false" />
+            <element signature="e#13853#16986#0" expanded="false" />
+            <element signature="e#17798#18395#0" expanded="false" />
+            <element signature="e#22373#23721#0" expanded="false" />
+            <element signature="e#23790#24648#0" expanded="false" />
+            <element signature="e#24786#26146#0" expanded="false" />
+            <element signature="e#27043#27454#0" expanded="false" />
+            <element signature="e#27517#27798#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_script_client/talent_config.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../s/lss/config/convertor/utils.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_script_client/rank.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_data_client/rank.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>

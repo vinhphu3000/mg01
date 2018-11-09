@@ -2,7 +2,8 @@
 pushd "%~dp0"
 
 cd xls2lua
-call run_client.bat
+::call run_client.bat
+call run_client42.bat
 ::call 检查图集.bat
 popd
 

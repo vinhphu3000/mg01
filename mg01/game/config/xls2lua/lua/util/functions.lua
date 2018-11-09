@@ -20,7 +20,7 @@ local srep = string.rep
 local tostring = tostring
 local tconcat = table.concat
 local tinsert = table.insert
-local print = print
+--local print = print
 
 --upvalue
 local debug = debug
