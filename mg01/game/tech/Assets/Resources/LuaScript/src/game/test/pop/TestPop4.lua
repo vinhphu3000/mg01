@@ -248,7 +248,7 @@ end
 
 function TestPop4:show_image()
 
-	self.m_handler.image_icon:load_sprite('npc1031', 'npc1031', true)
+	self.m_handler.image_icon:load_sprite('npc1031', true)
 
 end
 

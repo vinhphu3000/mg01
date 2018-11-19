@@ -108,7 +108,7 @@ function TestPop3:__show(showObj, ...)
 
     self.m_hdl.prog_exp:set_prog_value(0.2)
 
-    self.m_hdl.icon_1:load_sprite("npc1026", "npc1026_mini", false)
+    self.m_hdl.icon_1:load_sprite( "npc1026_mini", false)
 
 
     App.soundMgr:play_bgm("Sound/Bgm/battle04")

@@ -21,7 +21,7 @@ using mg.org;
 namespace Edit
 {
 
-    public class SprAtlasCliper : EditorWindow
+    public class SpriteAtlasCliper : EditorWindow
     {
 
         
@@ -45,7 +45,7 @@ namespace Edit
             if (obj == null || !(obj is Texture))
                 return false;
             string path = AssetDatabase.GetAssetPath(obj);
-            return SprAtlasMaker.IsInAtlasPath(path);
+            return SpriteAtlasMaker.IsInAtlasPath(path);
         }
 
         [MenuItem("Assets/生成图集/自定义图集切片", false, 3)]
@@ -55,7 +55,7 @@ namespace Edit
         [MenuItem("工具/生成图集/自定义图集切片", false, 5)]
         public static void openWindow()
         {
-            var window = EditorWindow.GetWindow<SprAtlasCliper>();
+            var window = EditorWindow.GetWindow<SpriteAtlasCliper>();
             window.texture = (Selection.activeObject is Texture2D) ? Selection.activeObject as Texture2D : null;
         }
 
@@ -73,8 +73,8 @@ namespace Edit
                 GUILayout.Space(5);
                 GUILayout.BeginHorizontal();
                 GUILayout.Label("选择尺寸类型：", GUILayout.Width(100));
-                m_typeIndex = EditorGUILayout.Popup(m_typeIndex, SprAtlasClipUtility.typeList, GUILayout.Width(120));
-                clipType = SprAtlasClipUtility.typeList[m_typeIndex];
+                m_typeIndex = EditorGUILayout.Popup(m_typeIndex, SpriteAtlasClipUtility.typeList, GUILayout.Width(120));
+                clipType = SpriteAtlasClipUtility.typeList[m_typeIndex];
                 GUILayout.EndHorizontal();
                 
                 GUILayout.Space(5);
@@ -112,9 +112,9 @@ namespace Edit
                         float width = float.Parse(m_input_w);
                         float height = float.Parse(m_input_h);
                         string path = AssetDatabase.GetAssetPath(texture);
-                        SprAtlasClipUtility.ClipAtlas(path, width, height, clipType);
+                        SpriteAtlasClipUtility.ClipAtlas(path, width, height, clipType);
 
-                        SprAtlasMaker.GenAsset(path);   //重新生成图集Asset
+                        SpriteAtlasMaker.GenAsset_OneFile(path);   //重新生成图集Asset
 
                         Debug.Log("切片完成：" + path + " --> " + width + ", " + height + ", " + clipType);
                     }
@@ -134,7 +134,7 @@ namespace Edit
                     {
                         string path = AssetDatabase.GetAssetPath(texture);
                         Debug.Log("开始保存记录：" + path);
-                        SprAtlasClipUtility.SaveJsonData(path);
+                        SpriteAtlasClipUtility.SaveJsonData(path);
                         TypeReadJson();
 
                     }
@@ -154,7 +154,7 @@ namespace Edit
             {
                 //图集改变时,尝试获取json里的尺寸
                 string path = AssetDatabase.GetAssetPath(m_texture);
-                JsonData data = SprAtlasClipUtility.GetClipJsonDataTypical(path, m_clipType);
+                JsonData data = SpriteAtlasClipUtility.GetClipJsonDataTypical(path, m_clipType);
                 if (data != null)
                 {
                     JsonData rect = data["rect"];
@@ -192,9 +192,9 @@ namespace Edit
                     return;
 
                 string path = AssetDatabase.GetAssetPath(value);
-                if (!SprAtlasMaker.IsInAtlasPath(path))
+                if (!SpriteAtlasMaker.IsInAtlasPath(path))
                 {
-                    Log.Debug(string.Format("图片不在 {0} 内", SprAtlasMaker.RAW_PATH_ATLAS) );                    
+                    Log.Debug(string.Format("图片不在 {0} 内", SpriteAtlasMaker.RAW_PATH_ATLAS) );                    
                     return;
                 }
 

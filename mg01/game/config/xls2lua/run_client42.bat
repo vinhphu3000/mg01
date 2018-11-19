@@ -9,8 +9,8 @@ rmdir /S /Q tmp\\lua_data_cmb_c_0
 rmdir /S /Q .\\game_data_client
 
 
-::set raw_path="\"./tmp/lua_data_raw_c_42/\""
-set raw_path=nil
+set raw_path="\"./tmp/lua_data_raw_c_42/\""
+::set raw_path=nil
 ::set combine_path="\"./tmp/lua_data_cmb_c_42/\""
 set combine_path=nil
 set export_path="\"./game_data_client/\""

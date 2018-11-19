@@ -25,7 +25,7 @@ using mg.org.KUI;
 
 namespace Edit
 {
-    public class SprAtlasClipUtility
+    public class SpriteAtlasClipUtility
     {
 
         //切片类型
@@ -36,8 +36,8 @@ namespace Edit
         }
 
         public static string[] typeList = new string[] {
-                SprAtlasClipUtility.ClipType.SMALL,
-                SprAtlasClipUtility.ClipType.MINI };
+                SpriteAtlasClipUtility.ClipType.SMALL,
+                SpriteAtlasClipUtility.ClipType.MINI };
 
 
         public static string GetJsonPath(string path)

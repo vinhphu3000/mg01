@@ -10,6 +10,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
+using System.Text;
 
 
 using Object = UnityEngine.Object;
@@ -21,7 +22,7 @@ using Edit.PSD4UGUI;
 namespace Edit
 {
 
-    public class SprAtlasMaker
+    public class SpriteAtlasMaker
     {
 
 
@@ -41,13 +42,15 @@ namespace Edit
             var fs = Directory.GetFiles(dir);
             foreach (var f in fs)
             {
-                onFile(f);
+                if (onFile != null)
+                    onFile(f);
             }
 
             var dirs = Directory.GetDirectories(dir);
             foreach (var d in dirs)
             {
-                onDir(d);
+                if (onDir != null)
+                    onDir(d);
                 WalkDir(d, onDir, onFile);
             }
 
@@ -75,23 +78,21 @@ namespace Edit
             return filePath_.IndexOf(GEN_PATH_ATLAS) >= 0;
         }
 
-
-        [MenuItem("Assets/生成图集/打包选中图集", true)]
-        static bool CanPackAtlasByChoose2() { return CanPackAtlasByChoose(); }
-        [MenuItem("Assets/生成图集/打包选中图集", false, 1)]
-        static void PackAtlasByChoose2() { PackAtlasByChoose(); }
-        [MenuItem("Assets/生成图集/生成选中Asset", true)]
-        static bool CanGenAssetByChoose2() { return CanGenAssetByChoose(); }
-        [MenuItem("Assets/生成图集/生成选中Asset", false, 2)]
-        static void GenAssetByChoose2() { GenAssetByChoose(); }
-
-        //[MenuItem("Assets/aaa/aaa")]
-        //static void GenAssetBy333() {  }
+        //右键资源弹出以下菜单
+        [MenuItem("Assets/生成图集/散图->图集->Asset", true)]
+        static bool CanPackAtlasByChoose0() { return CanPackAtlasByChoose(); }
+        [MenuItem("Assets/生成图集/散图->图集->Asset", false, 1)]
+        static void PackAtlasByChoose0() { PackAtlasByChoose(); }
+        [MenuItem("Assets/生成图集/图集->Asset", true)]
+        static bool CanGenAssetByChoose0() { return CanGenAssetByChoose(); }
+        [MenuItem("Assets/生成图集/图集->Asset", false, 2)]
+        static void GenAssetByChoose0() { GenAssetByChoose(); }
+        
 
         //-------∽-★-∽------∽-★-∽--------∽-★-∽Asset相关∽-★-∽--------∽-★-∽------∽-★-∽--------//
-
-        [MenuItem("工具/生成图集/选中对象生成Asset", true)]
-        static bool CanGenAssetByChoose()
+       
+        [MenuItem("工具/生成图集/图集->Asset", true)]
+        static bool CanGenAssetByChoose()   //是否可以点击按钮
         {
             Object obj = Selection.activeObject;
             if (obj == null)
@@ -102,7 +103,7 @@ namespace Edit
             string path = AssetDatabase.GetAssetPath(obj);
             if (obj is Texture)
             {
-                folderPath = mg.org.FileUtility.GetFolderFromFullPath(path);
+                folderPath = FileUtility.GetFolderFromFullPath(path);
             }
             else if (Directory.Exists(path))
             {
@@ -123,7 +124,7 @@ namespace Edit
     
 
 
-        [MenuItem("工具/生成图集/选中对象生成Asset", false, 3)]
+        [MenuItem("工具/生成图集/图集->Asset", false, 3)]
         static void GenAssetByChoose()
         {
             try
@@ -141,12 +142,12 @@ namespace Edit
                     var tex = obj as Texture;
                     if (tex != null)
                     {
-                        GenAsset(path);
+                        GenAsset_OneFile(path);
                         b = true;
                     }
                     else if (Directory.Exists(path))
                     {
-                        b = GenAssetByDir(path);
+                        b = GenAsset_AllFiles(path);
                     }
 
                     if (b)
@@ -169,6 +170,8 @@ namespace Edit
             }
 
             AssetDatabase.Refresh();
+
+            GenSpriteMsg();
         }
 
         [MenuItem("工具/生成图集/生成全部Asset", false, 4)]
@@ -181,12 +184,13 @@ namespace Edit
             for(int i=0;i<files.Length;++i)
             {
                 string path = rootPath + "/" + files[i].Name;
-                GenAssetByDir(path);
+                GenAsset_AllFiles(path);
             }
 
+            GenSpriteMsg();
         }
 
-        static bool GenAssetByDir(string path_)
+        static bool GenAsset_AllFiles(string path_)
         {
             bool b = false;
             WalkDir(path_,
@@ -204,7 +208,7 @@ namespace Edit
                {
                    if (f.EndsWith(".png") || f.EndsWith(".tga"))
                    {
-                       GenAsset(f);
+                       GenAsset_OneFile(f);
                        b = true;
                    }
                });
@@ -215,7 +219,7 @@ namespace Edit
 
 
 
-        public static void GenAsset(string path)
+        public static void GenAsset_OneFile(string path)
         {
 
             try
@@ -226,11 +230,11 @@ namespace Edit
                     return;
                 }
 
-                string fileName = mg.org.FileUtility.GetNameFromFullPath(path, "");
+                string fileName = FileUtility.GetNameFromFullPath(path, "");
                 string genPath = getAssetPath(fileName);
 
-                string dir = mg.org.FileUtility.GetFolderFromFullPath(genPath);
-                mg.org.FileUtility.EnsureDirectory(dir);
+                string dir = FileUtility.GetFolderFromFullPath(genPath);
+                FileUtility.EnsureDirectory(dir);
                 
                 SprAtlas asset = null;
                 if (File.Exists(genPath))
@@ -270,16 +274,11 @@ namespace Edit
 
 
         }
-
-
-
-
-
+        
 
         //-------∽-★-∽------∽-★-∽--------∽-★-∽Atlas相关∽-★-∽--------∽-★-∽------∽-★-∽--------//
-
-
-        [MenuItem("工具/生成图集/打包选中图集", true)]
+        
+        [MenuItem("工具/生成图集/散图->图集->Asset", true)]
         static bool CanPackAtlasByChoose()
         {
             Object obj = Selection.activeObject;
@@ -291,7 +290,7 @@ namespace Edit
             string path = AssetDatabase.GetAssetPath(obj);
             if (obj is Texture)
             {
-                folderPath = mg.org.FileUtility.GetFolderFromFullPath(path);  //获取所在目录
+                folderPath = FileUtility.GetFolderFromFullPath(path);  //获取所在目录
             }
             else if (Directory.Exists(path))
             {
@@ -313,7 +312,7 @@ namespace Edit
 
         
 
-        [MenuItem("工具/生成图集/打包选中图集", false, 1)]
+        [MenuItem("工具/生成图集/散图->图集->Asset", false, 1)]
         static void PackAtlasByChoose()
         {
             bool b = false;
@@ -329,13 +328,15 @@ namespace Edit
                 var tex = obj as Texture;
                 if (tex != null)
                 {
-                    string folder = mg.org.FileUtility.GetFolderFromFullPath(path);
-                    if (PackAtlas(folder))
+                    //选中的是图片，打包所在的文件夹
+                    string folder = FileUtility.GetFolderFromFullPath(path);
+                    if (PackAtlas_OneDir(folder))
                         b = true;
                 }
                 else if (Directory.Exists(path))
                 {
-                    if (PackAtlasByDir(path))
+                    //选中的是文件夹，打包下面的子文件夹
+                    if (PackAtlas_AllDir(path))
                         b = true;
                 }
 
@@ -359,13 +360,14 @@ namespace Edit
 
             AssetDatabase.Refresh();
 
+            GenSpriteMsg();
         }
 
-        [MenuItem("工具/生成图集/打包全部图集", false, 2)]
+        [MenuItem("工具/生成图集/打包全部散图", false, 2)]
         static void PackAllAtlas()
         {
             string rootPath = RAW_PATH_IMAGE;
-            PackAtlasByDir(rootPath);
+            PackAtlas_AllDir(rootPath);
 
             //DirectoryInfo dir = new DirectoryInfo(rootPath);
             //DirectoryInfo[] files = dir.GetDirectories();
@@ -375,11 +377,12 @@ namespace Edit
             //    string path = rootPath + "/" + files[i].Name;
             //    PackAtlas(path);
             //}
-
+            
+            GenSpriteMsg();
         }
        
-
-        static bool PackAtlasByDir(string folderPath_)
+        //打包所有子文件夹
+        static bool PackAtlas_AllDir(string folderPath_)
         {
 
             bool b = false;
@@ -388,7 +391,7 @@ namespace Edit
                 WalkDir(folderPath_, (d) => {
                     //文件夹
                     string f = d;
-                    if (PackAtlas(d))
+                    if (PackAtlas_OneDir(d))
                         b = true;
 
                 }, (f) =>
@@ -396,14 +399,14 @@ namespace Edit
 
                 });
 
-                if (PackAtlas(folderPath_))
+                if (PackAtlas_OneDir(folderPath_))
                     b = true;
             }
 
             return b;
         }
 
-        static bool PackAtlas(string folderPath_)
+        static bool PackAtlas_OneDir(string folderPath_)
         {
             List<Texture2D> textures = new List<Texture2D>();
             Texture2D tex;
@@ -440,9 +443,9 @@ namespace Edit
             string atlasPath = PackTextures(textures, folderPath_, suffix);   //打包图集
             AssetDatabase.Refresh();
             
-            SprAtlasClipUtility.ApplyClipData(atlasPath);   //还原切片数据到图集中
+            SpriteAtlasClipUtility.ApplyClipData(atlasPath);   //还原切片数据到图集中
 
-            GenAsset(atlasPath);
+            GenAsset_OneFile(atlasPath);
 
             return true;
         }
@@ -450,12 +453,11 @@ namespace Edit
         static string PackTextures(List<Texture2D> texturesList_, string folderPath_, string suffix_=".png")
         {
 
-            string atlasName_ = mg.org.FileUtility.GetNameFromFullPath(folderPath_, suffix_);  //Image/icon/icon1001 -> icon1001.png
-
+            string atlasName_ = FileUtility.GetNameFromFullPath(folderPath_, suffix_);  //Image/icon/icon1001 -> icon1001.png
             string atlasPath = folderPath_.Replace("Image/", "SpriteAtlas/") + "/" + atlasName_;  //Image/icon/icon1001 -> SpriteAtlas/icon/icon1001/icon1001.png
 
-            string folderPath = mg.org.FileUtility.GetFolderFromFullPath(atlasPath);
-            mg.org.FileUtility.EnsureDirectory(folderPath); //创建文件夹
+            string folderPath = FileUtility.GetFolderFromFullPath(atlasPath);
+           FileUtility.EnsureDirectory(folderPath); //创建文件夹
 
             if (File.Exists(atlasPath))
             {
@@ -597,6 +599,68 @@ namespace Edit
 
         }
 
-    }
+
+        //-------∽-★-∽------∽-★-∽--------∽-★-∽lua相关∽-★-∽--------∽-★-∽------∽-★-∽--------//
+
+        //生成图集配置
+        public static bool GenSpriteMsg()
+        {
+            bool ret = true;
+
+            string msg_path = "Assets/Resources/LuaScript/data/sprite_msg.lua";
+            if (File.Exists(msg_path))
+                File.Delete(msg_path);
+
+            Dictionary<string, string> sprName2path = new Dictionary<string, string>();
+
+
+            WalkDir(GEN_PATH_ATLAS, null, (f) =>
+            {
+                if (f.EndsWith(".asset"))
+                {
+                    SprAtlas atlas = AssetDatabase.LoadAssetAtPath<SprAtlas>(f);
+
+                    string name = FileUtility.GetNameFromFullPath(f, "");
+
+                    foreach (Sprite sprite in atlas.sprites)
+                    {
+                        if(sprName2path.ContainsKey(sprite.name))
+                        {
+                            ret = false;
+                            Debug.LogError(String.Format("图片重复 {0} {1} -> {2}", sprite, sprName2path[sprite.name], atlas.file_name));
+                            break;
+                        }
+                        else
+                        {
+                            sprName2path[sprite.name] = atlas.file_name;
+                        }
+                    }
+                }
+            });
+
+            if (!ret)
+                return ret;
+
+            StringBuilder sb = new StringBuilder(65535);
+            sb.Append("return {\n");
+            foreach (var kvp in sprName2path)
+            {
+                sb.AppendFormat("[\"{0}\"] = \"{1}\",\n", kvp.Key, kvp.Value);
+            }
+            sb.Append("}\n");
+
+            FileStream luaFile = new FileStream(msg_path, FileMode.Create);
+            var bytes = System.Text.Encoding.UTF8.GetBytes(sb.ToString());
+            luaFile.Write(bytes, 0, bytes.Length);
+            luaFile.Flush();
+            luaFile.Close();
+            AssetDatabase.SaveAssets();
+            
+            Debug.Log("sprite_msg生成完毕: " + msg_path);
+            return ret;
+        }
+
+
+     }
 
 }

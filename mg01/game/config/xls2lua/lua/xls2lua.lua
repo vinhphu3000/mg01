@@ -56,7 +56,6 @@ end
 
 local out_file
 local function write_log(str)
-
 	if out_file then
 		out_file:write(str .. "\n")
 	end
@@ -582,8 +581,11 @@ local function dump_cell(raw_v, attr, c, l, enum_tbl)
 	local f = internal_type[t]
 	if f then
 		--基础类型
-		return f(raw_v, attr, c, l)
-
+		local v =  f(raw_v, attr, c, l)
+		--if v == nil then
+		--	errorf("nil value:%s at%s", v, tolocation(c, l))
+		--end
+		return v
 	elseif enum_tbl[t] then
 		--枚举
 		local custom = enum_tbl[t]
@@ -756,6 +758,8 @@ local function sheet_to_table(xls_path, sheet_name, enum_tbl )
 			if raw_v and is_end then
 				is_end = false
 			end
+
+
 			local v = dump_cell(raw_v, attr, i, k, enum_tbl)    --解析单元格
 			if attr.list then
 				local lc = attr.list_count
@@ -882,7 +886,6 @@ local function combine_xls_list(xls_list)
 	end
 	return ret
 end
-
 
 local function dump_combine(xls_obj, enum_tbl, name2config)
 
@@ -1164,7 +1167,7 @@ local function excute_script_list(script_path, name2config)
 			local ms = {}
 			local desc_arr = {}
 			for i,name in ipairs(includes) do
-				local config = name2config[name]
+				local config = name2config[name] or name2new[name]
 				assertf(config, string.format('找不到需要引用的表：%s', name))
 				ms[name] = config.tbl
 				desc_arr[#desc_arr+1] = config.desc
@@ -1221,7 +1224,7 @@ local function main()
 	try_make_dir(combine_path)
 	try_make_dir(export_path)
 
-	local path = path_tmp .. 'log0.txt'
+	local path = path_tmp .. 'log42.txt'
 	out_file = io.open(path, 'wb')
 
 	printf('is_client %s', is_client)

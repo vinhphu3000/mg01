@@ -12,5 +12,5 @@ return {
 
 	item('魂卡秘境', 'card_war_config', true),
 	item('黑暗深渊常量', 'guild_abyss_const', true),
-	item({'排行榜', '栏目类型', '更新类型', '排行榜榜单', '排行榜主榜单'}, 'rank', true),
+	item({'排行榜', '栏目类型', '更新类型', '排行榜榜单', '排行榜主榜单'}, 'rank_config', true),
 }

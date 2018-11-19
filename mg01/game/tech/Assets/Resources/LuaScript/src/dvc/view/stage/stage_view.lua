@@ -127,7 +127,7 @@ function stage_view:update_deck_item( item_go, data, index )
 
 	local handler = self:get_handler(item_go, ui_map_deck)
 
-	handler.icon_deck:load_sprite('CardIcon', 'CardBack'..data.color, false)
+	handler.icon_deck:load_sprite('CardBack'..data.color, false)
 
 	self.m_color2deckItem[data.color] = handler
 

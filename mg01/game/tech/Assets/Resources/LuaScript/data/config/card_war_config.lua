@@ -1,4 +1,5 @@
---H魂卡秘境.xls_魂卡秘境
+-- ../xls/\H魂卡秘境.xls sheet_name:魂卡秘境
+
 return {
   {
     chapter=1,
@@ -7,9 +8,9 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=121101 },
-          { amount=1, full=0, id=121103 },
-          { amount=1, full=0, id=131103 },
+          { amount=1, full=0, id=121101, must=0 },
+          { amount=1, full=0, id=121103, must=0 },
+          { amount=1, full=0, id=131103, must=0 },
           { amount=1, full=0, id=131105 } 
         },
         award_rare={  },
@@ -34,6 +35,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=10,
+        name2="金砂",
         number=1,
         sec_name="第1层",
         section=1,
@@ -46,7 +48,7 @@ return {
           { id=10010100, rate=10000 },
           { id=10010100, rate=10000 } 
         },
-        stage_team=301011,
+        stage_team=302011,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -61,10 +63,10 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111101 },
-          { amount=1, full=0, id=121101 },
-          { amount=1, full=0, id=121103 },
-          { amount=1, full=0, id=131103 },
+          { amount=1, full=0, id=111101, must=0 },
+          { amount=1, full=0, id=121101, must=0 },
+          { amount=1, full=0, id=121103, must=0 },
+          { amount=1, full=0, id=131103, must=0 },
           { amount=1, full=0, id=131105 } 
         },
         award_rare={  },
@@ -88,6 +90,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=12,
+        name2="金砂",
         number=3,
         sec_name="第2层",
         section=2,
@@ -100,7 +103,7 @@ return {
           { id=10010110, rate=10000 },
           { id=10010110, rate=10000 } 
         },
-        stage_team=301012,
+        stage_team=302012,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -115,12 +118,12 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111101 },
-          { amount=1, full=0, id=121101 },
-          { amount=1, full=0, id=121103 },
-          { amount=1, full=0, id=131103 },
-          { amount=1, full=0, id=131105 },
-          { amount=1, full=0, id=131201 },
+          { amount=1, full=0, id=111101, must=0 },
+          { amount=1, full=0, id=121101, must=0 },
+          { amount=1, full=0, id=121103, must=0 },
+          { amount=1, full=0, id=131103, must=0 },
+          { amount=1, full=0, id=131105, must=0 },
+          { amount=1, full=0, id=131201, must=0 },
           { amount=1, full=0, id=131202 } 
         },
         award_rare={  },
@@ -144,6 +147,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=20,
+        name2="金砂",
         number=3,
         sec_name="第3层",
         section=3,
@@ -156,7 +160,7 @@ return {
           { id=10010120, rate=10000 },
           { id=10010120, rate=10000 } 
         },
-        stage_team=301013,
+        stage_team=302013,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -171,13 +175,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111101 },
-          { amount=1, full=0, id=121101 },
-          { amount=1, full=0, id=131105 },
-          { amount=1, full=0, id=111202 },
-          { amount=1, full=0, id=121203 },
-          { amount=1, full=0, id=131201 },
-          { amount=1, full=0, id=131202 } 
+          { amount=1, full=0, id=3049203, must=1 },
+          { amount=1, full=0, id=121101, must=0 },
+          { amount=1, full=0, id=131105, must=0 },
+          { amount=1, full=0, id=111202, must=0 },
+          { amount=1, full=0, id=121203, must=0 },
+          { amount=1, full=0, id=131201, must=0 },
+          { amount=1, full=0, id=131202, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -185,7 +190,8 @@ return {
           { id=420001, rate=10000 },
           { id=10010130, rate=10000 },
           { id=10010130, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=4000 } 
         },
         chapter=1,
         chapter_name="金砂秘境",
@@ -201,6 +207,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=26,
+        name2="金砂",
         number=3,
         sec_name="第4层",
         section=4,
@@ -212,9 +219,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010130, rate=10000 },
           { id=10010130, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=4000 } 
         },
-        stage_team=301021,
+        stage_team=302021,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -222,7 +230,8 @@ return {
           { id=10010130, rate=10000 },
           { id=10010130, rate=10000 },
           { id=10010130, rate=5000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=4000 } 
         },
         team_target_list={  },
         type=0 
@@ -230,11 +239,13 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111202 },
-          { amount=1, full=0, id=121203 },
-          { amount=1, full=0, id=131201 },
-          { amount=1, full=0, id=131202 },
-          { amount=1, full=0, id=131301 } 
+          { amount=1, full=0, id=3049203, must=1 },
+          { amount=1, full=0, id=111202, must=0 },
+          { amount=1, full=0, id=121203, must=0 },
+          { amount=1, full=0, id=131201, must=0 },
+          { amount=1, full=0, id=131202, must=0 },
+          { amount=1, full=0, id=131301, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -242,7 +253,8 @@ return {
           { id=420001, rate=10000 },
           { id=10010140, rate=10000 },
           { id=10010140, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=5000 } 
         },
         chapter=1,
         chapter_name="金砂秘境",
@@ -258,6 +270,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=32,
+        name2="金砂",
         number=3,
         sec_name="第5层",
         section=5,
@@ -269,9 +282,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010140, rate=10000 },
           { id=10010140, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=5000 } 
         },
-        stage_team=301022,
+        stage_team=302022,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -279,7 +293,8 @@ return {
           { id=10010140, rate=10000 },
           { id=10010140, rate=10000 },
           { id=10010140, rate=5000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=5000 } 
         },
         team_target_list={  },
         type=1 
@@ -287,12 +302,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111202 },
-          { amount=1, full=0, id=121203 },
-          { amount=1, full=0, id=131201 },
-          { amount=1, full=0, id=131202 },
-          { amount=1, full=0, id=121301 },
-          { amount=1, full=0, id=131301 } 
+          { amount=1, full=0, id=3049203, must=1 },
+          { amount=1, full=0, id=111202, must=0 },
+          { amount=1, full=0, id=121203, must=0 },
+          { amount=1, full=0, id=131201, must=0 },
+          { amount=1, full=0, id=131202, must=0 },
+          { amount=1, full=0, id=121301, must=0 },
+          { amount=1, full=0, id=131301, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -300,7 +317,8 @@ return {
           { id=420001, rate=10000 },
           { id=10010150, rate=10000 },
           { id=10010150, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         chapter=1,
         chapter_name="金砂秘境",
@@ -316,6 +334,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=36,
+        name2="金砂",
         number=3,
         sec_name="第6层",
         section=6,
@@ -327,9 +346,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010150, rate=10000 },
           { id=10010150, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=6000 } 
         },
-        stage_team=301023,
+        stage_team=302023,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -337,7 +357,8 @@ return {
           { id=10010150, rate=10000 },
           { id=10010150, rate=10000 },
           { id=10010150, rate=5000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         team_target_list={  },
         type=2 
@@ -350,13 +371,18 @@ return {
     sections={
       {
         add_percent=0.0,
-        award={ { amount=1, full=0, id=121102 }, { amount=1, full=0, id=131104 } },
+        award={
+          { amount=1, full=0, id=121102, must=0 },
+          { amount=1, full=0, id=131104, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
+        },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010200, rate=10000 },
-          { id=10010200, rate=10000 } 
+          { id=10010200, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         chapter=2,
         chapter_name="月辉秘境",
@@ -366,12 +392,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049203 } },
         first_pass_reward={ { id=2253, rate=10000 } },
-        force=43000,
+        force=34000,
         jindu_preview={  },
         level=25,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=35,
+        monster_lv=32,
+        name2="月辉",
         number=1,
         sec_name="第1层",
         section=1,
@@ -382,16 +409,18 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010200, rate=10000 },
-          { id=10010200, rate=10000 } 
+          { id=10010200, rate=10000 },
+          { id=2066, rate=6000 } 
         },
-        stage_team=301041,
+        stage_team=302041,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010200, rate=10000 },
           { id=10010200, rate=10000 },
-          { id=10010200, rate=5000 } 
+          { id=10010200, rate=5000 },
+          { id=2066, rate=6000 } 
         },
         team_target_list={  },
         type=0 
@@ -399,17 +428,19 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111102 },
-          { amount=1, full=0, id=121102 },
-          { amount=1, full=0, id=131104 },
-          { amount=1, full=0, id=131204 } 
+          { amount=1, full=0, id=111102, must=0 },
+          { amount=1, full=0, id=121102, must=0 },
+          { amount=1, full=0, id=131104, must=0 },
+          { amount=1, full=0, id=131204, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010210, rate=10000 },
-          { id=10010210, rate=10000 } 
+          { id=10010210, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         chapter=2,
         chapter_name="月辉秘境",
@@ -419,12 +450,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049203 } },
         first_pass_reward={ { id=2253, rate=10000 } },
-        force=53000,
+        force=42000,
         jindu_preview={  },
         level=25,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=38,
+        monster_lv=34,
+        name2="月辉",
         number=3,
         sec_name="第2层",
         section=2,
@@ -435,16 +467,18 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010210, rate=10000 },
-          { id=10010210, rate=10000 } 
+          { id=10010210, rate=10000 },
+          { id=2066, rate=6000 } 
         },
-        stage_team=301042,
+        stage_team=302042,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010210, rate=10000 },
           { id=10010210, rate=10000 },
-          { id=10010210, rate=5000 } 
+          { id=10010210, rate=5000 },
+          { id=2066, rate=6000 } 
         },
         team_target_list={  },
         type=0 
@@ -452,18 +486,20 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111102 },
-          { amount=1, full=0, id=121102 },
-          { amount=1, full=0, id=131104 },
-          { amount=1, full=0, id=131204 },
-          { amount=1, full=0, id=131205 } 
+          { amount=1, full=0, id=111102, must=0 },
+          { amount=1, full=0, id=121102, must=0 },
+          { amount=1, full=0, id=131104, must=0 },
+          { amount=1, full=0, id=131204, must=0 },
+          { amount=1, full=0, id=131205, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010220, rate=10000 },
-          { id=10010220, rate=10000 } 
+          { id=10010220, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         chapter=2,
         chapter_name="月辉秘境",
@@ -473,12 +509,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049203 } },
         first_pass_reward={ { id=2253, rate=10000 } },
-        force=63000,
+        force=48000,
         jindu_preview={  },
         level=25,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=41,
+        monster_lv=36,
+        name2="月辉",
         number=3,
         sec_name="第3层",
         section=3,
@@ -489,16 +526,18 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010220, rate=10000 },
-          { id=10010220, rate=10000 } 
+          { id=10010220, rate=10000 },
+          { id=2066, rate=6000 } 
         },
-        stage_team=301043,
+        stage_team=302043,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010220, rate=10000 },
           { id=10010220, rate=10000 },
-          { id=10010220, rate=5000 } 
+          { id=10010220, rate=5000 },
+          { id=2066, rate=6000 } 
         },
         team_target_list={  },
         type=0 
@@ -506,12 +545,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=111102 },
-          { amount=1, full=0, id=121102 },
-          { amount=1, full=0, id=131104 },
-          { amount=1, full=0, id=121202 },
-          { amount=1, full=0, id=131204 },
-          { amount=1, full=0, id=131205 } 
+          { amount=1, full=0, id=3049203, must=1 },
+          { amount=1, full=0, id=111102, must=0 },
+          { amount=1, full=0, id=121102, must=0 },
+          { amount=1, full=0, id=131104, must=0 },
+          { amount=1, full=0, id=121202, must=0 },
+          { amount=1, full=0, id=131204, must=0 },
+          { amount=1, full=0, id=131205, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -519,7 +560,8 @@ return {
           { id=420001, rate=10000 },
           { id=10010230, rate=10000 },
           { id=10010230, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         chapter=2,
         chapter_name="月辉秘境",
@@ -529,12 +571,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049203 } },
         first_pass_reward={ { id=2253, rate=10000 } },
-        force=71000,
+        force=56000,
         jindu_preview={  },
         level=25,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=44,
+        monster_lv=38,
+        name2="月辉",
         number=3,
         sec_name="第4层",
         section=4,
@@ -546,9 +589,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010230, rate=10000 },
           { id=10010230, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=6000 } 
         },
-        stage_team=301051,
+        stage_team=302051,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -556,7 +600,8 @@ return {
           { id=10010230, rate=10000 },
           { id=10010230, rate=10000 },
           { id=10010230, rate=5000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=6000 } 
         },
         team_target_list={  },
         type=0 
@@ -564,10 +609,12 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=121202 },
-          { amount=1, full=0, id=131204 },
-          { amount=1, full=0, id=131205 },
-          { amount=1, full=0, id=131302 } 
+          { amount=1, full=0, id=3049203, must=1 },
+          { amount=1, full=0, id=121202, must=0 },
+          { amount=1, full=0, id=131204, must=0 },
+          { amount=1, full=0, id=131205, must=0 },
+          { amount=1, full=0, id=131302, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -575,7 +622,8 @@ return {
           { id=420001, rate=10000 },
           { id=10010240, rate=10000 },
           { id=10010240, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=8000 } 
         },
         chapter=2,
         chapter_name="月辉秘境",
@@ -585,12 +633,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=2, full=0, id=3049203 } },
         first_pass_reward={ { id=2253, rate=10000 }, { id=2253, rate=10000 } },
-        force=78000,
+        force=67000,
         jindu_preview={  },
         level=25,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=47,
+        monster_lv=43,
+        name2="月辉",
         number=3,
         sec_name="第5层",
         section=5,
@@ -602,9 +651,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010240, rate=10000 },
           { id=10010240, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=8000 } 
         },
-        stage_team=301052,
+        stage_team=302052,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -612,7 +662,8 @@ return {
           { id=10010240, rate=10000 },
           { id=10010240, rate=10000 },
           { id=10010240, rate=5000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=8000 } 
         },
         team_target_list={  },
         type=1 
@@ -620,12 +671,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=121202 },
-          { amount=1, full=0, id=131204 },
-          { amount=1, full=0, id=131205 },
-          { amount=1, full=0, id=111301 },
-          { amount=1, full=0, id=121303 },
-          { amount=1, full=0, id=131302 } 
+          { amount=1, full=0, id=3049203, must=1 },
+          { amount=1, full=0, id=121202, must=0 },
+          { amount=1, full=0, id=131204, must=0 },
+          { amount=1, full=0, id=131205, must=0 },
+          { amount=1, full=0, id=111301, must=0 },
+          { amount=1, full=0, id=121303, must=0 },
+          { amount=1, full=0, id=131302, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -633,7 +686,8 @@ return {
           { id=420001, rate=10000 },
           { id=10010250, rate=10000 },
           { id=10010250, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=10000 } 
         },
         chapter=2,
         chapter_name="月辉秘境",
@@ -643,12 +697,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=2, full=0, id=3049203 } },
         first_pass_reward={ { id=2253, rate=10000 }, { id=2253, rate=10000 } },
-        force=85000,
+        force=79000,
         jindu_preview={  },
         level=25,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=50,
+        monster_lv=46,
+        name2="月辉",
         number=3,
         sec_name="第6层",
         section=6,
@@ -660,9 +715,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010250, rate=10000 },
           { id=10010250, rate=10000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=10000 } 
         },
-        stage_team=301053,
+        stage_team=302053,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -670,7 +726,8 @@ return {
           { id=10010250, rate=10000 },
           { id=10010250, rate=10000 },
           { id=10010250, rate=5000 },
-          { id=2253, rate=10000 } 
+          { id=2253, rate=10000 },
+          { id=2066, rate=10000 } 
         },
         team_target_list={  },
         type=2 
@@ -683,13 +740,18 @@ return {
     sections={
       {
         add_percent=0.0,
-        award={ { amount=1, full=0, id=122101 }, { amount=1, full=0, id=132101 } },
+        award={
+          { amount=1, full=0, id=122101, must=0 },
+          { amount=1, full=0, id=132101, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
+        },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010300, rate=10000 },
-          { id=10010300, rate=10000 } 
+          { id=10010300, rate=10000 },
+          { id=2066, rate=10000 } 
         },
         chapter=3,
         chapter_name="绿林秘境",
@@ -707,12 +769,13 @@ return {
           { id=2220, rate=10000 },
           { id=2220, rate=10000 } 
         },
-        force=74000,
+        force=68000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=45,
+        monster_lv=43,
+        name2="绿林",
         number=1,
         sec_name="第1层",
         section=1,
@@ -723,16 +786,18 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010300, rate=10000 },
-          { id=10010300, rate=10000 } 
+          { id=10010300, rate=10000 },
+          { id=2066, rate=10000 } 
         },
-        stage_team=301071,
+        stage_team=302071,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010300, rate=10000 },
           { id=10010300, rate=10000 },
-          { id=10010300, rate=5000 } 
+          { id=10010300, rate=5000 },
+          { id=2066, rate=10000 } 
         },
         team_target_list={  },
         type=0 
@@ -740,17 +805,19 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=112101 },
-          { amount=1, full=0, id=122101 },
-          { amount=1, full=0, id=132101 },
-          { amount=1, full=0, id=132203 } 
+          { amount=1, full=0, id=112101, must=0 },
+          { amount=1, full=0, id=122101, must=0 },
+          { amount=1, full=0, id=132101, must=0 },
+          { amount=1, full=0, id=132203, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010310, rate=10000 },
-          { id=10010310, rate=10000 } 
+          { id=10010310, rate=10000 },
+          { id=2066, rate=10000 } 
         },
         chapter=3,
         chapter_name="绿林秘境",
@@ -769,12 +836,13 @@ return {
           { id=2220, rate=10000 },
           { id=2220, rate=10000 } 
         },
-        force=89000,
+        force=81000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=48,
+        monster_lv=47,
+        name2="绿林",
         number=3,
         sec_name="第2层",
         section=2,
@@ -785,16 +853,18 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010310, rate=10000 },
-          { id=10010310, rate=10000 } 
+          { id=10010310, rate=10000 },
+          { id=2066, rate=10000 } 
         },
-        stage_team=301072,
+        stage_team=302072,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010310, rate=10000 },
           { id=10010310, rate=10000 },
-          { id=10010310, rate=5000 } 
+          { id=10010310, rate=5000 },
+          { id=2066, rate=10000 } 
         },
         team_target_list={  },
         type=0 
@@ -802,18 +872,82 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=112101 },
-          { amount=1, full=0, id=122101 },
-          { amount=1, full=0, id=132101 },
-          { amount=1, full=0, id=132201 },
-          { amount=1, full=0, id=132203 } 
+          { amount=1, full=0, id=112101, must=0 },
+          { amount=1, full=0, id=122101, must=0 },
+          { amount=1, full=0, id=132101, must=0 },
+          { amount=1, full=0, id=132201, must=0 },
+          { amount=1, full=0, id=132203, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010320, rate=10000 },
-          { id=10010320, rate=10000 } 
+          { id=10010320, rate=10000 },
+          { id=2066, rate=10000 } 
+        },
+        chapter=3,
+        chapter_name="绿林秘境",
+        desc="潮湿的海岛浮岛闪烁着点点光亮，越深的层级藏着魂卡越多",
+        desc2="5星及以上魂卡掉落几率+65%",
+        explore_list={  },
+        explore_reward={  },
+        first_pass_preview={ { amount=1, full=0, id=3049204 } },
+        first_pass_reward={ { id=2254, rate=10000 } },
+        force=89000,
+        jindu_preview={  },
+        level=45,
+        lv_award={  },
+        lv_award_rare={  },
+        monster_lv=49,
+        name2="绿林",
+        number=3,
+        sec_name="第3层",
+        section=3,
+        spr_name="wonderland1",
+        spr_path="wonderland1",
+        stage=301073,
+        stage_explore_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10010320, rate=10000 },
+          { id=10010320, rate=10000 },
+          { id=2066, rate=10000 } 
+        },
+        stage_team=302073,
+        target_list={  },
+        team_challenge_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10010320, rate=10000 },
+          { id=10010320, rate=10000 },
+          { id=10010320, rate=5000 },
+          { id=2066, rate=10000 } 
+        },
+        team_target_list={  },
+        type=0 
+      },
+      {
+        add_percent=0.0,
+        award={
+          { amount=1, full=0, id=3049204, must=1 },
+          { amount=1, full=0, id=112101, must=0 },
+          { amount=1, full=0, id=122101, must=0 },
+          { amount=1, full=0, id=132101, must=0 },
+          { amount=1, full=0, id=122202, must=0 },
+          { amount=1, full=0, id=132201, must=0 },
+          { amount=1, full=0, id=132203, must=0 },
+          { amount=1, full=0, id=181101, must=0 } 
+        },
+        award_rare={  },
+        challenge_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10010330, rate=10000 },
+          { id=10010330, rate=10000 },
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 } 
         },
         chapter=3,
         chapter_name="绿林秘境",
@@ -829,62 +963,7 @@ return {
         lv_award={  },
         lv_award_rare={  },
         monster_lv=51,
-        number=3,
-        sec_name="第3层",
-        section=3,
-        spr_name="wonderland1",
-        spr_path="wonderland1",
-        stage=301073,
-        stage_explore_reward={
-          { id=2015001, rate=10000 },
-          { id=420001, rate=10000 },
-          { id=10010320, rate=10000 },
-          { id=10010320, rate=10000 } 
-        },
-        stage_team=301073,
-        target_list={  },
-        team_challenge_reward={
-          { id=2015001, rate=10000 },
-          { id=420001, rate=10000 },
-          { id=10010320, rate=10000 },
-          { id=10010320, rate=10000 },
-          { id=10010320, rate=5000 } 
-        },
-        team_target_list={  },
-        type=0 
-      },
-      {
-        add_percent=0.0,
-        award={
-          { amount=1, full=0, id=112101 },
-          { amount=1, full=0, id=122101 },
-          { amount=1, full=0, id=132101 },
-          { amount=1, full=0, id=122202 },
-          { amount=1, full=0, id=132201 },
-          { amount=1, full=0, id=132203 } 
-        },
-        award_rare={  },
-        challenge_reward={
-          { id=2015001, rate=10000 },
-          { id=420001, rate=10000 },
-          { id=10010330, rate=10000 },
-          { id=10010330, rate=10000 },
-          { id=2254, rate=10000 } 
-        },
-        chapter=3,
-        chapter_name="绿林秘境",
-        desc="潮湿的海岛浮岛闪烁着点点光亮，越深的层级藏着魂卡越多",
-        desc2="5星及以上魂卡掉落几率+65%",
-        explore_list={  },
-        explore_reward={  },
-        first_pass_preview={ { amount=1, full=0, id=3049204 } },
-        first_pass_reward={ { id=2254, rate=10000 } },
-        force=107000,
-        jindu_preview={  },
-        level=45,
-        lv_award={  },
-        lv_award_rare={  },
-        monster_lv=54,
+        name2="绿林",
         number=3,
         sec_name="第4层",
         section=4,
@@ -896,9 +975,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010330, rate=10000 },
           { id=10010330, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 } 
         },
-        stage_team=301081,
+        stage_team=302081,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -906,7 +986,8 @@ return {
           { id=10010330, rate=10000 },
           { id=10010330, rate=10000 },
           { id=10010330, rate=5000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 } 
         },
         team_target_list={  },
         type=0 
@@ -914,11 +995,13 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=122202 },
-          { amount=1, full=0, id=132201 },
-          { amount=1, full=0, id=132203 },
-          { amount=1, full=0, id=112302 },
-          { amount=1, full=0, id=132301 } 
+          { amount=1, full=0, id=3049204, must=1 },
+          { amount=1, full=0, id=122202, must=0 },
+          { amount=1, full=0, id=132201, must=0 },
+          { amount=1, full=0, id=132203, must=0 },
+          { amount=1, full=0, id=112302, must=0 },
+          { amount=1, full=0, id=132301, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -926,7 +1009,9 @@ return {
           { id=420001, rate=10000 },
           { id=10010340, rate=10000 },
           { id=10010340, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=1000 } 
         },
         chapter=3,
         chapter_name="绿林秘境",
@@ -936,12 +1021,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049204 } },
         first_pass_reward={ { id=2254, rate=10000 } },
-        force=117000,
+        force=112000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=57,
+        monster_lv=54,
+        name2="绿林",
         number=3,
         sec_name="第5层",
         section=5,
@@ -953,9 +1039,11 @@ return {
           { id=420001, rate=10000 },
           { id=10010340, rate=10000 },
           { id=10010340, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=1000 } 
         },
-        stage_team=301082,
+        stage_team=302082,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -963,7 +1051,9 @@ return {
           { id=10010340, rate=10000 },
           { id=10010340, rate=10000 },
           { id=10010340, rate=5000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=1000 } 
         },
         team_target_list={  },
         type=1 
@@ -971,12 +1061,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=122202 },
-          { amount=1, full=0, id=132201 },
-          { amount=1, full=0, id=132203 },
-          { amount=1, full=0, id=112302 },
-          { amount=1, full=0, id=122302 },
-          { amount=1, full=0, id=132301 } 
+          { amount=1, full=0, id=3049204, must=1 },
+          { amount=1, full=0, id=122202, must=0 },
+          { amount=1, full=0, id=132201, must=0 },
+          { amount=1, full=0, id=132203, must=0 },
+          { amount=1, full=0, id=112302, must=0 },
+          { amount=1, full=0, id=122302, must=0 },
+          { amount=1, full=0, id=132301, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -984,7 +1076,9 @@ return {
           { id=420001, rate=10000 },
           { id=10010350, rate=10000 },
           { id=10010350, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         chapter=3,
         chapter_name="绿林秘境",
@@ -999,7 +1093,8 @@ return {
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=60,
+        monster_lv=57,
+        name2="绿林",
         number=3,
         sec_name="第6层",
         section=6,
@@ -1011,9 +1106,11 @@ return {
           { id=420001, rate=10000 },
           { id=10010350, rate=10000 },
           { id=10010350, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
-        stage_team=301083,
+        stage_team=302083,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1021,7 +1118,9 @@ return {
           { id=10010350, rate=10000 },
           { id=10010350, rate=10000 },
           { id=10010350, rate=5000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         team_target_list={  },
         type=2 
@@ -1034,13 +1133,19 @@ return {
     sections={
       {
         add_percent=0.0,
-        award={ { amount=1, full=0, id=122102 }, { amount=1, full=0, id=132102 } },
+        award={
+          { amount=1, full=0, id=122102, must=0 },
+          { amount=1, full=0, id=132102, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
+        },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010400, rate=10000 },
-          { id=10010400, rate=10000 } 
+          { id=10010400, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         chapter=4,
         chapter_name="白霜秘境",
@@ -1050,12 +1155,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049204 } },
         first_pass_reward={ { id=2254, rate=10000 } },
-        force=112000,
+        force=107000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=55,
+        monster_lv=53,
+        name2="白霜",
         number=1,
         sec_name="第1层",
         section=1,
@@ -1066,16 +1172,20 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010400, rate=10000 },
-          { id=10010400, rate=10000 } 
+          { id=10010400, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
-        stage_team=301101,
+        stage_team=302101,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010400, rate=10000 },
           { id=10010400, rate=10000 },
-          { id=10010400, rate=5000 } 
+          { id=10010400, rate=5000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         team_target_list={  },
         type=0 
@@ -1083,17 +1193,20 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=112102 },
-          { amount=1, full=0, id=122102 },
-          { amount=1, full=0, id=132102 },
-          { amount=1, full=0, id=132204 } 
+          { amount=1, full=0, id=112102, must=0 },
+          { amount=1, full=0, id=122102, must=0 },
+          { amount=1, full=0, id=132102, must=0 },
+          { amount=1, full=0, id=132204, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010410, rate=10000 },
-          { id=10010410, rate=10000 } 
+          { id=10010410, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         chapter=4,
         chapter_name="白霜秘境",
@@ -1103,12 +1216,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049204 } },
         first_pass_reward={ { id=2254, rate=10000 } },
-        force=133000,
+        force=117000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=58,
+        monster_lv=55,
+        name2="白霜",
         number=3,
         sec_name="第2层",
         section=2,
@@ -1119,16 +1233,20 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010410, rate=10000 },
-          { id=10010410, rate=10000 } 
+          { id=10010410, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
-        stage_team=301102,
+        stage_team=302102,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010410, rate=10000 },
           { id=10010410, rate=10000 },
-          { id=10010410, rate=5000 } 
+          { id=10010410, rate=5000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         team_target_list={  },
         type=0 
@@ -1136,18 +1254,86 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=112102 },
-          { amount=1, full=0, id=122102 },
-          { amount=1, full=0, id=132102 },
-          { amount=1, full=0, id=132202 },
-          { amount=1, full=0, id=132204 } 
+          { amount=1, full=0, id=112102, must=0 },
+          { amount=1, full=0, id=122102, must=0 },
+          { amount=1, full=0, id=132102, must=0 },
+          { amount=1, full=0, id=132202, must=0 },
+          { amount=1, full=0, id=132204, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010420, rate=10000 },
-          { id=10010420, rate=10000 } 
+          { id=10010420, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
+        },
+        chapter=4,
+        chapter_name="白霜秘境",
+        desc="萧瑟的凛冬浮岛闪烁着点点光亮，越深的层级藏着魂卡越多",
+        desc2="5星及以上魂卡掉落几率+100%",
+        explore_list={  },
+        explore_reward={  },
+        first_pass_preview={ { amount=1, full=0, id=3049204 } },
+        first_pass_reward={ { id=2254, rate=10000 } },
+        force=133000,
+        jindu_preview={  },
+        level=45,
+        lv_award={  },
+        lv_award_rare={  },
+        monster_lv=58,
+        name2="白霜",
+        number=3,
+        sec_name="第3层",
+        section=3,
+        spr_name="wonderland3",
+        spr_path="wonderland3",
+        stage=301103,
+        stage_explore_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10010420, rate=10000 },
+          { id=10010420, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
+        },
+        stage_team=302103,
+        target_list={  },
+        team_challenge_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10010420, rate=10000 },
+          { id=10010420, rate=10000 },
+          { id=10010420, rate=5000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
+        },
+        team_target_list={  },
+        type=0 
+      },
+      {
+        add_percent=0.0,
+        award={
+          { amount=1, full=0, id=3049204, must=1 },
+          { amount=1, full=0, id=112102, must=0 },
+          { amount=1, full=0, id=122102, must=0 },
+          { amount=1, full=0, id=132102, must=0 },
+          { amount=1, full=0, id=122201, must=0 },
+          { amount=1, full=0, id=132202, must=0 },
+          { amount=1, full=0, id=132204, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
+        },
+        award_rare={  },
+        challenge_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10010430, rate=10000 },
+          { id=10010430, rate=10000 },
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         chapter=4,
         chapter_name="白霜秘境",
@@ -1162,63 +1348,8 @@ return {
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=61,
-        number=3,
-        sec_name="第3层",
-        section=3,
-        spr_name="wonderland3",
-        spr_path="wonderland3",
-        stage=301103,
-        stage_explore_reward={
-          { id=2015001, rate=10000 },
-          { id=420001, rate=10000 },
-          { id=10010420, rate=10000 },
-          { id=10010420, rate=10000 } 
-        },
-        stage_team=301103,
-        target_list={  },
-        team_challenge_reward={
-          { id=2015001, rate=10000 },
-          { id=420001, rate=10000 },
-          { id=10010420, rate=10000 },
-          { id=10010420, rate=10000 },
-          { id=10010420, rate=5000 } 
-        },
-        team_target_list={  },
-        type=0 
-      },
-      {
-        add_percent=0.0,
-        award={
-          { amount=1, full=0, id=112102 },
-          { amount=1, full=0, id=122102 },
-          { amount=1, full=0, id=132102 },
-          { amount=1, full=0, id=122201 },
-          { amount=1, full=0, id=132202 },
-          { amount=1, full=0, id=132204 } 
-        },
-        award_rare={  },
-        challenge_reward={
-          { id=2015001, rate=10000 },
-          { id=420001, rate=10000 },
-          { id=10010430, rate=10000 },
-          { id=10010430, rate=10000 },
-          { id=2254, rate=10000 } 
-        },
-        chapter=4,
-        chapter_name="白霜秘境",
-        desc="萧瑟的凛冬浮岛闪烁着点点光亮，越深的层级藏着魂卡越多",
-        desc2="5星及以上魂卡掉落几率+100%",
-        explore_list={  },
-        explore_reward={  },
-        first_pass_preview={ { amount=1, full=0, id=3049204 } },
-        first_pass_reward={ { id=2254, rate=10000 } },
-        force=151000,
-        jindu_preview={  },
-        level=45,
-        lv_award={  },
-        lv_award_rare={  },
-        monster_lv=64,
+        monster_lv=60,
+        name2="白霜",
         number=3,
         sec_name="第4层",
         section=4,
@@ -1230,9 +1361,11 @@ return {
           { id=420001, rate=10000 },
           { id=10010430, rate=10000 },
           { id=10010430, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
-        stage_team=301111,
+        stage_team=302111,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1240,7 +1373,9 @@ return {
           { id=10010430, rate=10000 },
           { id=10010430, rate=10000 },
           { id=10010430, rate=5000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=3000 } 
         },
         team_target_list={  },
         type=0 
@@ -1248,10 +1383,12 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=122201 },
-          { amount=1, full=0, id=132202 },
-          { amount=1, full=0, id=132204 },
-          { amount=1, full=0, id=132303 } 
+          { amount=1, full=0, id=3049204, must=1 },
+          { amount=1, full=0, id=122201, must=0 },
+          { amount=1, full=0, id=132202, must=0 },
+          { amount=1, full=0, id=132204, must=0 },
+          { amount=1, full=0, id=132303, must=0 },
+          { amount=1, full=0, id=181203, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -1259,7 +1396,9 @@ return {
           { id=420001, rate=10000 },
           { id=10010440, rate=10000 },
           { id=10010440, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=4000 } 
         },
         chapter=4,
         chapter_name="白霜秘境",
@@ -1269,12 +1408,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=2, full=0, id=3049204 } },
         first_pass_reward={ { id=2254, rate=10000 }, { id=2254, rate=10000 } },
-        force=159000,
+        force=154000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=67,
+        monster_lv=63,
+        name2="白霜",
         number=3,
         sec_name="第5层",
         section=5,
@@ -1286,9 +1426,11 @@ return {
           { id=420001, rate=10000 },
           { id=10010440, rate=10000 },
           { id=10010440, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=4000 } 
         },
-        stage_team=301112,
+        stage_team=302112,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1296,7 +1438,9 @@ return {
           { id=10010440, rate=10000 },
           { id=10010440, rate=10000 },
           { id=10010440, rate=5000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=4000 } 
         },
         team_target_list={  },
         type=1 
@@ -1304,11 +1448,13 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=122201 },
-          { amount=1, full=0, id=132202 },
-          { amount=1, full=0, id=132204 },
-          { amount=1, full=0, id=122301 },
-          { amount=1, full=0, id=132303 } 
+          { amount=1, full=0, id=3049204, must=1 },
+          { amount=1, full=0, id=122201, must=0 },
+          { amount=1, full=0, id=132202, must=0 },
+          { amount=1, full=0, id=132204, must=0 },
+          { amount=1, full=0, id=122301, must=0 },
+          { amount=1, full=0, id=132303, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -1316,7 +1462,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010450, rate=10000 },
           { id=10010450, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         chapter=4,
         chapter_name="白霜秘境",
@@ -1326,12 +1475,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=2, full=0, id=3049204 } },
         first_pass_reward={ { id=2254, rate=10000 }, { id=2254, rate=10000 } },
-        force=167000,
+        force=166000,
         jindu_preview={  },
         level=45,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=70,
+        monster_lv=66,
+        name2="白霜",
         number=3,
         sec_name="第6层",
         section=6,
@@ -1343,9 +1493,12 @@ return {
           { id=420001, rate=10000 },
           { id=10010450, rate=10000 },
           { id=10010450, rate=10000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
-        stage_team=301113,
+        stage_team=302113,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1353,7 +1506,10 @@ return {
           { id=10010450, rate=10000 },
           { id=10010450, rate=10000 },
           { id=10010450, rate=5000 },
-          { id=2254, rate=10000 } 
+          { id=2254, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         team_target_list={  },
         type=2 
@@ -1366,13 +1522,20 @@ return {
     sections={
       {
         add_percent=0.0,
-        award={ { amount=1, full=0, id=123101 }, { amount=1, full=0, id=133101 } },
+        award={
+          { amount=1, full=0, id=123101, must=0 },
+          { amount=1, full=0, id=133101, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
+        },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010500, rate=10000 },
-          { id=10010500, rate=10000 } 
+          { id=10010500, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         chapter=5,
         chapter_name="红叶秘境",
@@ -1395,12 +1558,13 @@ return {
           { id=2220, rate=10000 },
           { id=2220, rate=10000 } 
         },
-        force=159000,
+        force=151000,
         jindu_preview={  },
         level=65,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=65,
+        monster_lv=62,
+        name2="红叶",
         number=1,
         sec_name="第1层",
         section=1,
@@ -1411,16 +1575,22 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010500, rate=10000 },
-          { id=10010500, rate=10000 } 
+          { id=10010500, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
-        stage_team=301127,
+        stage_team=302127,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010500, rate=10000 },
           { id=10010500, rate=10000 },
-          { id=10010500, rate=5000 } 
+          { id=10010500, rate=5000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         team_target_list={  },
         type=0 
@@ -1428,17 +1598,21 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=113101 },
-          { amount=1, full=0, id=123101 },
-          { amount=1, full=0, id=133101 },
-          { amount=1, full=0, id=133202 } 
+          { amount=1, full=0, id=113101, must=0 },
+          { amount=1, full=0, id=123101, must=0 },
+          { amount=1, full=0, id=133101, must=0 },
+          { amount=1, full=0, id=133202, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010510, rate=10000 },
-          { id=10010510, rate=10000 } 
+          { id=10010510, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         chapter=5,
         chapter_name="红叶秘境",
@@ -1463,12 +1637,13 @@ return {
           { id=2220, rate=10000 },
           { id=2220, rate=10000 } 
         },
-        force=175000,
+        force=162000,
         jindu_preview={  },
         level=65,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=68,
+        monster_lv=65,
+        name2="红叶",
         number=3,
         sec_name="第2层",
         section=2,
@@ -1479,16 +1654,22 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010510, rate=10000 },
-          { id=10010510, rate=10000 } 
+          { id=10010510, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
-        stage_team=301128,
+        stage_team=302128,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010510, rate=10000 },
           { id=10010510, rate=10000 },
-          { id=10010510, rate=5000 } 
+          { id=10010510, rate=5000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         team_target_list={  },
         type=0 
@@ -1496,18 +1677,22 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=113101 },
-          { amount=1, full=0, id=123101 },
-          { amount=1, full=0, id=133101 },
-          { amount=1, full=0, id=133202 },
-          { amount=1, full=0, id=133203 } 
+          { amount=1, full=0, id=113101, must=0 },
+          { amount=1, full=0, id=123101, must=0 },
+          { amount=1, full=0, id=133101, must=0 },
+          { amount=1, full=0, id=133202, must=0 },
+          { amount=1, full=0, id=133203, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
         },
         award_rare={  },
         challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010520, rate=10000 },
-          { id=10010520, rate=10000 } 
+          { id=10010520, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         chapter=5,
         chapter_name="红叶秘境",
@@ -1517,12 +1702,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049205 } },
         first_pass_reward={ { id=2255, rate=10000 } },
-        force=193000,
+        force=175000,
         jindu_preview={  },
         level=65,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=71,
+        monster_lv=68,
+        name2="红叶",
         number=3,
         sec_name="第3层",
         section=3,
@@ -1533,16 +1719,22 @@ return {
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010520, rate=10000 },
-          { id=10010520, rate=10000 } 
+          { id=10010520, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
-        stage_team=301129,
+        stage_team=302129,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
           { id=420001, rate=10000 },
           { id=10010520, rate=10000 },
           { id=10010520, rate=10000 },
-          { id=10010520, rate=5000 } 
+          { id=10010520, rate=5000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         team_target_list={  },
         type=0 
@@ -1550,13 +1742,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=113101 },
-          { amount=1, full=0, id=123101 },
-          { amount=1, full=0, id=133101 },
-          { amount=1, full=0, id=113201 },
-          { amount=1, full=0, id=123201 },
-          { amount=1, full=0, id=133202 },
-          { amount=1, full=0, id=133203 } 
+          { amount=1, full=0, id=3049205, must=1 },
+          { amount=1, full=0, id=123101, must=0 },
+          { amount=1, full=0, id=133101, must=0 },
+          { amount=1, full=0, id=113201, must=0 },
+          { amount=1, full=0, id=123201, must=0 },
+          { amount=1, full=0, id=133202, must=0 },
+          { amount=1, full=0, id=133203, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -1564,7 +1757,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010530, rate=10000 },
           { id=10010530, rate=10000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         chapter=5,
         chapter_name="红叶秘境",
@@ -1574,12 +1770,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049205 } },
         first_pass_reward={ { id=2255, rate=10000 } },
-        force=204000,
+        force=193000,
         jindu_preview={  },
         level=65,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=74,
+        monster_lv=71,
+        name2="红叶",
         number=3,
         sec_name="第4层",
         section=4,
@@ -1591,9 +1788,12 @@ return {
           { id=420001, rate=10000 },
           { id=10010530, rate=10000 },
           { id=10010530, rate=10000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
-        stage_team=301130,
+        stage_team=302130,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1601,7 +1801,10 @@ return {
           { id=10010530, rate=10000 },
           { id=10010530, rate=10000 },
           { id=10010530, rate=5000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=100 } 
         },
         team_target_list={  },
         type=0 
@@ -1609,11 +1812,13 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=113201 },
-          { amount=1, full=0, id=123201 },
-          { amount=1, full=0, id=133202 },
-          { amount=1, full=0, id=133203 },
-          { amount=1, full=0, id=133301 } 
+          { amount=1, full=0, id=3049205, must=1 },
+          { amount=1, full=0, id=113201, must=0 },
+          { amount=1, full=0, id=123201, must=0 },
+          { amount=1, full=0, id=133202, must=0 },
+          { amount=1, full=0, id=133203, must=0 },
+          { amount=1, full=0, id=133301, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -1621,7 +1826,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010540, rate=10000 },
           { id=10010540, rate=10000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=200 } 
         },
         chapter=5,
         chapter_name="红叶秘境",
@@ -1631,12 +1839,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=1, full=0, id=3049205 } },
         first_pass_reward={ { id=2255, rate=10000 } },
-        force=218000,
+        force=207000,
         jindu_preview={  },
         level=65,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=77,
+        monster_lv=75,
+        name2="红叶",
         number=3,
         sec_name="第5层",
         section=5,
@@ -1648,9 +1857,12 @@ return {
           { id=420001, rate=10000 },
           { id=10010540, rate=10000 },
           { id=10010540, rate=10000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=200 } 
         },
-        stage_team=301131,
+        stage_team=302131,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1658,7 +1870,10 @@ return {
           { id=10010540, rate=10000 },
           { id=10010540, rate=10000 },
           { id=10010540, rate=5000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=5000 },
+          { id=2068, rate=200 } 
         },
         team_target_list={  },
         type=1 
@@ -1666,12 +1881,14 @@ return {
       {
         add_percent=0.0,
         award={
-          { amount=1, full=0, id=113201 },
-          { amount=1, full=0, id=123201 },
-          { amount=1, full=0, id=133202 },
-          { amount=1, full=0, id=133203 },
-          { amount=1, full=0, id=123301 },
-          { amount=1, full=0, id=133301 } 
+          { amount=1, full=0, id=3049205, must=1 },
+          { amount=1, full=0, id=113201, must=0 },
+          { amount=1, full=0, id=123201, must=0 },
+          { amount=1, full=0, id=133202, must=0 },
+          { amount=1, full=0, id=133203, must=0 },
+          { amount=1, full=0, id=123301, must=0 },
+          { amount=1, full=0, id=133301, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
         },
         award_rare={  },
         challenge_reward={
@@ -1679,7 +1896,10 @@ return {
           { id=420001, rate=10000 },
           { id=10010550, rate=10000 },
           { id=10010550, rate=10000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=6000 },
+          { id=2068, rate=300 } 
         },
         chapter=5,
         chapter_name="红叶秘境",
@@ -1689,12 +1909,13 @@ return {
         explore_reward={  },
         first_pass_preview={ { amount=2, full=0, id=3049205 } },
         first_pass_reward={ { id=2255, rate=10000 }, { id=2255, rate=10000 } },
-        force=238000,
+        force=231000,
         jindu_preview={  },
         level=65,
         lv_award={  },
         lv_award_rare={  },
-        monster_lv=80,
+        monster_lv=79,
+        name2="红叶",
         number=3,
         sec_name="第6层",
         section=6,
@@ -1706,9 +1927,12 @@ return {
           { id=420001, rate=10000 },
           { id=10010550, rate=10000 },
           { id=10010550, rate=10000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=6000 },
+          { id=2068, rate=300 } 
         },
-        stage_team=301132,
+        stage_team=302132,
         target_list={  },
         team_challenge_reward={
           { id=2015001, rate=10000 },
@@ -1716,7 +1940,85 @@ return {
           { id=10010550, rate=10000 },
           { id=10010550, rate=10000 },
           { id=10010550, rate=5000 },
-          { id=2255, rate=10000 } 
+          { id=2255, rate=10000 },
+          { id=2066, rate=10000 },
+          { id=2067, rate=6000 },
+          { id=2068, rate=300 } 
+        },
+        team_target_list={  },
+        type=2 
+      } 
+    } 
+  },
+  {
+    chapter=6,
+    name="虚空秘境",
+    sections={
+      {
+        add_percent=0.0,
+        award={
+          { amount=1, full=0, id=3049206, must=1 },
+          { amount=1, full=0, id=3049207, must=0 },
+          { amount=1, full=0, id=133303, must=0 },
+          { amount=1, full=0, id=113304, must=0 },
+          { amount=1, full=0, id=133201, must=0 },
+          { amount=1, full=0, id=133203, must=0 },
+          { amount=1, full=0, id=181302, must=0 } 
+        },
+        award_rare={  },
+        challenge_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=2256, rate=10000 },
+          { id=2257, rate=1000 },
+          { id=2067, rate=6000 },
+          { id=2068, rate=300 } 
+        },
+        chapter=6,
+        chapter_name="虚空秘境",
+        desc="深幽的虚空秘境闪烁着点点光亮，越深的层级藏着魂卡越多",
+        desc2="",
+        explore_list={  },
+        explore_reward={  },
+        first_pass_preview={ { amount=1, full=0, id=3049206 } },
+        first_pass_reward={ { id=2256, rate=10000 } },
+        force=400000,
+        jindu_preview={  },
+        level=80,
+        lv_award={  },
+        lv_award_rare={  },
+        monster_lv=100,
+        name2="虚空",
+        number=1,
+        sec_name="第1层",
+        section=1,
+        spr_name="wonderland6",
+        spr_path="wonderland6",
+        stage=301024,
+        stage_explore_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=2256, rate=10000 },
+          { id=2257, rate=1000 },
+          { id=2067, rate=6000 },
+          { id=2068, rate=300 } 
+        },
+        stage_team=302024,
+        target_list={  },
+        team_challenge_reward={
+          { id=2015001, rate=10000 },
+          { id=420001, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=10011010, rate=10000 },
+          { id=2256, rate=10000 },
+          { id=2257, rate=1000 },
+          { id=2067, rate=6000 },
+          { id=2068, rate=300 } 
         },
         team_target_list={  },
         type=2 

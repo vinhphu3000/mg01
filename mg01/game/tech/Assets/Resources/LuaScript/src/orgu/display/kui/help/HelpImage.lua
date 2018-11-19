@@ -4,6 +4,8 @@
 local modname = "HelpImage"
 --==================global reference=======================
 
+local sprite_msg = require "data.sprite_msg"
+
 --===================namespace========================
 local ns = "org.kui"
 local using = {--[[namespace1,...]]}
@@ -41,22 +43,30 @@ HelpImage.fnSet_gr =
 
 --加载图片_异步
 --@nativeSize 是否重置size
-function HelpImage.load_sprite(go_, refer_, url_, spriteName_,  nativeSize)
+function HelpImage.load_sprite(go_, refer_, spriteName_,  nativeSize)
 
     local a = getImage(go_)
     if not a then
         return end
-    SprAtlasCache:loadSprite(refer_, a, url_, spriteName_,  nativeSize)
+	local atlasName = sprite_msg[spriteName_]   --获取图片所在的图集
+	if not atlasName then
+		nslog.error(false, 'miss sprite atlas ' .. spriteName_)
+	end
+    SprAtlasCache:loadSprite(refer_, a, atlasName, spriteName_,  nativeSize)
 end
 
 --加载图片_同步
 --@nativeSize 是否重置size
-function HelpImage.set_sprite(go_, refer_, url_, spriteName_,  nativeSize)
+function HelpImage.set_sprite(go_, refer_, spriteName_,  nativeSize)
 
     local a = getImage(go_)
     if not a then
         return end
-    SprAtlasCache:setSprite(refer_, a, url_, spriteName_,  nativeSize)
+	local atlasName = sprite_msg[spriteName_]  --获取图片所在的图集
+	if not atlasName then
+		nslog.error(false, 'miss sprite atlas ' .. spriteName_)
+	end
+    SprAtlasCache:setSprite(refer_, a, atlasName, spriteName_,  nativeSize)
 end
 
 

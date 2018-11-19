@@ -62,6 +62,7 @@ function t2str(root, dep, no_cls)
 
         cur_dep = cur_dep + 1
 
+	    local is_arr = #t > 0    --是否数组
         local key, val, b, tp
         local tmp_arr = {}
         for k, v in pairs(t) do
@@ -99,7 +100,10 @@ function t2str(root, dep, no_cls)
             end
         end
 
-        Array.sortOn(tmp_arr, "k", Array.ASCENDING) --按名称升序
+	    if not is_arr then
+		    --不是数组才排序
+		    Array.sortOn(tmp_arr, "k", Array.ASCENDING) --按名称升序
+		end
 
         local temp = {}
         local len = #tmp_arr

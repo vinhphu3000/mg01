@@ -340,7 +340,7 @@ local function excute_script_list(script_path, name2config)
 			local ms = {}
 			local desc_arr = {}
 			for i,name in ipairs(includes) do
-				local config = name2config[name]
+				local config = name2config[name] or name2new[name]
 				assert(config, string.format('找不到需要引用的表：%s', name))
 				ms[name] = config.tbl
 				desc_arr[#desc_arr+1] = config.desc

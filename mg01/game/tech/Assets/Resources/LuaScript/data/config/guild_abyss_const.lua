@@ -1,4 +1,5 @@
---G公会-黑暗深渊.xls_黑暗深渊常量
+-- ../xls/\G公会-黑暗深渊.xls sheet_name:黑暗深渊常量
+
 return {
   abyss_auction_begin=3040,
   abyss_auction_last=720,
@@ -16,14 +17,14 @@ return {
   abyss_stage_id=380001,
   abyss_start_notice_id=3025,
   abyss_transport="1:ghsd_tp1,2:ghsd_tp2,3:ghsd_tp3,4:ghsd_tp4,5:ghsd_tp5",
-  hd_abyss_capacity=54,
+  hd_abyss_capacity=40,
   hd_abyss_closing_notice=3029,
   hd_abyss_cost_guild_money=1000,
   hd_abyss_nd_award={
-    { amount=1, id=1001 },
+    { amount=1, id=3300403 },
+    { amount=1, id=67002 },
     { amount=1, id=46200 },
-    { amount=1, id=430010 },
-    { amount=1, id=3300300 } 
+    { amount=1, id=1001 } 
   },
   hd_abyss_nd_guild_lv=1,
   hd_abyss_nd_guild_money=20000,

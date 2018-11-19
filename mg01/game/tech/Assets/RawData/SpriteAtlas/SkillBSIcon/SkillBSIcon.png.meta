@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4e5f4ca785642804db247b465f9ede03
-timeCreated: 1510043850
+timeCreated: 1542027680
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -122,8 +122,8 @@ TextureImporter:
       name: bianshenjumo
       rect:
         serializedVersion: 2
-        x: 2
-        y: 210
+        x: 106
+        y: 2
         width: 100
         height: 100
       alignment: 0
@@ -135,8 +135,8 @@ TextureImporter:
       name: bianshenminuowa
       rect:
         serializedVersion: 2
-        x: 2
-        y: 314
+        x: 106
+        y: 106
         width: 100
         height: 100
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       name: bianshenpangjiuke
       rect:
         serializedVersion: 2
-        x: 106
+        x: 210
         y: 2
         width: 100
         height: 100
@@ -161,7 +161,7 @@ TextureImporter:
       name: bianshenxiaoying
       rect:
         serializedVersion: 2
-        x: 106
+        x: 210
         y: 106
         width: 100
         height: 100
@@ -174,8 +174,8 @@ TextureImporter:
       name: bianshenxuejingling
       rect:
         serializedVersion: 2
-        x: 106
-        y: 210
+        x: 314
+        y: 2
         width: 100
         height: 100
       alignment: 0
@@ -187,307 +187,8 @@ TextureImporter:
       name: bingjinglingskill1
       rect:
         serializedVersion: 2
-        x: 106
-        y: 314
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: bingjinglingskill2
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: dajiguang
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: E10011
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 210
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: E10040
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 314
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: gongjizengqiang
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: huoyu
-      rect:
-        serializedVersion: 2
         x: 314
         y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: jiukeskill2
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 210
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: jiukewangskill1
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 314
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: jiukewangskill2
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: jumoskill1
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: jumoskill2
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 210
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: minuowaskill1
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 314
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: minuowaskill2
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: pangjiuketadi
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: tuoleiskill1
-      rect:
-        serializedVersion: 2
-        x: 730
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: tuoleiskill2
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 2
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: tuoleixiya
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: xuejinglingskill1
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 210
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: xuejinglingskill2
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 314
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: yingskill1
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: yingskill2
-      rect:
-        serializedVersion: 2
-        x: 730
-        y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: zhaohuanbinglang
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 106
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: zhaohuanhudie
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 210
         width: 100
         height: 100
       alignment: 0
