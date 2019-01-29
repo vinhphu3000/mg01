@@ -22,7 +22,7 @@ using Edit.PSD4UGUI;
 namespace Edit
 {
 
-    public class SpriteAtlasMaker
+    public class SpriteAtlasWnd
     {
 
 

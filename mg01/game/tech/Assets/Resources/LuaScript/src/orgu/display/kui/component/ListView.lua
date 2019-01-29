@@ -26,7 +26,7 @@ local LayoutUtil = LayoutUtil
 
 function ListView:__dispose()
 
-	self:clear_all_item_views(true)
+	self:__clear_all_item_views(true)
 	self.m_itemPool:clear()
 end
 
@@ -60,7 +60,7 @@ function ListView:__ctor( setting)
 	self.m_contentSizeDf = cc.size(go:GetSizeDelta_())  --起始的content尺寸
 	self:showGameObjectEx(go)
 
-	self:initialize()
+	self:__initialize()
     
 end
 
@@ -81,9 +81,9 @@ function ListView:setting(setting)
 end
 
 
-function ListView:initialize()
+function ListView:__initialize()
 
-	self.m_itemTemp = GameObjUtil.fuzzySearchChild(self.m_gameObject, 'item')
+	self.m_itemTemp = GameObjUtil.fuzzySearchChild(self.m_gameObject, 'item')   --查找名叫item的go作为列表项
 	self.m_itemTemp:SetActive(false)
 
 	if not self.m_layoutParam.itemSize then
@@ -103,7 +103,7 @@ function ListView:__show(dataList, ...)
 	self.m_dataList = dataList or empty_tbl
 	clear_tbl(self.m_item2data)
 
-	self:create_layout_items()  --创建全部布局项
+	self:__create_layout_items()  --创建全部布局项
 
 	self:show_list()
 	self.m_dataLenLast = #self.m_dataList   --记录数据长度
@@ -140,19 +140,19 @@ function ListView:show_list()
 	local len = #self.m_dataList
 	for i=1, len do
 		index = i
-		item_go = self:create_item(index)
-		self:set_item_data(item_go, self.m_dataList[i], index)
+		item_go = self:__create_item(index)
+		self:__set_item_data(item_go, self.m_dataList[i], index)
 	end
 
 	if self.m_dataLenLast > index then
 		--比起上次有多出来的项
 		index = index + 1
 		for i=self.m_dataLenLast, index, -1 do
-			self:recyle_item(i)
+			self:__recyle_item(i)
 		end
 	end
 
-	self:refresh_content_size()
+	self:__refresh_content_size()
 end
 
 
@@ -166,25 +166,25 @@ function ListView:clear_list()
 	local keysToDel = TableUtil.get_keys(self.m_index2item)
 
 	for i, idx in ipairs(keysToDel) do
-		self:recyle_item(idx)
+		self:__recyle_item(idx)
 	end
 
 	clear_tbl(self.m_index2item)
 	clear_tbl(self.m_item2data)
 
-	self:clear_layout_items()
-	self:clear_all_item_views(false)
+	self:__clear_layout_items()
+	self:__clear_all_item_views(false)
 
-	self:on_clear_list()
+	self:__on_clear_list()
 
 end
 
-function ListView:on_clear_list()
+function ListView:__on_clear_list()
 
 end
 
 --刷新content的尺寸
-function ListView:refresh_content_size()
+function ListView:__refresh_content_size()
 
 	local w,h = LayoutUtil.calc_layout_size(self.m_layoutParam, #self.m_dataList)
 
@@ -199,7 +199,7 @@ end
 --//-------~★~-------~★~-------~★~数据管理~★~-------~★~-------~★~-------//
 
 --创建item
-function ListView:create_item(index)
+function ListView:__create_item(index)
 
 	local item_go = self.m_index2item[index]
 	if item_go then
@@ -216,18 +216,18 @@ function ListView:create_item(index)
 	item_go:SetActive(true)
 	item_go.name = 'item(' .. index .. ')'
 
-	self:layout_item(index, item_go)
+	self:__layout_item(index, item_go)
 	return item_go
 end
 
 --回收item
-function ListView:recyle_item(index)
+function ListView:__recyle_item(index)
 
 	if not self.m_index2item[index] then
 		return end
 
 	local item_go = self.m_index2item[index]
-	self:clear_item_data(item_go, index)
+	self:__clear_item_data(item_go, index)
 
 	self.m_index2item[index] = nil
 	self.m_itemPool:add(item_go)
@@ -236,7 +236,7 @@ function ListView:recyle_item(index)
 end
 
 --设置item数据
-function ListView:set_item_data(item_go, data, index)
+function ListView:__set_item_data(item_go, data, index)
 
 	local old =  self.m_item2data[item_go]
 	if old ~= nil and old == data then
@@ -246,7 +246,7 @@ function ListView:set_item_data(item_go, data, index)
 	self.m_item2data[item_go] = data
 
 	if self.m_itemCls then
-		local view = self:create_item_view(item_go, index)
+		local view = self:__create_item_view(item_go, index)
 		view.index = index
 		view:show(data)
 	else
@@ -259,14 +259,14 @@ function ListView:set_item_data(item_go, data, index)
 end
 
 
-function ListView:clear_item_data(item_go, index)
+function ListView:__clear_item_data(item_go, index)
 
 	if self.m_item2data[item_go] == nil then
 		return end
 	self.m_item2data[item_go] = nil
 
 	if self.m_itemCls then
-		local view = self:create_item_view(item_go, index)
+		local view = self:__create_item_view(item_go, index)
 		view:destroy()
 		view.index = -1
 	end
@@ -275,19 +275,19 @@ end
 --//-------~★~-------~★~-------~★~layout~★~-------~★~-------~★~-------//
 
 --创建所有布局项
-function ListView:create_layout_items()
+function ListView:__create_layout_items()
 
 	LayoutUtil.genLayoutItems(self.m_layoutParam, #self.m_dataList, self.m_layoutItems)
 end
 
 
-function ListView:clear_layout_items()
+function ListView:__clear_layout_items()
 
 	LayoutUtil.clearLayoutItems(self.m_layoutItems)
 end
 
 
-function ListView:layout_item(index, item_go)
+function ListView:__layout_item(index, item_go)
 	local layoutItem = self.m_layoutItems[index]
 	item_go:SetAchPos_(layoutItem.pos.x, layoutItem.pos.y)
 	return layoutItem.pos
@@ -297,7 +297,7 @@ end
 --//-------~★~-------~★~-------~★~ListViewItem~★~-------~★~-------~★~-------//
 
 
-function ListView:create_item_view(item_go, index)
+function ListView:__create_item_view(item_go, index)
 
 	local view = self.m_item2view[item_go]
 	if view then
@@ -313,7 +313,7 @@ function ListView:create_item_view(item_go, index)
 end
 
 
-function ListView:clear_all_item_views(del)
+function ListView:__clear_all_item_views(del)
 
 	if not self.m_itemCls then
 		return end

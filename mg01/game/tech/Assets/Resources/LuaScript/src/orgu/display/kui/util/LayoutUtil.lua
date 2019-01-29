@@ -190,19 +190,19 @@ function LayoutUtil.clearLayoutItems(items)
 end
 
 
-function LayoutUtil.genLayoutItems(layoutParam, num, items)
+function LayoutUtil.genLayoutItems(layoutParam, num, out_list)
 
-	items = items or {}
+	out_list = out_list or {}
 
-	local remain = #items - num
+	local remain = #out_list - num
 
 	local item
 	for i=1, num do
 
-		item = items[i]
+		item = out_list[i]
 		if not item then
 			item = LayoutUtil.newLayoutItem()
-			items[i] = item
+			out_list[i] = item
 		end
 
 		LayoutUtil.calc_item_pos(layoutParam, i, true, item)
@@ -212,8 +212,8 @@ function LayoutUtil.genLayoutItems(layoutParam, num, items)
 	if remain > 0 then
 
 		for i=num+remain, num -1 do
-			item = items[i]
-			items[i] = nil
+			item = out_list[i]
+			out_list[i] = nil
 			--recyleItem
 		end
 	end

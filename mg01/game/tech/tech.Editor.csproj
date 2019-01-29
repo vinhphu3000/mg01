@@ -162,9 +162,10 @@
     <Compile Include="Assets\Editor\Bundle\Util\AbsResExport.cs" />
     <Compile Include="Assets\Editor\Json\JsonPrettyPrint.cs" />
     <Compile Include="Assets\Editor\Json\JsonUtil.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow.cs" />
     <Compile Include="Assets\Editor\SpriteAtlas\SpriteAtlasClipUtility.cs" />
-    <Compile Include="Assets\Editor\SpriteAtlas\SpriteAtlasCliper.cs" />
-    <Compile Include="Assets\Editor\SpriteAtlas\SpriteAtlasMaker.cs" />
+    <Compile Include="Assets\Editor\SpriteAtlas\SpriteAtlasClipWnd.cs" />
+    <Compile Include="Assets\Editor\SpriteAtlas\SpriteAtlasWnd.cs" />
     <Compile Include="Assets\Editor\Util\EditerUtil.cs" />
     <Compile Include="Assets\Script\Slua\Editor\SluaExport.cs" />
     <Compile Include="Assets\Slua\Editor\CustomEditor.cs" />

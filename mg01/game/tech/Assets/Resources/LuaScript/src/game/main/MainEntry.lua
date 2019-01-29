@@ -54,9 +54,9 @@ end
 function MainEntry:setup_event()
     
     if CCDefine.USE_KEYBOARD then
-        local Keyboard = CCApp.keyboard
-        Keyboard:Attach(KEY_EVENT.PRESS, self.on_key_press)     --TODO: 这个也要改在GetEvents
-        Keyboard:Attach(KEY_EVENT.RELEASE, self.on_key_release)
+        local csKeyboard = CCApp.keyboard
+        csKeyboard:Attach(KEY_EVENT.PRESS, self.on_key_press)     --TODO: 这个也要改在GetEvents
+        csKeyboard:Attach(KEY_EVENT.RELEASE, self.on_key_release)
     end
 end
 

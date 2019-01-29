@@ -50,9 +50,7 @@ end
 --@image_ UI.Image
 function SprAtlasCache:setSprite(refer_, image_, url_, spriteName_, nativeSize)
 
-    if nativeSize == nil then
-        nativeSize = true
-    end
+	nativeSize = nativeSize or false
 
     local referId = Refer.format(refer_)
     csSprAtlasCache:SetSprite(referId, image_,  url_, spriteName_,  nativeSize)

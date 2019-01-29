@@ -21,7 +21,7 @@ using mg.org;
 namespace Edit
 {
 
-    public class SpriteAtlasCliper : EditorWindow
+    public class SpriteAtlasClipWnd : EditorWindow
     {
 
         
@@ -45,7 +45,7 @@ namespace Edit
             if (obj == null || !(obj is Texture))
                 return false;
             string path = AssetDatabase.GetAssetPath(obj);
-            return SpriteAtlasMaker.IsInAtlasPath(path);
+            return SpriteAtlasWnd.IsInAtlasPath(path);
         }
 
         [MenuItem("Assets/生成图集/自定义图集切片", false, 3)]
@@ -55,7 +55,7 @@ namespace Edit
         [MenuItem("工具/生成图集/自定义图集切片", false, 5)]
         public static void openWindow()
         {
-            var window = EditorWindow.GetWindow<SpriteAtlasCliper>();
+            var window = EditorWindow.GetWindow<SpriteAtlasClipWnd>();
             window.texture = (Selection.activeObject is Texture2D) ? Selection.activeObject as Texture2D : null;
         }
 
@@ -114,7 +114,7 @@ namespace Edit
                         string path = AssetDatabase.GetAssetPath(texture);
                         SpriteAtlasClipUtility.ClipAtlas(path, width, height, clipType);
 
-                        SpriteAtlasMaker.GenAsset_OneFile(path);   //重新生成图集Asset
+                        SpriteAtlasWnd.GenAsset_OneFile(path);   //重新生成图集Asset
 
                         Debug.Log("切片完成：" + path + " --> " + width + ", " + height + ", " + clipType);
                     }
@@ -192,9 +192,9 @@ namespace Edit
                     return;
 
                 string path = AssetDatabase.GetAssetPath(value);
-                if (!SpriteAtlasMaker.IsInAtlasPath(path))
+                if (!SpriteAtlasWnd.IsInAtlasPath(path))
                 {
-                    Log.Debug(string.Format("图片不在 {0} 内", SpriteAtlasMaker.RAW_PATH_ATLAS) );                    
+                    Log.Debug(string.Format("图片不在 {0} 内", SpriteAtlasWnd.RAW_PATH_ATLAS) );                    
                     return;
                 }
 

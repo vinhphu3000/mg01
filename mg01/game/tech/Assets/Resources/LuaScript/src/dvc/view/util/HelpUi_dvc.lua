@@ -28,13 +28,13 @@ HelpUi_dvc.fnSet_gr =
 
 function HelpUi_dvc.load_icon_cardFace(go_, refer_, card_color,  nativeSize)
 
-	HelpImage.load_sprite(go_, refer_, 'CardFace'..card_color,  nativeSize)
+	HelpImage.set_sprite(go_, refer_, 'CardFace'..card_color,  nativeSize)
 end
 
 
 function HelpUi_dvc.load_icon_cardBack(go_, refer_, card_color,  nativeSize)
 
-	HelpImage.load_sprite(go_, refer_,  'CardBack'..card_color,  nativeSize)
+	HelpImage.set_sprite(go_, refer_,  'CardBack'..card_color,  nativeSize)
 end
 
 

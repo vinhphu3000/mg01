@@ -91,11 +91,10 @@ namespace mg.org
             }
             else if (refer_ is IRefer)
             {
-
                 return true;
             }
 
-            Log.Assert("不争取的Refer: " + refer_);
+            Log.Assert("不正确的Refer: " + refer_);
             return false;
         }
 
