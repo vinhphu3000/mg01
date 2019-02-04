@@ -73,13 +73,13 @@ end
 
 
 --设置锚定坐标
-function HelpUi.set_achPos(go_, x, y)
+function HelpUi.set_ach_pos(go_, x, y)
 	go_:SetAchPos_(x, y)
 end
 
 --获取锚定坐标
 --return x,y
-function HelpUi.get_achPos(go_)
+function HelpUi.get_ach_pos(go_)
 	return go_:GetAchPos_()
 end
 
@@ -100,13 +100,13 @@ end
 
 
 --设置size
-function HelpUi.set_sizeDelta(go_, x, y)
+function HelpUi.set_size_delta(go_, x, y)
 	go_:SetSizeDelta_(x, y)
 end
 
 --获取size
 --return x,y
-function HelpUi.get_sizeDelta(go_)
+function HelpUi.get_size_delta(go_)
 	return go_:GetSizeDelta_()
 end
 
@@ -115,7 +115,7 @@ function HelpUi.get_rect(go_)
 	return go_:GetRect_()
 end
 
-function HelpUi.get_rectSize(go_)
+function HelpUi.get_rect_size(go_)
 	return go_:GetRectSize_()
 end
 

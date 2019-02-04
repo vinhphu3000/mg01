@@ -20,9 +20,10 @@ local KeyCode = KeyCode
 function UnityTestPop:__setup(...)
     
     self:ctor()
-    
-    
+
     nslog.debug("setup")
+
+	App.popMgr:show(POP_ID.NOTIFY_TIPS)
 end
 
 function UnityTestPop:__clear()

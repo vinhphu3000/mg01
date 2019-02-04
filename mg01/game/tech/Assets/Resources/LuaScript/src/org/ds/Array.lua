@@ -197,7 +197,7 @@ function Array:tail()
 end
 
 
-function Array:toTable()
+function Array:to_table()
     
     local result = {}
     local len = #self

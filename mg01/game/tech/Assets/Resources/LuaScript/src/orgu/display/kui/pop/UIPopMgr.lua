@@ -24,8 +24,9 @@ function UIPopMgr:__ctor()
     
     self.m_canvasNumMax = 20    --画布渲染上限
     self.m_canvasDisStart = 5   --画布镜距初始值
-    self.m_canvasDisPer = 30    --窗口镜距
+    self.m_canvasDisPer = 30    --窗口间距
     self.m_canvasDisMax = 15    --最大渲染距离
+	self.m_orderAddPer = 50     --order间距
     
     self.m_canvasDisMax = self.m_canvasDisStart + self.m_canvasNumMax * self.m_canvasDisPer + 5
     
@@ -120,7 +121,7 @@ end
 --窗口排序
 function UIPopMgr:__sortAllPop()
     
-    local pop_arr = self.m_openArr:toTable()
+    local pop_arr = self.m_openArr:to_table()
     Array.sortOn(pop_arr, {"layerId", "popTime"}, Array.DESCENDING) --排序
     --nslog.debug(t2str(pop_arr, 3))
     --nslog.print_r("pop_arr", pop_arr)
@@ -133,7 +134,7 @@ function UIPopMgr:__sortAllPop()
         
         pop = pop_arr[i]
         pop:setSortingLayer(pop.layerId)
-        pop:setSortingOrder(len - i + 1)    --越大越近
+        pop:setSortingOrder( (len - i + 1) * self.m_orderAddPer )    --越大越近
         pop:setPlaneDistance(dis)
     end
     

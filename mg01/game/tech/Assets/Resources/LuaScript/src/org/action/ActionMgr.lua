@@ -25,7 +25,7 @@ function ActionMgr:__ctor()
     
     self.isAutoUpdate = true    --是否自动更新
     
-    self.m_schUpdated = false
+    self.m_attach_updated = false
     self.m_invalid = false
 end
 
@@ -49,16 +49,16 @@ function ActionMgr:clear_event()
 end
 
 
-function ActionMgr:schUpdate(b)
+function ActionMgr:attach_update(b)
     
-    if self.m_schUpdated == b then
+    if self.m_attach_updated == b then
         return end
-    self.m_schUpdated = b
+    self.m_attach_updated = b
     if b then
-        App:schUpdate(self.update, self)
+        App:attach_update(self.update, self)
     else
-        App:unschUpdate(self.update, self)
-        --nslog.debug(modname, "unschUpdate")
+        App:detach_update(self.update, self)
+        --nslog.debug(modname, "detach_update")
     end
 end
 
@@ -109,12 +109,12 @@ function ActionMgr:update(dt)
             if self.m_actionNum == 0 then
 	            --停止更新
 	            nslog.debug(modname, "stop udpate")
-                self:schUpdate(false)
+                self:attach_update(false)
             end
         end 
     else
     
-        self:schUpdate(false)
+        self:attach_update(false)
     end
 end
 
@@ -129,7 +129,7 @@ function ActionMgr:run(target, action)
     self.m_actionNum = #self.m_actions
     if self.isAutoUpdate and self.m_actionNum == 1 then
 		--自动更新
-        self:schUpdate(true)
+        self:attach_update(true)
     end
     
     return action
@@ -172,7 +172,7 @@ function ActionMgr:stopAllActions()
     self.m_actions:clear()
     self.m_delArr.clear()
 
-    self:schUpdate(false)
+    self:attach_update(false)
 end
 
 return ActionMgr

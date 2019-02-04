@@ -24,7 +24,6 @@ function HelpGo.get_gameObject(go_)
 end
 
 
-
 --Active
 function HelpGo.set_active(go, b)
     go:SetActive(b and true or false)
@@ -62,6 +61,10 @@ end
 --
 function HelpGo.get_transform(go_)
     return go_.transform
+end
+
+function HelpGo.get_parent(go_)
+	return go_.transform.parent.gameObject
 end
 
 --改变父级

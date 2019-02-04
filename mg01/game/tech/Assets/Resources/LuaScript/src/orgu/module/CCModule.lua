@@ -89,12 +89,12 @@ function CCModule:remove_listener(type, fun, target, notifer)
 end
 
 
-function CCModule:schUpdate(fun, target)
-	App:schUpdate(fun, target, self)
+function CCModule:attach_update(fun, target)
+	App:attach_update(fun, target, self)
 end
 
-function CCModule:unschUpdate(fun, target)
-	App:unschUpdate(fun, target)
+function CCModule:detach_update(fun, target)
+	App:detach_update(fun, target)
 end
 
 --//-------~★~被别人监听~★~-------//

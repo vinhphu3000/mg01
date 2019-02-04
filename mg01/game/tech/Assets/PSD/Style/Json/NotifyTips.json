@@ -1,0 +1,26 @@
+{"name":"NotifyTips","type":"Container","param":"stretch","x":0,"y":0,"width":1920,"height":1080,"langCount":0,
+	"children":
+	[
+		{"name":"Panel","type":"Container","param":"Stretch","x":612,"y":115,"width":678,"height":72,
+			"children":
+			[
+				{"name":"tips1","type":"Container","param":"TopCenter|pivot0505","x":0,"y":0,"width":678,"height":72,
+					"children":
+					[
+						{"name":"item","type":"Container","param":"MiddleCenter|pivot0505|canvasGroup","x":0,"y":0,"width":678,"height":72,
+							"children":
+							[
+								{"name":"Tips","type":"Label","param":"MiddleCenter|overFlow","x":16,"y":11.46755,"width":644,"height":48.0649,
+									"normal":{"x":0,"y":0,"width":644,"height":48.0649,"content":"这是飘字提示啊啊啊啊啊啊啊啊啊啊","param":"MiddleCenter|overFlow","alignment":"MiddleCenter","format":{"color":"FFFFFF","font":"FZZhunYuan-M02","size":40,"bold":0}}
+								},
+								{"name":"zhezhao","type":"Image","param":"4,4,4,4|NoTex|pivot0505","x":0,"y":0,"width":678,"height":72,
+									"normal":{"link":"Shared.zhezhao","x":0,"y":0,"width":678,"height":72,"alpha":100,"param":"4,4,4,4|NoTex|pivot0505","top":4,"right":4,"bottom":4,"left":4,"solidFill":{"mode":"normal","color":"000000","alpha":100}}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

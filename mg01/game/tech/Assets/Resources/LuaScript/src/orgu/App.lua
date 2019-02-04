@@ -148,12 +148,12 @@ function App:lateUpdate(dt)
     __autoRelease:excute()
 end
 
-function App:schUpdate(listener, target, refer)
+function App:attach_update(listener, target, refer)
 
     __notifier:attach(gEVENT.UPDATE, listener, target, refer)
 end
 
-function App:unschUpdate(listener, target)
+function App:detach_update(listener, target)
 
     __notifier:detach(gEVENT.UPDATE, listener, target)
 end

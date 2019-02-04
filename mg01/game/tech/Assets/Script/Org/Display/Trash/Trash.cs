@@ -83,6 +83,7 @@ namespace mg.org
         {
             if (m_gameObject)
                 return;
+
             string name = string.IsNullOrEmpty(name_) ? this.GetType().Name : name_;    //容器名称
             m_gameObject = GameObjUtil.CreateGameobj(name);
             m_gameObject.isStatic = true;   //设置为静态对象

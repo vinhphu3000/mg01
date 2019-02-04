@@ -127,7 +127,7 @@ function stage_mgr:start_ph_proc(name)
 	self.m_phaseProc:setup(self)
 	self.m_phaseProc:enter(self.m_procInput)
 
-	self:schUpdate(self.update_ph_proc, self)
+	self:attach_update(self.update_ph_proc, self)
 end
 
 
@@ -140,7 +140,7 @@ function stage_mgr:clear_ph_proc()
 	self.m_phaseProc = false
 	self.m_procInput = false
 
-	self:unschUpdate(self.update_ph_proc, self)
+	self:detach_update(self.update_ph_proc, self)
 end
 
 

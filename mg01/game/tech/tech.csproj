@@ -13,14 +13,12 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.5.4f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -283,7 +281,6 @@
     <Compile Include="Assets\Script\Org\ds\Struct\Padding.cs" />
     <Compile Include="Assets\Script\Org\ds\Struct\Size.cs" />
     <Compile Include="Assets\Script\Org\ds\ds_const.cs" />
-    <Compile Include="Assets\Script\Slua\LuaBindManual\Unity\Lua_UnityEngine_UI_Graphic_Manual.cs" />
     <Compile Include="Assets\Script\Slua\LuaBind\Custom\BindCustom.cs" />
     <Compile Include="Assets\Script\Slua\LuaBind\Custom\LuaDelegate_Circle_UpdateDelegate.cs" />
     <Compile Include="Assets\Script\Slua\LuaBind\Custom\LuaDelegate_Deleg_GetBundleInfoDelegate.cs" />
@@ -1065,6 +1062,7 @@
     <Compile Include="Assets\Script\Slua\LuaBindManual\Custom\Lua_mg_org_LuaEvtCenter_Manual.cs" />
     <Compile Include="Assets\Script\Slua\LuaBindManual\Unity\Lua_UnityEngine_GameObject_Manual.cs" />
     <Compile Include="Assets\Script\Slua\LuaBindManual\Unity\Lua_UnityEngine_Transform_Manual.cs" />
+    <Compile Include="Assets\Script\Slua\LuaBindManual\Unity\Lua_UnityEngine_UI_Graphic_Manual.cs" />
     <Compile Include="Assets\Script\Slua\SluaHost.cs" />
     <Compile Include="Assets\Slua\Plugins\Slua_Managed\ByteArray.cs" />
     <Compile Include="Assets\Slua\Plugins\Slua_Managed\Coroutine.cs" />
@@ -1108,6 +1106,7 @@
     <None Include="Assets\PSD\Style\Setting\cn\缩略图导出.ReadMe.txt" />
     <None Include="Assets\PSD\Style\Xml\ErrorReport.xml" />
     <None Include="Assets\PSD\Style\Xml\Loading.xml" />
+    <None Include="Assets\PSD\Style\Xml\NotifyTips.xml" />
     <None Include="Assets\PSD\Style\Xml\Shared.xml" />
     <None Include="Assets\PSD\Style\Xml\Stage.xml" />
     <None Include="Assets\PSD\Style\Xml\TestPop4.xml" />

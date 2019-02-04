@@ -40,11 +40,11 @@ function GameObjUtil.fuzzySearchChild(go_, name_)
     return csGameObjUtil.FuzzySearchChild(go_, name_)
 end
 
---改变父级
-function GameObjUtil.changeParent(chlid_, toParent_, worldPosStays_)
-    
-    csGameObjUtil.ChangeParent(chlid_, toParent_, worldPosStays_ or false)
-end
+--改变父级(用addChild)
+--function GameObjUtil.changeParent(chlid_, toParent_, worldPosStays_)
+--
+--    csGameObjUtil.ChangeParent(chlid_, toParent_, worldPosStays_ or false)
+--end
 
 
 return GameObjUtil

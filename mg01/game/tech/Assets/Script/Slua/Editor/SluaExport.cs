@@ -157,7 +157,7 @@ public class SluaExport: ICustomExportPost
         { typeof(GameObjUtil), new List<string> {
                 "FindChild",
                 "FuzzySearchChild",
-                "ChangeParent",
+                //"ChangeParent",
                 "DontDestroyOnLoad",
             } },
         { typeof(ComponentUtil), new List<string> {

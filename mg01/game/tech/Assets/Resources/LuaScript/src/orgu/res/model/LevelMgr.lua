@@ -21,6 +21,10 @@ local LevelMgr = LevelMgr
 
 --===================module content========================
 
+local function getEvtType(name)
+	return name
+end
+
 function LevelMgr:__ctor()
 
 	self.m_notifier = new(Subject)  --独立派发器
@@ -61,11 +65,11 @@ function LevelMgr:on_load_complete(levelData)
 	nslog.print_t('on_load_complete', url, levelData)
 	--nslog.print_t(self.m_notifier:dump())
 
-	local evtType = url
+	local evtType = getEvtType(url)
 	--safe_call(self.notify, self, evtType, asset, url)
 	self:notify(evtType, url)
 
-	self:detachByType(url) --移除所有监听
+	self:detachByType(evtType) --移除所有监听
 end
 
 function LevelMgr:on_load_exception(url)
@@ -101,7 +105,7 @@ function LevelMgr:load_async(url, isAdditive, on_complete, target, refer)
 		return false
 	end
 
-	local evtType = url
+	local evtType = getEvtType(url)
 	self:attach(evtType, on_complete, target, refer)
 
 	local levelData = csLevelMgr:LoadAsync(url, isAdditive, nil, nil)

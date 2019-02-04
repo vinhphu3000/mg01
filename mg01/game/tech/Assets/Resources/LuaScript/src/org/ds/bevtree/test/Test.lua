@@ -104,7 +104,7 @@ function Test:start_bev_tree()
 	    nslog.print_t("运行中")
         return end
     self.m_running = true
-    App:schUpdate(self.update, self)
+    App:attach_update(self.update, self)
     
     self.m_tree:enter(self.m_input)
 end
@@ -114,7 +114,7 @@ function Test:stop_bev_tree()
     if not self.m_running then
         return end
     self.m_running = false
-    App:unschUpdate(self.update, self)
+    App:detach_update(self.update, self)
 
     self.m_tree:exit(self.m_input)
 end
