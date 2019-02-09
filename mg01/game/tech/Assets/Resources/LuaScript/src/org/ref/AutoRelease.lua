@@ -54,7 +54,7 @@ function AutoRelease:excute()
     local len = #self.m_autoArr
     for i=len, 1, -1 do
         ref = self.m_autoArr[i]
-        self.m_autoArr:removeAt(i)  --先移除再release,不然在remove里又会release一次
+        self.m_autoArr:remove_at(i)  --先移除再release,不然在remove里又会release一次
 
 	    --if ref:ref_cnt() <= 1 then
 		 --   nslog.print_t('被AutoRelease了', ref.referId)

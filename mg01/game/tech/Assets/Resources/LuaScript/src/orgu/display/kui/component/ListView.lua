@@ -209,7 +209,7 @@ function ListView:__create_item(index)
 	item_go = self.m_itemPool:pop()
 	if not item_go then
 		item_go = instantiate(self.m_itemTemp)
-		DisplayUtil.addChild(self.m_contentGo, item_go)
+		GameObjUtil.change_parent(item_go, self.m_contentGo)
 	end
 
 	self.m_index2item[index] = item_go

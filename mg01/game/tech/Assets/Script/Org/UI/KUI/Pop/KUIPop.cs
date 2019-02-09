@@ -144,7 +144,7 @@ namespace mg.org.KUI
         {
             base.__ShowGameObject();
 
-            DisplayUtil.AddChild(KUIApp.UILayer, m_gameObject);
+            GameObjUtil.ChangeParent(m_gameObject, KUIApp.UILayer);
             m_gameObject.SetActive(true);
 
             m_canvas = m_gameObject.GetComponent<Canvas>();

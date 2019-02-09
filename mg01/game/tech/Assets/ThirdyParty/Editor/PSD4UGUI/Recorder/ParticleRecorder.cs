@@ -104,14 +104,13 @@ namespace Edit.PSD4UGUI
             return string.Format("{0}/{1}.prefab", KAssetManager.FOLDER_PARTICLE, go.name);
         }
 
-        /// <summary>
-        /// 特效记录文件的保存路径
-        /// </summary>
-        public static string ParticleRecordFolder
+
+        public static string GetRecordPath(GameObject panel)
         {
-            get { return string.Format("Assets/Resources/GUI/{0}/Record_Particle", KAssetManager.language); }
+            string path = RecordFolder + "/" + panel.name + "_effect.json";
+            return path;
         }
-        
+
 
 
         /// <summary>
@@ -129,7 +128,7 @@ namespace Edit.PSD4UGUI
                 Dictionary<GameObject, List<GameObject>> spotEffectDict = GetAttachSpotEffectDict(effectList);
                 foreach (GameObject spot in spotEffectDict.Keys)
                 {
-                    string spotPath = GetAttachSpotPath(spot);  //挂点路径
+                    string spotPath = GetSpotPath(spot);  //挂点路径
                     if (path2configs.ContainsKey(spotPath) == false)
                     {
                         path2configs.Add(spotPath, new List<List<string>>());
@@ -147,27 +146,7 @@ namespace Edit.PSD4UGUI
             WriteParticleRecord(panel, path2configs);
         }
 
-        //获取挂点路径
-        static string GetAttachSpotPath(GameObject go)
-        {
-            Transform transform = go.transform;
-            List<Transform> transformList = new List<Transform>();
-            while (transform != null)
-            {
-                transformList.Add(transform);
-                transform = transform.parent;
-            }
-            string path = string.Empty;
-            if (transformList.Count > 1)
-            {
-                for (int i = 0; i < transformList.Count - 1; i++)
-                {
-                    path = transformList[i].name + "/" + path;
-                }
-            }
-            path = path.Substring(0, path.Length - 1);
-            return path;
-        }
+       
 
         //获取配置文本列表
         static List<string> GetParticleConfig(GameObject go)
@@ -207,10 +186,13 @@ namespace Edit.PSD4UGUI
 
         private static void WriteParticleRecord(GameObject root, Dictionary<string, List<List<string>>> path2configs)
         {
-            string path = ParticleRecordFolder + "/" + root.name + ".json";
-            AssetDatabase.DeleteAsset(path);
+            string path = GetRecordPath(root);
+            if (File.Exists(path))
+            {
+                AssetDatabase.DeleteAsset(path);
+            }
 
-            if(path2configs != null)
+            if (path2configs != null)
             {
                 // 有特效
                 string content = GetJsonContent(path2configs);
@@ -231,53 +213,10 @@ namespace Edit.PSD4UGUI
         }
 
      
-
-        //获取json文本
-        static string GetJsonContent(Dictionary<string, List<List<string>>> configs)
-        {
-            if (configs.Count == 0)
-                return string.Empty;
-
-            //{
-            //    "ScrollView_card/Image_mask/Container_content/Container_PointEffect":[["Assets/RawData/Effects_LP/UI_Effects/fx_UI_biankuang01.prefab","0","0","0","0","1","1","1","0","0","0","1"]]
-            //}
-
-            string content = "{\r\n";
-            foreach (string key in configs.Keys)
-            {
-                content += "\t\"" + key + "\":[";
-                foreach (List<string> config in configs[key])
-                {
-                    content += "[";
-                    foreach (string s in config)
-                    {
-                        content += "\"" + s + "\",";
-                    }
-                    content = content.Substring(0, content.Length - 1);
-                    content += "],";
-                }
-                content = content.Substring(0, content.Length - 1);
-                content += "],\r\n";
-            }
-            content = content.Substring(0, content.Length - 3);
-            content += "\r\n}";
-            return content;
-        }
-
-
+        
         //-------∽-★-∽------∽-★-∽--------∽-★-∽读取记录∽-★-∽--------∽-★-∽------∽-★-∽--------//
 
-        /// <summary>
-        /// 获取特效记录文件
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public static JsonAsset GetRecord(string name)
-        {
-            string path = string.Format("{0}/{1}.json", ParticleRecordFolder, name);
-            JsonAsset json = KAssetManager.GetJson(path);
-            return json;
-        }
+        
 
         /// <summary>
         /// 读取特效记录
@@ -285,10 +224,14 @@ namespace Edit.PSD4UGUI
         /// <param name="panel"></param>
         public static void ReadRecord(GameObject panel)
         {
-            JsonAsset asset = GetRecord(panel.name);
-            if (asset == null)
+            string path = GetRecordPath(panel);
+            if (!File.Exists(path))
+            {
                 return;
+            }
 
+
+            TextAsset asset = AssetDatabase.LoadAssetAtPath<TextAsset>(path);
             Dictionary<string, List<List<string>>> particleAttachSpotDict = JsonMapper.ToObject<Dictionary<string, List<List<string>>>>(asset.text);
             foreach (string key in particleAttachSpotDict.Keys)
             {

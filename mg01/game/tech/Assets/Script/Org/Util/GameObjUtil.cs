@@ -347,11 +347,7 @@ namespace mg.org
             return go;
         }
         
-
-        
         //-------∽-★-∽------∽-★-∽--------∽-★-∽CreateChild∽-★-∽--------∽-★-∽------∽-★-∽--------//
-
-        
 
         static public GameObject CreateChildByName(GameObject parent_, string name_)
         {
@@ -360,7 +356,7 @@ namespace mg.org
             {
                 //还没创建
                 go = GameObjUtil.CreateGameobj(name_);
-                DisplayUtil.AddChild(parent_, go);
+                GameObjUtil.ChangeParent(go, parent_);
             }
 
             return go;
@@ -373,15 +369,42 @@ namespace mg.org
             {
                 //还没创建
                 go = GameObjUtil.CreateGameobj(name_);
-                DisplayUtil.AddChild(parent_, go);
+                GameObjUtil.ChangeParent(go, parent_);
             }
 
             T cmpt = ComponentUtil.EnsureComponent<T>(go);
             return cmpt;
         }
-        
+
 
         //-------∽-★-∽------∽-★-∽--------∽-★-∽本地矩阵记录∽-★-∽--------∽-★-∽------∽-★-∽--------//
+
+
+        static public void ChangeParent(GameObject child_, GameObject parent_, bool worldPositionStays_ = false)
+        {
+            Transform to = parent_ ? parent_.transform : null;
+            if (child_.transform.parent == to)
+                return;
+
+            //RecordLocalMatrix(child_.transform);
+            child_.transform.SetParent(to, worldPositionStays_);
+            //ApplyLocalMatrix(child_.transform);
+        }
+
+
+        /// <summary>
+        /// 从父节点移除
+        /// </summary>
+        /// <param name="child_"></param>
+        static public void RemoveFromParent(GameObject child_)
+        {
+
+            Transform transChild = child_.transform;
+            if (transChild.parent != CCApp.Trash.transform)
+            {
+                ChangeParent(child_, CCApp.Trash);
+            }
+        }
 
         static private Vector3 __rcPos;
         static private Quaternion __rcRt;
@@ -422,21 +445,8 @@ namespace mg.org
             trans_.localScale = __rcScale;
         }
         
-        /// <summary>
-        /// 改变父级
-        /// </summary>
-        /// <param name="child_"></param>
-        /// <param name="parent_"></param>
-        static public void ChangeParent(GameObject child_,  GameObject parent_, bool worldPositionStays_=false)
-        {
-            Transform to = parent_ ? parent_.transform : null;
-            if (child_.transform.parent == to)
-                return;
+      
 
-            //RecordLocalMatrix(child_.transform);
-            child_.transform.SetParent(to, worldPositionStays_);
-            //ApplyLocalMatrix(child_.transform);
-        }
 
         //使本地矩阵相等
         static public void EquateLocalMatrix(Transform from_, Transform to_)

@@ -367,7 +367,7 @@ public class TestKUIPop3 : KUIPop
             GameObject item = GameObjUtil.Instantiate(itemGo);
 
             item.SetActive(true);
-            DisplayUtil.AddChild(container, item);
+            GameObjUtil.ChangeParent(item, container);
 
             LayoutUtil.LayItem(param, i, item);
 

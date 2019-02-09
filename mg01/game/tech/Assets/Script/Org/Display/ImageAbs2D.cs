@@ -28,7 +28,7 @@ namespace mg.org
 
         public void SetPosition(Vector2 pos_)
         {
-            DisplayUtil.SetPos2(this.gameObject, pos_);
+            DisplayUtil.SetPos2(this.gameObject, pos_.x, pos_.y);
         }
         
         public Vector2 position

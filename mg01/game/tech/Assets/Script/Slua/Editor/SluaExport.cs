@@ -155,18 +155,17 @@ public class SluaExport: ICustomExportPost
         { typeof(LuaEvtCenter), new List<string> { }  },
         //--util
         { typeof(GameObjUtil), new List<string> {
+                "CreateGameobj",
                 "FindChild",
                 "FuzzySearchChild",
-                //"ChangeParent",
+                "ChangeParent",
+                "RemoveFromParent",
                 "DontDestroyOnLoad",
             } },
         { typeof(ComponentUtil), new List<string> {
                 "EnsureComponent",
             } },
         { typeof(DisplayUtil),new List<string> {
-                "AddChild",
-                "RemoveFromParent",
-                "IsInTrash",
             } },
         { typeof(DateUtil),  new List<string> {
                 "TimeFromStart",

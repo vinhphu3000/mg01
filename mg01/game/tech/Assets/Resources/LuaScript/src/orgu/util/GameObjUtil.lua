@@ -19,6 +19,10 @@ local GameObjUtil = GameObjUtil
 --===================module content========================
 
 
+function GameObjUtil.create_gameobject(name)
+
+	return csGameObjUtil.CreateGameobj(name)
+end
 
 --转场不销毁
 function GameObjUtil.dontDestroyOnLoad(go_)
@@ -41,10 +45,16 @@ function GameObjUtil.fuzzySearchChild(go_, name_)
 end
 
 --改变父级(用addChild)
---function GameObjUtil.changeParent(chlid_, toParent_, worldPosStays_)
---
---    csGameObjUtil.ChangeParent(chlid_, toParent_, worldPosStays_ or false)
---end
+function GameObjUtil.change_parent(child_, toParent_, worldPosStays_)
 
+	csGameObjUtil.ChangeParent(child_, toParent_, worldPosStays_ or false)
+end
+
+function GameObjUtil.remove_from_parent(child_)
+	local trans = child_.transform
+	if trans ~= App.trashTrans then
+		csGameObjUtil.ChangeParent(child_, App.trash, false)
+	end
+end
 
 return GameObjUtil

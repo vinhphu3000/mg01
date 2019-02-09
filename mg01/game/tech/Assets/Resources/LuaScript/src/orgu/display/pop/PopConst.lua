@@ -66,8 +66,6 @@ POP_EVT =
         POP_OUT_FINISH = "POP_OUT_FINISH",
     }
 
-POP_ID = {}  --所有的窗口id将被注册到这里
-
 
 --窗口信息注册例子   
 --local POP_ID = 

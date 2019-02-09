@@ -23,7 +23,6 @@ function UnityTestPop:__setup(...)
 
     nslog.debug("setup")
 
-	App.popMgr:show(POP_ID.NOTIFY_TIPS)
 end
 
 function UnityTestPop:__clear()
@@ -47,7 +46,7 @@ end
 
 function UnityTestPop:on_key_press(evt_)
 
-	nslog.print_t("on_key_press", evt_.data)
+	--nslog.print_t("on_key_press", evt_.data)
 
     local code = evt_.data
     if code == KeyCode.Alpha1 then
@@ -61,6 +60,8 @@ function UnityTestPop:on_key_press(evt_)
 
         --local a
         --a.a = 1
+
+		msg_mgr:show_msg("这是一条提示啊啊啊啊")
 
     elseif code == KeyCode.Alpha3 then
         

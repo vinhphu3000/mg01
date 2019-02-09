@@ -19,6 +19,7 @@ using mg.org.KUI;
 
 public class TestPop4 : KUIPop
 {
+    GameObject m_panel;
 
     KButton m_btnOk;
     KButton m_btnClose;
@@ -50,6 +51,9 @@ public class TestPop4 : KUIPop
         //
         m_btnOk = GetChildByName<KButton>("Button_Ok", true);
         m_btnClose = GetChildByName<KButton>("Button_Close", true);
+
+        m_panel = GameObjUtil.GetParent(m_btnOk.gameObject);
+
         //
         m_inputName = GetChildByName<KInputField>("Input_name", true);
         m_labelTestInput = GetChildByName<KText>("Label_testInput", true);
@@ -121,6 +125,17 @@ public class TestPop4 : KUIPop
             case KeyCode.Keypad3:
                 m_listView.JumpToIndex(14, KListViewScroll.JumpPosType.TOP);
                 break;
+            case KeyCode.Keypad4:
+
+                GameObjUtil.RemoveFromParent(m_btnOk.gameObject);
+
+                break;
+            case KeyCode.Keypad5:
+
+                GameObjUtil.ChangeParent(m_btnOk.gameObject, m_panel);
+
+                break;
+
             default:
                 break;
         }

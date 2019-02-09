@@ -85,12 +85,14 @@ end
 
 function TestPop4:setup_event()
 
+	App.keyboard:attach(KEY_EVENT.RELEASE, self.on_key_press, self)
 
 end
 
 
 function TestPop4:clear_event()
 
+	App.keyboard:detach(KEY_EVENT.RELEASE, self.on_key_press, self)
 
 end
 
@@ -108,6 +110,23 @@ function TestPop4:__destroy()
 	--
 	self:clear_res()
 	self:clear_my_list()
+end
+
+
+function TestPop4:on_key_press(evt_)
+
+	--nslog.print_t("on_key_press", evt_.data)
+
+	local code = evt_.data
+	if code == KeyCode.Keypad1 then
+
+		GameObjUtil.remove_from_parent(self.m_handler.btn_ok.gameObject)
+
+	elseif code == KeyCode.Keypad2 then
+
+		GameObjUtil.change_parent(self.m_handler.btn_ok.gameObject, self.m_handler.gameObject)
+	end
+
 end
 
 --//-------~★~-------~★~-------~★~button~★~-------~★~-------~★~-------//

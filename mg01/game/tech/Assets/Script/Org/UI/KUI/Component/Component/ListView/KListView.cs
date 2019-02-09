@@ -274,7 +274,7 @@ namespace mg.org.KUI
             else
             {
                 item = GameObjUtil.Instantiate(m_itemTemp);
-                DisplayUtil.AddChild(m_contentGo, item);
+                GameObjUtil.ChangeParent(item, m_contentGo);
             }
 
             m_index2item[index_] = item;

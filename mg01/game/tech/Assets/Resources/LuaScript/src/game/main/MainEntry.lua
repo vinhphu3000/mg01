@@ -38,7 +38,8 @@ function MainEntry:setup()
     App:setup()
     
     self:setup_event()
-    
+
+
     self:enter_game()
 end
 
@@ -47,7 +48,7 @@ function MainEntry:clear()
     self:clear_event()
     
     self:quit_game()
-    
+
     App:clear()
 end
 
@@ -121,7 +122,7 @@ end
 
 function MainEntry.on_key_release(keycode)
 
-    nslog.debug("on_key_release", keycode)
+    --nslog.debug("on_key_release", keycode)
     safe_call(App.notify, App, KEY_EVENT.RELEASE, keycode)
     
     if keycode == KeyCode.KeypadMinus then
@@ -163,6 +164,8 @@ function MainEntry:quit_game()
 
     nslog.debug("quit_game")
 
+	msg_mgr:clear()
+
 end
 
 --进入游戏
@@ -175,6 +178,7 @@ function MainEntry:enter_game()
 	nslog.print_t("enter_game")
 
     require("src.game.lib")
+	msg_mgr:setup()
 
 	LevelMgr:load_async('SceneStart', false, self.on_level_loaded, self)
 

@@ -95,7 +95,7 @@ public class BundleTest : CCModule
         GameObject prefab = bundle1.LoadAsset("canvas_test3") as GameObject;
 
         GameObject go =  GameObjUtil.Instantiate(prefab);
-        DisplayUtil.AddChild(KUIApp.UILayer, go);
+        GameObjUtil.ChangeParent(go, KUIApp.UILayer);
 
         //需要全部卸载掉才能重新加载， 不然会报错
         foreach (var b in bundleList)   

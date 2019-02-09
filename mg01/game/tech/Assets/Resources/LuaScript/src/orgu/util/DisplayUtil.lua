@@ -17,22 +17,5 @@ local DisplayUtil = DisplayUtil
 
 --===================module content========================
 
---添加到父节点
-function DisplayUtil.addChild(parent_, child_)
-    
-    return csDisplayUtil.AddChild(parent_, child_)
-end
-
---从父节点移除
-function DisplayUtil.removeFromParent(child_)
-
-    csDisplayUtil.RemoveFromParent( child_)
-end
-
---是否在垃圾桶
-function DisplayUtil.isInTrash(child_)
-    
-    return csDisplayUtil.IsInTrash( child_)
-end
 
 return DisplayUtil

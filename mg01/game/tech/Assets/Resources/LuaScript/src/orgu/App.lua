@@ -29,6 +29,9 @@ local __evtCenter = false
 
 function App:__ctor()
 
+	self.trash = false
+	self.trashTrans = false
+
 	--观察者
     __notifier = new(Subject)
     self.notifer = __notifier
@@ -61,13 +64,22 @@ end
 
 function App:setting()
 
-	CCApp.FrameRate = 30
+	--CCApp.FrameRate = 30
+	CCApp.FrameRate = 60
 end
 
 function App:setup()
 
     --log.debug(modname, "os_name", OS_NAME)
     self:ctor()
+
+	if not self.trash then
+		self.trash = GameObjUtil.create_gameobject('LuaTrash')
+		GameObjUtil.dontDestroyOnLoad(self.trash)
+		HelpGo.set_local_pos(self.trash, -1500, -1500, -1500)
+		self.trash.isStatic = true
+		self.trashTrans = self.trash.transform
+	end
 
 	--
 	__evtCenter:setup()
@@ -95,23 +107,27 @@ end
 function App:clear()
 
 
-    self:clear_event()
-    
-    __timerMgr:clear()
-    self.keyboard:clear()
-    
-    self.resMgr:clear()
-    self.popMgr:clear()
+	self:clear_event()
+
+	__timerMgr:clear()
+	self.keyboard:clear()
+
+	self.resMgr:clear()
+	self.popMgr:clear()
 	self.actionMgr:clear()
 
-    --action.Action:clear()
+	--action.Action:clear()
 
-    __notifier:detachAll()
-    __autoRelease:clear()
+	__notifier:detachAll()
+	__autoRelease:clear()
 	__coMgr:clear()
 	__evtCenter:clear()
 
 	Refer.clearNotify()
+
+	if self.trash then
+		self.trash, self.trashTrans = destroy(self.trash)
+	end
 end
 
 function App:setup_event()

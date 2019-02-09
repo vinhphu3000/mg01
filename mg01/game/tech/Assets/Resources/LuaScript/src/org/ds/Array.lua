@@ -70,7 +70,6 @@ function Array:push(a1, a2, ...)
 end
 
 function Array:add(obj)
-    
     --nslog.debug(modname, "add", #self)
     self[#self+1] = obj
 end
@@ -99,12 +98,16 @@ function Array:shift()
 end
 
 --将一个或多个元素添加到数组的开头，并返回该数组的新长度
-function Array:unshift(...)
+function Array:unshift(a1, a2, ...)
 
-    local add = {...}
-    for i = #add, 1, -1 do
-        table.insert(self, 1, add[i])
-    end
+	if a2 == nil then
+		table.insert(self, 1, a1)
+	else
+		local add = {a1, a2, ...}
+		for i = #add, 1, -1 do
+			table.insert(self, 1, add[i])
+		end
+	end
     return #self
 end
 
@@ -142,7 +145,7 @@ function Array:remove(obj)
     return false
 end
 
-function Array:removeAt(index)
+function Array:remove_at(index)
 
     if index <= 0 or index > #self  then 
         return end

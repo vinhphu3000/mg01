@@ -35,19 +35,26 @@ namespace Edit.PSD4UGUI
 
         }
 
+        protected override void OnClickTargets()
+        {
+            _parent2targets = new Dictionary<GameObject, List<GameObject>>();
+
+            AnimatorRecorder.GenTargetDic(_panelPrefabObj, _parent2targets);
+
+        }
 
         public static void GenerateRecord(GameObject panel)
         {
-            //特效
             ParticleRecorder.GenerateRecord(panel);
+            AnimatorRecorder.GenerateRecord(panel);
 
         }
 
 
         public static void ReadRecord(GameObject panel)
         {
-            //特效
             ParticleRecorder.ReadRecord(panel);
+            AnimatorRecorder.ReadRecord(panel);
 
         }
 

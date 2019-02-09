@@ -179,4 +179,12 @@ function ImageAbs:remove_listener(type, fun, target, notifer)
 	notifer:detach(type, fun, target)
 end
 
+function ImageAbs:attach_update(fun, target)
+	App:attach_update(fun, target, self)
+end
+
+function ImageAbs:detach_update(fun, target)
+	App:detach_update(fun, target)
+end
+
 return ImageAbs

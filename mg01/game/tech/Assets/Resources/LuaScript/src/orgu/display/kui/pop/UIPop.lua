@@ -99,8 +99,8 @@ function UIPop:__onShowGameObject()
     super.__onShowGameObject(self)
 
     local PopMgr = App.popMgr
-    
-    DisplayUtil.addChild(PopMgr:getUILayer(), self.m_gameObject)
+
+	GameObjUtil.change_parent(self.m_gameObject, PopMgr:getUILayer())
     self.m_gameObject:SetActive(true)
 	self.m_gameObject.layer = CAMERA_LAYER.UI
 

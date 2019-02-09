@@ -20,6 +20,7 @@ function destroy(unityObj, now_)
     else
         Object.Destroy(unityObj)
     end
+	return nil
 end
 
 

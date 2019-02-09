@@ -320,7 +320,7 @@ namespace mg.org
                 //外部go,不负责移除
                 return;
 
-            DisplayUtil.RemoveFromParent(this.gameObject);
+            GameObjUtil.RemoveFromParent(this.gameObject);
         }
 
 
@@ -383,7 +383,7 @@ namespace mg.org
             GameObjUtil.ApplyLocalMatrix(replace_.transform);
 
             GameObjUtil.Delete(child);  //删除原来的子对象
-            DisplayUtil.AddChild(parent, replace_);
+            GameObjUtil.ChangeParent(replace_, parent);
         }
 
       

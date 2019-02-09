@@ -14,7 +14,8 @@ PopMgr = class(modname, super)
 local PopMgr = PopMgr
 
 local POP_LIFE = POP_LIFE
-local POP_ID = POP_ID
+
+POP_ID = {}  --所有的窗口id将被注册到这里
 
 --===================module content========================
 

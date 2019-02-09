@@ -32,6 +32,7 @@ namespace mg.org
         //App行为
         static CCAppBhv m_appBhv;
 
+        static GameObject m_trash;
 
         //观察者
         static Subject m_subject = new Subject();
@@ -96,7 +97,13 @@ namespace mg.org
 
             m_appBhv = ComponentUtil.EnsureComponent<CCAppBhv>(m_gRoot);
 
-            InitTrash();
+            if(!m_trash)
+            {
+                m_trash = GameObjUtil.CreateGameobj("Trash");
+                GameObjUtil.DontDestroyOnLoad(m_trash);
+                m_trash.transform.position = new Vector3(-1000, -1000, -1000);
+                m_trash.isStatic = true;   //设置为静态对象
+            }
             
 
             m_resMgr = m_resMgr ?? new ResMgr();
@@ -148,9 +155,7 @@ namespace mg.org
             
             UserPrefs.Clear();
             Refer.ClearNotify();
-
-            //清空垃圾桶
-            ClearTrash();
+            
 
             GameObject.Destroy(m_appBhv);
             m_appBhv = null;
@@ -160,6 +165,11 @@ namespace mg.org
             m_onLateUpdate = null;
             m_onUpdate = null;
             m_onGui = null;
+
+            if (m_trash)
+            {
+                m_trash = GameObjUtil.Delete(m_trash);
+            }
 
         }
 
@@ -186,7 +196,12 @@ namespace mg.org
         {
             get { return m_appBhv; }
         }
-        
+
+        static public GameObject Trash
+        {
+            get { return m_trash; }
+        }
+
         /// <summary>
         /// 键盘
         /// </summary>
@@ -294,39 +309,7 @@ namespace mg.org
         {
             return Thread.CurrentThread.ManagedThreadId == m_mainThreadId;
         }
-
-        //-------∽-★-∽------∽-★-∽--------∽-★-∽垃圾桶∽-★-∽--------∽-★-∽------∽-★-∽--------//
-
-        //垃圾桶
-        //static CCTrash m_trash;
-        static Trash m_trash;
-
-
-        /// <summary>
-        /// 垃圾桶
-        /// </summary>
-        //static public CCTrash Trash
-        static public Trash Trash
-        {
-            get { return m_trash; }
-        }
-
-        static void InitTrash()
-        {
-            if (m_trash == null)
-            {
-                //m_trash = new CCTrash(CCTrashType.far_from_camera);
-                m_trash = new Trash("Trash");
-            }
-
-            //m_trash.Setup(null);
-        }
-
-        static void ClearTrash()
-        {
-            m_trash.Clear();
-            //m_trash.Dispose();
-        }
+        
 
         //-------∽-★-∽------∽-★-∽--------∽-★-∽进程相关∽-★-∽--------∽-★-∽------∽-★-∽--------//
 

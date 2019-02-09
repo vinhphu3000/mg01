@@ -29,7 +29,7 @@ function HelpGo.set_active(go, b)
     go:SetActive(b and true or false)
 end
 
-function HelpGo.getActive(go)
+function HelpGo.get_active(go)
     return go.activeSelf
 end
 
@@ -68,13 +68,18 @@ function HelpGo.get_parent(go_)
 end
 
 --改变父级
-function HelpGo.set_parent(go_, toParent_, worldPosStays_)
-	return GameObjUtil.changeParent(go_, toParent_, worldPosStays_)
+function HelpGo.change_parent(go_, toParent_, worldPosStays_)
+	return GameObjUtil.change_parent(go_, toParent_, worldPosStays_)
+end
+
+--
+function HelpGo.remove_from_parent(go_)
+	return GameObjUtil.remove_from_parent(go_)
 end
 
 --根据路径获取子对象
 --@isRecursive 是否递归查找
-function HelpGo.findChlid(go_, path_, isRecursive)
+function HelpGo.find_chlid(go_, path_, isRecursive)
 	return GameObjUtil.findChild(go_, path_, isRecursive)
 end
 
