@@ -136,7 +136,7 @@ function PopMgr:pop(pop_)
     self:__addToOpen(pop_)
     self:__addToLayer(pop_)
     
-    self:notifyWithEvent(POP_EVT.POP_OPEN, pop_id)
+    self:notifyWithEvent(EVT_TYPE.POP_OPEN, pop_id)
     
     if not pop_:isOpen() then
         --第一次弹出, 播放动画
@@ -183,7 +183,7 @@ function PopMgr:__excuteClose(pop_)
     self:__destroyPop(pop_)
     self:__addToClose(pop_)
     
-    self:notifyWithEvent(POP_EVT.POP_CLOSE, pop_id)
+    self:notifyWithEvent(EVT_TYPE.POP_CLOSE, pop_id)
 end
 
 function PopMgr:__destroyPop(pop_)

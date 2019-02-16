@@ -1,7 +1,7 @@
 --Const
 --@author jr.zeng
 --2017年9月25日 下午3:13:37
-local modname = "Const"
+local modname = "const"
 --==================global reference=======================
 
 --===================namespace========================
@@ -30,19 +30,19 @@ COMPONENT_TYPE =
 }
 
 
---全局事件
-G_EVENT =
-    {
-        --进帧
-        UPDATE = "update",    
-    }
-
 --按键事件
 KEY_EVENT =
+{
+	--按下
+	PRESS   = "KEY_EVENT_PRESS",
+	--弹起
+	RELEASE = "KEY_EVENT_RELEASE",
+}
+
+
+local EVENT_TYPE =
     {
-        --按下
-        PRESS           = "KEY_EVENT_PRESS",
-        --弹起
-        RELEASE         = "KEY_EVENT_RELEASE",
+        --进帧
+        UPDATE = get_evt_type("UPDATE"),
+
     }
-    

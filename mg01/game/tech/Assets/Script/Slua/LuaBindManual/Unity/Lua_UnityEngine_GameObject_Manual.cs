@@ -203,6 +203,53 @@ public class Lua_UnityEngine_GameObject_Manual : LuaObject
         }
     }
 
+    /// <summary>
+    /// 设置全部坐标
+    /// SetLocalPos_(x, y, z)
+    /// </summary>
+    /// <param name="l"></param>
+    /// <returns></returns>
+    [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+    [UnityEngine.Scripting.Preserve]
+    static public int SetPos_(IntPtr l)
+    {
+        try
+        {
+            GameObject self = (GameObject)checkSelf(l);
+            float x, y, z;
+            checkType(l, 2, out x);
+            checkType(l, 3, out y);
+            checkType(l, 4, out z);
+            self.transform.position = new Vector3(x, y, z);
+            pushValue(l, true);
+            return 1;
+        }
+        catch (Exception e)
+        {
+            return error(l, e);
+        }
+    }
+
+    [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+    [UnityEngine.Scripting.Preserve]
+    static public int GetPos_(IntPtr l)
+    {
+        try
+        {
+            GameObject self = (GameObject)checkSelf(l);
+            var p = self.transform.position;
+            pushValue(l, true);
+            pushValue(l, p.x);
+            pushValue(l, p.y);
+            pushValue(l, p.z);
+            return 4;
+        }
+        catch (Exception e)
+        {
+            return error(l, e);
+        }
+    }
+
 
     /// <summary>
     /// 设置本地坐标
@@ -518,6 +565,8 @@ public class Lua_UnityEngine_GameObject_Manual : LuaObject
         addMember(l, FindChild_);
         addMember(l, GetHierarchy_);    // 获取层级路径
         addMember(l, NeedComponent_);
+        addMember(l, SetPos_);
+        addMember(l, GetPos_);
         addMember(l, SetLocalPos_);
         addMember(l, GetLocalPos_);
         addMember(l, SetLocalScale_);

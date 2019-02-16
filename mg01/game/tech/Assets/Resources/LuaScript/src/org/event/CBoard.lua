@@ -77,23 +77,23 @@ end
 --移除监听
 function CBoard:detach(name, listener, target)
 
-    if type(listener) ~= "function" then
-        assert(false)
-    end
+	if type(listener) ~= "function" then
+		assert(false)
+	end
 
-    local obs = self.m_obsDic[name]
-    if not obs then
-        return false
-    end
-    
-    if obs.fun ~= listener or obs.target ~= target then
-         return false
-    end
-    
-    self.m_obsDic[name] = nil
-    clearObs(obs)
-    self.m_obsNum = self.m_obsNum - 1
-    return true
+	local obs = self.m_obsDic[name]
+	if not obs then
+		return false
+	end
+
+	if obs.fun ~= listener or obs.target ~= target then
+		return false
+	end
+
+	self.m_obsDic[name] = nil
+	clearObs(obs)
+	self.m_obsNum = self.m_obsNum - 1
+	return true
 end
 
 

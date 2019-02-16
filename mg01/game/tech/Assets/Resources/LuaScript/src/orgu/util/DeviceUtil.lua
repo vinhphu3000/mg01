@@ -62,12 +62,12 @@ local function get_os()
     return name
 end
 
-osName = get_os()
-platformName = CCDefine.Platform
---nslog.debug("platformName", platformName)
+OS_NAME = get_os()
+PLATFORM_NAME = CCDefine.Platform
+--nslog.debug("PLATFORM_NAME", PLATFORM_NAME)
 
-is_editor = platformName == Platform_Name.EDITOR
-is_debug = CCDefine.DEBUG
+IS_EDITOR = PLATFORM_NAME == Platform_Name.EDITOR
+IS_DEBUG = CCDefine.DEBUG
 
 
 return DeviceUtil

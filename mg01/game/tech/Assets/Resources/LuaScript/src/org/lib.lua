@@ -29,6 +29,8 @@ end
 --define
 --require_org "define"
 
+require_org "const"
+
 --util
 require_org "util.lib"
 

@@ -17,15 +17,16 @@ local _ENV = namespace(ns, using)
 --//-------~★~-------~★~-------~★~事件相关~★~-------~★~-------~★~-------//
 
 
-
-RES_EVT = 
+RES_EVT =
     {
+	    --c#
         --加载完成
         LOAD_COMPLETE = "LOAD_COMPLETE",
         --加载异常
         LOAD_EXCEPTION = "LOAD_EXCEPTION",
-
 	    --场景加载完成
 	    LOAD_LEVEL_COMPLETE = "LOAD_LEVEL_COMPLETE",
 	    LOAD_LEVEL_EXCEPTION = "LOAD_LEVEL_EXCEPTION",
+
+	    --lua
     }

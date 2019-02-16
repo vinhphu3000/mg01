@@ -1,7 +1,7 @@
 --PopConst
 --@author jr.zeng
 --2017年10月13日 下午5:58:07
-local modname = "PopConst"
+local modname = "pop_const"
 --==================global reference=======================
 
 --===================namespace========================
@@ -20,6 +20,5 @@ local POP_ID =
 	    MSG_TIPS = {script_url = "src.game.ui.tips.msg_tips", prefab_url = "GUI/cn/Prefab/Canvas_NotifyTips", res_urls = {} },
 
     }
-    
-    
+
 PopMgr.addPopConfig(POP_ID)

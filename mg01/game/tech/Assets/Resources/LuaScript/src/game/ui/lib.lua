@@ -2,7 +2,7 @@
 
 
 
-require("src.game.ui.pop.PopConst")
+require("src.game.ui.pop.pop_const")
 
 
 

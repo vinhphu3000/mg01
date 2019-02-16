@@ -15,7 +15,7 @@ local super = nil	--父类
 App = class(modname, super)
 local App = App
 
-local gEVENT
+local EVT_TYPE = EVT_TYPE
 local ves3_pool
 
 --===================module content========================
@@ -54,7 +54,6 @@ function App:__ctor()
 	self.actionMgr = new(action.ActionMgr)
 
 	ves3_pool = Vec3.pool
-	gEVENT = G_EVENT
 
 	nslog.print_t('__ctor')
 
@@ -148,7 +147,7 @@ end
 
 function App:update(dt)
 
-    __notifier:notify(gEVENT.UPDATE, dt)
+    __notifier:notify(EVT_TYPE.UPDATE, dt)
     __timerMgr:update(dt)
 
 	__coMgr:update(dt)
@@ -166,12 +165,12 @@ end
 
 function App:attach_update(listener, target, refer)
 
-    __notifier:attach(gEVENT.UPDATE, listener, target, refer)
+    __notifier:attach(EVT_TYPE.UPDATE, listener, target, refer)
 end
 
 function App:detach_update(listener, target)
 
-    __notifier:detach(gEVENT.UPDATE, listener, target)
+    __notifier:detach(EVT_TYPE.UPDATE, listener, target)
 end
 
 --//-------∽-★-∽------∽-★-∽--------∽-★-∽观察者∽-★-∽--------∽-★-∽------∽-★-∽--------//

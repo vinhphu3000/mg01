@@ -79,7 +79,7 @@ function TestPop4:__show(showObj, ...)
 	self:show_listview()
 	--
 	self:show_res()
-	self:show_my_list()
+	--self:show_my_list()
 
 end
 
@@ -109,7 +109,7 @@ function TestPop4:__destroy()
 	self:clear_listview()
 	--
 	self:clear_res()
-	self:clear_my_list()
+	--self:clear_my_list()
 end
 
 
@@ -292,8 +292,6 @@ end
 --//-------~★~-------~★~-------~★~klistview~★~-------~★~-------~★~-------//
 
 function TestPop4:show_listview()
-
-	if 1 then return end
 
 	local list_view = self.m_handler.sv_guildlist
 

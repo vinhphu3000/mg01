@@ -43,25 +43,24 @@ JumpPosType =
 
 
 --ui事件
-UI_EVT = 
-    {
-        --c#
-        POINTER_DOWN = "POINTER_DOWN",
-        POINTER_UP = "POINTER_UP",
-        POINTER_ENTER = "POINTER_ENTER",
-        POINTER_EXIT = "POINTER_EXIT",
-        POINTER_MOVE = "POINTER_MOVE",
-        POINTER_CLICK = "POINTER_CLICK",
-        --数值改变
-        VALUE_CHANGE = "VALUE_CHANGE",
-        --列表项数据改变
-        LIST_ITEM_DATA = "LIST_ITEM_DATA",
-        --编辑结束
-        EDIT_END = "EDIT_END",
-        --请求改变
-        REQ_VALUE_CHANGE = "REQ_VALUE_CHANGE",
-        
-        --lua
-        
-    }
-    
+UI_EVT =
+{
+	--c#
+	POINTER_DOWN = "POINTER_DOWN",
+	POINTER_UP = "POINTER_UP",
+	POINTER_ENTER = "POINTER_ENTER",
+	POINTER_EXIT = "POINTER_EXIT",
+	POINTER_MOVE = "POINTER_MOVE",
+	POINTER_CLICK = "POINTER_CLICK",
+	--数值改变
+	VALUE_CHANGE = "VALUE_CHANGE",
+	--列表项数据改变
+	LIST_ITEM_DATA = "LIST_ITEM_DATA",
+	--编辑结束
+	EDIT_END = "EDIT_END",
+	--请求改变
+	REQ_VALUE_CHANGE = "REQ_VALUE_CHANGE",
+
+	--lua
+
+}

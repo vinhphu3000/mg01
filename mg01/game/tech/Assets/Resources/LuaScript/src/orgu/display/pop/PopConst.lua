@@ -48,24 +48,23 @@ POP_LIFE =
 
 
 --窗口事件
-POP_EVT = 
+local EVENT_TYPE =
     {
         --窗口打开
-        POP_OPEN = "POP_OPEN",
+        POP_OPEN = get_evt_type("POP_OPEN"),
         --窗口关闭
-        POP_CLOSE = "POP_CLOSE",
+        POP_CLOSE = get_evt_type("POP_CLOSE"),
         --所有面板窗口
-        POP_CLOSE_ALL = "POP_CLOSE_ALL",
+        POP_CLOSE_ALL = get_evt_type("POP_CLOSE_ALL"),
         --窗口淡入开始
-        POP_IN_BEGIN = "POP_IN_BEGIN",
+        POP_IN_BEGIN = get_evt_type("POP_IN_BEGIN"),
         --窗口淡入完成
-        POP_IN_FINISH = "POP_IN_FINISH",
+        POP_IN_FINISH = get_evt_type("POP_IN_FINISH"),
         --窗口淡出开始
-        POP_OUT_BEGIN = "POP_OUT_BEGIN",
+        POP_OUT_BEGIN = get_evt_type("POP_OUT_BEGIN"),
         --窗口淡出完成
-        POP_OUT_FINISH = "POP_OUT_FINISH",
+        POP_OUT_FINISH = get_evt_type("POP_OUT_FINISH"),
     }
-
 
 --窗口信息注册例子   
 --local POP_ID = 
